@@ -36,10 +36,10 @@ yarn-error.log*
 next-env.d.ts
 
 # pages in progress - need to be converted to JSX
-/app/brand
-/app/brand-guide
-/app/holiday
-/app/terms/
-/app/video
-/app/vote
-/app/zoom
+brand
+brand-guide
+holiday
+terms
+video
+vote
+zoom
