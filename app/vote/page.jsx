@@ -1,7 +1,7 @@
 import React from "react";
 
-const Vote = () => {
-  return <div>Vote</div>;
+const VotePage = () => {
+  return <div>VotePage</div>;
 };
 
-export default Vote;
+export default VotePage;

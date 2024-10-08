@@ -1,7 +1,7 @@
 import React from "react";
 
-const Terms = () => {
-  return <div>Terms</div>;
+const TermsPage = () => {
+  return <div>TermsPage</div>;
 };
 
-export default Terms;
+export default TermsPage;

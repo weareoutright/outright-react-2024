@@ -1,7 +1,7 @@
 import React from "react";
 
-const Zoom = () => {
-  return <div>Zoom</div>;
+const ZoomPage = () => {
+  return <div>ZoomPage</div>;
 };
 
-export default Zoom;
+export default ZoomPage;
