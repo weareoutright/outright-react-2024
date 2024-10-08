@@ -177,9 +177,11 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+    height: fit-content;
     opacity: 1;
     transition: opacity 0.33s ease-in;
     z-index: 1;
+
     // &.title-logo-img-contrast {
     //   opacity:0;
     // }
@@ -189,6 +191,7 @@ a {
     top: -40%;
     left: 0;
     opacity: 0;
+    height: fit-content;
     transition: opacity 0.33s ease-in;
     z-index: 1;
   }
@@ -274,6 +277,11 @@ a {
   flex-wrap: wrap;
   align-items: center;
   @include titleLogo;
+
+  .header-logo-nav {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .no-list {

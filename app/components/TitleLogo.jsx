@@ -5,7 +5,7 @@ import LOGO_FULL from "../assets/logo-outright-dark.svg";
 const TitleLogo = () => {
   return (
     <h1 className="title-logo">
-      <a href="/">
+      <a href="/" className="header-logo-nav">
         <span className="title-logo-img">
           <LOGO_O />
         </span>
