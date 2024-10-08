@@ -9,14 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "fullpage.js": "^4.0.29",
+    "next": "14.2.13",
+    "postcss-cli": "^11.0.0",
+    "postcss-preset-env": "^10.0.6",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.13"
+    "sass": "^1.79.4",
+    "uglify-es": "^3.3.10",
+    "uglifyjs": "^2.4.11",
+    "viewport-units-buggyfill": "^0.6.2"
   },
   "devDependencies": {
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
     "eslint": "^8",
-    "eslint-config-next": "14.2.13"
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.1"
   }
 }
