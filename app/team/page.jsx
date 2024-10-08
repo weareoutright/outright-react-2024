@@ -6,6 +6,10 @@ import { team_cards, pageTitle } from "./team_constants";
 import { siteBaseUrl } from "../site_constants";
 import { extractText } from "./assets";
 import TitleLogo from "../components/TitleLogo";
+import ICON_X from "../assets/icon-x.svg";
+import SCRIBBLE_LINE from "../assets/scribble-line.gif";
+import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
+import OUTRIGHT_O from "../components/outright-o.svg";
 
 const TeamPage = () => {
   const headshotImgObj = {};
@@ -22,12 +26,11 @@ const TeamPage = () => {
   }, []);
 
   return (
-    <div id="page-team">
-      <header id="page-utility">
+    <div className="page-team" id="page-team" style={{ background: "black" }}>
+      <header id="page-utility" className="page-team">
         <div className="page-utility-component page-utility-upper page-utility-left page-utility-page">
           <div id="site-branding">
             <a href={`${siteBaseUrl}/`}>
-              {/* Replace this with the actual logo component or image */}
               <TitleLogo />
             </a>
           </div>
@@ -35,17 +38,19 @@ const TeamPage = () => {
         <div className="page-utility-component page-utility-upper page-utility-right">
           <div id="bug-site-contact">
             <a href="#contact">
-              <img
-                src={`${siteBaseUrl}/media/bug-contact-outer.svg`}
+              <svg
+                src={BUG_CONTACT_OUTER}
                 className="bug-contact-img"
                 alt="Contact"
+                width={"100"}
+                height={"100"}
               />
             </a>
           </div>
         </div>
         <div className="page-utility-component page-utility-upper page-utility-right">
           <div id="contactform-close">
-            <img src={`${siteBaseUrl}/media/icon-x.svg`} alt="Close" />
+            <svg src={ICON_X} alt="Close" width={"100"} height={"100"} />
           </div>
         </div>
       </header>
@@ -57,10 +62,13 @@ const TeamPage = () => {
               <header className="pane-header">
                 <h1 className="pane-title">
                   {pageTitle}
-                  <img
-                    src={`${siteBaseUrl}/media/scribble-line.gif`}
+                  <Image
+                    src={SCRIBBLE_LINE}
                     className="scribble"
                     alt="Scribble"
+                    width={"100"}
+                    height={"100"}
+                    unoptimized
                   />
                 </h1>
               </header>
@@ -68,7 +76,7 @@ const TeamPage = () => {
                 <div className="row">
                   {team_cards.map((card) => {
                     const lowercaseName = card.name.toLowerCase();
-                    const headshot = headshotImages[lowercaseName]?.default.src;
+                    const HEADSHOT = headshotImages[lowercaseName]?.default.src;
                     return (
                       <div
                         key={card.name}
@@ -80,7 +88,7 @@ const TeamPage = () => {
                               <div className="img-container">
                                 <Image
                                   className="cardColor img-fluid"
-                                  src={headshot}
+                                  src={HEADSHOT}
                                   alt={card.name}
                                   width={100}
                                   height={100}
@@ -97,13 +105,16 @@ const TeamPage = () => {
 
                             <div className="back">
                               <div className="card-bg">
-                                {/* You need to include the SVG here, or another component */}
-                                {/* <OutrightO /> */}
+                                <Image
+                                  src={OUTRIGHT_O}
+                                  width={"100"}
+                                  height={"100"}
+                                />
                               </div>
                               <div className="img-container">
                                 <Image
                                   className="cardColor img-fluid"
-                                  src={headshot}
+                                  src={HEADSHOT}
                                   alt={card.name}
                                   width={"100"}
                                   height={"100"}

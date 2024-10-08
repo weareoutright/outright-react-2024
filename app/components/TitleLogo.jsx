@@ -6,11 +6,19 @@ const TitleLogo = () => {
   return (
     <h1 className="title-logo">
       <a href="/">
-        <Image src={LOGO_O} alt="Logo O" className="title-logo-img" />
-        <Image
+        <svg
+          src={LOGO_O}
+          alt="Logo O"
+          className="title-logo-img"
+          width={"100"}
+          height={"100"}
+        />
+        <svg
           src={LOGO_FULL}
           alt="Logo Outright"
           className="title-logo-img-full"
+          width={"100"}
+          height={"100"}
         />
       </a>
       <span>outright</span>

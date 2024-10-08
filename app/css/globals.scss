@@ -33,6 +33,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  background-color: white;
 }
 
 body {
@@ -177,7 +178,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: auto;
     width: auto;
     opacity: 1;
     transition: opacity 0.33s ease-in;

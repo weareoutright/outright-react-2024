@@ -1,1 +1,2 @@
-const siteBaseUrl = "https://weareoutright.com";
+// const siteBaseUrl = "https://weareoutright.com";
+export const siteBaseUrl = "http://localhost:3000";
