@@ -4,8 +4,8 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { team_cards, pageTitle } from "./team_constants";
 import { siteBaseUrl } from "../site_constants";
-import amanda from "./assets/amanda.png";
 import { extractText } from "./assets";
+import TitleLogo from "../components/TitleLogo";
 
 const TeamPage = () => {
   const headshotImgObj = {};
@@ -28,7 +28,7 @@ const TeamPage = () => {
           <div id="site-branding">
             <a href={`${siteBaseUrl}/`}>
               {/* Replace this with the actual logo component or image */}
-              {/* <TitleLogo /> */}
+              <TitleLogo />
             </a>
           </div>
         </div>

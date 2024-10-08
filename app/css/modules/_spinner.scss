@@ -1,0 +1,173 @@
+.spinner {
+  position: relative;
+  overflow: hidden;
+  transform-origin: 50% 100%;
+}
+
+.spinner-circle,
+.spinner-contrast,
+.spinner-circle-contrast {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform-origin: 50% 100%;
+}
+.spinner-circle,
+.spinner-circle-contrast {
+  border-radius: 100%;
+  border: 110px solid $dark;
+}
+
+.spinner-circle {
+  height: 200%;
+}
+
+.spinner-contrast {
+  height: 100%;
+  overflow: hidden;
+  .spinner-circle-contrast {
+    content: "";
+    border-color: #fff;
+    height: calc(200% + 2px);
+    top: -1px;
+    border-width: 112px;
+  }
+}
+
+.spinner-content {
+  position: absolute;
+  top: calc(55px - 1.6em);
+  left: 0;
+  width: 100%;
+  @include spinnerText;
+}
+
+@mixin spinner-hover-init($from) {
+  .spinner-contrast {
+    transform: rotate(#{$from}deg);
+    transition: transform 0.33s ease-in-out;
+  }
+  .spinner-content {
+    transition: color 0.33s ease-in-out;
+  }
+}
+
+@mixin spinner-hover($from, $to) {
+  @include spinner-hover-init($from);
+  &:hover {
+    .spinner-contrast {
+      transform: rotate(#{$to}deg);
+    }
+    .spinner-content {
+      @include spinnerTextContrast;
+    }
+  }
+}
+
+//Specific spinners
+
+.spinner-hero,
+.spinner-contact {
+  width: 380px;
+  height: 190px;
+}
+
+.spinner-hero {
+  top: -190px;
+  left: -190px;
+  z-index: 2;
+  transform: rotate(180deg);
+  transform-origin: 50% 100%;
+  z-index: 2;
+  position: absolute;
+  //@include spinner-hover(180,540);
+  @include spinner-hover-init(180);
+}
+
+@media screen and (max-width: 600px) {
+  .spinner-hero {
+    top: -100px;
+    left: -100px;
+  }
+  .spinner-hero,
+  .spinner-contact {
+    width: 200px;
+    height: 100px;
+    .spinner-circle,
+    .spinner-circle-contrast {
+      border-width: 60px;
+    }
+    .spinner-content {
+      top: 0;
+    }
+  }
+}
+
+#spinner-about {
+  width: 550px;
+  height: 275px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(50%);
+  @include spinner-hover-init(180);
+  .spinner-circle {
+    border-width: 160px;
+  }
+}
+
+.spinner-contact {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  // cursor:	$cursorActive;
+  @include spinner-hover(180, 0);
+  position: absolute;
+  animation: 2s ease-in-out infinite spinner-contact-throb;
+  backface-visibility: hidden;
+  transition: transform 0.33s ease-out;
+  z-index: 3;
+  .spinner-circle {
+    border-color: $black;
+  }
+  .spinner-circle-contrast {
+    border-color: $chartreuse;
+  }
+  &:hover {
+    animation-play-state: paused;
+  }
+  .container-contactform & {
+    .spinner-circle {
+      border-color: $black;
+    }
+    .spinner-circle-contrast {
+      border-color: $chartreuse;
+    }
+  }
+}
+
+.spinner-clients {
+  top: 50%;
+  left: 100px;
+  width: 68px;
+  height: 34px;
+  transform: translate(-50%, -100%) rotate(90deg);
+  transform-origin: 50% 100%;
+  @include spinner-hover-init(180);
+  position: absolute;
+  transition: transform 0.33s ease-out;
+  overflow: visible;
+  .spinner-circle {
+    border-width: 22px;
+  }
+  .spinner-contrast {
+    display: none;
+  }
+}
+
+.spinner-clientscover {
+  .spinner-circle {
+    border-color: $chartreuse;
+  }
+}

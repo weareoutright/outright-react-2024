@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@svgr/webpack": "^8.1.0",
     "bootstrap": "^5.3.3",
     "fullpage.js": "^4.0.29",
     "next": "14.2.13",
@@ -17,6 +18,7 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.79.4",
+    "scss": "^0.2.4",
     "uglify-es": "^3.3.10",
     "uglifyjs": "^2.4.11",
     "viewport-units-buggyfill": "^0.6.2"

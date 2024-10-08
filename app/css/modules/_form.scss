@@ -1,0 +1,63 @@
+form {
+  label {
+    @include formLabelText;
+    display: flex;
+    align-items: flex-end;
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+  }
+  input,
+  select,
+  textarea {
+    appearance: none;
+    border: 1px solid $dark;
+    border-width: 0 0 1px;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    @include formFieldText;
+    color: $dark;
+    display: inline-block;
+    flex: auto;
+    height: 2em;
+    vertical-align: bottom;
+    margin: 0 0 1em 1em;
+    text-align: center;
+    &:focus {
+      outline: none;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 2em;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    @include media-breakpoint-down(sm) {
+      margin: 0 0 1em;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  &.validated {
+    input,
+    select,
+    textarea {
+      &:not(:focus):required:invalid {
+        background: transparent url("../../assets/icon-invalid.svg") right 50%
+          no-repeat;
+        background-size: auto 50%;
+      }
+    }
+  }
+  .contrast & {
+    input,
+    select,
+    textarea {
+      &::placeholder {
+        color: #798f00;
+      }
+    }
+  }
+}

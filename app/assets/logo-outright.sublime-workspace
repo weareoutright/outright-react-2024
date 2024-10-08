@@ -1,0 +1,424 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"field_me",
+				"field_cmcm_membership_type"
+			],
+			[
+				"leaflet-popu",
+				"leaflet-popup-content-wrapper"
+			],
+			[
+				"page-",
+				"page-challenge-fund-call-for-proposals"
+			],
+			[
+				"XML",
+				"XMLHttpRequest\tinterface"
+			],
+			[
+				"two",
+				"twoDegreeLine"
+			],
+			[
+				"twoDegre",
+				"twoDegreeModel"
+			],
+			[
+				"jum",
+				"jumpInterval"
+			],
+			[
+				"get",
+				"getPos"
+			],
+			[
+				"c",
+				"crystalcleardev"
+			],
+			[
+				"cont",
+				"constructor"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"lat",
+				"LatLng"
+			],
+			[
+				"select",
+				"selectedOrgText"
+			],
+			[
+				"sele",
+				"selectedRows"
+			],
+			[
+				"postRe",
+				"postRedraw"
+			],
+			[
+				"or",
+				"orgFilterSize"
+			],
+			[
+				"org",
+				"orgFilterSize"
+			],
+			[
+				"highlighted",
+				"highlightedOrgs"
+			],
+			[
+				"highlight",
+				"highlightedOrgs"
+			],
+			[
+				"new",
+				"newOrgTranslateGroup"
+			],
+			[
+				"newOrg",
+				"newOrgChart"
+			],
+			[
+				"org_info_",
+				"org_info_region"
+			],
+			[
+				"cirter",
+				"criteriaKeys"
+			],
+			[
+				"crit",
+				"criteria"
+			],
+			[
+				"tra",
+				"translateGroup"
+			],
+			[
+				"orgDim",
+				"orgDimensionSize"
+			],
+			[
+				"cri",
+				"criteriaDimension"
+			],
+			[
+				"crti",
+				"criteriaTrueGroup"
+			],
+			[
+				"points",
+				"pointsToKML"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "packa",
+		"selected_items":
+		[
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: html"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kevin/Source/climatesignals_access.txt",
+		"/Users/kevin/Source/drd/media/logo-outright.svg",
+		"/Users/kevin/Source/sandbox/knockout.html",
+		"/Users/kevin/Source/holiday_card.html",
+		"/Users/kevin/Source/everytown/massshootings/package.json",
+		"/Users/kevin/Google Drive - George Washington University/IAFF 6163 Transnational Security/Research Paper/klustig-research_paper-draft.pdf",
+		"/Users/kevin/Source/ifes/sites/all/themes/ifes_2020/scss/components/README.txt",
+		"/Users/kevin/Source/tcs/sites/all/themes/tcs_theme/templates/html.tpl.php",
+		"/Users/kevin/Source/tcs/sites/all/themes/tcs_theme/templates/node.tpl.php",
+		"/Users/kevin/Source/tcs/sites/all/themes/tcs_theme/templates/page.tpl.php",
+		"/Users/kevin/Source/upaa/sites/default/settings.php",
+		"/Users/kevin/Source/upaa/sites/all/modules/features/upaa_contests/plugins/content_types/contest_links_open.inc",
+		"/Users/kevin/Source/upaa/sites/all/modules/features/upaa_contests/upaa_contests.drush.inc",
+		"/Users/kevin/Source/upaa/sites/all/modules/features/upaa_contests/upaa_contests.module",
+		"/Users/kevin/Source/upaa/sites/all/modules/features/upaa_contests/upaa_contests.features.field_instance.inc",
+		"/Users/kevin/Source/upaa/sites/all/modules/features/upaa_contests/upaa_contests.features.field_base.inc",
+		"/Users/kevin/Source/upaa/sites/all/modules/features/upaa_contests/upaa_contests.info",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/theme/_program.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/paragraphs/paragraph--institution.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/paragraphs/paragraph--program-grid-item.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_grid-items.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_hero.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_header.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/views/_maps.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/views/_projects.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/views/_publications.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/nodes/_program-page.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/fields/field.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/paragraphs/paragraph--grid-item.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_country-popup.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/theme/_default.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/system/page.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/nodes/node--program-page.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/system/page--type--program-page.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/system/page--type--program-subpage.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/nodes/_page.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/js/main.js",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_blocks/templates/gfdrr-recovery-header.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/style.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/gfdrr.libraries.yml",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/gfdrr.theme",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_maps/assets/js/project_map.js",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_maps/gfdrr_maps.module",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_blocks/js/jquery.inpageNav.js",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/bower_components/font-awesome/web-fonts-with-css/scss/fontawesome.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/bower_components/font-awesome/web-fonts-with-css/scss/fa-brands.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/node_modules/fontawesome/README.md",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/core/modules/migrate/src/Plugin/MigratePluginManager.php",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_import/src/Form/GrantImportForm.php",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/system/html.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_migration/gfdrr_migration.install",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_migration/config/install/migrate_plus.migration.gfdrr_grants.yml",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_migration/gfdrr_migration.info.yml",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_header-content.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_migration/src/Form/MigrationForm.php",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/nodes/node--feature-stories.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_blocks/templates/gfdrr-feature-header.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_blocks/gfdrr_blocks.module",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_blocks/src/Plugin/Block/FeatureHeader.php",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/system/region--above-header.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/block/block--page-title.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_headers/gfdrr_headers.module",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_pub_fix/gfdrr_pub_fix.module",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/fields/field--field-grid.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/nodes/node.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/system/page--type--country-profile.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/nodes/taxonomy-term.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/composer.json",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_import/gfdrr_import.info.yml",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_import/gfdrr_import.links.task.yml",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_import/gfdrr_import.routing.yml",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_import/gfdrr_import.install",
+		"/Users/kevin/Downloads/Congo grant.csv",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_blocks/templates/gfdrr-event-header.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_menu.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/views/_recovery-hub.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/nodes/_feature_story.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/nodes/_event.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_image-gallery.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/nodes/_thematic-page.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/gfdrr.info.yml",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/nodes/node--thematic-page.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/pages/_thematic_pages.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/layout/_default.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_carousel.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_paragraphs.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/component/_grid.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/block/block--bundle--map.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/fields/field--field-gallery-image.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/block/block.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/block/block--block-content--image-gallery.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/fields/field--paragraph--field-gallery-image--image-gallery.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/templates/block/block--image-gallery.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/js/events.inpageNav.js",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/themes/custom/gfdrr/scss/pages/_challenge_fund.scss",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_maps/src/Plugin/views/style/ProjectMap.php",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_maps/templates/gfdrr-map.html.twig",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_maps/assets/css/main.css",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_maps/gfdrr_maps.libraries.yml",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/modules/custom/gfdrr_maps/gfdrr_maps.info.yml",
+		"/Users/kevin/Source/gfdrr/gfdrr-drupal8/index.php",
+		"/Users/kevin/Source/Angular5/crb5/src/styles.scss",
+		"/Users/kevin/Source/Angular5/crb5/src/app/map/map.component.html",
+		"/Users/kevin/Source/Angular5/crb5/src/app/app.component.html",
+		"/Users/kevin/Source/Angular5/crb5/src/app/card/card.component.html",
+		"/Users/kevin/Source/Angular5/crb5/src/app/app.component.ts",
+		"/Users/kevin/Source/GWBI/Scorecard/_site/data/integration-trade.csv",
+		"/Users/kevin/Downloads/test/version1.html",
+		"/Users/kevin/Downloads/tools/temprecords/sass/_responsive.scss",
+		"/Users/kevin/Downloads/test/version6.html",
+		"/Users/kevin/Downloads/test/version2.html",
+		"/Users/kevin/Downloads/test/version3.html",
+		"/Users/kevin/Downloads/test/version4.html",
+		"/Users/kevin/Downloads/test/version5.html",
+		"/Users/kevin/Downloads/lechat 2/lechat_text_content.html",
+		"/Users/kevin/Downloads/lechat 2/lechat_console_example.html",
+		"/Users/kevin/Downloads/lechat 2/lechat_inner_html_ex.html",
+		"/Users/kevin/Downloads/lechat 2/lechat_bckg_example.html",
+		"/Users/kevin/Downloads/lechat 2/lechat_alert_example.html",
+		"/Users/kevin/Downloads/index_scorm.html",
+		"/Users/kevin/Downloads/lechat.html",
+		"/Users/kevin/Downloads/Recovery Hub Resources Databases (2) 6.6.17.csv",
+		"/Users/kevin/Downloads/Trellon_data_web_all_20127.csv",
+		"/Users/kevin/Downloads/detail.html",
+		"/Users/kevin/Downloads/piechart.html",
+		"/Users/kevin/Downloads/scatterplot.html",
+		"/Users/kevin/Downloads/timeline.html",
+		"/Users/kevin/Downloads/map.html"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "logo-outright.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Source/cci/_cci.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 267.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 328.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

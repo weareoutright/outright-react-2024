@@ -1,0 +1,103 @@
+@import "../_variables.scss";
+
+#pane-hero {
+  h1 {
+    @include headerTextHero;
+    margin: 0 0 0.1em;
+    animation-play-state: paused;
+    img {
+      height: 1em;
+      width: auto;
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+      transition: transform 0.33s ease-in-out;
+      transform: translateY(calc(-50% - 50vh));
+    }
+    .branding-hide & {
+      animation: 2s ease-in-out infinite spinner-hero-throb;
+      img {
+        transform: translateY(0);
+      }
+    }
+  }
+  .container {
+    > .row {
+      padding: 21vh #{$gutter-page-outer};
+    }
+  }
+}
+
+.site-headline {
+  @include siteHeadlineText;
+  position: relative;
+  span {
+    position: relative;
+  }
+  img {
+    display: block;
+    margin: 2em auto 0;
+    filter: invert(1);
+    &.scribble {
+      height: 2.4em;
+      width: 8em;
+      margin: 0;
+      top: -1em;
+      left: -1.5em;
+      filter: invert(1) saturate(2) brightness(0.7);
+      opacity: 0.8;
+    }
+  }
+}
+
+#brand-tags {
+  display: inline-block;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  width: auto;
+  max-width: 1200px;
+  transition: max-width 250ms ease-out;
+  margin-top: -0.2em;
+  position: relative;
+  padding-right: 0.125em;
+  height: 1.2em;
+  min-width: 1px;
+  opacity: 0;
+  @include brandTagsText;
+  &,
+  span {
+    overflow: visible;
+  }
+  span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    &:after {
+      content: "";
+      border-bottom: 0.032em solid #f93c5a;
+      width: 100%;
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 1.05em;
+      @supports (-moz-appearance: none) {
+        & {
+          top: 0.925em;
+        }
+      }
+      z-index: -1;
+    }
+  }
+  &:after {
+    content: "|";
+    color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1em;
+    line-height: 1em;
+    animation: blink 1s linear infinite;
+    backface-visibility: hidden;
+  }
+}

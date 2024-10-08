@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+{% for tag in page.meta %}
+	<meta name="{{ tag[0] }}" content="{{ tag[1] }}">
+{% endfor %}
+{% capture socialimage %}{% if page.meta.image %}{{site.url}}{{page.meta.image}}{% else %}{{site.url}}/media/logo-outright-social.jpg{% endif %}{% endcapture %}
+{% capture socialpath %}{{site.url}}{% unless page.path == 'index.html' %}{% if page.permalink %}{{page.permalink}}{% else %}/{{page.path}}{% endif %}{% endunless %}{% endcapture %}
+{% capture socialtitle %}{{ site.title }} {% if page.title %}| {{ page.title }}{% endif %}{% endcapture %}
+{% unless page.meta.image %}
+	<meta name="image" content="{{ socialimage }}">
+{% endunless %}
+<meta name="url" content="{{ socialpath }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ socialpath }}">
+<meta property="og:title" content="{{ socialtitle }}">
+<meta property="og:description" content="{{page.meta.description}}">
+<meta property="og:image" content="{{ socialimage }}">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ socialpath }}">
+<meta property="twitter:title" content="{{ socialtitle }}">
+<meta property="twitter:description" content="{{page.meta.description}}">
+<meta property="twitter:image" content="{{ socialimage }}">

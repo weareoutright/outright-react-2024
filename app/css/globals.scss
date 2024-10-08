@@ -1,0 +1,351 @@
+// $cursorDefault: url("app/assets/cursor.svg"), auto;
+// $cursorActive: url("app/cursor-active.svg"), auto;
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "modules/_brand-guide.scss";
+@import "modules/_brand.scss";
+@import "modules/_cards.scss";
+@import "modules/_form.scss";
+@import "modules/_hero.scss";
+@import "modules/_holiday.scss";
+@import "modules/_o.scss";
+@import "modules/_overlay.scss";
+@import "modules/_page-utility.scss";
+@import "modules/_pages.scss";
+@import "modules/_panes.scss";
+@import "modules/_scribble.scss";
+@import "modules/_see-more-work.scss";
+@import "modules/_spinner.scss";
+@import "modules/_team-card.scss";
+@import "modules/_video.scss";
+@import "modules/_wipe.scss";
+@import "_color.scss";
+@import "_theme.scss";
+@import "_typography.scss";
+@import "_variables-bootstrap.scss";
+@import "_variables.scss";
+@import "fullpage.css";
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  @include bodyTextDefault;
+  // cursor: $cursorDefault;
+}
+
+.fullpage-wrapper {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.fp-auto-height {
+  &.fp-section,
+  .fp-slide {
+    min-height: calc(var(--vh, 1vh) * 100) !important;
+    min-height: 100dvh !important;
+  }
+}
+
+.fp-responsive {
+  .fp-auto-height-responsive {
+    &.fp-section,
+    .fp-slide {
+      min-height: calc(var(--vh, 1vh) * 100) !important;
+      min-height: 100dvh !important;
+    }
+  }
+}
+
+.fp-overflow {
+  height: auto !important;
+  min-height: calc(var(--vh, 1vh) * 100) !important;
+  min-height: 100dvh !important;
+  max-height: none !important;
+}
+
+.container {
+  height: inherit;
+  max-height: none;
+  min-height: calc(var(--vh, 1vh) * 100);
+  min-height: 100dvh;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  > .row {
+    height: 100%;
+    max-height: 100%;
+    min-height: calc(var(--vh, 1vh) * 100);
+    min-height: 100dvh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    > .col-12 {
+      padding: 0;
+      margin: 0;
+      display: block;
+      float: none;
+    }
+  }
+  &.container-center {
+    > .row {
+      align-items: center;
+      justify-content: center;
+      > [class*="col-"] {
+        width: auto;
+        flex: none;
+      }
+    }
+  }
+  &.container-left {
+    margin-left: 0;
+    max-width: none;
+    > .row {
+      > [class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  &.container-bottom {
+    > .row {
+      align-items: flex-end;
+    }
+  }
+  @media screen and (max-width: 767px),
+    screen and (max-height: 600px) and (orientation: landscape) {
+    height: auto;
+  }
+}
+
+a {
+  @include linkTextDefault;
+  &,
+  &:active,
+  &:visited,
+  &:hover,
+  &:focus {
+    // cursor: $cursorActive;
+  }
+  .contrast &,
+  .contrast-dark & {
+    @include linkTextLight;
+  }
+}
+
+.notification {
+  &.notification-popup {
+    background: #fff;
+    padding: 1em 2em;
+    position: absolute;
+    z-index: 10000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include paneContentText;
+    color: $blueMedium;
+    max-width: calc(100vw - 40px);
+  }
+}
+
+@mixin titleLogo {
+  @include titleLogoText;
+  width: 85vw;
+  position: relative;
+  margin-bottom: 0;
+  display: inline-block;
+  filter: invert(1);
+  &:hover {
+    .title-logo-img-full {
+      opacity: 1;
+    }
+
+    .nav-links {
+      opacity: 1;
+    }
+  }
+  .title-logo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    opacity: 1;
+    transition: opacity 0.33s ease-in;
+    z-index: 1;
+    // &.title-logo-img-contrast {
+    //   opacity:0;
+    // }
+  }
+  .title-logo-img-full {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    opacity: 0;
+    height: 183%;
+    width: auto;
+    transition: opacity 0.33s ease-in;
+    z-index: 1;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    height: inherit;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.33s ease-in;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+
+    .link {
+      color: $dark;
+      font-size: 23px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: right;
+      margin: 0 0.7em;
+      transition: background-image 300ms;
+      padding-bottom: 1.25em;
+
+      &:hover {
+        background-image: url("../assets/scribble-line.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left 90% bottom 0%;
+        text-decoration: none;
+      }
+
+      &:visited {
+        text-decoration: none;
+      }
+
+      &:active {
+        text-decoration: none;
+      }
+
+      @media screen and (max-width: 1180px) {
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        text-align: left;
+        background-size: contain;
+        background-position: left 0% bottom 0%;
+      }
+    }
+
+    @media screen and (max-width: 1180px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 1.25em;
+    }
+  }
+
+  span {
+    opacity: 0;
+  }
+
+  // .contrast & {
+  //   .title-logo-img {
+  //     opacity:0;
+  //     &.title-logo-img-contrast {
+  //       opacity:1;
+  //     }
+  //   }
+  // }
+}
+
+.title-logo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  @include titleLogo;
+}
+
+.no-list {
+  margin: 0;
+  &,
+  li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+@mixin divider {
+  &:before,
+  &:after {
+    width: 50px;
+    display: block;
+    border-top: 1px solid #fff;
+    height: 1px;
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+  }
+}
+
+@mixin divider-above {
+  @include divider;
+  &:before {
+    content: "";
+  }
+}
+
+@mixin divider-below {
+  @include divider;
+  &:after {
+    content: "";
+  }
+}
+
+@mixin divider-red {
+  &:before,
+  &:after {
+    border-color: $redMedium;
+  }
+}
+
+.divider {
+  &.divider-above {
+    @include divider-above;
+  }
+  &.divider-above {
+    @include divider-below;
+  }
+  &.divider-red {
+    @include divider-red;
+  }
+}
+
+.mobile-only {
+  display: none;
+}
+
+@media screen and (max-width: 767px),
+  screen and (max-height: 600px) and (orientation: landscape) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+.fp-watermark {
+  display: none;
+}

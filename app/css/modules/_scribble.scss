@@ -1,0 +1,12 @@
+.scribble {
+  display:block;
+  position:absolute;
+  margin:0;
+  padding:0;
+  mix-blend-mode:hard-light;
+  z-index:2;
+  width:auto;
+  height:auto;
+  //filter:saturate(1.5) brightness(1.2);
+  opacity:.85;
+}

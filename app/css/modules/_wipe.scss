@@ -1,0 +1,83 @@
+.wipe-container {
+    position: relative;
+    overflow:hidden;
+    height:inherit;
+    max-height:none;
+    min-height:calc(var(--vh, 1vh) * 100);
+    min-height: 100dvh;
+    .container {
+        height:100%;
+        min-height:100%;
+    	position: absolute;
+    	top: 0;
+    	left: 50%;
+    	transform: translateX(-50%);
+    	transition: clip-path 0s ease-in .5s;
+    	clip-path:circle(0px at 50% 100%);
+    	overflow:visible;
+    	width:100%;
+    	padding:0;
+    	max-width:none;
+        pointer-events:none;
+    	&.active {
+    		transition-duration:.5s;
+    		transition-delay:0s;
+    		clip-path:circle(150vw at 50% 100%);
+            pointer-events:all;
+    	}
+
+    }
+    .container-clients,.container-clientscover {
+        clip-path:circle(0px at 100px 50%);
+        &:after {
+            content: "";
+            border: 20px solid $chartreuse;
+            border-radius: 100%;
+            width:68px;
+            height:68px;
+            transition: all 0s ease-in .5s;
+            position: absolute;
+            left: 100px;
+            top:50%;
+            transform: translate(-50%,-50%);
+            z-index:10;
+            pointer-events:none;
+        }
+        &.active {
+            clip-path:circle(250vw at 100px 50%);
+            &:after {
+                border-width:50vw;
+                width: 500vw;
+                height: 500vw;
+                transition-duration:.5s;
+                transition-delay:0s;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px),screen and (max-height:600px) and (orientation:landscape) {
+    .wipe-container {
+        height:auto;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .wipe-container {
+        .container {
+            &.active {
+                clip-path:circle(150vh at 50% 100%);
+            }
+
+        }
+        .container-clients,.container-clientscover {
+            &.active {
+                clip-path:circle(250vh at 100px 50%);
+                &:after {
+                    width:500vh;
+                    height:500vh;
+                }
+            }
+        }
+    }    
+}
