@@ -38,12 +38,9 @@ const TeamPage = () => {
         <div className="page-utility-component page-utility-upper page-utility-right">
           <div id="bug-site-contact">
             <a href="#contact">
-              <svg
-                src={BUG_CONTACT_OUTER}
+              <BUG_CONTACT_OUTER
                 className="bug-contact-img"
-                alt="Contact"
-                width={"100"}
-                height={"100"}
+                id="bug-contact-img"
               />
             </a>
           </div>
@@ -51,6 +48,7 @@ const TeamPage = () => {
         <div className="page-utility-component page-utility-upper page-utility-right">
           <div id="contactform-close">
             <svg src={ICON_X} alt="Close" width={"100"} height={"100"} />
+            <ICON_X />
           </div>
         </div>
       </header>
@@ -105,11 +103,7 @@ const TeamPage = () => {
 
                             <div className="back">
                               <div className="card-bg">
-                                <Image
-                                  src={OUTRIGHT_O}
-                                  width={"100"}
-                                  height={"100"}
-                                />
+                                <OUTRIGHT_O />
                               </div>
                               <div className="img-container">
                                 <Image
