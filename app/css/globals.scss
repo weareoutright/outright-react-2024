@@ -176,7 +176,7 @@ a {
   .title-logo-img {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1.5px;
     height: fit-content;
     opacity: 1;
     transition: opacity 0.33s ease-in;
@@ -188,8 +188,8 @@ a {
   }
   .title-logo-img-full {
     position: absolute;
-    top: -40%;
-    left: 0;
+    top: -17px;
+    left: 2px;
     opacity: 0;
     height: fit-content;
     transition: opacity 0.33s ease-in;
