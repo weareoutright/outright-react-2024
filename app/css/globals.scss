@@ -37,7 +37,7 @@ body {
 
 body {
   @include bodyTextDefault;
-  // cursor: $cursorDefault;
+  cursor: url("../assets/cursor.svg");
 }
 
 .fullpage-wrapper {
@@ -129,13 +129,13 @@ body {
 
 a {
   @include linkTextDefault;
-  &,
-  &:active,
-  &:visited,
-  &:hover,
-  &:focus {
-    // cursor: $cursorActive;
-  }
+  // &,
+  // &:active,
+  // &:visited,
+  // &:hover,
+  // &:focus {
+  //   // cursor: $cursorActive;
+  // }
   .contrast &,
   .contrast-dark & {
     @include linkTextLight;

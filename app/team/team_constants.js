@@ -1,4 +1,4 @@
-export const pageTitle = "Our Team";
+export const pageTitle = "meet the team";
 
 export const team_cards = [
   {

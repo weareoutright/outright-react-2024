@@ -5,7 +5,8 @@
     @include headerTextHero;
     margin: 0 0 0.1em;
     animation-play-state: paused;
-    img {
+    img,
+    svg {
       height: 1em;
       width: auto;
       display: block;
@@ -16,7 +17,8 @@
     }
     .branding-hide & {
       animation: 2s ease-in-out infinite spinner-hero-throb;
-      img {
+      img,
+      svg {
         transform: translateY(0);
       }
     }
@@ -34,7 +36,8 @@
   span {
     position: relative;
   }
-  img {
+  img,
+  svg {
     display: block;
     margin: 2em auto 0;
     filter: invert(1);

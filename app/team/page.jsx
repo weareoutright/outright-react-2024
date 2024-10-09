@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { team_cards, pageTitle } from "./team_constants";
+import { team_cards } from "./team_constants";
 import { siteBaseUrl } from "../site_constants";
 import { extractText } from "./assets";
 import TitleLogo from "../components/TitleLogo";
@@ -10,6 +10,7 @@ import ICON_X from "../assets/icon-x.svg";
 import SCRIBBLE_LINE from "../assets/scribble-line.gif";
 import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
 import OUTRIGHT_O from "../components/outright-o.svg";
+import "../css/modules/_team-card.scss";
 
 const TeamPage = () => {
   const headshotImgObj = {};
@@ -59,15 +60,18 @@ const TeamPage = () => {
             <div className="col-12">
               <header className="pane-header">
                 <h1 className="pane-title">
-                  {pageTitle}
-                  <Image
-                    src={SCRIBBLE_LINE}
-                    className="scribble"
-                    alt="Scribble"
-                    width={"100"}
-                    height={"100"}
-                    unoptimized
-                  />
+                  Meet the{" "}
+                  <span className="team-underline">
+                    Team
+                    <Image
+                      src={SCRIBBLE_LINE}
+                      className="scribble"
+                      alt="Scribble"
+                      width={100}
+                      height={100}
+                      unoptimized
+                    />
+                  </span>
                 </h1>
               </header>
               <div className="pane-content">
@@ -75,6 +79,7 @@ const TeamPage = () => {
                   {team_cards.map((card) => {
                     const lowercaseName = card.name.toLowerCase();
                     const HEADSHOT = headshotImages[lowercaseName]?.default.src;
+
                     return (
                       <div
                         key={card.name}

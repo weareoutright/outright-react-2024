@@ -1,4 +1,10 @@
 @use "sass:map";
+@import "../color";
+@import "../variables";
+@import "../typography";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
 .page #page-team {
   .container-contact {
@@ -6,18 +12,28 @@
   }
 }
 
-.page .pane.pane-team {
+.pane.pane-team {
   background: #eaeae7;
   color: $dark;
   .pane-title {
     margin-bottom: 0;
-    .scribble {
-      top: 0.58em;
-      left: 5em;
-      width: 3.25em;
-      @media screen and (max-width: 435px) {
-        top: 1.65em;
-        left: 0em;
+
+    span {
+      position: relative;
+
+      .scribble {
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 3.25em;
+        @media screen and (min-width: 436px) {
+          top: 55px;
+          left: 0;
+        }
+        @media screen and (max-width: 435px) {
+          top: -10px;
+          left: 0;
+        }
       }
     }
   }
@@ -319,14 +335,13 @@
     }
   }
 
-  $colors: [ #f0405c, #2ec4b6, #b0ff92, #db78ad, #f95738, #0000ff, #314d52,
-    #291f5c, #fbdad6, #cff200];
+  $colors: #f0405c, #2ec4b6, #b0ff92, #db78ad, #f95738, #0000ff, #314d52,
+    #291f5c, #fbdad6, #cff200;
 
-  $positions: [
-      (
-        left: 0,
-        top: 0,
-      ),
+  $positions: (
+      left: 0,
+      top: 0,
+    ),
     (
       left: 0,
       top: 25%,
@@ -344,9 +359,9 @@
       top: 25%,
     ),
     (
-        left: 100%,
-        top: 50%,
-      )];
+      left: 100%,
+      top: 50%,
+    );
 
   @for $c from 1 through length($colors) {
     &.style-bg-#{$c} {
