@@ -18,8 +18,8 @@ const AboutPane = () => {
       <p>
         Our passion and commitment to the quality of our work paired with our
         boundless imagination is what creates our salient and differentiating
-        edge. We’re not here to just do the work; we’re here to tell your story
-        in a way that has, quite literally, never been told before.
+        edge. We&apos;re not here to just do the work; we&apos;re here to tell
+        your story in a way that has, quite literally, never been told before.
       </p>
 
       <p>
@@ -31,9 +31,9 @@ const AboutPane = () => {
       </p>
 
       <p>
-        We’re a proud woman- and minority-owned business that thrives on
+        We&apos;re a proud woman- and minority-owned business that thrives on
         changing the narrative through the power of design. And, with you on
-        board, we’re doing it together.
+        board, we&apos;re doing it together.
       </p>
     </div>
   );

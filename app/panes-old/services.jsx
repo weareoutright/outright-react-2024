@@ -20,7 +20,7 @@ const ServicesPane = () => {
           <p>
             The core of who you are and what you do begins with your foundation.
             From messaging and content strategy, to social media ideation, to
-            overall campaign and brand development, we're ready to help you
+            overall campaign and brand development, we&apos;re ready to help you
             re-plant your roots, creating opportunities for accelerated growth.
           </p>
         </div>
@@ -31,11 +31,11 @@ const ServicesPane = () => {
         <div className="service-content">
           <strong>Design</strong>
           <p>
-            Look good, feel good. Whether you're stepping out into the world
-            with a new brand identity or revitalizing your services through
-            motion and video production, our goal is to help you align your
-            vision with your visuals so that you can confidently (and stylishly)
-            leave your mark.
+            Look good, feel good. Whether you&apos;re stepping out into the
+            world with a new brand identity or revitalizing your services
+            through motion and video production, our goal is to help you align
+            your vision with your visuals so that you can confidently (and
+            stylishly) leave your mark.
           </p>
         </div>
       </li>
@@ -45,12 +45,13 @@ const ServicesPane = () => {
         <div className="service-content">
           <strong>Digital</strong>
           <p>
-            Let's get{" "}
+            Let&apos;s get{" "}
             <span style={{ textDecoration: "line-through" }}>physical</span>{" "}
             digital. Our digital advertising and marketing, UX/UI design, web
             development, and cutting-edge interactive data visualizations will
-            show you first-hand that the sky is not the limit. We're ready to
-            transform your brand's narrative in ways beyond your imagination.
+            show you first-hand that the sky is not the limit. We&apos;re ready
+            to transform your brand&apos;s narrative in ways beyond your
+            imagination.
           </p>
         </div>
       </li>
