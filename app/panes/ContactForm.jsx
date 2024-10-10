@@ -1,15 +1,3 @@
-const paneData = {
-  hideTitle: true,
-  attributes: {
-    id: "contactform",
-    containerClasses: ["center"],
-    autoheight_responsive: true,
-  },
-  background: "chartreusewhite",
-  order: 7,
-  waypoint: "Contact",
-};
-
 const ContactForm = () => {
   return (
     <form noValidate id="form-contact" onSubmit={(e) => e.preventDefault()}>

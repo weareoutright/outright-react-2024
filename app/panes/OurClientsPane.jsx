@@ -1,13 +1,4 @@
-const paneData = {
-  hideTitle: false,
-  attributes: {
-    id: "clients",
-    containerClasses: ["left", "center"],
-  },
-  background: "black",
-  order: 5,
-  waypoint: "Our Clients",
-};
+import Image from "next/image";
 
 {
   /* <ul class="no-list client-list">
@@ -34,14 +25,16 @@ const paneData = {
 const OurClientsPane = () => {
   return (
     <div class="no-list client-list">
-      <img src="../media/client-logos/youtube.svg" />
-      <img src="../media/client-logos/marriott.svg" />
-      <img src="../media/client-logos/adidas.svg" />
-      <img src="../media/client-logos/oc.svg" />
-      <img src="../media/client-logos/me-too.svg" />
-      <img src="../media/client-logos/aarp.svg" />
-      <img src="../media/client-logos/share-our-strength.svg" />
-      <img src="../media/client-logos/wri.svg" />
+      <Image src="../media/client-logos/youtube.svg" />
+      <Image src="../media/client-logos/marriott.svg" />
+      <Image src="../media/client-logos/adidas.svg" />
+      <Image src="../media/client-logos/oc.svg" />
+      <Image src="../media/client-logos/me-too.svg" />
+      <Image src="../media/client-logos/aarp.svg" />
+      <Image src="../media/client-logos/share-our-strength.svg" />
+      <Image src="../media/client-logos/wri.svg" />
     </div>
   );
 };
+
+export default OurClientsPane;
