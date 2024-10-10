@@ -1,3 +1,5 @@
+import Spinner from "./Spinner";
+
 const PaneInner = ({ pane }) => {
   return (
     <>

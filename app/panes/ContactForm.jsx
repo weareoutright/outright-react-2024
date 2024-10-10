@@ -14,7 +14,7 @@ const ContactForm = () => {
   return (
     <form noValidate id="form-contact" onSubmit={(e) => e.preventDefault()}>
       <label>
-        Hey, I’m
+        Hey, I'm
         <input
           name="entry.255908712"
           type="text"
@@ -41,7 +41,7 @@ const ContactForm = () => {
         />
       </label>
       <label>
-        I’m looking for
+        I'm looking for
         <textarea
           name="entry.1466566023"
           placeholder="Enter your project details"
