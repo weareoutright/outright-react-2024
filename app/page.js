@@ -1,6 +1,6 @@
 import PaneOuter from "./components/PaneOuter";
 import Utility from "./components/Utility";
-import { pane as YouTubePane } from "./clients/youtube";
+import { pane as YouTubePane } from "./clients/YouTubePaneProps.js";
 import HeroPane from "./panes/HeroPane.jsx";
 
 export default function Home() {

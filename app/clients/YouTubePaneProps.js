@@ -11,12 +11,3 @@ export const pane = {
   waypoint: "Featured",
   background_image: "bg-youtube-video.jpg",
 };
-
-export const YouTubeContent = () => {
-  return (
-    <p>
-      From YouTube’s Super Bowl AdBlitz to Google’s Creative Ads Studio launch,
-      fresh design and motion helped these big brands do big things.
-    </p>
-  );
-};
