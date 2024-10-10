@@ -17,6 +17,7 @@
     "postcss-preset-env": "^10.0.6",
     "react": "^18",
     "react-dom": "^18",
+    "react-scroll-parallax": "^3.4.5",
     "sass": "^1.79.4",
     "scss": "^0.2.4",
     "uglify-es": "^3.3.10",

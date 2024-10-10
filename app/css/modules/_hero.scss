@@ -1,19 +1,38 @@
 @import "../_variables.scss";
 
+.HeroPane {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+
+  .scrollImage {
+    width: 100%; /* Or any size you prefer */
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transition: transform 0.1s ease-out; /* Smooth transition effect */
+  }
+}
+
 #pane-hero {
   h1 {
     @include headerTextHero;
     margin: 0 0 0.1em;
-    animation-play-state: paused;
+    // animation-play-state: paused;
     img,
     svg {
-      height: 1em;
+      height: 1.15em;
       width: auto;
       display: block;
       max-width: 100%;
       margin: 0 auto;
       transition: transform 0.33s ease-in-out;
-      transform: translateY(calc(-50% - 50vh));
+      animation: breathe 3s linear infinite;
+      scale: 100%;
+      // transform: translateY(calc(-50% - 50vh));
     }
     .branding-hide & {
       animation: 2s ease-in-out infinite spinner-hero-throb;
@@ -50,6 +69,22 @@
       filter: invert(1) saturate(2) brightness(0.7);
       opacity: 0.8;
     }
+  }
+
+  // .hero-chevron-down {
+  //   animation: 2.925s ease-in-out infinite oscillate;
+  // }
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
   }
 }
 
@@ -102,5 +137,17 @@
     line-height: 1em;
     animation: blink 1s linear infinite;
     backface-visibility: hidden;
+  }
+}
+
+@keyframes breathe {
+  0% {
+    scale: 100%;
+  }
+  50% {
+    scale: 103%;
+  }
+  100% {
+    scale: 100%;
   }
 }

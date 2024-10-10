@@ -1,28 +1,30 @@
+import PaneInner from "./PaneInner";
+
 const PaneOuter = ({
   background,
   collection,
   attributes,
   waypoint,
   background_image,
-  site,
+  site = null,
   pane,
 }) => {
   return (
     <section
       className={`pane pane-bg-${background} pane-${collection} 
     ${attributes.autoheight ? "fp-auto-height" : ""} 
-    ${attributes.autoheight_responsive ? "fp-auto-height-responsive" : ""}`}
+    ${attributes.autoheight_responsive ? "fp-auto-height-responsive" : ""} `}
       id={`pane-${attributes.id}`}
       data-anchor={attributes.id}
       data-waypoint={waypoint}
       data-bg={background}
       style={
         background_image
-          ? { backgroundImage: `url('media/${background_image}')` }
+          ? { backgroundImage: `url('../assets/${background_image}')` }
           : {}
       }
     >
-      {(attributes.id === "contact" || attributes.id === "clientscover") && (
+      {/* {(attributes.id === "contact" || attributes.id === "clientscover") && (
         <div className="wipe-container">
           {attributes.id === "contact" && (
             // Assuming you have the pane_inner component to handle the content
@@ -40,7 +42,7 @@ const PaneOuter = ({
             />
           )}
         </div>
-      )}
+      )} */}
 
       {/* Include the primary pane content */}
       <PaneInner pane={pane} />
