@@ -5,4 +5,5 @@ export const pane = {
   backgroundImage: "bg-hero.png",
   order: "01",
   waypoint: "Well, Hello!",
+  collection: null,
 };

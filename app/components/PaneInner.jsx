@@ -3,24 +3,6 @@ import Spinner from "./Spinner";
 const PaneInner = ({ pane }) => {
   return (
     <>
-      {pane.background_video && (
-        <div className="video-bg">
-          <div
-            id={`video-${pane.background_video}`}
-            className="video-bg-embed"
-            data-videourl={pane.background_video}
-          ></div>
-        </div>
-      )}
-      {pane.responsive_background_video && (
-        <div className="video-bg video-bg-vertical">
-          <div
-            id={`video-${pane.responsive_background_video}`}
-            className="video-bg-embed"
-            data-videourl={pane.responsive_background_video}
-          ></div>
-        </div>
-      )}
       <div
         className={`container container-${
           pane.attributes.id
@@ -29,6 +11,26 @@ const PaneInner = ({ pane }) => {
         )} container-bg-${pane.background}`}
       >
         <div className="row">
+          {pane.background_video && (
+            <div className="video-bg">
+              <div
+                id={`video-${pane.background_video}`}
+                className="video-bg-embed"
+                data-videourl={pane.background_video}
+              >
+                {pane.iframe}
+              </div>
+            </div>
+          )}
+          {pane.responsive_background_video && (
+            <div className="video-bg video-bg-vertical">
+              <div
+                id={`video-${pane.responsive_background_video}`}
+                className="video-bg-embed"
+                data-videourl={pane.responsive_background_video}
+              ></div>
+            </div>
+          )}
           <div className="col-12">
             {(pane.title || pane.header_content) && !pane.hide_title && (
               <header className="pane-header">

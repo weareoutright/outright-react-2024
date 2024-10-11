@@ -7,9 +7,8 @@ import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
 import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 import CHEVRON_DOWN from "../assets/icon-chevron-down.svg";
 import ICON_X from "../assets/icon-x.svg";
-import { pane as HeroPane } from "../panes/HeroPaneProps.js";
 
-const Utility = () => {
+const Utility = ({ waypoint, order }) => {
   const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
@@ -53,10 +52,10 @@ const Utility = () => {
           className="page-utility-component page-utility-lower page-utility-left"
           id="site-nav"
         >
-          <div id="site-nav-waypoint">{`${HeroPane.waypoint} - ${HeroPane.order}`}</div>
+          <div id="site-nav-waypoint">{`${waypoint} - ${order}`}</div>
         </div>
 
-        <div
+        {/* <div
           className="page-utility-component page-utility-lower page-utility-left"
           id="site-terms"
         >
@@ -76,7 +75,7 @@ const Utility = () => {
               DesignRush
             </a>
           </p>
-        </div>
+        </div> */}
         <div
           className="page-utility-component page-utility-lower page-utility-center"
           id="intro-read-more"
