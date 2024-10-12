@@ -1,10 +1,10 @@
-export const paneData = {
+export const pane = {
   hideTitle: true,
   attributes: {
     id: "see-more",
     containerClasses: ["left", "center"],
   },
   background: "chartreuse",
-  order: 4,
-  waypoint: "Want More?",
+  order: "04",
+  waypoint: "Work",
 };

@@ -1,4 +1,4 @@
-const paneData = {
+export const pane = {
   hideTitle: true,
   attributes: {
     id: "clientscover",
@@ -10,4 +10,3 @@ const paneData = {
   order: 5,
   waypoint: "Our Clients",
 };
-export default paneData;

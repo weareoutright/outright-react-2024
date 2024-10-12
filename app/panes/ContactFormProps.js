@@ -1,4 +1,4 @@
-export const paneData = {
+export const pane = {
   hideTitle: true,
   attributes: {
     id: "contactform",
