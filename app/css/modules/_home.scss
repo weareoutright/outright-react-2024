@@ -1,0 +1,18 @@
+.Home {
+  height: 100vh; /* Full viewport height for each pane */
+  width: 100vw;
+  scroll-snap-type: y mandatory; /* Enable vertical snapping */
+  overflow-y: scroll; /* Allow scrolling within the container */
+  scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+
+  .HeroPane,
+  .pane,
+  .see-more-work {
+    height: 100vh; /* Each pane takes full viewport height */
+    width: 100vw;
+    scroll-snap-align: start; /* Snap panes to the start of the viewport */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

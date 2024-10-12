@@ -11,6 +11,26 @@ import SeeMoreWork from "./panes/SeeMoreWorkPane";
 import { pane as SeeMoreWorkPaneProps } from "./panes/SeeMoreWorkPaneProps.js";
 
 export default function Home() {
+  const [opacity, setOpacity] = useState(1);
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const maxScroll = 300;
+      const scrollPos = containerRef.current?.scrollTop || 0;
+      const newOpacity = Math.max(1 - scrollPos / maxScroll, 0);
+      setOpacity(newOpacity);
+    };
+
+    const container = containerRef.current;
+    container?.addEventListener("scroll", handleScroll);
+
+    // Cleanup on unmount
+    return () => {
+      container?.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   // State to track currently visible component's waypoint and order
   const [currentWaypoint, setCurrentWaypoint] = useState("");
   const [currentOrder, setCurrentOrder] = useState("");
@@ -51,9 +71,13 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className="Home" ref={containerRef}>
       {/* Utility component receives dynamic waypoint and order */}
-      <Utility waypoint={currentWaypoint} order={currentOrder} />
+      <Utility
+        waypoint={currentWaypoint}
+        order={currentOrder}
+        opacity={opacity}
+      />
 
       {/* HeroPane observed */}
       <div
@@ -87,6 +111,6 @@ export default function Home() {
       >
         <SeeMoreWork />
       </div>
-    </>
+    </div>
   );
 }

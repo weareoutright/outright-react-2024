@@ -11,6 +11,7 @@
 @import "modules/_form.scss";
 @import "modules/_hero.scss";
 @import "modules/_holiday.scss";
+@import "modules/_home.scss";
 @import "modules/_o.scss";
 @import "modules/_overlay.scss";
 @import "modules/_page-utility.scss";
@@ -32,7 +33,6 @@
 html,
 body {
   width: 100%;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }

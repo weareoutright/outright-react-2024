@@ -8,24 +8,7 @@ import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 import CHEVRON_DOWN from "../assets/icon-chevron-down.svg";
 import ICON_X from "../assets/icon-x.svg";
 
-const Utility = ({ waypoint, order }) => {
-  const [opacity, setOpacity] = useState(1);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const maxScroll = 300; // Set the scroll range over which the fade happens
-      const scrollPos = window.scrollY;
-      const newOpacity = Math.max(1 - scrollPos / maxScroll, 0); // Opacity decreases as you scroll down
-      setOpacity(newOpacity);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+const Utility = ({ waypoint, order, opacity }) => {
   return (
     <>
       <header className="Utility" id="page-utility">
