@@ -327,9 +327,10 @@ const OAnimation = () => {
         }
         .o-outer {
           position: absolute;
-          top: 50%;
-          left: 0%;
+          top: -11.85px;
           transform: translate(-50%, -50%);
+          scale: 1.115;
+          left: -13.5px;
         }
         .o {
           background: #cff200;

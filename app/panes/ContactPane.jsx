@@ -1,7 +1,10 @@
+import OAnimation from "../components/o";
+
 const ContactPane = () => {
   return (
-    <>
-      <ul className="pane no-list contact-list">
+    <div className="ContactPane">
+      {/* <OAnimation /> */}
+      <ul className="no-list contact-list pane-content">
         <li>
           <h2>Find Us</h2>
           <p>
@@ -90,7 +93,7 @@ const ContactPane = () => {
           </a>
         </li>
       </ul>
-    </>
+    </div>
   );
 };
 

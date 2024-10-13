@@ -5,9 +5,12 @@
   overflow-y: scroll; /* Allow scrolling within the container */
   scroll-behavior: smooth; /* Enable smooth scrolling behavior */
 
+  .HeroPane {
+    height: 100vh; /* Each pane takes full viewport height */
+  }
+
   .HeroPane,
   .pane {
-    height: 100vh; /* Each pane takes full viewport height */
     width: 100vw;
     scroll-snap-align: start; /* Snap panes to the start of the viewport */
     display: flex;

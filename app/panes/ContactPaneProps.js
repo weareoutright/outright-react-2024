@@ -1,14 +1,18 @@
 import ContactPane from "./ContactPane";
 
 export const pane = {
-  hideTitle: true,
+  title: (
+    <>
+      Hit
+      <br /> our DMs.
+    </>
+  ),
   attributes: {
     id: "contact",
-    containerClasses: ["left"],
-    autoheight: true,
+    containerClasses: ["center"],
     autoheight_responsive: true,
   },
-  background: "black",
+  background: "white",
   order: "06",
   waypoint: "Contact",
   content: <ContactPane />,

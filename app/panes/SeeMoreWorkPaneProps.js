@@ -1,7 +1,7 @@
 import SeeMoreWork from "./SeeMoreWorkPane";
 
 export const pane = {
-  hideTitle: true,
+  hide_title: true,
   attributes: {
     id: "see-more",
     containerClasses: ["left", "center"],

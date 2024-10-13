@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import TitleLogo from "./TitleLogo";
 import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
@@ -8,7 +8,7 @@ import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 import CHEVRON_DOWN from "../assets/icon-chevron-down.svg";
 import ICON_X from "../assets/icon-x.svg";
 
-const Utility = ({ waypoint, order, opacity }) => {
+const Utility = ({ waypoint, order, siteHeadlineOpacity, spinnerOpacity }) => {
   return (
     <>
       <header className="Utility" id="page-utility">
@@ -38,11 +38,11 @@ const Utility = ({ waypoint, order, opacity }) => {
           <div id="site-nav-waypoint">{`${waypoint} - ${order}`}</div>
         </div>
 
-        {/* <div
+        <div
           className="page-utility-component page-utility-lower page-utility-left"
           id="site-terms"
         >
-          <p>
+          <p style={{ opacity: spinnerOpacity }}>
             <a href="./terms" target="_blank" rel="noopener noreferrer">
               Privacy Policy
             </a>
@@ -58,12 +58,15 @@ const Utility = ({ waypoint, order, opacity }) => {
               DesignRush
             </a>
           </p>
-        </div> */}
+        </div>
         <div
           className="page-utility-component page-utility-lower page-utility-center"
           id="intro-read-more"
         >
-          <h2 className="site-headline" style={{ opacity }}>
+          <h2
+            className="site-headline"
+            style={{ opacity: siteHeadlineOpacity }}
+          >
             <span>
               <Image
                 src={SCRIBBLE_CIRCLE}

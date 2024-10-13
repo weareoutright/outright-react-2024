@@ -6,17 +6,14 @@ import Utility from "./components/Utility";
 import { pane as YouTubePane } from "./clients/YouTubePaneProps.js";
 import HeroPane from "./panes/HeroPane.jsx";
 import { pane as HeroPaneProps } from "./panes/HeroPaneProps.js";
-import GNRTPane from "./clients/GnrtPane";
 import { pane as GNRTPaneProps } from "./clients/GnrtPaneProps.js";
-import SeeMoreWork from "./panes/SeeMoreWorkPane";
 import { pane as SeeMoreWorkPaneProps } from "./panes/SeeMoreWorkPaneProps.js";
-import ContactPane from "./panes/ContactPane";
 import { pane as ContactPaneProps } from "./panes/ContactPaneProps.js";
-import OurClientsPane from "./panes/OurClientsPane";
 import { pane as OurClientsPaneProps } from "./panes/OurClientsPaneProps.js";
 
 export default function Home() {
-  const [opacity, setOpacity] = useState(1);
+  const [siteHeadlineOpacity, setSiteHeadlineOpacity] = useState(1);
+  const [spinnerOpacity, setSpinnerOpacity] = useState(0);
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -24,7 +21,7 @@ export default function Home() {
       const maxScroll = 300;
       const scrollPos = containerRef.current?.scrollTop || 0;
       const newOpacity = Math.max(1 - scrollPos / maxScroll, 0);
-      setOpacity(newOpacity);
+      setSiteHeadlineOpacity(newOpacity);
     };
 
     const container = containerRef.current;
@@ -56,10 +53,16 @@ export default function Home() {
             const { waypoint, order } = entry.target.dataset;
             setCurrentWaypoint(waypoint);
             setCurrentOrder(order);
+
+            if (entry.target.dataset.waypoint === "Contact") {
+              setSpinnerOpacity(1);
+            } else {
+              setSpinnerOpacity(0);
+            }
           }
         });
       },
-      { threshold: 0.25 } // Component must be at least 50% visible
+      { threshold: 0.25 } // Component must be at least ##% visible
     );
 
     // Observe components
@@ -87,7 +90,8 @@ export default function Home() {
       <Utility
         waypoint={currentWaypoint}
         order={currentOrder}
-        opacity={opacity}
+        siteHeadlineOpacity={siteHeadlineOpacity}
+        spinnerOpacity={spinnerOpacity}
       />
 
       {/* HeroPane observed */}
@@ -134,7 +138,7 @@ export default function Home() {
         data-waypoint={ContactPaneProps.waypoint}
         data-order={ContactPaneProps.order}
       >
-        <PaneOuter pane={ContactPaneProps} />
+        <PaneOuter pane={ContactPaneProps} spinnerOpacity={spinnerOpacity} />
       </div>
     </div>
   );

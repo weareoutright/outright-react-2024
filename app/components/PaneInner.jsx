@@ -1,6 +1,8 @@
 import Spinner from "./Spinner";
+import Image from "next/image";
+import SCRIBBLE_LINE from "../assets/scribble-line.gif";
 
-const PaneInner = ({ pane }) => {
+const PaneInner = ({ pane, spinnerOpacity }) => {
   return (
     <>
       <div
@@ -39,40 +41,57 @@ const PaneInner = ({ pane }) => {
                     <img src="../assets/logo-o.svg" alt="outright" />
                   </h1>
                 ) : (
-                  <h1 className="pane-title">
+                  <h1
+                    className={
+                      pane.attributes.id === "contact"
+                        ? "contact-title pane-title"
+                        : "pane-title"
+                    }
+                  >
                     {pane.title}
                     {pane.attributes.id === "about" && (
                       <>
                         {/* Uncomment the line below if you need it */}
                         {/* <img src={`${process.env.PUBLIC_URL}/media/scribble-line-alt.gif`} className="scribble" /> */}
-                        <img
+                        <Image
                           src="../assets/scribble-circle.gif"
                           className="scribble"
+                          width={100}
+                          height={100}
                         />
                         <div>
-                          <img
+                          <Image
                             src="../assets/outright-arrow.png"
                             className="arrow"
+                            width={100}
+                            height={100}
                           />
                           <a href="./team">
-                            <img
+                            <Image
                               src="../assets/meet-the-team.png"
                               className="meet-the-team"
+                              width={100}
+                              height={100}
                             />
                           </a>
                         </div>
                       </>
                     )}
                     {pane.attributes.id === "services" && (
-                      <img
+                      <Image
                         src="../assets/scribble-circle.gif"
                         className="scribble"
+                        width={100}
+                        height={100}
                       />
                     )}
                     {pane.attributes.id === "contact" && (
-                      <img
-                        src="../assets/scribble-line.gif"
-                        className="scribble"
+                      <Image
+                        src={SCRIBBLE_LINE}
+                        className="contact-scribble"
+                        width={100}
+                        height={100}
+                        unoptimized
                       />
                     )}
                   </h1>
@@ -97,6 +116,7 @@ const PaneInner = ({ pane }) => {
           <Spinner
             text="Say hey!"
             classes="spinner-contact spinner-contactmain"
+            spinnerOpacity={spinnerOpacity}
           />
         )}
         {pane.attributes.id === "clientscover" && (

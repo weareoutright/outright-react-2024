@@ -1,6 +1,7 @@
+import { pane as ContactFormProps } from "../panes/ContactFormProps";
 import PaneInner from "./PaneInner";
 
-const PaneOuter = ({ pane }) => {
+const PaneOuter = ({ pane, spinnerOpacity }) => {
   return (
     <section
       className={`pane pane-bg-${pane.background} pane-${pane.collection} 
@@ -18,7 +19,8 @@ const PaneOuter = ({ pane }) => {
           : {}
       }
     >
-      <PaneInner pane={pane} />
+      {/* Include the primary pane content */}
+      <PaneInner pane={pane} spinnerOpacity={spinnerOpacity} />
 
       {pane.attributes.id === "contact" && (
         <div className="o-wrapper">
