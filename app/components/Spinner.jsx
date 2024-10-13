@@ -5,7 +5,7 @@ const Spinner = ({ classes, id, text, spinnerOpacity }) => {
     <div
       className={`spinner ${classes}`}
       id={id}
-      style={{ opacity: spinnerOpacity }}
+      style={{ opacity: spinnerOpacity, transition: "200ms ease-in-out" }}
     >
       <div className="spinner-circle"></div>
       <div className="spinner-contrast">

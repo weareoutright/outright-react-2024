@@ -19,7 +19,13 @@ const Utility = ({ waypoint, order, siteHeadlineOpacity, spinnerOpacity }) => {
             </a>
           </div>
         </div>
-        <div className="page-utility-component page-utility-upper page-utility-right">
+        <div
+          className="page-utility-component page-utility-upper page-utility-right"
+          style={{
+            opacity: waypoint === "Contact" ? 0 : 1,
+            transition: "200ms ease-in-out",
+          }}
+        >
           <div id="bug-site-contact">
             <a href="#contact">
               <BUG_CONTACT_OUTER
@@ -42,7 +48,9 @@ const Utility = ({ waypoint, order, siteHeadlineOpacity, spinnerOpacity }) => {
           className="page-utility-component page-utility-lower page-utility-left"
           id="site-terms"
         >
-          <p style={{ opacity: spinnerOpacity }}>
+          <p
+            style={{ opacity: spinnerOpacity, transition: "200ms ease-in-out" }}
+          >
             <a href="./terms" target="_blank" rel="noopener noreferrer">
               Privacy Policy
             </a>
@@ -65,7 +73,10 @@ const Utility = ({ waypoint, order, siteHeadlineOpacity, spinnerOpacity }) => {
         >
           <h2
             className="site-headline"
-            style={{ opacity: siteHeadlineOpacity }}
+            style={{
+              opacity: siteHeadlineOpacity,
+              transition: "200ms ease-in-out",
+            }}
           >
             <span>
               <Image

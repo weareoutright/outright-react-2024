@@ -1,4 +1,5 @@
-import OAnimation from "../components/o";
+// import OAnimation from "../components/o";
+import Spinner from "../components/Spinner";
 
 const ContactPane = () => {
   return (

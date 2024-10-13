@@ -2,6 +2,7 @@
   background: $white !important;
   width: 100vw !important;
   margin-top: -1em;
+  position: relative;
 
   ul {
     display: flex;
@@ -24,6 +25,11 @@
       text-transform: uppercase;
       font-size: 1.15rem !important;
     }
+  }
+
+  .spinner-contact {
+    position: absolute;
+    bottom: 0;
   }
 }
 
