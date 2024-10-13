@@ -18,27 +18,6 @@ const PaneOuter = ({ pane }) => {
           : {}
       }
     >
-      {/* {(attributes.id === "contact" || attributes.id === "clientscover") && (
-        <div className="wipe-container">
-          {attributes.id === "contact" && (
-            // Assuming you have the pane_inner component to handle the content
-            <PaneInner
-              pane={
-                site.panes.find((p) => p.attributes.id === "contactform") || {}
-              }
-            />
-          )}
-
-          {attributes.id === "clientscover" && (
-            // Handling clientscover pane
-            <PaneInner
-              pane={site.panes.find((p) => p.attributes.id === "clients") || {}}
-            />
-          )}
-        </div>
-      )} */}
-
-      {/* Include the primary pane content */}
       <PaneInner pane={pane} />
 
       {pane.attributes.id === "contact" && (

@@ -1,38 +1,28 @@
-import Image from "next/image";
-
-{
-  /* <ul class="no-list client-list">
-  <li><span>AARP</span></li>
-  <li><span>Adidas/Ivy Park</span></li>
-  <li><span>Appian</span></li>
-  <li><span>Capital One</span></li>
-  <li><span>The Commonwealth Fund</span></li>
-  <li><span>Environmental Defense Fund</span></li>
-  <li><span>Experience Fayetteville</span></li>
-  <li><span>Google/YouTube</span></li>
-  <li><span>KABOOM!</span></li>
-  <li><span>Marriott International</span></li>
-  <li><span>McCormick & Company</span></li>
-  <li><span>me too. Movement</span></li>
-  <li><span>Ocean Conservancy</span></li>
-  <li><span>Rails to Trails Conservancy</span></li>
-  <li><span>Share Our Strength</span></li>
-  <li><span>The Opportunity Agenda</span></li>
-  <li><span>World Resources Institute</span></li>
-</ul> */
-}
+import YOUTUBE from "../assets/client-logos/youtube.svg";
+import GOOGLE from "../assets/client-logos/google.svg";
+import MARRIOTT from "../assets/client-logos/marriott.svg";
+import ADIDAS from "../assets/client-logos/adidas.svg";
+import OC from "../assets/client-logos/oc.svg";
+import ME_TOO from "../assets/client-logos/me-too.svg";
+import AARP from "../assets/client-logos/aarp.svg";
+import SHARE_OUR_STRENGTH from "../assets/client-logos/share-our-strength.svg";
+import WRI from "../assets/client-logos/wri.svg";
 
 const OurClientsPane = () => {
   return (
-    <div class="no-list client-list">
-      <Image src="../media/client-logos/youtube.svg" />
-      <Image src="../media/client-logos/marriott.svg" />
-      <Image src="../media/client-logos/adidas.svg" />
-      <Image src="../media/client-logos/oc.svg" />
-      <Image src="../media/client-logos/me-too.svg" />
-      <Image src="../media/client-logos/aarp.svg" />
-      <Image src="../media/client-logos/share-our-strength.svg" />
-      <Image src="../media/client-logos/wri.svg" />
+    <div className="Clients">
+      <h2>We work with...</h2>
+      <div className="client-logos">
+        <YOUTUBE className="youtube-logo" />
+        <GOOGLE className="google-logo" />
+        <MARRIOTT className="marriott-logo" />
+        <ADIDAS className="adidas-logo" />
+        <OC className="oc-logo" />
+        <ME_TOO className="me-too-logo" />
+        <AARP className="aarp-logo" />
+        <SHARE_OUR_STRENGTH className="share-our-strength-logo" />
+        <WRI className="wri-logo" />
+      </div>
     </div>
   );
 };

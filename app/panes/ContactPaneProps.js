@@ -1,12 +1,15 @@
+import ContactPane from "./ContactPane";
+
 export const pane = {
   hideTitle: true,
   attributes: {
-    id: "clientscover",
+    id: "contact",
     containerClasses: ["left"],
     autoheight: true,
     autoheight_responsive: true,
   },
   background: "black",
-  order: 5,
-  waypoint: "Our Clients",
+  order: "06",
+  waypoint: "Contact",
+  content: <ContactPane />,
 };

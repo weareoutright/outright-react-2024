@@ -1,3 +1,5 @@
+import SeeMoreWork from "./SeeMoreWorkPane";
+
 export const pane = {
   hideTitle: true,
   attributes: {
@@ -7,4 +9,5 @@ export const pane = {
   background: "chartreuse",
   order: "04",
   waypoint: "Work",
+  content: <SeeMoreWork />,
 };

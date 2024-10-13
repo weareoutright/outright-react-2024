@@ -6,9 +6,14 @@ import Utility from "./components/Utility";
 import { pane as YouTubePane } from "./clients/YouTubePaneProps.js";
 import HeroPane from "./panes/HeroPane.jsx";
 import { pane as HeroPaneProps } from "./panes/HeroPaneProps.js";
+import GNRTPane from "./clients/GnrtPane";
 import { pane as GNRTPaneProps } from "./clients/GnrtPaneProps.js";
 import SeeMoreWork from "./panes/SeeMoreWorkPane";
 import { pane as SeeMoreWorkPaneProps } from "./panes/SeeMoreWorkPaneProps.js";
+import ContactPane from "./panes/ContactPane";
+import { pane as ContactPaneProps } from "./panes/ContactPaneProps.js";
+import OurClientsPane from "./panes/OurClientsPane";
+import { pane as OurClientsPaneProps } from "./panes/OurClientsPaneProps.js";
 
 export default function Home() {
   const [opacity, setOpacity] = useState(1);
@@ -40,6 +45,8 @@ export default function Home() {
   const youtubeRef = useRef(null);
   const gnrtRef = useRef(null);
   const seeMoreWorkRef = useRef(null);
+  const ourClientsRef = useRef(null);
+  const contactRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -60,6 +67,8 @@ export default function Home() {
     if (youtubeRef.current) observer.observe(youtubeRef.current);
     if (gnrtRef.current) observer.observe(gnrtRef.current);
     if (seeMoreWorkRef.current) observer.observe(seeMoreWorkRef.current);
+    if (ourClientsRef.current) observer.observe(ourClientsRef.current);
+    if (contactRef.current) observer.observe(contactRef.current);
 
     // Cleanup on unmount
     return () => {
@@ -67,6 +76,8 @@ export default function Home() {
       if (youtubeRef.current) observer.unobserve(youtubeRef.current);
       if (gnrtRef.current) observer.observe(gnrtRef.current);
       if (seeMoreWorkRef.current) observer.observe(seeMoreWorkRef.current);
+      if (ourClientsRef.current) observer.observe(ourClientsRef.current);
+      if (contactRef.current) observer.observe(contactRef.current);
     };
   }, []);
 
@@ -109,7 +120,21 @@ export default function Home() {
         data-waypoint={SeeMoreWorkPaneProps.waypoint}
         data-order={SeeMoreWorkPaneProps.order}
       >
-        <SeeMoreWork />
+        <PaneOuter pane={SeeMoreWorkPaneProps} />
+      </div>
+      <div
+        ref={ourClientsRef}
+        data-waypoint={OurClientsPaneProps.waypoint}
+        data-order={OurClientsPaneProps.order}
+      >
+        <PaneOuter pane={OurClientsPaneProps} />
+      </div>
+      <div
+        ref={contactRef}
+        data-waypoint={ContactPaneProps.waypoint}
+        data-order={ContactPaneProps.order}
+      >
+        <PaneOuter pane={ContactPaneProps} />
       </div>
     </div>
   );
