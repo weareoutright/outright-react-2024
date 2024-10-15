@@ -50,27 +50,27 @@
   .container-bg-blackwhite,
   &.pane-bg-chartreusewhite,
   .container-bg-chartreusewhite {
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-      bottom: 0;
-      height: 17.8125em;
-      min-height: 200px;
-    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: 1;
+    //   width: 100%;
+    //   bottom: 0;
+    //   height: 17.8125em;
+    //   min-height: 200px;
+    // }
     @media screen and (max-width: 600px) {
-      &:before {
-        min-height: 0;
-      }
+      // &:before {
+      //   min-height: 0;
+      // }
     }
   }
   &.pane-bg-chartreusewhite,
   .container-bg-chartreusewhite {
     background: $chartreuse;
-    &:before {
-      background: $white;
-    }
+    // &:before {
+    //   background: $white;
+    // }
   }
   &.pane-bg-chartreuse,
   .container-bg-chartreuse {
@@ -79,29 +79,29 @@
   &.pane-bg-blackwhite,
   .container-bg-blackwhite {
     background: $black;
-    &:before {
-      background: $white;
-      height: 50vh;
-      height: 50dvh;
-    }
+    // &:before {
+    //   background: $white;
+    //   height: 50vh;
+    //   height: 50dvh;
+    // }
     @include media-breakpoint-down(md) {
-      &:before {
-        height: 56vh;
-        height: 56dvh;
-      }
+      // &:before {
+      //   height: 56vh;
+      //   height: 56dvh;
+      // }
     }
   }
   &.pane-bg-redwhite,
   .container-bg-redwhite {
-    &:before {
-      background: $white;
-    }
+    // &:before {
+    //   background: $white;
+    // }
   }
   &.pane-bg-redblue,
   .container-bg-redblue {
-    &:before {
-      background: $blueMedium;
-    }
+    // &:before {
+    //   background: $blueMedium;
+    // }
   }
   &.reduced {
     .pane-content {
@@ -433,9 +433,9 @@
     }
     @media screen and (max-width: 768px),
       screen and (max-height: 600px) and (orientation: landscape) {
-      &:before {
-        content: none;
-      }
+      // &:before {
+      //   content: none;
+      // }
       .container {
         > .row {
           padding-left: $gutter-page-outer-responsive;
@@ -576,10 +576,10 @@
       }
     }
     @include media-breakpoint-down(sm) {
-      &:before,
-      .container:before {
-        height: calc(100% - 240px);
-      }
+      // &:before,
+      // .container:before {
+      //   height: calc(100% - 240px);
+      // }
       .container {
         > .row {
           padding-top: #{$gutter-page-outer-responsive * 10};
@@ -609,9 +609,9 @@
         .service-content {
           opacity: 1;
           ul {
-            &:before {
-              margin: 0.8em 0;
-            }
+            // &:before {
+            //   margin: 0.8em 0;
+            // }
           }
         }
       }
@@ -624,10 +624,10 @@
       }
     }
     @media screen and (max-width: 430px) {
-      &:before,
-      .container:before {
-        height: calc(100% - 286px);
-      }
+      // &:before,
+      // .container:before {
+      //   height: calc(100% - 286px);
+      // }
     }
   }
   &#pane-contact {
@@ -728,9 +728,9 @@
     }
     @media screen and (max-width: 600px) {
       .container {
-        &:before {
-          height: 140px;
-        }
+        // &:before {
+        //   height: 140px;
+        // }
         > .row {
           padding-bottom: #{$gutter-page-outer-responsive * 7};
           align-items: flex-end;

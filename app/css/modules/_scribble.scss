@@ -1,12 +1,32 @@
 .scribble {
-  display:block;
-  position:absolute;
-  margin:0;
-  padding:0;
-  mix-blend-mode:hard-light;
-  z-index:2;
-  width:auto;
-  height:auto;
+  display: block;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  mix-blend-mode: hard-light;
+  z-index: 2;
+  width: auto;
+  height: auto;
   //filter:saturate(1.5) brightness(1.2);
-  opacity:.85;
+  opacity: 0.85;
+}
+
+.scrrible-word-container {
+  position: relative;
+}
+
+.scribble-circled-word {
+  position: relative;
+  display: inline-block;
+
+  .service-scribble {
+    position: absolute;
+    width: 175%;
+    height: 200%;
+    top: 20%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+  }
 }

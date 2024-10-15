@@ -1,6 +1,7 @@
 import Spinner from "./Spinner";
 import Image from "next/image";
 import SCRIBBLE_LINE from "../assets/scribble-line.gif";
+import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 
 const PaneInner = ({ pane, spinnerOpacity }) => {
   return (
@@ -54,7 +55,7 @@ const PaneInner = ({ pane, spinnerOpacity }) => {
                         {/* Uncomment the line below if you need it */}
                         {/* <img src={`${process.env.PUBLIC_URL}/media/scribble-line-alt.gif`} className="scribble" /> */}
                         <Image
-                          src="../assets/scribble-circle.gif"
+                          src={SCRIBBLE_CIRCLE}
                           className="scribble"
                           width={100}
                           height={100}
@@ -77,14 +78,14 @@ const PaneInner = ({ pane, spinnerOpacity }) => {
                         </div>
                       </>
                     )}
-                    {pane.attributes.id === "services" && (
+                    {/* {pane.attributes.id === "services" && (
                       <Image
-                        src="../assets/scribble-circle.gif"
-                        className="scribble"
+                        src={SCRIBBLE_CIRCLE}
+                        className="services-scribble"
                         width={100}
                         height={100}
                       />
-                    )}
+                    )} */}
                     {pane.attributes.id === "contact" && (
                       <Image
                         src={SCRIBBLE_LINE}

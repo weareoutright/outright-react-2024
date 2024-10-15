@@ -6,7 +6,7 @@ const SeeMoreWork = () => {
       <div className="header-text">
         <h1 className="no-list">Want more?</h1>
         <br />
-        <h2>
+        <h2 className="work-subheading">
           Check Out Our <span>Work.</span>
         </h2>
       </div>

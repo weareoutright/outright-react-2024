@@ -1,6 +1,6 @@
 const ServicesPane = () => {
   return (
-    <ul className="services-list no-list row">
+    <ul className="ServicesPane services-list no-list row" id="pane-services">
       <li className="service col-md-4">
         <h2>At the core</h2>
         <div className="service-content">
