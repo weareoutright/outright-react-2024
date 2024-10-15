@@ -1,28 +1,13 @@
 const AboutPane = () => {
   return (
-    <div>
-      <p>Without you, there would be no us.</p>
-
-      <p>
-        Our passion and commitment to the quality of our work paired with our
-        boundless imagination is what creates our salient and differentiating
-        edge. We&apos;re not here to just do the work; we&apos;re here to tell
-        your story in a way that has, quite literally, never been told before.
-      </p>
-
-      <p>
-        How do we do it, you ask? By pushing limits, questioning the
-        already-existing, and inspiring the world around us in impactful,
-        made-you-look kind of ways. Weave in a feverish zest for simply
-        creating, and you have yourself a team of artists and strategists who
-        are driven to rethink, reshape, and redefine.
-      </p>
-
-      <p>
-        We&apos;re a proud woman- and minority-owned business that thrives on
-        changing the narrative through the power of design. And, with you on
-        board, we&apos;re doing it together.
-      </p>
+    <div className="AboutPane">
+      <div className="about-content">
+        Outright is a full service digital agency, here to expand your ideas and
+        elevate your brand. We&apos;re a team of artists and strategists driven
+        to rethink, reshape, and redefine. A proud woman- and minority-owned
+        business that thrives on changing narratives through the power of design
+        — with you on board we&apos;re doing it together.
+      </div>
     </div>
   );
 };

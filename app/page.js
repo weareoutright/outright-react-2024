@@ -11,6 +11,7 @@ import { pane as SeeMoreWorkPaneProps } from "./panes/SeeMoreWorkPaneProps.js";
 import { pane as ContactPaneProps } from "./panes/ContactPaneProps.js";
 import { pane as OurClientsPaneProps } from "./panes/OurClientsPaneProps.js";
 import { pane as ServicesPaneProps } from "./panes/ServicesPaneProps.js";
+import { pane as AboutPaneProps } from "./panes/AboutPaneProps.js";
 
 export default function Home() {
   const [siteHeadlineOpacity, setSiteHeadlineOpacity] = useState(1);
@@ -45,6 +46,7 @@ export default function Home() {
   const gnrtRef = useRef(null);
   const seeMoreWorkRef = useRef(null);
   const ourClientsRef = useRef(null);
+  const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const contactRef = useRef(null);
 
@@ -76,6 +78,7 @@ export default function Home() {
     if (gnrtRef.current) observer.observe(gnrtRef.current);
     if (seeMoreWorkRef.current) observer.observe(seeMoreWorkRef.current);
     if (ourClientsRef.current) observer.observe(ourClientsRef.current);
+    if (aboutRef.current) observer.observe(aboutRef.current);
     if (servicesRef.current) observer.observe(servicesRef.current);
     if (contactRef.current) observer.observe(contactRef.current);
 
@@ -86,6 +89,7 @@ export default function Home() {
       if (gnrtRef.current) observer.observe(gnrtRef.current);
       if (seeMoreWorkRef.current) observer.observe(seeMoreWorkRef.current);
       if (ourClientsRef.current) observer.observe(ourClientsRef.current);
+      if (aboutRef.current) observer.observe(aboutRef.current);
       if (servicesRef.current) observer.observe(servicesRef.current);
       if (contactRef.current) observer.observe(contactRef.current);
     };
@@ -140,6 +144,13 @@ export default function Home() {
         data-order={OurClientsPaneProps.order}
       >
         <PaneOuter pane={OurClientsPaneProps} />
+      </div>
+      <div
+        ref={aboutRef}
+        data-waypoint={AboutPaneProps.waypoint}
+        data-order={AboutPaneProps.order}
+      >
+        <PaneOuter pane={AboutPaneProps} />
       </div>
       <div
         ref={servicesRef}

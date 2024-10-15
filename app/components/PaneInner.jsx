@@ -2,6 +2,8 @@ import Spinner from "./Spinner";
 import Image from "next/image";
 import SCRIBBLE_LINE from "../assets/scribble-line.gif";
 import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
+import OUTRIGHT_ARROW from "../assets/outright-arrow.png";
+import MEET_THE_TEAM from "../assets/meet-the-team.png";
 
 const PaneInner = ({ pane, spinnerOpacity }) => {
   return (
@@ -54,27 +56,21 @@ const PaneInner = ({ pane, spinnerOpacity }) => {
                       <>
                         {/* Uncomment the line below if you need it */}
                         {/* <img src={`${process.env.PUBLIC_URL}/media/scribble-line-alt.gif`} className="scribble" /> */}
-                        <Image
-                          src={SCRIBBLE_CIRCLE}
-                          className="scribble"
-                          width={100}
-                          height={100}
-                        />
                         <div>
-                          <Image
-                            src="../assets/outright-arrow.png"
+                          {/* <Image
+                            src={OUTRIGHT_ARROW}
                             className="arrow"
                             width={100}
                             height={100}
                           />
                           <a href="./team">
                             <Image
-                              src="../assets/meet-the-team.png"
+                              src={MEET_THE_TEAM}
                               className="meet-the-team"
                               width={100}
                               height={100}
                             />
-                          </a>
+                          </a> */}
                         </div>
                       </>
                     )}

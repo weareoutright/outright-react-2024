@@ -1,0 +1,13 @@
+.AboutPane {
+  margin: 0px 120px;
+  max-width: 1029px;
+
+  .about-content {
+    margin-top: -0.5rem;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px; /* 200% */
+    letter-spacing: 0.48px;
+  }
+}
