@@ -8,7 +8,13 @@ import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 import CHEVRON_DOWN from "../assets/icon-chevron-down.svg";
 import ICON_X from "../assets/icon-x.svg";
 
-const Utility = ({ waypoint, order, siteHeadlineOpacity, spinnerOpacity }) => {
+const Utility = ({
+  waypoint,
+  order,
+  siteHeadlineOpacity,
+  siteHeadlineDisplay,
+  spinnerOpacity,
+}) => {
   return (
     <>
       <header className="Utility" id="page-utility">
@@ -49,7 +55,10 @@ const Utility = ({ waypoint, order, siteHeadlineOpacity, spinnerOpacity }) => {
           id="site-terms"
         >
           <p
-            style={{ opacity: spinnerOpacity, transition: "200ms ease-in-out" }}
+            style={{
+              opacity: spinnerOpacity,
+              transition: "200ms ease-in-out",
+            }}
           >
             <a href="./terms" target="_blank" rel="noopener noreferrer">
               Privacy Policy
@@ -76,6 +85,7 @@ const Utility = ({ waypoint, order, siteHeadlineOpacity, spinnerOpacity }) => {
             style={{
               opacity: siteHeadlineOpacity,
               transition: "200ms ease-in-out",
+              display: siteHeadlineDisplay,
             }}
           >
             <span>

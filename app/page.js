@@ -13,6 +13,7 @@ import { pane as OurClientsPaneProps } from "./panes/OurClientsPaneProps.js";
 
 export default function Home() {
   const [siteHeadlineOpacity, setSiteHeadlineOpacity] = useState(1);
+  const [siteHeadlineDisplay, setSiteHidelineDisplay] = useState("block");
   const [spinnerOpacity, setSpinnerOpacity] = useState(0);
   const containerRef = useRef(null);
 
@@ -56,8 +57,10 @@ export default function Home() {
 
             if (entry.target.dataset.waypoint === "Contact") {
               setSpinnerOpacity(1);
+              setSiteHidelineDisplay("none");
             } else {
               setSpinnerOpacity(0);
+              setSiteHidelineDisplay("block");
             }
           }
         });
@@ -91,6 +94,7 @@ export default function Home() {
         waypoint={currentWaypoint}
         order={currentOrder}
         siteHeadlineOpacity={siteHeadlineOpacity}
+        siteHeadlineDisplay={siteHeadlineDisplay}
         spinnerOpacity={spinnerOpacity}
       />
 

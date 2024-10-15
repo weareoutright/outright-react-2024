@@ -11,7 +11,7 @@
 
   .HeroPane,
   .pane {
-    width: 100vw;
+    width: 100%;
     scroll-snap-align: start; /* Snap panes to the start of the viewport */
     display: flex;
     align-items: center;
@@ -20,7 +20,7 @@
 
   .see-more-work {
     height: 75vh; /* Each pane takes full viewport height */
-    width: 100vw;
+    width: 100%;
     scroll-snap-align: center; /* Snap panes to the start of the viewport */
     display: flex;
     align-items: center;
