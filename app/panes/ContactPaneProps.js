@@ -9,7 +9,7 @@ export const pane = {
   ),
   attributes: {
     id: "contact",
-    containerClasses: ["center"],
+    containerClasses: ["left"],
     autoheight_responsive: true,
   },
   background: "white",

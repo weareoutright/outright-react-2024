@@ -3,7 +3,7 @@ import Spinner from "../components/Spinner";
 
 const ContactPane = () => {
   return (
-    <div className="ContactPane">
+    <div className="ContactPane" id="pant-contact">
       {/* <OAnimation /> */}
       <ul className="no-list contact-list pane-content">
         <li>

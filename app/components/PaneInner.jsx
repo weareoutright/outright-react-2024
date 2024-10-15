@@ -78,14 +78,6 @@ const PaneInner = ({ pane, spinnerOpacity }) => {
                         </div>
                       </>
                     )}
-                    {/* {pane.attributes.id === "services" && (
-                      <Image
-                        src={SCRIBBLE_CIRCLE}
-                        className="services-scribble"
-                        width={100}
-                        height={100}
-                      />
-                    )} */}
                     {pane.attributes.id === "contact" && (
                       <Image
                         src={SCRIBBLE_LINE}
@@ -118,11 +110,12 @@ const PaneInner = ({ pane, spinnerOpacity }) => {
             text="Say hey!"
             classes="spinner-contact spinner-contactmain"
             spinnerOpacity={spinnerOpacity}
+            spinnerYPos={0}
           />
         )}
-        {pane.attributes.id === "clientscover" && (
+        {/* {pane.attributes.id === "clientscover" && (
           <Spinner text="" classes="spinner-clients spinner-clientscover" />
-        )}
+        )} */}
         {/* Uncomment the line below if you need it */}
         {/* {include.pane.attributes.id === 'about' && <Spinner text="" id="spinner-about" />} */}
       </div>

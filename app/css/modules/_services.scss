@@ -1,6 +1,21 @@
 .ServicesPane {
   h2,
-  p {
+  p,
+  strong {
     color: $black;
+  }
+  padding: 0px 120px !important;
+
+  h2 {
+    text-transform: uppercase;
+    font-family: $fontAlt;
+  }
+
+  .service-content {
+    border-bottom: 2px solid $black;
+
+    p {
+      font-size: em(24) !important;
+    }
   }
 }

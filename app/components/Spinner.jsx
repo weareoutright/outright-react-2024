@@ -1,11 +1,15 @@
 import React from "react";
 
-const Spinner = ({ classes, id, text, spinnerOpacity }) => {
+const Spinner = ({ classes, id, text, spinnerOpacity, spinnerYPos }) => {
   return (
     <div
       className={`spinner ${classes}`}
       id={id}
-      style={{ opacity: spinnerOpacity, transition: "200ms ease-in-out" }}
+      style={{
+        opacity: spinnerOpacity,
+        transition: "200ms ease-in-out",
+        transformY: spinnerYPos,
+      }}
     >
       <div className="spinner-circle"></div>
       <div className="spinner-contrast">

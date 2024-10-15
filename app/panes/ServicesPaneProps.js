@@ -4,7 +4,7 @@ import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 
 export const pane = {
   title: (
-    <div className="scrrible-circle-word-container">
+    <div className="scribble-circle-word-container">
       And this is
       <br />
       <span className="scribble-circled-word">

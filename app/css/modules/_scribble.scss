@@ -11,22 +11,26 @@
   opacity: 0.85;
 }
 
-.scrrible-word-container {
-  position: relative;
-}
+.scribble-circle-word-container {
+  padding: 0px 120px !important;
 
-.scribble-circled-word {
-  position: relative;
-  display: inline-block;
+  .scribble-word-container {
+    position: relative;
+  }
 
-  .service-scribble {
-    position: absolute;
-    width: 175%;
-    height: 200%;
-    top: 20%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    pointer-events: none;
+  .scribble-circled-word {
+    position: relative;
+    display: inline-block;
+
+    .service-scribble {
+      position: absolute;
+      width: 175%;
+      height: 200%;
+      top: 20%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      pointer-events: none;
+    }
   }
 }
