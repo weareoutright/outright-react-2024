@@ -4,20 +4,19 @@ import React from "react";
 import Image from "next/image";
 import TitleLogo from "./TitleLogo";
 import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
-import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 import CHEVRON_DOWN from "../assets/icon-chevron-down.svg";
 import ICON_X from "../assets/icon-x.svg";
 
-const Utility = ({
-  waypoint,
-  order,
+const WorkGalleryUtility = ({
+  waypoint = "Contact",
+  order = "00",
   siteHeadlineOpacity,
   siteHeadlineDisplay,
   spinnerOpacity,
 }) => {
   return (
     <>
-      <header className="Utility" id="page-utility">
+      <header className="Utility WorkPageUtility" id="work-page-utility">
         <TitleLogo
           href="#hero"
           id="site-branding"
@@ -44,8 +43,12 @@ const Utility = ({
         <div
           className="page-utility-component page-utility-lower page-utility-left"
           id="site-nav"
+          style={{
+            opacity: waypoint === "Contact" ? 1 : 0,
+            transition: "200ms ease-in-out",
+          }}
         >
-          <div id="site-nav-waypoint">{`${waypoint} - ${order}`}</div>
+          <div id="site-nav-waypoint">{`${waypoint}`}</div>
         </div>
 
         <div
@@ -74,31 +77,6 @@ const Utility = ({
             </a>
           </p>
         </div>
-        <div
-          className="page-utility-component page-utility-lower page-utility-center"
-          id="intro-read-more"
-        >
-          <h2
-            className="site-headline"
-            style={{
-              opacity: siteHeadlineOpacity,
-              transition: "200ms ease-in-out",
-              display: siteHeadlineDisplay,
-            }}
-          >
-            <span>
-              <Image
-                src={SCRIBBLE_CIRCLE}
-                alt="Scribble Circle"
-                className="scribble"
-                width={100}
-                height={100}
-              />
-              Elevated creative for modern brands
-            </span>
-            <CHEVRON_DOWN className="hero-chevron-down" />
-          </h2>
-        </div>
         <div className="page-utility-component page-utility-upper page-utility-right">
           <div id="contactform-close">
             <ICON_X />
@@ -109,4 +87,4 @@ const Utility = ({
   );
 };
 
-export default Utility;
+export default WorkGalleryUtility;

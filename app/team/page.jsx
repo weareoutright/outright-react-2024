@@ -29,13 +29,13 @@ const TeamPage = () => {
   return (
     <div className="page-team" id="page-team" style={{ background: "black" }}>
       <header id="page-utility" className="page-team">
-        <div className="page-utility-component page-utility-upper page-utility-left page-utility-page">
-          <div id="site-branding">
-            <a href={`${siteBaseUrl}/`}>
-              <TitleLogo />
-            </a>
-          </div>
-        </div>
+        <TitleLogo
+          href={`${siteBaseUrl}/`}
+          id={"site-branding"}
+          classes={
+            "page-utility-component page-utility-upper page-utility-left page-utility-page"
+          }
+        />
         <div className="page-utility-component page-utility-upper page-utility-right">
           <div id="bug-site-contact">
             <a href="#contact">

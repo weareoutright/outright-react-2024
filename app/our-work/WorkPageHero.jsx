@@ -1,7 +1,8 @@
 "use client";
 
-import LOGO_O from "../assets/logo-o.svg";
 import { useState, useEffect } from "react";
+import CHEVRON_DOWN from "../assets/icon-chevron-down.svg";
+import SCRIBBLE_LINE from "../assets/scribble-line-dark.svg";
 
 const HeroPane = () => {
   const [translateY, setTranslateY] = useState(0);
@@ -22,15 +23,20 @@ const HeroPane = () => {
   }, []);
 
   return (
-    <div className="HeroPane" id="pane-hero">
-      <h1 className="pane-title site-title">
-        <span
-          className="scrollImage"
-          style={{ transform: `translateY(-${translateY}px)` }}
-        >
-          <LOGO_O className="hero-o" />
+    <div className="HeroPane WorkPageHero" id="work-page-hero">
+      <h1 className="pane-title site-title work-page-title">
+        OUR{" "}
+        <span className="underline">
+          WORK.
+          <SCRIBBLE_LINE />
         </span>
       </h1>
+      <div className="work-page-headline page-utility-component page-utility-lower page-utility-center">
+        <h2 className="site-headline">
+          <span>Elevated creative for modern brands</span>
+          <CHEVRON_DOWN className="hero-chevron-down" />
+        </h2>
+      </div>
     </div>
   );
 };
