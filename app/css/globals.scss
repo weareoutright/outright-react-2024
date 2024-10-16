@@ -33,6 +33,10 @@
 @import "_variables.scss";
 @import "fullpage.css";
 
+html {
+  overflow: hidden;
+}
+
 html,
 body {
   width: 100%;

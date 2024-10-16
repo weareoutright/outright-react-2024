@@ -2,6 +2,7 @@
   position: relative;
   overflow: hidden;
   transform-origin: 50% 100%;
+  transform: translateY(50%) translateX(-40%) !important;
 }
 
 .spinner-circle,

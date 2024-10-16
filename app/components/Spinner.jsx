@@ -8,7 +8,7 @@ const Spinner = ({ classes, id, text, spinnerOpacity, spinnerYPos }) => {
       style={{
         opacity: spinnerOpacity,
         transition: "200ms ease-in-out",
-        transformY: spinnerYPos,
+        translateY: spinnerYPos,
       }}
     >
       <div className="spinner-circle"></div>

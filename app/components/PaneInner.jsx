@@ -5,7 +5,7 @@ import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 import OUTRIGHT_ARROW from "../assets/outright-arrow.png";
 import MEET_THE_TEAM from "../assets/meet-the-team.png";
 
-const PaneInner = ({ pane, spinnerOpacity }) => {
+const PaneInner = ({ pane, spinnerOpacity, spinnerYPos }) => {
   return (
     <>
       <div
@@ -52,28 +52,6 @@ const PaneInner = ({ pane, spinnerOpacity }) => {
                     }
                   >
                     {pane.title}
-                    {pane.attributes.id === "about" && (
-                      <>
-                        {/* Uncomment the line below if you need it */}
-                        {/* <img src={`${process.env.PUBLIC_URL}/media/scribble-line-alt.gif`} className="scribble" /> */}
-                        <div>
-                          {/* <Image
-                            src={OUTRIGHT_ARROW}
-                            className="arrow"
-                            width={100}
-                            height={100}
-                          />
-                          <a href="./team">
-                            <Image
-                              src={MEET_THE_TEAM}
-                              className="meet-the-team"
-                              width={100}
-                              height={100}
-                            />
-                          </a> */}
-                        </div>
-                      </>
-                    )}
                     {pane.attributes.id === "contact" && (
                       <Image
                         src={SCRIBBLE_LINE}
@@ -106,7 +84,7 @@ const PaneInner = ({ pane, spinnerOpacity }) => {
             text="Say hey!"
             classes="spinner-contact spinner-contactmain"
             spinnerOpacity={spinnerOpacity}
-            spinnerYPos={0}
+            spinnerYPos={spinnerYPos}
           />
         )}
         {/* {pane.attributes.id === "clientscover" && (

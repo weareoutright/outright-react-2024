@@ -3,8 +3,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import PaneOuter from "./components/PaneOuter";
 import Utility from "./components/Utility";
-import { pane as YouTubePane } from "./clients/YouTubePaneProps.js";
 import HeroPane from "./panes/HeroPane.jsx";
+import { pane as YouTubePane } from "./clients/YouTubePaneProps.js";
 import { pane as HeroPaneProps } from "./panes/HeroPaneProps.js";
 import { pane as GNRTPaneProps } from "./clients/GnrtPaneProps.js";
 import { pane as SeeMoreWorkPaneProps } from "./panes/SeeMoreWorkPaneProps.js";
@@ -16,6 +16,7 @@ import { pane as AboutPaneProps } from "./panes/AboutPaneProps.js";
 export default function Home() {
   const [siteHeadlineOpacity, setSiteHeadlineOpacity] = useState(1);
   const [siteHeadlineDisplay, setSiteHidelineDisplay] = useState("block");
+  const [spinnerYPos, setSpinnerYPos] = useState("-50%");
   const [spinnerOpacity, setSpinnerOpacity] = useState(0);
   const containerRef = useRef(null);
 
@@ -164,7 +165,11 @@ export default function Home() {
         data-waypoint={ContactPaneProps.waypoint}
         data-order={ContactPaneProps.order}
       >
-        <PaneOuter pane={ContactPaneProps} spinnerOpacity={spinnerOpacity} />
+        <PaneOuter
+          pane={ContactPaneProps}
+          spinnerOpacity={spinnerOpacity}
+          spinnerYPos={spinnerYPos}
+        />
       </div>
     </div>
   );
