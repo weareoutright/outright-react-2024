@@ -1,6 +1,7 @@
 @import "../_variables.scss";
 
-.HeroPane {
+.HeroPane,
+.WorkPageHero {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -17,13 +18,14 @@
   }
 }
 
-#pane-hero {
+#pane-hero,
+#work-page-hero {
   h1 {
     @include headerTextHero;
     margin: 0 0 0.1em;
     // animation-play-state: paused;
     img,
-    svg {
+    .hero-o {
       height: 1.15em;
       width: auto;
       display: block;
@@ -37,7 +39,7 @@
     .branding-hide & {
       animation: 2s ease-in-out infinite spinner-hero-throb;
       img,
-      svg {
+      .hero-o {
         transform: translateY(0);
       }
     }
@@ -70,10 +72,6 @@
       opacity: 0.8;
     }
   }
-
-  // .hero-chevron-down {
-  //   animation: 2.925s ease-in-out infinite oscillate;
-  // }
 }
 
 @keyframes oscillate {

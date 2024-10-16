@@ -11,6 +11,18 @@
   opacity: 0.85;
 }
 
+.underline {
+  position: relative;
+  display: inline;
+  margin-left: 2.5rem;
+
+  svg {
+    position: absolute;
+    top: 70%; /* Adjust this to control the vertical positioning */
+    left: -10%; /* Adjust this to control the horizontal positioning */
+  }
+}
+
 .scribble-circle-word-container {
   padding: 0px 120px !important;
 

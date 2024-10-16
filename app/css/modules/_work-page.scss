@@ -1,0 +1,34 @@
+.WorkPage {
+  height: 100vh; /* Full viewport height for each pane */
+  width: 100%;
+  scroll-snap-type: y mandatory; /* Enable vertical snapping */
+  overflow-y: scroll; /* Allow scrolling within the container */
+  scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+  overflow-x: hidden;
+
+  .WorkPageHero {
+    height: 85vh;
+    background: $chartreuse;
+    padding-bottom: 2rem;
+    .work-page-title {
+      color: $dark !important;
+      text-align: center;
+      font-size: 115px !important;
+      font-style: normal;
+      font-weight: 700;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .work-page-headline {
+      padding: 1rem;
+      .site-headline {
+        margin-bottom: 3rem;
+      }
+      .hero-chevron-down {
+        fill: white;
+        animation: 2.925s ease-in-out infinite oscillate;
+      }
+    }
+  }
+}

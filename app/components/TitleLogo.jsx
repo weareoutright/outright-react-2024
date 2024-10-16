@@ -1,7 +1,11 @@
 import LOGO_O from "../assets/logo-o.svg";
 import LOGO_FULL from "../assets/logo-outright-dark.svg";
 
-const TitleLogo = ({ classes, id, href }) => {
+const TitleLogo = ({
+  classes = "page-utility-component page-utility-upper page-utility-left page-utility-page",
+  id = "site-branding",
+  href = "/",
+}) => {
   return (
     <div className={classes}>
       <div id={id}>
@@ -20,7 +24,7 @@ const TitleLogo = ({ classes, id, href }) => {
               <a className="link" href="#youtube">
                 featured
               </a>
-              <a className="link" href="/work">
+              <a className="link" href="/our-work">
                 work
               </a>
               <a className="link" href="#clientscover">
