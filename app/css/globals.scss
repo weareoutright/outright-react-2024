@@ -365,8 +365,10 @@ a {
 
 .pane-header {
   position: relative;
+  z-index: 2;
 }
 
 .pane-content {
   position: relative;
+  z-index: 2;
 }

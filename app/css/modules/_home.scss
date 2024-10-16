@@ -30,3 +30,18 @@
     align-items: center;
   }
 }
+
+.gradient-box {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100%; /* Adjust based on your needs */
+  height: 100vh; /* Adjust height as needed */
+  background: linear-gradient(
+    to top,
+    /* Direction from bottom to top */ rgb(0, 0, 0),
+    /* Solid at the bottom */ rgba(0, 0, 0, 0) 40%
+      /* Transparent towards the center */
+  );
+  box-sizing: border-box; /* Ensure padding does not affect dimensions */
+}

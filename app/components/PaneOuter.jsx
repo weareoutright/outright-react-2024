@@ -7,7 +7,7 @@ const PaneOuter = ({ pane, spinnerOpacity, spinnerYPos }) => {
     ${pane.attributes.autoheight ? "fp-auto-height" : ""} 
     ${
       pane.attributes.autoheight_responsive ? "fp-auto-height-responsive" : ""
-    } `}
+    }`}
       id={`pane-${pane.attributes.id}`}
       data-anchor={pane.attributes.id}
       data-waypoint={pane.waypoint}
@@ -24,7 +24,6 @@ const PaneOuter = ({ pane, spinnerOpacity, spinnerYPos }) => {
         spinnerOpacity={spinnerOpacity}
         spinnerYPos={spinnerYPos}
       />
-
       {pane.attributes.id === "contact" && (
         <div className="o-wrapper">
           <div className="o-outer"></div>

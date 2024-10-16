@@ -343,7 +343,6 @@ const OAnimation = () => {
         .edge {
           position: absolute;
           background: red;
-          border: 1px solid red;
         }
       `}</style>
       <div className="o-outer"></div>

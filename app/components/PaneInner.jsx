@@ -18,6 +18,7 @@ const PaneInner = ({ pane, spinnerOpacity, spinnerYPos }) => {
         <div className="row">
           {pane.background_video && (
             <div className="video-bg">
+              <div className="gradient-box" />
               <div
                 id={`video-${pane.background_video}`}
                 className="video-bg-embed"

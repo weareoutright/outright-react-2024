@@ -161,19 +161,7 @@
     padding-top: 50px;
   }
   .container {
-    // &:before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 33.333%;
-    //   left: 0;
-    //   width: 100%;
-    //   height: 66.666%;
-    //   background: linear-gradient(0deg, $grayDark, rgba($grayDark, 0));
-    //   opacity: 0.6;
-    //   mix-blend-mode: multiply;
-    // }
     > .row {
-      //mix-blend-mode: difference;
       padding: 0 #{$gutter-page-outer} #{$gutter-page-outer * 0.9} #{$gutter-page-outer-responsive *
         7};
       [class*="col-"] {
