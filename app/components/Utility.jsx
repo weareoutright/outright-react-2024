@@ -18,7 +18,11 @@ const Utility = ({
   return (
     <>
       <header className="Utility" id="page-utility">
-        <TitleLogo />
+        <TitleLogo
+          href="#hero"
+          id="site-branding"
+          classes="page-utility-component page-utility-upper page-utility-left"
+        />
         <div
           className="page-utility-component page-utility-upper page-utility-right"
           style={{

@@ -1,12 +1,11 @@
-import Image from "next/image";
 import LOGO_O from "../assets/logo-o.svg";
 import LOGO_FULL from "../assets/logo-outright-dark.svg";
 
-const TitleLogo = () => {
+const TitleLogo = ({ classes, id, href }) => {
   return (
-    <div className="page-utility-component page-utility-upper page-utility-left">
-      <div id="site-branding">
-        <a href="#hero">
+    <div className={classes}>
+      <div id={id}>
+        <a href={href}>
           <h1 className="title-logo">
             <a href="/" className="header-logo-nav">
               <span className="title-logo-img">
