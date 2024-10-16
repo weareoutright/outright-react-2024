@@ -18,7 +18,7 @@ const TitleLogo = () => {
         <a className="link" href="#youtube">
           featured
         </a>
-        <a className="link" href="#services">
+        <a className="link" href="/work">
           work
         </a>
         <a className="link" href="#clientscover">
