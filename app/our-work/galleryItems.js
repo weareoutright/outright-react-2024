@@ -1,16 +1,40 @@
-import RTC from "./work-gallery/rtc-we-see-more.svg";
-import ME_TOO from "./work-gallery/me-too-rebranding-a-movement.svg";
-import MARRIOTT_HORIZONS from "./work-gallery/marriott-intl-leading-to-new-horizons.svg";
-import GOOGLE_YT_BIG_GAME from "./work-gallery/google-yt-big-game.svg";
-import OP_AGENDA_NARRATIVES from "./work-gallery/op-agenda-shifting-narratives.svg";
-import EXP_FAYETTEVILLE_EMBRACE_THE_DAY from "./work-gallery/ex-fayetteville-embrace-the-day.svg";
-import GOOGLE_YT_COACHELLA from "./work-gallery/google-yt-coachella.svg";
-import EDF_VISION_2023 from "./work-gallery/edf-vision-2023.svg";
-import WRI_DATA_DRIVEN from "./work-gallery/wri-data-driven-revolution.svg";
-import MODEV_NEW_ERA from "./work-gallery/modev-new-era.svg";
-import PAIC_YOU_GOT_QUESTIONS from "./work-gallery/paic-you-got-questions.svg";
-import GOOGLE_YT_BEAUTYFEST from "./work-gallery/google-yt-beautyfest.svg";
-import WPA_PEOPLE_TOGETHER from "./work-gallery/wpa-people-together.svg";
+import dynamic from "next/dynamic";
+
+const RTC = dynamic(() => import("./work-gallery/rtc-we-see-more.svg"));
+const ME_TOO = dynamic(() =>
+  import("./work-gallery/me-too-rebranding-a-movement.svg")
+);
+const MARRIOTT_HORIZONS = dynamic(() =>
+  import("./work-gallery/marriott-intl-leading-to-new-horizons.svg")
+);
+const GOOGLE_YT_BIG_GAME = dynamic(() =>
+  import("./work-gallery/google-yt-big-game.svg")
+);
+const OP_AGENDA_NARRATIVES = dynamic(() =>
+  import("./work-gallery/op-agenda-shifting-narratives.svg")
+);
+const EXP_FAYETTEVILLE_EMBRACE_THE_DAY = dynamic(() =>
+  import("./work-gallery/ex-fayetteville-embrace-the-day.svg")
+);
+const GOOGLE_YT_COACHELLA = dynamic(() =>
+  import("./work-gallery/google-yt-coachella.svg")
+);
+const EDF_VISION_2023 = dynamic(() =>
+  import("./work-gallery/edf-vision-2023.svg")
+);
+const WRI_DATA_DRIVEN = dynamic(() =>
+  import("./work-gallery/wri-data-driven-revolution.svg")
+);
+const MODEV_NEW_ERA = dynamic(() => import("./work-gallery/modev-new-era.svg"));
+const PAIC_YOU_GOT_QUESTIONS = dynamic(() =>
+  import("./work-gallery/paic-you-got-questions.svg")
+);
+const GOOGLE_YT_BEAUTYFEST = dynamic(() =>
+  import("./work-gallery/google-yt-beautyfest.svg")
+);
+const WPA_PEOPLE_TOGETHER = dynamic(() =>
+  import("./work-gallery/wpa-people-together.svg")
+);
 
 export const GALLERY_ITEMS = [
   {
