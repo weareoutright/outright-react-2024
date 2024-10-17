@@ -32,7 +32,6 @@ const WorkPage = () => {
             const { waypoint, order } = entry.target.dataset;
             setCurrentWaypoint(waypoint);
             setCurrentOrder(order);
-            console.log(entry.target);
 
             if (entry.target.dataset.waypoint === "Contact") {
               setSpinnerOpacity(1);
@@ -43,7 +42,6 @@ const WorkPage = () => {
 
             if (entry.target.dataset.waypoint === "Work Page") {
               setSiteHidelineDisplay("block");
-              console.log(entry.target.dataset);
             }
 
             if (entry.target.dataset.waypoint === "Gallery") {
@@ -55,16 +53,20 @@ const WorkPage = () => {
       { threshold: 0.25 } // Component must be at least ##% visible
     );
 
+    const hero = heroPaneRef.current;
+    const workGallery = workGalleryRef.current;
+    const contact = contactRef.current;
+
     // Observe components
-    if (heroPaneRef.current) observer.observe(heroPaneRef.current);
-    if (workGalleryRef.current) observer.observe(workGalleryRef.current);
-    if (contactRef.current) observer.observe(contactRef.current);
+    if (hero) observer.observe(hero);
+    if (workGallery) observer.observe(workGallery);
+    if (contact) observer.observe(contact);
 
     // Cleanup on unmount
     return () => {
-      if (heroPaneRef.current) observer.observe(heroPaneRef.current);
-      if (workGalleryRef.current) observer.observe(workGalleryRef.current);
-      if (contactRef.current) observer.observe(contactRef.current);
+      if (hero) observer.observe(hero);
+      if (workGallery) observer.observe(workGallery);
+      if (contact) observer.observe(contact);
     };
   }, []);
 

@@ -23,19 +23,19 @@ const LazyGalleryItem = ({ item }) => {
 
   return (
     <>
-      {!isLoaded ? (
-        <div className="card-container">
-          <Skeleton height={50} width={300} />
-          <Skeleton height={40} width={200} />
-          <Skeleton height={40} width={150} />
-        </div>
-      ) : (
+      {isLoaded ? (
         <div className="work-page-gallery-item img-fluid" key={key}>
           {item.svg}
           <div className="work-page-gallery-item-headings">
             <h5>{item.organization}</h5>
             <h3>{item.title}</h3>
           </div>
+        </div>
+      ) : (
+        <div className="card-container">
+          <Skeleton height={50} width={300} />
+          <Skeleton height={40} width={200} />
+          <Skeleton height={40} width={150} />
         </div>
       )}
     </>
