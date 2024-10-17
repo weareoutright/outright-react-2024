@@ -1,39 +1,55 @@
 import dynamic from "next/dynamic";
 
-const RTC = dynamic(() => import("./work-gallery/rtc-we-see-more.svg"));
-const ME_TOO = dynamic(() =>
-  import("./work-gallery/me-too-rebranding-a-movement.svg")
+const RTC = dynamic(() => import("./work-gallery/rtc-we-see-more.svg"), {
+  ssr: false,
+});
+const ME_TOO = dynamic(
+  () => import("./work-gallery/me-too-rebranding-a-movement.svg"),
+  { ssr: false }
 );
-const MARRIOTT_HORIZONS = dynamic(() =>
-  import("./work-gallery/marriott-intl-leading-to-new-horizons.svg")
+const MARRIOTT_HORIZONS = dynamic(
+  () => import("./work-gallery/marriott-intl-leading-to-new-horizons.svg"),
+  { ssr: false }
 );
-const GOOGLE_YT_BIG_GAME = dynamic(() =>
-  import("./work-gallery/google-yt-big-game.svg")
+const GOOGLE_YT_BIG_GAME = dynamic(
+  () => import("./work-gallery/google-yt-big-game.svg"),
+  { ssr: false }
 );
-const OP_AGENDA_NARRATIVES = dynamic(() =>
-  import("./work-gallery/op-agenda-shifting-narratives.svg")
+const OP_AGENDA_NARRATIVES = dynamic(
+  () => import("./work-gallery/op-agenda-shifting-narratives.svg"),
+  { ssr: false }
 );
-const EXP_FAYETTEVILLE_EMBRACE_THE_DAY = dynamic(() =>
-  import("./work-gallery/ex-fayetteville-embrace-the-day.svg")
+const EXP_FAYETTEVILLE_EMBRACE_THE_DAY = dynamic(
+  () => import("./work-gallery/ex-fayetteville-embrace-the-day.svg"),
+  { ssr: false }
 );
-const GOOGLE_YT_COACHELLA = dynamic(() =>
-  import("./work-gallery/google-yt-coachella.svg")
+const GOOGLE_YT_COACHELLA = dynamic(
+  () => import("./work-gallery/google-yt-coachella.svg"),
+  { ssr: false }
 );
-const EDF_VISION_2023 = dynamic(() =>
-  import("./work-gallery/edf-vision-2023.svg")
+const EDF_VISION_2023 = dynamic(
+  () => import("./work-gallery/edf-vision-2023.svg"),
+  { ssr: false }
 );
-const WRI_DATA_DRIVEN = dynamic(() =>
-  import("./work-gallery/wri-data-driven-revolution.svg")
+const WRI_DATA_DRIVEN = dynamic(
+  () => import("./work-gallery/wri-data-driven-revolution.svg"),
+  { ssr: false }
 );
-const MODEV_NEW_ERA = dynamic(() => import("./work-gallery/modev-new-era.svg"));
-const PAIC_YOU_GOT_QUESTIONS = dynamic(() =>
-  import("./work-gallery/paic-you-got-questions.svg")
+const MODEV_NEW_ERA = dynamic(
+  () => import("./work-gallery/modev-new-era.svg"),
+  { ssr: false }
 );
-const GOOGLE_YT_BEAUTYFEST = dynamic(() =>
-  import("./work-gallery/google-yt-beautyfest.svg")
+const PAIC_YOU_GOT_QUESTIONS = dynamic(
+  () => import("./work-gallery/paic-you-got-questions.svg"),
+  { ssr: false }
 );
-const WPA_PEOPLE_TOGETHER = dynamic(() =>
-  import("./work-gallery/wpa-people-together.svg")
+const GOOGLE_YT_BEAUTYFEST = dynamic(
+  () => import("./work-gallery/google-yt-beautyfest.svg"),
+  { ssr: false }
+);
+const WPA_PEOPLE_TOGETHER = dynamic(
+  () => import("./work-gallery/wpa-people-together.svg"),
+  { ssr: false }
 );
 
 export const GALLERY_ITEMS = [
