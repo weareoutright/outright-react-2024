@@ -32,7 +32,6 @@ const WorkPage = () => {
             const { waypoint, order } = entry.target.dataset;
             setCurrentWaypoint(waypoint);
             setCurrentOrder(order);
-            console.log(entry.target);
 
             if (entry.target.dataset.waypoint === "Contact") {
               setSpinnerOpacity(1);
@@ -43,7 +42,6 @@ const WorkPage = () => {
 
             if (entry.target.dataset.waypoint === "Work Page") {
               setSiteHidelineDisplay("block");
-              console.log(entry.target.dataset);
             }
 
             if (entry.target.dataset.waypoint === "Gallery") {
