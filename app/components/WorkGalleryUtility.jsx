@@ -1,19 +1,11 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import TitleLogo from "./TitleLogo";
 import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
-import CHEVRON_DOWN from "../assets/icon-chevron-down.svg";
 import ICON_X from "../assets/icon-x.svg";
 
-const WorkGalleryUtility = ({
-  waypoint = "Contact",
-  order = "00",
-  siteHeadlineOpacity,
-  siteHeadlineDisplay,
-  spinnerOpacity,
-}) => {
+const WorkGalleryUtility = ({ waypoint = "Contact", spinnerOpacity }) => {
   return (
     <>
       <header className="Utility WorkPageUtility" id="work-page-utility">

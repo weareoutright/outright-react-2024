@@ -2,10 +2,11 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import WorkGalleryUtility from "../components/WorkGalleryUtility";
+import Gallery from "./Gallery";
 import { pane as ContactPaneProps } from "../panes/ContactPaneProps.js";
 import PaneOuter from "../components/PaneOuter";
 import WorkPageHero from "./WorkPageHero";
-import RTC from "../assets/work-gallery/rtc-gallery.svg";
+
 import { pane as WorkPageHeroProps } from "./WorkPageHeroProps";
 
 const WorkPage = () => {
@@ -89,16 +90,7 @@ const WorkPage = () => {
           ref={workGalleryRef}
           data-waypoint={WorkPageHeroProps.galleryWaypoint}
         >
-          <div className="work-page-gallery-item">
-            <RTC className="gallery-thumbnail" />
-            <h5>organization</h5>
-            <h3>Project Title</h3>
-          </div>
-          <div className="work-page-gallery-item">
-            <RTC className="gallery-thumbnail" />
-            <h5>organization</h5>
-            <h3>Project Title</h3>
-          </div>{" "}
+          <Gallery />
         </div>
         <div
           ref={contactRef}
