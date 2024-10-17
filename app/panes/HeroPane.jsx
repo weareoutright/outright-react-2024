@@ -9,7 +9,7 @@ const HeroPane = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPos = window.scrollY;
-      const speed = 0.7; // Adjust this value to control the scrolling speed of the image
+      const speed = 0.5; // Adjust this value to control the scrolling speed of the image
       setTranslateY(scrollPos * speed);
     };
 
