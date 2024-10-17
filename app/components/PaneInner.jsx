@@ -1,9 +1,7 @@
 import Spinner from "./Spinner";
 import Image from "next/image";
 import SCRIBBLE_LINE from "../assets/scribble-line.gif";
-import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
-import OUTRIGHT_ARROW from "../assets/outright-arrow.png";
-import MEET_THE_TEAM from "../assets/meet-the-team.png";
+import LOGO_O from "../assets/logo-o.svg";
 
 const PaneInner = ({ pane, spinnerOpacity, spinnerYPos }) => {
   return (
@@ -42,7 +40,7 @@ const PaneInner = ({ pane, spinnerOpacity, spinnerYPos }) => {
               <header className="pane-header">
                 {pane.attributes.id === "hero" ? (
                   <h1 className="pane-title site-title">
-                    <img src="../assets/logo-o.svg" alt="outright" />
+                    <Image src={LOGO_O} alt="outright" />
                   </h1>
                 ) : (
                   <h1

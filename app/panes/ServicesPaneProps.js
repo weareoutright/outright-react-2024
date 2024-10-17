@@ -14,6 +14,7 @@ export const pane = {
           className="service-scribble scribble"
           width={100}
           height={100}
+          alt=""
         />
         <span>how</span>
       </span>{" "}

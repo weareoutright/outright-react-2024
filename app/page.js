@@ -73,26 +73,35 @@ export default function Home() {
       { threshold: 0.25 } // Component must be at least ##% visible
     );
 
+    const hero = heroPaneRef.current;
+    const youtube = youtubeRef.current;
+    const gnrt = gnrtRef.current;
+    const seeMoreWork = seeMoreWorkRef.current;
+    const ourClients = ourClientsRef.current;
+    const about = aboutRef.current;
+    const services = servicesRef.current;
+    const contact = contactRef.current;
+
     // Observe components
-    if (heroPaneRef.current) observer.observe(heroPaneRef.current);
-    if (youtubeRef.current) observer.observe(youtubeRef.current);
-    if (gnrtRef.current) observer.observe(gnrtRef.current);
-    if (seeMoreWorkRef.current) observer.observe(seeMoreWorkRef.current);
-    if (ourClientsRef.current) observer.observe(ourClientsRef.current);
-    if (aboutRef.current) observer.observe(aboutRef.current);
-    if (servicesRef.current) observer.observe(servicesRef.current);
-    if (contactRef.current) observer.observe(contactRef.current);
+    if (hero) observer.observe(hero);
+    if (youtube) observer.observe(youtube);
+    if (gnrt) observer.observe(gnrt);
+    if (seeMoreWork) observer.observe(seeMoreWork);
+    if (ourClients) observer.observe(ourClients);
+    if (about) observer.observe(about);
+    if (services) observer.observe(services);
+    if (contact) observer.observe(contact);
 
     // Cleanup on unmount
     return () => {
-      if (heroPaneRef.current) observer.unobserve(heroPaneRef.current);
-      if (youtubeRef.current) observer.unobserve(youtubeRef.current);
-      if (gnrtRef.current) observer.observe(gnrtRef.current);
-      if (seeMoreWorkRef.current) observer.observe(seeMoreWorkRef.current);
-      if (ourClientsRef.current) observer.observe(ourClientsRef.current);
-      if (aboutRef.current) observer.observe(aboutRef.current);
-      if (servicesRef.current) observer.observe(servicesRef.current);
-      if (contactRef.current) observer.observe(contactRef.current);
+      if (hero) observer.observe(hero);
+      if (youtube) observer.observe(youtube);
+      if (gnrt) observer.observe(gnrt);
+      if (seeMoreWork) observer.observe(seeMoreWork);
+      if (ourClients) observer.observe(ourClients);
+      if (about) observer.observe(about);
+      if (services) observer.observe(services);
+      if (contact) observer.observe(contact);
     };
   }, []);
 

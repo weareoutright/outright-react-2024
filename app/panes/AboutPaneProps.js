@@ -16,6 +16,7 @@ export const pane = {
           className="service-scribble scribble"
           width={100}
           height={100}
+          alt=""
         />
         <span>people</span>,
       </span>
@@ -25,6 +26,7 @@ export const pane = {
           className="service-arrow"
           width={100}
           height={100}
+          alt=""
         />
         <a href="./team">
           <Image
@@ -32,6 +34,7 @@ export const pane = {
             className="service-meet-the-team"
             width={100}
             height={100}
+            alt=""
           />
         </a>
       </span>
