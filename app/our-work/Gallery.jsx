@@ -6,17 +6,8 @@ const LazyGalleryItem = ({ item }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // A very basic lazy loading method using requestIdleCallback
-    const loadSvg = () => {
-      if ("requestIdleCallback" in window) {
-        requestIdleCallback(() => setIsLoaded(true));
-      } else {
-        // Fallback for browsers without requestIdleCallback
-        setTimeout(() => setIsLoaded(true), 100);
-      }
-    };
-
-    loadSvg();
+    // Immediately load the SVG without additional delay
+    setIsLoaded(true);
   }, []);
 
   const key = item.title.split(" ").join("-");
