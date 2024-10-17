@@ -7,9 +7,10 @@
   overflow-x: hidden;
 
   .WorkPageHero {
-    height: 85vh;
+    height: 75vh;
     background: $chartreuse;
     padding-bottom: 2rem;
+    margin: 0 auto;
     .work-page-title {
       color: $dark !important;
       text-align: center;
@@ -28,6 +29,58 @@
       .hero-chevron-down {
         fill: white;
         animation: 2.925s ease-in-out infinite oscillate;
+        margin-right: 20.5rem;
+      }
+    }
+  }
+
+  .work-page-gallery {
+    padding: em(60) em(125);
+    .work-page-gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      padding: em(60) em(125);
+      justify-content: center;
+
+      .work-page-gallery-item {
+        display: block;
+        width: auto;
+        svg {
+          border-radius: 20px;
+          display: block;
+          width: 100%;
+          height: auto;
+          transition: 300ms ease-out;
+          &:hover {
+            scale: 90%;
+          }
+
+          rect {
+            width: 102%;
+            height: 105%;
+            aspect-ratio: 1 / 1;
+          }
+        }
+
+        .work-page-gallery-item-headings {
+          padding-top: em(20);
+          padding-bottom: em(100);
+          h5 {
+            color: $grayLight;
+          }
+
+          h3 {
+            color: $black;
+          }
+        }
+      }
+    }
+
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      .work-page-gallery-grid {
+        grid-template-columns: 1fr; // Switch to one column
+        padding: em(30) em(15); // Adjust padding for smaller screens if needed
       }
     }
   }
