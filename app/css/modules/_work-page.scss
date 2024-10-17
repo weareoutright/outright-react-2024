@@ -74,6 +74,12 @@
             color: $black;
           }
         }
+        &:nth-last-child(2),
+        &:nth-last-child(1) {
+          .work-page-gallery-item-headings {
+            padding-bottom: 0;
+          }
+        }
       }
     }
 
