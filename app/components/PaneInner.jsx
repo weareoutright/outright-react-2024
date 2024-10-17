@@ -40,7 +40,7 @@ const PaneInner = ({ pane, spinnerOpacity, spinnerYPos }) => {
               <header className="pane-header">
                 {pane.attributes.id === "hero" ? (
                   <h1 className="pane-title site-title">
-                    <Image src={LOGO_O} alt="outright" />
+                    <Image src={LOGO_O} alt="" />
                   </h1>
                 ) : (
                   <h1
@@ -58,6 +58,7 @@ const PaneInner = ({ pane, spinnerOpacity, spinnerYPos }) => {
                         width={100}
                         height={100}
                         unoptimized
+                        alt=""
                       />
                     )}
                   </h1>
