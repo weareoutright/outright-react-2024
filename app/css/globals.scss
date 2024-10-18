@@ -50,6 +50,26 @@ body {
   cursor: url("../assets/cursor.svg");
 }
 
+.light-scrollbar {
+  scrollbar-color: #151515 white;
+  scrollbar-width: thin;
+}
+
+.dark-scrollbar {
+  scrollbar-color: $chartreuse black;
+  scrollbar-width: thin;
+}
+
+.img-scrollbar {
+  scrollbar-color: white #242424;
+  scrollbar-width: thin;
+}
+
+.chartreuse-inverted-scrollbar {
+  scrollbar-color: #2d0cb9 $chartreuse;
+  scrollbar-width: thin;
+}
+
 .fullpage-wrapper {
   overflow-x: hidden;
   width: 100%;

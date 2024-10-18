@@ -18,6 +18,7 @@ export default function Home() {
   const [siteHeadlineDisplay, setSiteHidelineDisplay] = useState("block");
   const [spinnerYPos, setSpinnerYPos] = useState("-50%");
   const [spinnerOpacity, setSpinnerOpacity] = useState(0);
+  const [scrollbarColor, setScrollbarColor] = useState("");
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -39,7 +40,7 @@ export default function Home() {
 
   // State to track currently visible component's waypoint and order
   const [currentWaypoint, setCurrentWaypoint] = useState("");
-  const [currentOrder, setCurrentOrder] = useState("");
+  const [currentOrder, setCurrentOrder] = useState("light-scrollbar");
 
   // Refs for the components you want to observe
   const heroPaneRef = useRef(null);
@@ -56,9 +57,20 @@ export default function Home() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const { waypoint, order } = entry.target.dataset;
+            const { waypoint, order, scrollbar } = entry.target.dataset;
+            const hasWhiteBg = "white" === scrollbar;
+            const hasDarkBg = "black" === scrollbar;
+            const hasImgBg = "img" === scrollbar;
+            const hasChartreuseBg = "chartreuse" === scrollbar;
+
             setCurrentWaypoint(waypoint);
             setCurrentOrder(order);
+
+            if (hasChartreuseBg)
+              setScrollbarColor("chartreuse-inverted-scrollbar");
+            if (hasWhiteBg) setScrollbarColor("light-scrollbar");
+            if (hasDarkBg) setScrollbarColor("dark-scrollbar");
+            if (hasImgBg) setScrollbarColor("img-scrollbar");
 
             if (entry.target.dataset.waypoint === "Contact") {
               setSpinnerOpacity(1);
@@ -106,7 +118,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="Home" ref={containerRef}>
+    <div className={`Home ${scrollbarColor}`} ref={containerRef}>
       {/* Utility component receives dynamic waypoint and order */}
       <Utility
         waypoint={currentWaypoint}
@@ -121,6 +133,7 @@ export default function Home() {
         ref={heroPaneRef}
         data-waypoint={HeroPaneProps.waypoint}
         data-order={HeroPaneProps.order}
+        data-scrollbar={HeroPaneProps.background}
       >
         <HeroPane />
       </div>
@@ -130,6 +143,7 @@ export default function Home() {
         ref={youtubeRef}
         data-waypoint={YouTubePane.waypoint}
         data-order={YouTubePane.order}
+        data-scrollbar={YouTubePane.background}
       >
         <PaneOuter pane={YouTubePane} />
       </div>
@@ -137,6 +151,7 @@ export default function Home() {
         ref={gnrtRef}
         data-waypoint={GNRTPaneProps.waypoint}
         data-order={GNRTPaneProps.order}
+        data-scrollbar={GNRTPaneProps.background}
       >
         <PaneOuter pane={GNRTPaneProps} />
       </div>
@@ -145,6 +160,7 @@ export default function Home() {
         ref={seeMoreWorkRef}
         data-waypoint={SeeMoreWorkPaneProps.waypoint}
         data-order={SeeMoreWorkPaneProps.order}
+        data-scrollbar={SeeMoreWorkPaneProps.background}
       >
         <PaneOuter pane={SeeMoreWorkPaneProps} />
       </div>
@@ -152,6 +168,7 @@ export default function Home() {
         ref={ourClientsRef}
         data-waypoint={OurClientsPaneProps.waypoint}
         data-order={OurClientsPaneProps.order}
+        data-scrollbar={OurClientsPaneProps.background}
       >
         <PaneOuter pane={OurClientsPaneProps} />
       </div>
@@ -159,6 +176,7 @@ export default function Home() {
         ref={aboutRef}
         data-waypoint={AboutPaneProps.waypoint}
         data-order={AboutPaneProps.order}
+        data-scrollbar={AboutPaneProps.background}
       >
         <PaneOuter pane={AboutPaneProps} />
       </div>
@@ -166,6 +184,7 @@ export default function Home() {
         ref={servicesRef}
         data-waypoint={ServicesPaneProps.waypoint}
         data-order={ServicesPaneProps.order}
+        data-scrollbar={ServicesPaneProps.background}
       >
         <PaneOuter pane={ServicesPaneProps} />
       </div>
@@ -173,6 +192,7 @@ export default function Home() {
         ref={contactRef}
         data-waypoint={ContactPaneProps.waypoint}
         data-order={ContactPaneProps.order}
+        data-scrollbar={ContactPaneProps.background}
       >
         <PaneOuter
           pane={ContactPaneProps}
