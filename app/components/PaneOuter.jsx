@@ -14,7 +14,9 @@ const PaneOuter = ({ pane, spinnerOpacity, spinnerYPos }) => {
       data-bg={pane.background}
       style={
         pane.background_image
-          ? { backgroundImage: `url('../assets/${pane.background_image}')` }
+          ? {
+              backgroundImage: `url('../assets/${pane.background_image}')`,
+            }
           : {}
       }
     >
