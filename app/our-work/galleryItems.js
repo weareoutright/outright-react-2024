@@ -1,54 +1,55 @@
 import dynamic from "next/dynamic";
 
-const RTC = dynamic(() => import("./work-gallery/rtc-we-see-more.svg"), {
+const RTC = dynamic(() => import("./work-gallery-images/rtc-we-see-more.svg"), {
   ssr: false,
 });
 const ME_TOO = dynamic(
-  () => import("./work-gallery/me-too-rebranding-a-movement.svg"),
+  () => import("./work-gallery-images/me-too-rebranding-a-movement.svg"),
   { ssr: false }
 );
 const MARRIOTT_HORIZONS = dynamic(
-  () => import("./work-gallery/marriott-intl-leading-to-new-horizons.svg"),
+  () =>
+    import("./work-gallery-images/marriott-intl-leading-to-new-horizons.svg"),
   { ssr: false }
 );
 const GOOGLE_YT_BIG_GAME = dynamic(
-  () => import("./work-gallery/google-yt-big-game.svg"),
+  () => import("./work-gallery-images/google-yt-big-game.svg"),
   { ssr: false }
 );
 const OP_AGENDA_NARRATIVES = dynamic(
-  () => import("./work-gallery/op-agenda-shifting-narratives.svg"),
+  () => import("./work-gallery-images/op-agenda-shifting-narratives.svg"),
   { ssr: false }
 );
 const EXP_FAYETTEVILLE_EMBRACE_THE_DAY = dynamic(
-  () => import("./work-gallery/ex-fayetteville-embrace-the-day.svg"),
+  () => import("./work-gallery-images/ex-fayetteville-embrace-the-day.svg"),
   { ssr: false }
 );
 const GOOGLE_YT_COACHELLA = dynamic(
-  () => import("./work-gallery/google-yt-coachella.svg"),
+  () => import("./work-gallery-images/google-yt-coachella.svg"),
   { ssr: false }
 );
 const EDF_VISION_2023 = dynamic(
-  () => import("./work-gallery/edf-vision-2023.svg"),
+  () => import("./work-gallery-images/edf-vision-2023.svg"),
   { ssr: false }
 );
 const WRI_DATA_DRIVEN = dynamic(
-  () => import("./work-gallery/wri-data-driven-revolution.svg"),
+  () => import("./work-gallery-images/wri-data-driven-revolution.svg"),
   { ssr: false }
 );
 const MODEV_NEW_ERA = dynamic(
-  () => import("./work-gallery/modev-new-era.svg"),
+  () => import("./work-gallery-images/modev-new-era.svg"),
   { ssr: false }
 );
 const PAIC_YOU_GOT_QUESTIONS = dynamic(
-  () => import("./work-gallery/paic-you-got-questions.svg"),
+  () => import("./work-gallery-images/paic-you-got-questions.svg"),
   { ssr: false }
 );
 const GOOGLE_YT_BEAUTYFEST = dynamic(
-  () => import("./work-gallery/google-yt-beautyfest.svg"),
+  () => import("./work-gallery-images/google-yt-beautyfest.svg"),
   { ssr: false }
 );
 const WPA_PEOPLE_TOGETHER = dynamic(
-  () => import("./work-gallery/wpa-people-together.svg"),
+  () => import("./work-gallery-images/wpa-people-together.svg"),
   { ssr: false }
 );
 
