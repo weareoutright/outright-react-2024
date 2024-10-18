@@ -1,14 +1,17 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
-import WorkGalleryUtility from "../components/WorkGalleryUtility";
-import Gallery from "./Gallery";
-import PaneOuter from "../components/PaneOuter";
-import WorkGalleryHero from "./WorkGalleryHero";
-import { pane as ContactPaneProps } from "../panes/ContactPaneProps.js";
-import { pane as WorkGalleryHeroProps } from "./WorkGalleryHeroProps";
+import WorkGalleryUtility from "@/app/components/WorkGalleryUtility";
+import React, { useState, useRef, useEffect } from "react";
+import ClientWorkHero from "./components/ClientWorkHero";
+import { pane as ContactPaneProps } from "../panes/ContactPaneProps";
+import PaneOuter from "@/app/components/PaneOuter";
+import ClientWorkHeroHeader from "./components/ClientWorkHeroHeader";
+import ClientWorkBento from "./components/ClientWorkBento";
+import ClientQuote from "./components/ClientQuote";
+import ClientSpotlight from "./components/ClientSpotlight";
+import ClientProjectOverview from "./components/ClientProjectOverview";
 
-const WorkPage = () => {
+const ClientWorkPageLayout = () => {
   // State to track currently visible component's waypoint and order
   const [currentWaypoint, setCurrentWaypoint] = useState("");
   const [currentOrder, setCurrentOrder] = useState("");
@@ -19,8 +22,7 @@ const WorkPage = () => {
   const containerRef = useRef(null);
 
   // Refs for the components you want to observe
-  const heroPaneRef = useRef(null);
-  const workGalleryRef = useRef(null);
+  const clientWorkHeroRef = useRef(null);
   const contactRef = useRef(null);
 
   useEffect(() => {
@@ -38,33 +40,22 @@ const WorkPage = () => {
             } else {
               setSpinnerOpacity(0);
             }
-
-            if (entry.target.dataset.waypoint === "Work Page") {
-              setSiteHidelineDisplay("block");
-            }
-
-            if (entry.target.dataset.waypoint === "Gallery") {
-              setSiteHidelineDisplay("none");
-            }
           }
         });
       },
       { threshold: 0.25 } // Component must be at least ##% visible
     );
 
-    const hero = heroPaneRef.current;
-    const workGallery = workGalleryRef.current;
+    const clientWorkHero = clientWorkHeroRef.current;
     const contact = contactRef.current;
 
     // Observe components
-    if (hero) observer.observe(hero);
-    if (workGallery) observer.observe(workGallery);
+    if (clientWorkHero) observer.observe(clientWorkHero);
     if (contact) observer.observe(contact);
 
     // Cleanup on unmount
     return () => {
-      if (hero) observer.observe(hero);
-      if (workGallery) observer.observe(workGallery);
+      if (clientWorkHero) observer.observe(clientWorkHero);
       if (contact) observer.observe(contact);
     };
   }, []);
@@ -78,20 +69,14 @@ const WorkPage = () => {
         siteHeadlineDisplay={siteHeadlineDisplay}
         spinnerOpacity={spinnerOpacity}
       />
-      <div
-        ref={heroPaneRef}
-        data-waypoint={WorkGalleryHeroProps.waypoint}
-        data-order={WorkGalleryHeroProps.order}
-      >
-        <WorkGalleryHero pane={WorkGalleryHeroProps} />
-      </div>
-      <div
-        className="work-page-gallery"
-        ref={workGalleryRef}
-        data-waypoint={WorkGalleryHeroProps.galleryWaypoint}
-      >
-        <Gallery />
-      </div>
+      <ClientWorkHero />
+      <ClientWorkHeroHeader />
+      <div className="main-headline"></div>
+      <ClientWorkBento />
+      <ClientQuote />
+      <div className="full-width-img"></div>
+      <ClientSpotlight />
+      <ClientProjectOverview />
       <div
         ref={contactRef}
         data-waypoint={ContactPaneProps.waypoint}
@@ -107,4 +92,4 @@ const WorkPage = () => {
   );
 };
 
-export default WorkPage;
+export default ClientWorkPageLayout;
