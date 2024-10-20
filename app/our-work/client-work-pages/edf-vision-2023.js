@@ -1,10 +1,10 @@
-import BG from "../client-work-pages/assets/edf-vision-2023/edf-vision-2023-bg.png";
-import BENTO_TOP from "../client-work-pages/assets/edf-vision-2023/edf-vision-2023-bento-top.png";
-import BENTO_BOTTOM_LEFT from "../client-work-pages/assets/edf-vision-2023/edf-vision-2023-bento-bottom-left.png";
-import BENTO_BOTTOM_MID from "../client-work-pages/assets/edf-vision-2023/edf-vision-2023-bento-bottom-mid.png";
-import BENTO_BOTTOM_RIGHT from "../client-work-pages/assets/edf-vision-2023/edf-vision-2023-bento-bottom-right.png";
-import FULL_WIDTH_IMG from "../client-work-pages/assets/edf-vision-2023/edf-vision-2023-full-width-img.png";
-import CLIENT_SPOTLIGHT from "../client-work-pages/assets/edf-vision-2023/edf-vission-2023-client-spotlight.img";
+import BG from "./assets/edf-vision-2023/edf-vision-2023-bg.png";
+import BENTO_TOP from "./assets/edf-vision-2023/edf-vision-2023-bento-top.png";
+import BENTO_BOTTOM_LEFT from "./assets/edf-vision-2023/edf-vision-2023-bento-bottom-left.png";
+import BENTO_BOTTOM_MID from "./assets/edf-vision-2023/edf-vision-2023-bento-bottom-mid.png";
+import BENTO_BOTTOM_RIGHT from "./assets/edf-vision-2023/edf-vision-2023-bento-bottom-right.png";
+import FULL_WIDTH_IMG from "./assets/edf-vision-2023/edf-vision-2023-full-width-img.png";
+import CLIENT_SPOTLIGHT from "./assets/edf-vision-2023/edf-vision-2023-client-spotlight.png";
 
 export const EDF_VISION_2023 = {
   hero: {
