@@ -11,7 +11,7 @@ import ClientQuote from "./components/ClientQuote";
 import ClientSpotlight from "./components/ClientSpotlight";
 import ClientProjectOverview from "./components/ClientProjectOverview";
 
-const ClientWorkPageLayout = () => {
+const ClientWorkPageLayout = ({ clientProject }) => {
   // State to track currently visible component's waypoint and order
   const [currentWaypoint, setCurrentWaypoint] = useState("");
   const [currentOrder, setCurrentOrder] = useState("");
