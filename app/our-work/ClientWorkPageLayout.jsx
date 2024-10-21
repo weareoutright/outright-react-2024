@@ -86,7 +86,7 @@ const ClientWorkPageLayout = ({ clientProject }) => {
   } = clientProject;
 
   return (
-    <div className="WorkPage" ref={containerRef}>
+    <div className="WorkPage ClientWorkPage" ref={containerRef}>
       <WorkGalleryUtility
         waypoint={currentWaypoint}
         order={currentOrder}

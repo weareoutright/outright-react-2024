@@ -35,8 +35,11 @@ const WorkGalleryUtility = ({ waypoint, spinnerOpacity }) => {
         <div
           className="page-utility-component page-utility-lower page-utility-left"
           id="site-nav"
+          style={{
+            opacity: waypoint === "Contact" ? 1 : 0,
+          }}
         >
-          <div id="site-nav-waypoint">{`${waypoint}`}</div>
+          <div id="site-nav-waypoint">Contact</div>
         </div>
 
         <div

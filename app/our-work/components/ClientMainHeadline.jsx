@@ -3,7 +3,7 @@ import React from "react";
 const ClientMainHeadline = ({ mainHeadline, waypoint }) => {
   return (
     <div className="ClientMainHeadline" data-waypoint={waypoint}>
-      {mainHeadline}
+      <div className="main-headline-text">{mainHeadline}</div>
     </div>
   );
 };
