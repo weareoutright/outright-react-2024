@@ -17,7 +17,7 @@ const LazyGalleryItem = ({ item }) => {
     <>
       {isLoaded ? (
         <div className="work-page-gallery-item img-fluid" key={key}>
-          <Image src={item.src} />
+          <Image src={item.src} alt="" />
           <div className="work-page-gallery-item-headings">
             <h5>{item.organization}</h5>
             <h3>{item.title}</h3>
