@@ -5,7 +5,7 @@ import TitleLogo from "./TitleLogo";
 import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
 import ICON_X from "../assets/icon-x.svg";
 
-const WorkGalleryUtility = ({ waypoint = "Contact", spinnerOpacity }) => {
+const WorkGalleryUtility = ({ waypoint, spinnerOpacity }) => {
   return (
     <>
       <header className="Utility WorkPageUtility" id="work-page-utility">
@@ -35,10 +35,6 @@ const WorkGalleryUtility = ({ waypoint = "Contact", spinnerOpacity }) => {
         <div
           className="page-utility-component page-utility-lower page-utility-left"
           id="site-nav"
-          style={{
-            opacity: waypoint === "Contact" ? 1 : 0,
-            transition: "200ms ease-in-out",
-          }}
         >
           <div id="site-nav-waypoint">{`${waypoint}`}</div>
         </div>
