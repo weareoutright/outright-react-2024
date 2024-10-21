@@ -5,10 +5,14 @@ const ClientQuote = ({ clientQuote, waypoint }) => {
   const { name, title, org } = speaker;
   return (
     <div className="ClientQuote" data-waypoint={waypoint}>
-      <div className="quote-text">{quote}</div>
-      <small>
-        {name}, {title}, {org}
-      </small>
+      <div className="open-quotation">,,</div>
+      <div className="quote-body">
+        <h2 className="quote-text">{quote}</h2>
+        <small>
+          {name}, {title}, {org}
+        </small>
+      </div>
+      <div className="close-quotation">,,</div>
     </div>
   );
 };

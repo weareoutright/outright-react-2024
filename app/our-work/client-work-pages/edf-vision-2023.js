@@ -47,8 +47,11 @@ export const EDF_VISION_2023 = {
       challenge was to present extensive content and research in a captivating
       way. We distilled rich information into a visual narrative, using
       human-focused photography and inventive UX strategies to drive awareness
-      and engagement. Vision 2030 sets a new standard for web experiences within
-      the organization. Standout features include interactive stories, carefully
+      and engagement.
+      <br />
+      <br />
+      Vision 2030 sets a new standard for web experiences within the
+      organization. Standout features include interactive stories, carefully
       curated photography, and bold design elements that make information easily
       digestible and inspire action.
     </>

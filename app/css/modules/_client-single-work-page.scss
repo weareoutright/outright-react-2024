@@ -1,3 +1,6 @@
+$work-page-padding: 100px 250px;
+$work-page-padding-no-top: 0px 250px 100px 250px;
+
 .ClientWorkPage {
   .ClientWorkHero {
     img {
@@ -7,7 +10,7 @@
   }
 
   .ClientWorkHeroHeader {
-    padding: em(80) em(250);
+    padding: $work-page-padding;
     h5 {
       color: $grayLight;
       margin-bottom: em(30);
@@ -32,7 +35,7 @@
 
   .ClientMainHeadline {
     .main-headline-text {
-      padding: 0px 250px;
+      padding: $work-page-padding-no-top;
       font-size: em(60);
       font-weight: 700;
       line-height: 120%;
@@ -40,10 +43,10 @@
   }
 
   .ClientWorkBento {
-    padding: 100px 250px;
+    padding: $work-page-padding-no-top;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 0.2fr;
+    grid-template-rows: 1fr 1fr 0.15fr;
     gap: 10px;
     width: 100%;
     height: auto;
@@ -64,6 +67,94 @@
     .bottom-right {
       grid-column: span 1;
       grid-row: span 2;
+    }
+  }
+
+  .ClientQuote {
+    display: flex;
+    padding: $work-page-padding-no-top;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+
+    .open-quotation,
+    .close-quotation {
+      font-size: em(128);
+      font-family: $fontSans;
+    }
+
+    .open-quotation {
+      transform: rotateZ(180deg);
+    }
+
+    .quote-body {
+      width: 100%;
+      justify-self: center;
+      margin: 0 auto;
+      h2 {
+        font-weight: 700;
+        padding-bottom: 1.5rem;
+        line-height: 120%;
+        width: 100%;
+        text-wrap: pretty;
+      }
+      small {
+        font-size: em(20);
+      }
+    }
+
+    .close-quotation {
+      transform: rotateX(180deg);
+    }
+  }
+
+  .ClientFullWidthImg {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .ClientSpotlight {
+    padding: 100px 125px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .ClientProjectOverview {
+    padding: $work-page-padding-no-top;
+    font-size: em(32);
+    line-height: 140%;
+  }
+
+  .PrevNextBottomNav {
+    width: 100%;
+    height: auto;
+    padding: $work-page-padding-no-top;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    a {
+      font-family: $fontAlt;
+      font-size: em(36);
+      display: block;
+      color: $black;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-align: right;
+      transition: background-image 100ms ease-in;
+      padding-bottom: 1.25em;
+
+      &:hover {
+        background-image: url("../../assets/scribble-line.gif");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom 55% right 10%;
+        text-decoration: none;
+      }
     }
   }
 }
