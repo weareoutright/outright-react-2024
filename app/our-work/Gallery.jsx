@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { GALLERY_ITEMS } from "./galleryItems.js";
 import Skeleton from "react-loading-skeleton";
+import Image from "next/image.js";
 
 const LazyGalleryItem = ({ item }) => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -16,7 +17,7 @@ const LazyGalleryItem = ({ item }) => {
     <>
       {isLoaded ? (
         <div className="work-page-gallery-item img-fluid" key={key}>
-          {item.svg}
+          <Image src={item.src} />
           <div className="work-page-gallery-item-headings">
             <h5>{item.organization}</h5>
             <h3>{item.title}</h3>

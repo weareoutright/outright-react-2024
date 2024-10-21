@@ -37,8 +37,6 @@ const ClientWorkPageLayout = ({ clientProject }) => {
             setCurrentWaypoint(waypoint);
             setCurrentOrder(order);
 
-            console.log(entry.target.dataset);
-
             if (entry.target.dataset.waypoint === "Contact") {
               setSpinnerOpacity(1);
               setSiteHidelineDisplay("none");
@@ -50,7 +48,7 @@ const ClientWorkPageLayout = ({ clientProject }) => {
           }
         });
       },
-      { threshold: 0.25 } // Component must be at least ##% visible
+      { threshold: 0.75 } // Component must be at least ##% visible
     );
 
     const pageComponents = pageComponentsRef.current;
@@ -58,16 +56,16 @@ const ClientWorkPageLayout = ({ clientProject }) => {
 
     // Observe components
     if (pageComponents) {
-      const children = pageComponents.querySelectorAll("[data-waypoint]"); // Select all elements with data-waypoint attribute
-      children.forEach((child) => observer.observe(child)); // Observe each child element
+      const children = pageComponents.querySelectorAll("[data-waypoint]");
+      children.forEach((child) => observer.observe(child));
     }
     if (contact) observer.observe(contact);
 
     // Cleanup on unmount
     return () => {
       if (pageComponents) {
-        const children = pageComponents.querySelectorAll("[data-waypoint]"); // Select all elements with data-waypoint attribute
-        children.forEach((child) => observer.observe(child)); // Observe each child element
+        const children = pageComponents.querySelectorAll("[data-waypoint]");
+        children.forEach((child) => observer.observe(child));
       }
       if (contact) observer.unobserve(contact);
     };

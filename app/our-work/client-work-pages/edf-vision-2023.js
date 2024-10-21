@@ -1,3 +1,4 @@
+import Project from "./newProjectConstructor";
 import BG from "./assets/edf-vision-2023/edf-vision-2023-bg.png";
 import BENTO_TOP from "./assets/edf-vision-2023/edf-vision-2023-bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/edf-vision-2023/edf-vision-2023-bento-bottom-left.png";
@@ -6,37 +7,27 @@ import BENTO_BOTTOM_RIGHT from "./assets/edf-vision-2023/edf-vision-2023-bento-b
 import FULL_WIDTH_IMG from "./assets/edf-vision-2023/edf-vision-2023-full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/edf-vision-2023/edf-vision-2023-client-spotlight.png";
 
-export const EDF_VISION_2023 = {
-  hero: {
-    hero_bg_img: BG,
-    header: {
-      client_full_name: "Environmental Defense Fund",
-      project_title: "Vision 2023",
-      tags: ["microsites", "ux/ui", "website development"],
-    },
-  },
+export const EDF_VISION_2023 = new Project({
+  hero_bg_img: BG,
+  client_full_name: "Environmental Defense Fund",
+  project_title: "Vision 2023",
+  tags: ["microsites", "ux/ui", "website development"],
   main_headline: (
     <>Visualizing an ambitious plan for climate action this decade.</>
   ),
-  bento_images: {
-    top: BENTO_TOP,
-    bottom_left: BENTO_BOTTOM_LEFT,
-    bottom_mid: BENTO_BOTTOM_MID,
-    bottom_right: BENTO_BOTTOM_RIGHT,
-  },
-  client_quote: {
-    quote: (
-      <>
-        Outright&apos;s ability to meet our design challenges across tone,
-        audiences, and programmatic offerings was very impressive.
-      </>
-    ),
-    speaker: {
-      name: "Denise Beek",
-      title: "Chief Communications Officer",
-      org: "me too. International",
-    },
-  },
+  bento_top: BENTO_TOP,
+  bento_bottom_left: BENTO_BOTTOM_LEFT,
+  bento_bottom_mid: BENTO_BOTTOM_MID,
+  bento_bottom_right: BENTO_BOTTOM_RIGHT,
+  quote: (
+    <>
+      Outright&apos;s ability to meet our design challenges across tone,
+      audiences, and programmatic offerings was very impressive.
+    </>
+  ),
+  speaker_name: "Denise Beek",
+  speaker_title: "Chief Communications Officer",
+  speaker_org: "me too. International",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
@@ -58,4 +49,4 @@ export const EDF_VISION_2023 = {
   ),
   prev_page: "/",
   next_page: "/experience-fayetteville-embrace-the-day-savor-the-night",
-};
+});
