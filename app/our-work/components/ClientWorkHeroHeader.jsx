@@ -8,7 +8,11 @@ const ClientWorkHeroHeader = ({ heroHeader, waypoint }) => {
       <h3>{project_title}</h3>
       <div className="project-tags">
         {tags?.map((tag) => {
-          return <div className="tag-pill">{tag.toUpperCase()}</div>;
+          return (
+            <div key={tag} className="tag-pill">
+              {tag.toUpperCase()}
+            </div>
+          );
         })}
       </div>
     </div>
