@@ -36,21 +36,26 @@ export const EDF_VISION_2023 = {
       title: "Chief Communications Officer",
       org: "me too. International",
     },
-    fullWidthImg: FULL_WIDTH_IMG,
-    client_spotlight: CLIENT_SPOTLIGHT,
-    project_overview: (
-      <>
-        With an ambitious climate action plan for the decade, the Environmental
-        Defense Fund enlisted Outright to create a bespoke, interactive web
-        experience to mobilize the most promising climate opportunities. The key
-        challenge was to present extensive content and research in a captivating
-        way. We distilled rich information into a visual narrative, using
-        human-focused photography and inventive UX strategies to drive awareness
-        and engagement. Vision 2030 sets a new standard for web experiences
-        within the organization. Standout features include interactive stories,
-        carefully curated photography, and bold design elements that make
-        information easily digestible and inspire action.
-      </>
-    ),
   },
+  full_width_img: FULL_WIDTH_IMG,
+  client_spotlight: CLIENT_SPOTLIGHT,
+  project_overview: (
+    <>
+      With an ambitious climate action plan for the decade, the Environmental
+      Defense Fund enlisted Outright to create a bespoke, interactive web
+      experience to mobilize the most promising climate opportunities. The key
+      challenge was to present extensive content and research in a captivating
+      way. We distilled rich information into a visual narrative, using
+      human-focused photography and inventive UX strategies to drive awareness
+      and engagement.
+      <br />
+      <br />
+      Vision 2030 sets a new standard for web experiences within the
+      organization. Standout features include interactive stories, carefully
+      curated photography, and bold design elements that make information easily
+      digestible and inspire action.
+    </>
+  ),
+  prev_page: "/",
+  next_page: "/experience-fayetteville-embrace-the-day-savor-the-night",
 };
