@@ -1,121 +1,80 @@
-import dynamic from "next/dynamic";
-
-const RTC = dynamic(() => import("./work-gallery-images/rtc-we-see-more.svg"), {
-  ssr: false,
-});
-const ME_TOO = dynamic(
-  () => import("./work-gallery-images/me-too-rebranding-a-movement.svg"),
-  { ssr: false }
-);
-const MARRIOTT_HORIZONS = dynamic(
-  () =>
-    import("./work-gallery-images/marriott-intl-leading-to-new-horizons.svg"),
-  { ssr: false }
-);
-const GOOGLE_YT_BIG_GAME = dynamic(
-  () => import("./work-gallery-images/google-yt-big-game.svg"),
-  { ssr: false }
-);
-const OP_AGENDA_NARRATIVES = dynamic(
-  () => import("./work-gallery-images/op-agenda-shifting-narratives.svg"),
-  { ssr: false }
-);
-const EXP_FAYETTEVILLE_EMBRACE_THE_DAY = dynamic(
-  () => import("./work-gallery-images/ex-fayetteville-embrace-the-day.svg"),
-  { ssr: false }
-);
-const GOOGLE_YT_COACHELLA = dynamic(
-  () => import("./work-gallery-images/google-yt-coachella.svg"),
-  { ssr: false }
-);
-const EDF_VISION_2023 = dynamic(
-  () => import("./work-gallery-images/edf-vision-2023.svg"),
-  { ssr: false }
-);
-const WRI_DATA_DRIVEN = dynamic(
-  () => import("./work-gallery-images/wri-data-driven-revolution.svg"),
-  { ssr: false }
-);
-const MODEV_NEW_ERA = dynamic(
-  () => import("./work-gallery-images/modev-new-era.svg"),
-  { ssr: false }
-);
-const PAIC_YOU_GOT_QUESTIONS = dynamic(
-  () => import("./work-gallery-images/paic-you-got-questions.svg"),
-  { ssr: false }
-);
-const GOOGLE_YT_BEAUTYFEST = dynamic(
-  () => import("./work-gallery-images/google-yt-beautyfest.svg"),
-  { ssr: false }
-);
-const WPA_PEOPLE_TOGETHER = dynamic(
-  () => import("./work-gallery-images/wpa-people-together.svg"),
-  { ssr: false }
-);
+import RTC from "./work-gallery-images/rtc-we-see-more.png";
+import ME_TOO from "./work-gallery-images/me-too-rebranding-a-movement.png";
+import MARRIOTT_HORIZONS from "./work-gallery-images/marriott-intl-leading-to-new-horizons.png";
+import GOOGLE_YT_BIG_GAME from "./work-gallery-images/google-yt-big-game.png";
+import OP_AGENDA_NARRATIVES from "./work-gallery-images/op-agenda-shifting-narratives.png";
+import EXP_FAYETTEVILLE_EMBRACE_THE_DAY from "./work-gallery-images/ex-fayetteville-embrace-the-day.png";
+import GOOGLE_YT_COACHELLA from "./work-gallery-images/google-yt-coachella.png";
+import EDF_VISION_2023 from "./work-gallery-images/edf-vision-2023.png";
+import WRI_DATA_DRIVEN from "./work-gallery-images/wri-data-driven-revolution.png";
+import MODEV_NEW_ERA from "./work-gallery-images/modev-new-era.png";
+import PAIC_YOU_GOT_QUESTIONS from "./work-gallery-images/paic-you-got-questions.png";
+import GOOGLE_YT_BEAUTYFEST from "./work-gallery-images/google-yt-beautyfest.png";
+import WPA_PEOPLE_TOGETHER from "./work-gallery-images/wpa-people-together.png";
 
 export const GALLERY_ITEMS = [
   {
-    svg: <RTC />,
+    src: RTC,
     organization: "Rails to Trails Conservancy",
     title: "We See More than a Trail",
   },
   {
-    svg: <ME_TOO />,
+    src: ME_TOO,
     organization: "me too. International",
     title: "Rebranding a Movement",
   },
   {
-    svg: <MARRIOTT_HORIZONS />,
+    src: MARRIOTT_HORIZONS,
     organization: "Marriott International",
     title: "Leading to New Horizons",
   },
   {
-    svg: <GOOGLE_YT_BIG_GAME />,
+    src: GOOGLE_YT_BIG_GAME,
     organization: "Google/Youtube",
     title: "Big Game, Bigger Ads",
   },
   {
-    svg: <OP_AGENDA_NARRATIVES />,
+    src: OP_AGENDA_NARRATIVES,
     organization: "The Opportunity Agenda",
     title: "Shifting Narratives",
   },
   {
-    svg: <EXP_FAYETTEVILLE_EMBRACE_THE_DAY />,
+    src: EXP_FAYETTEVILLE_EMBRACE_THE_DAY,
     organization: "Experience Fayetteville",
     title: "Embrace the Day, Savor the Night",
   },
   {
-    svg: <GOOGLE_YT_COACHELLA />,
+    src: GOOGLE_YT_COACHELLA,
     organization: "Google / Youtube",
     title: "Connecting Beyond Coachella",
   },
   {
-    svg: <EDF_VISION_2023 />,
+    src: EDF_VISION_2023,
     organization: "Environmental Defense Fund",
     title: "Vision 2023",
   },
   {
-    svg: <WRI_DATA_DRIVEN />,
+    src: WRI_DATA_DRIVEN,
     organization: "World Resource Institute",
     title: "Data-Driven Revolution",
   },
   {
-    svg: <MODEV_NEW_ERA />,
+    src: MODEV_NEW_ERA,
     organization: "Modev",
     title: "AI Event for a New Era",
   },
   {
-    svg: <PAIC_YOU_GOT_QUESTIONS />,
+    src: PAIC_YOU_GOT_QUESTIONS,
     organization: "Pennsylvania Immunization Coalition",
     title: "You've Got Questions",
   },
   {
-    svg: <GOOGLE_YT_BEAUTYFEST />,
+    src: GOOGLE_YT_BEAUTYFEST,
     organization: "Google/Youtube",
     title: "YouTube Shopping x #BeautyFest",
   },
   {
-    svg: <WPA_PEOPLE_TOGETHER />,
+    src: WPA_PEOPLE_TOGETHER,
     organization: "Washington Project for the Arts",
     title: "Art That Brings People Together",
   },
