@@ -46,6 +46,13 @@
       .work-page-gallery-item {
         display: block;
         width: auto;
+
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
         img,
         svg {
           border-radius: 20px;

@@ -65,7 +65,7 @@ const ClientWorkPageLayout = ({ clientProject }) => {
     return () => {
       if (pageComponents) {
         const children = pageComponents.querySelectorAll("[data-waypoint]");
-        children.forEach((child) => observer.observe(child));
+        children.forEach((child) => observer.unobserve(child));
       }
       if (contact) observer.unobserve(contact);
     };

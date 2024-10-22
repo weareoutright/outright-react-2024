@@ -1,9 +1,8 @@
-import Spinner from "./Spinner";
 import Image from "next/image";
 import SCRIBBLE_LINE from "../assets/scribble-line.gif";
 import LOGO_O from "../assets/logo-o.svg";
 
-const PaneInner = ({ pane, spinnerOpacity, spinnerYPos }) => {
+const PaneInner = ({ pane }) => {
   return (
     <>
       <div
@@ -11,7 +10,7 @@ const PaneInner = ({ pane, spinnerOpacity, spinnerYPos }) => {
           pane.attributes.id
         } container-${pane.attributes.containerClasses.join(
           " container-"
-        )} container-bg-${pane.background}`}
+        )} container-bg-${pane.background} `}
       >
         <div className="row">
           {pane.background_video && (
@@ -73,25 +72,12 @@ const PaneInner = ({ pane, spinnerOpacity, spinnerYPos }) => {
             <div className="pane-content">{pane.content}</div>
           </div>
         </div>
-        {pane.attributes.id === "contactform" && (
+        {/* {pane.attributes.id === "contactform" && (
           <Spinner
             text="Send it!"
             classes="spinner-contact spinner-contactform"
           />
-        )}
-        {pane.attributes.id === "contact" && (
-          <Spinner
-            text="Say hey!"
-            classes="spinner-contact spinner-contactmain"
-            spinnerOpacity={spinnerOpacity}
-            spinnerYPos={spinnerYPos}
-          />
-        )}
-        {/* {pane.attributes.id === "clientscover" && (
-          <Spinner text="" classes="spinner-clients spinner-clientscover" />
-        )} */}
-        {/* Uncomment the line below if you need it */}
-        {/* {include.pane.attributes.id === 'about' && <Spinner text="" id="spinner-about" />} */}
+        )}*/}
       </div>
     </>
   );

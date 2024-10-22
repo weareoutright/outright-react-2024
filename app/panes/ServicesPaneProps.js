@@ -27,7 +27,7 @@ export const pane = {
     containerClasses: ["center"],
   },
   background: "white",
-  order: 10,
+  order: "07",
   waypoint: "Approach",
   content: <ServicesPane />,
 };

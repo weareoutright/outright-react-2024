@@ -34,11 +34,13 @@ export const EDF_VISION_2023 = new Project({
     <>
       With an ambitious climate action plan for the decade, the Environmental
       Defense Fund enlisted Outright to create a bespoke, interactive web
-      experience to mobilize the most promising climate opportunities. The key
-      challenge was to present extensive content and research in a captivating
-      way. We distilled rich information into a visual narrative, using
-      human-focused photography and inventive UX strategies to drive awareness
-      and engagement.
+      experience to mobilize the most promising climate opportunities.
+      <br />
+      <br />
+      The key challenge was to present extensive content and research in a
+      captivating way. We distilled rich information into a visual narrative,
+      using human-focused photography and inventive UX strategies to drive
+      awareness and engagement.
       <br />
       <br />
       Vision 2030 sets a new standard for web experiences within the

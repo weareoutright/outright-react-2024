@@ -34,7 +34,9 @@ const HeroPane = () => {
       <div className="work-page-headline page-utility-component page-utility-lower page-utility-center">
         <h2 className="site-headline">
           <span>Elevated creative for modern brands</span>
-          <CHEVRON_DOWN className="hero-chevron-down" />
+          <a href="#gallery">
+            <CHEVRON_DOWN className="hero-chevron-down" />
+          </a>
         </h2>
       </div>
     </div>

@@ -10,37 +10,41 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    h1 {
-      color: $dark;
-      text-transform: uppercase;
-      font-size: em(115);
-      font-style: normal;
-      font-weight: 400;
-      line-height: 1em;
-      padding-right: 1.5em;
-      font-family: $fontAlt;
-      letter-spacing: -3.45px;
-    }
-    .work-subheading {
-      font-family: $fontSans;
-      font-size: em(48);
-      letter-spacing: -1.44px;
-      line-height: 0%;
-      color: $dark;
-      span {
-        color: $dark;
-        transition: background-image 300ms;
-        padding-bottom: 0.2em;
-        background-image: url("../../assets/scribble-line-dark.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom;
+    justify-content: flex-start;
+    .check-out-our-work-link {
+      margin-left: 0;
+      &:hover {
         text-decoration: none;
+      }
+      h1 {
+        color: $dark;
+        text-transform: uppercase;
+        font-size: em(115);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1em;
+        padding-right: 1.5em;
+        font-family: $fontAlt;
+        letter-spacing: -3.45px;
+      }
+      .work-subheading {
+        font-family: $fontSans;
+        font-size: em(48);
+        letter-spacing: -1.44px;
+        line-height: 50%;
+        color: $dark;
+        margin-left: 0;
+      }
+      svg {
+        transition: 200ms ease-in-out;
+      }
+      .hidden {
+        display: none;
       }
     }
   }
 
-  a {
+  .right-chevron-link {
     transform: rotate(-90deg);
 
     &:hover {

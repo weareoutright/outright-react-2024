@@ -1,6 +1,6 @@
 import PaneInner from "./PaneInner";
 
-const PaneOuter = ({ pane, spinnerOpacity, spinnerYPos }) => {
+const PaneOuter = ({ pane }) => {
   return (
     <section
       className={`pane pane-bg-${pane.background} pane-${pane.collection} 
@@ -12,20 +12,17 @@ const PaneOuter = ({ pane, spinnerOpacity, spinnerYPos }) => {
       data-anchor={pane.attributes.id}
       data-waypoint={pane.waypoint}
       data-bg={pane.background}
-      style={
-        pane.background_image
-          ? {
-              backgroundImage: `url('../assets/${pane.background_image}')`,
-            }
-          : {}
-      }
+      style={{
+        backgroundImage: pane.background_image
+          ? `url('../assets/${pane.background_image})`
+          : "",
+        height: pane.attributes.id === "see-more" ? "75vh" : "100%",
+        scrollSnapAlign: pane.attributes.id === "see-more" ? "center" : "start",
+      }}
     >
       {/* Include the primary pane content */}
-      <PaneInner
-        pane={pane}
-        spinnerOpacity={spinnerOpacity}
-        spinnerYPos={spinnerYPos}
-      />
+      <PaneInner pane={pane} />
+
       {pane.attributes.id === "contact" && (
         <div className="o-wrapper">
           <div className="o-outer"></div>

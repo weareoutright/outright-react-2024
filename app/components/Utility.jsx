@@ -96,7 +96,9 @@ const Utility = ({
               />
               Elevated creative for modern brands
             </span>
-            <CHEVRON_DOWN className="hero-chevron-down" />
+            <a href="#featured-01">
+              <CHEVRON_DOWN className="hero-chevron-down" />
+            </a>
           </h2>
         </div>
         <div className="page-utility-component page-utility-upper page-utility-right">
