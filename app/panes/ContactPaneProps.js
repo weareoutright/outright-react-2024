@@ -13,7 +13,7 @@ export const pane = {
     autoheight_responsive: true,
   },
   background: "white",
-  order: "06",
+  order: "08",
   waypoint: "Contact",
   content: <ContactPane />,
 };

@@ -1,8 +1,21 @@
 .spinner {
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  transform-origin: 50% 100%;
-  transform: translateY(0%) translateX(-40%) !important;
+  transform-origin: 100% 100%;
+  transform: translateY(165%) translateX(-50%) !important;
+  animation: breathe 3s linear infinite;
+
+  @keyframes breathe {
+    0% {
+      scale: 100%;
+    }
+    50% {
+      scale: 103%;
+    }
+    100% {
+      scale: 100%;
+    }
+  }
 }
 
 .spinner-circle,

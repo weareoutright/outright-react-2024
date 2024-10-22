@@ -144,6 +144,7 @@ export default function Home() {
         data-waypoint={YouTubePane.waypoint}
         data-order={YouTubePane.order}
         data-scrollbar={YouTubePane.background}
+        id="featured-01"
       >
         <PaneOuter pane={YouTubePane} />
       </div>

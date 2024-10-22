@@ -10,12 +10,11 @@ import { pane as WorkGalleryHeroProps } from "./WorkGalleryHeroProps";
 
 const WorkPage = () => {
   // State to track currently visible component's waypoint and order
+  const [scrollbarColor, setScrollbarColor] = useState("");
   const [currentWaypoint, setCurrentWaypoint] = useState("");
   const [currentOrder, setCurrentOrder] = useState("");
-  const [siteHeadlineOpacity, setSiteHeadlineOpacity] = useState(1);
-  const [siteHeadlineDisplay, setSiteHidelineDisplay] = useState("block");
-  const [spinnerYPos, setSpinnerYPos] = useState("50%");
   const [spinnerOpacity, setSpinnerOpacity] = useState(0);
+
   const containerRef = useRef(null);
 
   // Refs for the components you want to observe
@@ -28,28 +27,26 @@ const WorkPage = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const { waypoint, order } = entry.target.dataset;
+            const { waypoint, order, scrollbar } = entry.target.dataset;
+            const hasChartreuseBg = "chartreuse" === scrollbar;
             setCurrentWaypoint(waypoint);
             setCurrentOrder(order);
 
+            if (hasChartreuseBg)
+              setScrollbarColor("chartreuse-inverted-scrollbar");
+            else setScrollbarColor("light-scrollbar");
+
             if (entry.target.dataset.waypoint === "Contact") {
               setSpinnerOpacity(1);
-              setSiteHidelineDisplay("none");
-            } else {
+            }
+
+            if (entry.target.dataset.waypoint !== "Contact") {
               setSpinnerOpacity(0);
-            }
-
-            if (entry.target.dataset.waypoint === "Work Page") {
-              setSiteHidelineDisplay("block");
-            }
-
-            if (entry.target.dataset.waypoint === "Gallery") {
-              setSiteHidelineDisplay("none");
             }
           }
         });
       },
-      { threshold: 0.25 } // Component must be at least ##% visible
+      { threshold: 0.75 } // Component must be at least ##% visible
     );
 
     const hero = heroPaneRef.current;
@@ -58,50 +55,51 @@ const WorkPage = () => {
 
     // Observe components
     if (hero) observer.observe(hero);
-    if (workGallery) observer.observe(workGallery);
+    if (workGallery) {
+      const children = workGallery.querySelectorAll("[data-waypoint]");
+      children.forEach((child) => observer.observe(child));
+    }
     if (contact) observer.observe(contact);
 
     // Cleanup on unmount
     return () => {
-      if (hero) observer.observe(hero);
-      if (workGallery) observer.observe(workGallery);
-      if (contact) observer.observe(contact);
+      if (hero) observer.unobserve(hero);
+      if (workGallery) {
+        const children = workGallery.querySelectorAll("[data-waypoint]");
+        children.forEach((child) => observer.observe(child));
+      }
+      if (contact) observer.unobserve(contact);
     };
   }, []);
 
   return (
-    <div className="WorkPage" ref={containerRef}>
+    <div className={`WorkPage ${scrollbarColor}`} ref={containerRef}>
       <WorkGalleryUtility
         waypoint={currentWaypoint}
         order={currentOrder}
-        siteHeadlineOpacity={siteHeadlineOpacity}
-        siteHeadlineDisplay={siteHeadlineDisplay}
         spinnerOpacity={spinnerOpacity}
       />
       <div
         ref={heroPaneRef}
         data-waypoint={WorkGalleryHeroProps.waypoint}
         data-order={WorkGalleryHeroProps.order}
+        data-scrollbar="chartreuse"
       >
         <WorkGalleryHero pane={WorkGalleryHeroProps} />
       </div>
       <div
-        className="work-page-gallery"
         ref={workGalleryRef}
         data-waypoint={WorkGalleryHeroProps.galleryWaypoint}
+        className="work-page-gallery"
       >
-        <Gallery />
+        <Gallery waypoint={WorkGalleryHeroProps.galleryWaypoint} />
       </div>
       <div
         ref={contactRef}
         data-waypoint={ContactPaneProps.waypoint}
         data-order={ContactPaneProps.order}
       >
-        <PaneOuter
-          pane={ContactPaneProps}
-          spinnerOpacity={spinnerOpacity}
-          spinnerYPos={spinnerYPos}
-        />
+        <PaneOuter pane={ContactPaneProps} spinnerOpacity={spinnerOpacity} />
       </div>
     </div>
   );
