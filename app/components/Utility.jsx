@@ -13,7 +13,7 @@ const Utility = ({
   order,
   siteHeadlineOpacity,
   siteHeadlineDisplay,
-  spinnerOpacity,
+  privacyPolicyOpacity,
 }) => {
   return (
     <>
@@ -54,7 +54,7 @@ const Utility = ({
         >
           <p
             style={{
-              opacity: spinnerOpacity,
+              opacity: waypoint === "Contact" ? 1 : privacyPolicyOpacity,
               transition: "200ms ease-in-out",
             }}
           >
