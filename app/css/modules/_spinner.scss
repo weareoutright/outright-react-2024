@@ -1,20 +1,13 @@
-.spinner {
-  position: absolute;
-  overflow: hidden;
-  transform-origin: 100% 100%;
-  transform: translateY(165%) translateX(-50%) !important;
-  animation: breathe 3s linear infinite;
+.spinner-no-show {
+  transform: translateX(-50%) translateY(100%) !important;
+}
 
-  @keyframes breathe {
-    0% {
-      scale: 100%;
-    }
-    50% {
-      scale: 103%;
-    }
-    100% {
-      scale: 100%;
-    }
+@keyframes slide-to-bottom {
+  0% {
+    transform: translateX(-50%) translateY(0%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(100%);
   }
 }
 
@@ -134,11 +127,12 @@
 .spinner-contact {
   left: 50%;
   bottom: 0;
-  transform: translateX(-50%);
+  animation: 220ms linear appear-from-bottom;
+  transform: translateX(-50%) translateY(0%);
   // cursor:	$cursorActive;
+
   @include spinner-hover(180, 0);
   position: absolute;
-  animation: 2s ease-in-out infinite spinner-contact-throb;
   backface-visibility: hidden;
   transition: transform 0.33s ease-out;
   z-index: 10;
@@ -158,6 +152,15 @@
     .spinner-circle-contrast {
       border-color: $chartreuse;
     }
+  }
+}
+
+@keyframes appear-from-bottom {
+  0% {
+    transform: translateX(-50%) translateY(100%);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0%);
   }
 }
 

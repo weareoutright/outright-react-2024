@@ -4,7 +4,7 @@ import Spinner from "../components/Spinner";
 const ContactPane = () => {
   return (
     <>
-      <div className="ContactPane" id="pant-contact">
+      <div className="ContactPane" id="pane-contact">
         {/* <OAnimation /> */}
         <ul className="no-list contact-list pane-content">
           <li>
@@ -96,12 +96,6 @@ const ContactPane = () => {
           </li>
         </ul>
       </div>
-      <Spinner
-        text="Say hey!"
-        classes="spinner-contact spinner-contactmain"
-        // spinnerOpacity={spinnerOpacity}
-        // spinnerYPos={spinnerYPos}
-      />
     </>
   );
 };

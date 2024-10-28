@@ -16,8 +16,6 @@ import { pane as AboutPaneProps } from "./panes/AboutPaneProps.js";
 export default function Home() {
   const [siteHeadlineOpacity, setSiteHeadlineOpacity] = useState(1);
   const [siteHeadlineDisplay, setSiteHidelineDisplay] = useState("block");
-  const [spinnerYPos, setSpinnerYPos] = useState("-50%");
-  const [spinnerOpacity, setSpinnerOpacity] = useState(0);
   const [scrollbarColor, setScrollbarColor] = useState("");
   const containerRef = useRef(null);
 
@@ -73,16 +71,14 @@ export default function Home() {
             if (hasImgBg) setScrollbarColor("img-scrollbar");
 
             if (entry.target.dataset.waypoint === "Contact") {
-              setSpinnerOpacity(1);
               setSiteHidelineDisplay("none");
             } else {
-              setSpinnerOpacity(0);
               setSiteHidelineDisplay("block");
             }
           }
         });
       },
-      { threshold: 0.25 } // Component must be at least ##% visible
+      { threshold: 0.5 } // Component must be at least ##% visible
     );
 
     const hero = heroPaneRef.current;
@@ -125,7 +121,6 @@ export default function Home() {
         order={currentOrder}
         siteHeadlineOpacity={siteHeadlineOpacity}
         siteHeadlineDisplay={siteHeadlineDisplay}
-        spinnerOpacity={spinnerOpacity}
       />
 
       {/* HeroPane observed */}
@@ -195,11 +190,7 @@ export default function Home() {
         data-order={ContactPaneProps.order}
         data-scrollbar={ContactPaneProps.background}
       >
-        <PaneOuter
-          pane={ContactPaneProps}
-          spinnerOpacity={spinnerOpacity}
-          spinnerYPos={spinnerYPos}
-        />
+        <PaneOuter pane={ContactPaneProps} currentWaypoint={currentWaypoint} />
       </div>
     </div>
   );
