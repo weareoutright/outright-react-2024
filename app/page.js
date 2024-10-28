@@ -16,6 +16,7 @@ import { pane as AboutPaneProps } from "./panes/AboutPaneProps.js";
 export default function Home() {
   const [siteHeadlineOpacity, setSiteHeadlineOpacity] = useState(1);
   const [siteHeadlineDisplay, setSiteHidelineDisplay] = useState("block");
+  const [privacyHeadlineOpacity, setPrivacyHeadlineOpacity] = useState(1);
   const [scrollbarColor, setScrollbarColor] = useState("");
   const containerRef = useRef(null);
 
@@ -25,6 +26,7 @@ export default function Home() {
       const scrollPos = containerRef.current?.scrollTop || 0;
       const newOpacity = Math.max(1 - scrollPos / maxScroll, 0);
       setSiteHeadlineOpacity(newOpacity);
+      setPrivacyHeadlineOpacity(newOpacity);
     };
 
     const container = containerRef.current;
@@ -121,6 +123,7 @@ export default function Home() {
         order={currentOrder}
         siteHeadlineOpacity={siteHeadlineOpacity}
         siteHeadlineDisplay={siteHeadlineDisplay}
+        privacyPolicyOpacity={privacyHeadlineOpacity}
       />
 
       {/* HeroPane observed */}
