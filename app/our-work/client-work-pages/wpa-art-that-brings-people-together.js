@@ -42,5 +42,5 @@ export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
   prev_page: async () => (await import("./rtc-we-see-more")).RTC_WE_SEE_MORE,
   next_page: async () =>
     (await import("./wri-data-driven-revolution")).WRI_DATA_DRIVEN_REVOLUTION,
-  slug: "washington-project-of-the-arts-art-that-brings-people-together",
+  slug: "/washington-project-of-the-arts-art-that-brings-people-together",
 });

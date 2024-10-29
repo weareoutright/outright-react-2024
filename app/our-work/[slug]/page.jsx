@@ -2,16 +2,14 @@
 
 import ClientWorkPageLayout from "../ClientWorkPageLayout";
 import { useParams } from "next/navigation";
-import { EDF_VISION_2023 } from "../client-work-pages/edf-vision-2023";
+import PROJECT_SLUGS from "../client-work-pages/index.js";
 
 const ClientWorkPage = () => {
   const { slug } = useParams();
 
-  const projects = {
-    "edf-vision-2023": EDF_VISION_2023,
-  };
+  const currentPage = PROJECT_SLUGS[`/our-work/${slug}`].module;
 
-  return <ClientWorkPageLayout clientProject={projects[slug]} />;
+  return <ClientWorkPageLayout clientProject={currentPage} />;
 };
 
 export default ClientWorkPage;

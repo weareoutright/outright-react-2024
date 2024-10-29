@@ -60,5 +60,5 @@ export const RTC_WE_SEE_MORE = new Project({
   next_page: async () =>
     (await import("./wpa-art-that-brings-people-together"))
       .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
-  slug: "rails-to-trails-conservancy-we-see-more-than-a-trail",
+  slug: "/rails-to-trails-conservancy-we-see-more-than-a-trail",
 });

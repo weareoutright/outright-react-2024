@@ -7,7 +7,7 @@ import BENTO_BOTTOM_RIGHT from "./assets/modev-ai-new-era/bento-bottom-right.png
 import FULL_WIDTH_IMG from "./assets/modev-ai-new-era/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/modev-ai-new-era/client-spotlight.png";
 
-export const MODEV_AI_NEW_ERA = new Project({
+export const MODEV_AI_EVENT_FOR_A_NEW_ERA = new Project({
   hero_bg_img: BG,
   client_full_name: "Modev",
   project_title: "AI Event for a New Era",

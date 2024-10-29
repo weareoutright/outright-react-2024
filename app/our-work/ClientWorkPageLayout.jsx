@@ -40,17 +40,16 @@ const ClientWorkPageLayout = ({ clientProject }) => {
   useEffect(() => {
     // Resolve async prev_page and next_page
     const fetchPrevNextPages = async () => {
+      if (_prev_page === "/") setPrevPage("/");
+      if (_next_page === "/") setNextPage("/");
+
       if (_prev_page !== "/") {
         const resolvedPrevPage = await _prev_page();
         setPrevPage(resolvedPrevPage);
-      } else {
-        setPrevPage("/");
       }
       if (_next_page !== "/") {
         const resolvedNextPage = await _next_page();
         setNextPage(resolvedNextPage);
-      } else {
-        setNextPage("/");
       }
     };
     fetchPrevNextPages();
@@ -93,10 +92,6 @@ const ClientWorkPageLayout = ({ clientProject }) => {
       if (contact) observer.unobserve(contact);
     };
   }, []);
-
-  useEffect(() => {
-    console.log(clientProject, _prev_page, _next_page().slug);
-  });
 
   return (
     <div className="ClientWorkPage" ref={clientWorkPageContainerRef}>

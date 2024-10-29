@@ -7,7 +7,7 @@ import BENTO_BOTTOM_RIGHT from "./assets/exp-faye-embrace-the-day/bento-bottom-r
 import FULL_WIDTH_IMG from "./assets/exp-faye-embrace-the-day/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/exp-faye-embrace-the-day/client-spotlight.png";
 
-export const EXP_FAYE_EMBRACE_THE_DAY = new Project({
+export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
   hero_bg_img: BG,
   client_full_name: "Experience Fayetteville",
   project_title: "Embrace The Day, Savor The Night",

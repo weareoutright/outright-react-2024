@@ -9,7 +9,7 @@ import CLIENT_SPOTLIGHT from "./assets/google-yt-beauty-fest/client-spotlight.pn
 
 // prev_page & next_page slug imports
 
-export const GOOGLE_YT_BEAUTY_FEST = new Project({
+export const GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST = new Project({
   hero_bg_img: BG,
   client_full_name: "Google / YouTube",
   project_title: "YouTube Shopping x #BeautyFest",
