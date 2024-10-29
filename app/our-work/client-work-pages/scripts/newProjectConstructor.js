@@ -19,6 +19,7 @@ class Project {
     prev_page,
     next_page,
     slug,
+    galleryThumbnail,
   }) {
     this.hero = {
       hero_bg_img,
@@ -49,6 +50,7 @@ class Project {
     this._prev_page = prev_page;
     this._next_page = next_page;
     this.slug = slug;
+    this.galleryThumbnail = galleryThumbnail;
   }
 
   // Async Getter for prev_page

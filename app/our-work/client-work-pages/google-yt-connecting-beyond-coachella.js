@@ -6,6 +6,7 @@ import BENTO_BOTTOM_MID from "./assets/google-yt-connecting-beyond-coachella/ben
 import BENTO_BOTTOM_RIGHT from "./assets/google-yt-connecting-beyond-coachella/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/google-yt-connecting-beyond-coachella/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/google-yt-connecting-beyond-coachella/client-spotlight.png";
+import GOOGLE_YT_CONNECTING_BEYOND_COACHELLA_THUMBNAIL from "./assets/google-yt-connecting-beyond-coachella/thumbnail.png";
 
 export const GOOGLE_YT_CONNECTING_BEYOND_COACHELLA = new Project({
   hero_bg_img: BG,
@@ -49,4 +50,5 @@ export const GOOGLE_YT_CONNECTING_BEYOND_COACHELLA = new Project({
       .GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
 
   slug: "/google-youtube-connecting-beyond-coachella",
+  galleryThumbnail: GOOGLE_YT_CONNECTING_BEYOND_COACHELLA_THUMBNAIL,
 });

@@ -4,6 +4,7 @@
   scroll-snap-type: y mandatory; /* Enable vertical snapping */
   overflow-y: scroll; /* Allow scrolling within the container */
   overflow-x: hidden;
+  scroll-behavior: smooth !important;
 
   .WorkPageHero {
     height: 75vh;

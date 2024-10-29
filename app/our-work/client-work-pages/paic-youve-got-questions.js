@@ -6,6 +6,7 @@ import BENTO_BOTTOM_MID from "./assets/paic-youve-got-questions/bento-bottom-mid
 import BENTO_BOTTOM_RIGHT from "./assets/paic-youve-got-questions/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/paic-youve-got-questions/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/paic-youve-got-questions/client-spotlight.png";
+import PAIC_YOUVE_GOT_QUESTIONS_THUMBNAIL from "./assets/paic-youve-got-questions/thumbnail.png";
 
 export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   hero_bg_img: BG,
@@ -52,4 +53,5 @@ export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   next_page: async () => (await import("./rtc-we-see-more")).RTC_WE_SEE_MORE,
 
   slug: "/paic-youve-got-questions",
+  galleryThumbnail: PAIC_YOUVE_GOT_QUESTIONS_THUMBNAIL,
 });

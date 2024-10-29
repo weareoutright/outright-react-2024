@@ -6,6 +6,7 @@ import BENTO_BOTTOM_MID from "./assets/wri-data-driven-revolution/bento-bottom-m
 import BENTO_BOTTOM_RIGHT from "./assets/wri-data-driven-revolution/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/wri-data-driven-revolution/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/wri-data-driven-revolution/client-spotlight.png";
+import WRI_DATA_DRIVEN_REVOLUTION_THUMBNAIL from "./assets/wri-data-driven-revolution/thumbnail.png";
 
 export const WRI_DATA_DRIVEN_REVOLUTION = new Project({
   hero_bg_img: BG,
@@ -60,4 +61,5 @@ export const WRI_DATA_DRIVEN_REVOLUTION = new Project({
       .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
   next_page: "/",
   slug: "/world-resources-institute-data-driven-revolution",
+  galleryThumbnail: WRI_DATA_DRIVEN_REVOLUTION_THUMBNAIL,
 });

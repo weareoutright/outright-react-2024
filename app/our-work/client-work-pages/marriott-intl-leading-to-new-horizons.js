@@ -6,8 +6,7 @@ import BENTO_BOTTOM_MID from "./assets/marriott-intl-leading-to-new-horizons/ben
 import BENTO_BOTTOM_RIGHT from "./assets/marriott-intl-leading-to-new-horizons/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/marriott-intl-leading-to-new-horizons/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/marriott-intl-leading-to-new-horizons/client-spotlight.png";
-
-// prev_page & next_page slug imports
+import MARRIOTT_INTL_NEW_HORIZONS_THUMBNAIL from "./assets/marriott-intl-leading-to-new-horizons/thumbnail.png";
 
 export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   hero_bg_img: BG,
@@ -63,4 +62,5 @@ export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
       .ME_TOO_REBRANDING_A_MOVEMENT,
 
   slug: "/marriott-intl-leading-to-new-horizons",
+  galleryThumbnail: MARRIOTT_INTL_NEW_HORIZONS_THUMBNAIL,
 });

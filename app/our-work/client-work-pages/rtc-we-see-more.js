@@ -6,6 +6,7 @@ import BENTO_BOTTOM_MID from "./assets/rtc-we-see-more/bento-bottom-mid.png";
 import BENTO_BOTTOM_RIGHT from "./assets/rtc-we-see-more/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/rtc-we-see-more/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/rtc-we-see-more/client-spotlight.png";
+import RTC_WE_SEE_MORE_THUMBNAIL from "./assets/rtc-we-see-more/thumbnail.png";
 
 export const RTC_WE_SEE_MORE = new Project({
   hero_bg_img: BG,
@@ -61,4 +62,5 @@ export const RTC_WE_SEE_MORE = new Project({
     (await import("./wpa-art-that-brings-people-together"))
       .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
   slug: "/rails-to-trails-conservancy-we-see-more-than-a-trail",
+  galleryThumbnail: RTC_WE_SEE_MORE_THUMBNAIL,
 });

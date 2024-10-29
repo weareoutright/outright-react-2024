@@ -6,6 +6,7 @@ import BENTO_BOTTOM_MID from "./assets/opp-agenda-shifting-narratives/bento-bott
 import BENTO_BOTTOM_RIGHT from "./assets/opp-agenda-shifting-narratives/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/opp-agenda-shifting-narratives/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/opp-agenda-shifting-narratives/client-spotlight.png";
+import OPP_AGENDA_SHIFTING_NARRATIVES_THUMBNAIL from "./assets/opp-agenda-shifting-narratives/thumbnail.png";
 
 export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
   hero_bg_img: BG,
@@ -64,4 +65,5 @@ export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
     (await import("./paic-youve-got-questions")).PAIC_YOUVE_GOT_QUESTIONS,
 
   slug: "/opp-agenda-shifting-narratives",
+  galleryThumbnail: OPP_AGENDA_SHIFTING_NARRATIVES_THUMBNAIL,
 });

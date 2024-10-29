@@ -6,6 +6,7 @@ import BENTO_BOTTOM_MID from "./assets/edf-vision-2023/bento-bottom-mid.png";
 import BENTO_BOTTOM_RIGHT from "./assets/edf-vision-2023/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/edf-vision-2023/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/edf-vision-2023/client-spotlight.png";
+import EDF_VISION_2023_THUMBNAIL from "./assets/edf-vision-2023/thumbnail.png";
 
 export const EDF_VISION_2023 = new Project({
   hero_bg_img: BG,
@@ -52,6 +53,7 @@ export const EDF_VISION_2023 = new Project({
   prev_page: "/",
   next_page: async () =>
     (await import("./exp-faye-embrace-the-day-savor-the-night"))
-      .EXP_FAYE_EMBRACE_THE_DAY,
+      .EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
   slug: "/edf-vision-2023",
+  galleryThumbnail: EDF_VISION_2023_THUMBNAIL,
 });
