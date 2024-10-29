@@ -24,7 +24,7 @@ export const WRI_DATA_DRIVEN_REVOLUTION = new Project({
   bento_bottom_right: BENTO_BOTTOM_RIGHT,
   quote: (
     <>
-      "The data is first class and I refer other people in the land sector to
+      The data is first class and I refer other people in the land sector to
       this website as the first port of call for data.
     </>
   ),

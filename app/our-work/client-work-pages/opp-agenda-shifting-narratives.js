@@ -30,9 +30,9 @@ export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
       their admiration for our new look. We were so pleased with their work that
       we continued to collaborate with Outright on five additional sub-brands,
       each of which beautifully call back to our main brand while remaining
-      distinct. The relationship we've built with their wonderful, smart team
-      has been a highlight of this journey. Their professionalism, insight, and
-      dedication are truly commendable.
+      distinct. The relationship we&apos;ve built with their wonderful, smart
+      team has been a highlight of this journey. Their professionalism, insight,
+      and dedication are truly commendable.
     </>
   ),
   speaker_name: "Rachel Reyes",
