@@ -5,7 +5,7 @@ import TitleLogo from "./TitleLogo";
 import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
 import ICON_X from "../assets/icon-x.svg";
 
-const WorkGalleryUtility = ({ waypoint, spinnerOpacity }) => {
+const WorkGalleryUtility = ({ waypoint }) => {
   return (
     <>
       <header className="Utility WorkPageUtility" id="work-page-utility">
@@ -48,7 +48,7 @@ const WorkGalleryUtility = ({ waypoint, spinnerOpacity }) => {
         >
           <p
             style={{
-              opacity: spinnerOpacity,
+              opacity: waypoint === "Contact" ? 1 : 0,
               transition: "200ms ease-in-out",
             }}
           >

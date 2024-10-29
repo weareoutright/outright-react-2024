@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/google-yt-beauty-fest/hero-bg.png";
 import BENTO_TOP from "./assets/google-yt-beauty-fest/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/google-yt-beauty-fest/bento-bottom-left.png";
@@ -6,6 +6,8 @@ import BENTO_BOTTOM_MID from "./assets/google-yt-beauty-fest/bento-bottom-mid.pn
 import BENTO_BOTTOM_RIGHT from "./assets/google-yt-beauty-fest/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/google-yt-beauty-fest/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/google-yt-beauty-fest/client-spotlight.png";
+
+// prev_page & next_page slug imports
 
 export const GOOGLE_YT_BEAUTY_FEST = new Project({
   hero_bg_img: BG,
@@ -40,6 +42,11 @@ export const GOOGLE_YT_BEAUTY_FEST = new Project({
       the event, making it more vibrant and engaging than ever before.
     </>
   ),
-  prev_page: "/google-youtube-big-game-bigger-ads",
-  next_page: "/google-youtube-connecting-beyond-coachella",
+  prev_page: async () =>
+    (await import("./google-yt-connecting-beyond-coachella"))
+      .GOOGLE_YT_CONNECTING_BEYOND_COACHELLA,
+  next_page: async () =>
+    (await import("./marriott-intl-leading-to-new-horizons"))
+      .MARRIOTT_INTL_NEW_HORIZONS,
+  slug: "/google-youtube-shopping-beauty-fest",
 });

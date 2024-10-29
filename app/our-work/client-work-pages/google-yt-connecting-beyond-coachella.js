@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/google-yt-connecting-beyond-coachella/hero-bg.png";
 import BENTO_TOP from "./assets/google-yt-connecting-beyond-coachella/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/google-yt-connecting-beyond-coachella/bento-bottom-left.png";
@@ -41,6 +41,12 @@ export const GOOGLE_YT_CONNECTING_BEYOND_COACHELLA = new Project({
       experience directly to fans at home.
     </>
   ),
-  prev_page: "/google-youtube-yt-shopping-beauty-fest",
-  next_page: "/opportunity-agenda-shifting-narratives",
+  prev_page: async () =>
+    (await import("./google-yt-big-game-bigger-ads"))
+      .GOOGLE_YT_BIG_GAME_BIGGER_ADS,
+  next_page: async () =>
+    (await import("./google-yt-youtube-shopping-beauty-fest"))
+      .GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
+
+  slug: "/google-youtube-connecting-beyond-coachella",
 });

@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/marriott-intl-leading-to-new-horizons/hero-bg.png";
 import BENTO_TOP from "./assets/marriott-intl-leading-to-new-horizons/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/marriott-intl-leading-to-new-horizons/bento-bottom-left.png";
@@ -6,6 +6,8 @@ import BENTO_BOTTOM_MID from "./assets/marriott-intl-leading-to-new-horizons/ben
 import BENTO_BOTTOM_RIGHT from "./assets/marriott-intl-leading-to-new-horizons/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/marriott-intl-leading-to-new-horizons/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/marriott-intl-leading-to-new-horizons/client-spotlight.png";
+
+// prev_page & next_page slug imports
 
 export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   hero_bg_img: BG,
@@ -53,6 +55,12 @@ export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
       professional and personal growth.
     </>
   ),
-  prev_page: "/opportunity-agenda-shifting-narratives",
-  next_page: "/me-too-intl-rebranding-a-movement",
+  prev_page: async () =>
+    (await import("./google-yt-youtube-shopping-beauty-fest"))
+      .GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
+  next_page: async () =>
+    (await import("./me-too-intl-rebranding-a-movement"))
+      .ME_TOO_REBRANDING_A_MOVEMENT,
+
+  slug: "/marriott-intl-leading-to-new-horizons",
 });

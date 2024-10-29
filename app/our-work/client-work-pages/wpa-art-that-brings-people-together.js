@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/wpa-art-that-brings-people-together/hero-bg.png";
 import BENTO_TOP from "./assets/wpa-art-that-brings-people-together/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/wpa-art-that-brings-people-together/bento-bottom-left.png";
@@ -39,6 +39,8 @@ export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
       mission to provide a community and platform for artists to thrive.
     </>
   ),
-  prev_page: "/world-resources-institute-data-driven-revolution",
-  next_page: "/",
+  prev_page: async () => (await import("./rtc-we-see-more")).RTC_WE_SEE_MORE,
+  next_page: async () =>
+    (await import("./wri-data-driven-revolution")).WRI_DATA_DRIVEN_REVOLUTION,
+  slug: "washington-project-of-the-arts-art-that-brings-people-together",
 });

@@ -142,7 +142,7 @@ export default function Home() {
         data-waypoint={YouTubePane.waypoint}
         data-order={YouTubePane.order}
         data-scrollbar={YouTubePane.background}
-        id="featured-01"
+        id="featured"
       >
         <PaneOuter pane={YouTubePane} />
       </div>
@@ -168,6 +168,7 @@ export default function Home() {
         data-waypoint={OurClientsPaneProps.waypoint}
         data-order={OurClientsPaneProps.order}
         data-scrollbar={OurClientsPaneProps.background}
+        id="clients"
       >
         <PaneOuter pane={OurClientsPaneProps} />
       </div>
@@ -176,6 +177,7 @@ export default function Home() {
         data-waypoint={AboutPaneProps.waypoint}
         data-order={AboutPaneProps.order}
         data-scrollbar={AboutPaneProps.background}
+        id="who-we-are"
       >
         <PaneOuter pane={AboutPaneProps} />
       </div>
@@ -184,6 +186,7 @@ export default function Home() {
         data-waypoint={ServicesPaneProps.waypoint}
         data-order={ServicesPaneProps.order}
         data-scrollbar={ServicesPaneProps.background}
+        id="approach"
       >
         <PaneOuter pane={ServicesPaneProps} />
       </div>

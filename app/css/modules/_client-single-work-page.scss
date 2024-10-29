@@ -2,6 +2,12 @@ $work-page-padding: 100px 250px;
 $work-page-padding-no-top: 0px 250px 100px 250px;
 
 .ClientWorkPage {
+  overflow-y: auto !important;
+  scroll-behavior: auto !important;
+  height: 100vh; /* Full viewport height for each pane */
+  width: 100%;
+  overflow-y: scroll; /* Allow scrolling within the container */
+  overflow-x: hidden;
   .ClientWorkHero {
     img {
       height: auto;

@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/paic-youve-got-questions/hero-bg.png";
 import BENTO_TOP from "./assets/paic-youve-got-questions/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/paic-youve-got-questions/bento-bottom-left.png";
@@ -46,6 +46,10 @@ export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
       and a more nuanced, approachable tone.
     </>
   ),
-  prev_page: "/modev-ai-event-for-a-new-era",
-  next_page: "/rails-to-trails-conservancy-we-see-more-than-a-trail",
+  prev_page: async () =>
+    (await import("./opp-agenda-shifting-narratives"))
+      .OPP_AGENDA_SHIFTING_NARRATIVES,
+  next_page: async () => (await import("./rtc-we-see-more")).RTC_WE_SEE_MORE,
+
+  slug: "/paic-youve-got-questions",
 });

@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "generate-index": "node app/our-work/client-work-pages/scripts/generateIndex.js",
+    "dev": "npm run generate-index && next dev",
+    "build": "npm run generate-index && next build",
     "start": "next start",
     "lint": "next lint"
   },

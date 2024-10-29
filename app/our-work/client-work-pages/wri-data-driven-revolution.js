@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/wri-data-driven-revolution/hero-bg.png";
 import BENTO_TOP from "./assets/wri-data-driven-revolution/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/wri-data-driven-revolution/bento-bottom-left.png";
@@ -55,6 +55,9 @@ export const WRI_DATA_DRIVEN_REVOLUTION = new Project({
       prioritize the actions that drive transformative change.
     </>
   ),
-  prev_page: "/rails-to-trails-conservancy-we-see-more-than-a-trail",
-  next_page: "/washington-project-for-the-arts-art-that-brings-people-together",
+  prev_page: async () =>
+    (await import("./wpa-art-that-brings-people-together"))
+      .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
+  next_page: "/",
+  slug: "/world-resources-institute-data-driven-revolution",
 });

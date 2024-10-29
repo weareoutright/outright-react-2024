@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/opp-agenda-shifting-narratives/hero-bg.png";
 import BENTO_TOP from "./assets/opp-agenda-shifting-narratives/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/opp-agenda-shifting-narratives/bento-bottom-left.png";
@@ -57,6 +57,11 @@ export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
       of page templates with modular components.
     </>
   ),
-  prev_page: "/google-youtube-connecting-beyond-coachella",
-  next_page: "/marriott-intl-leading-to-new-horizons",
+  prev_page: async () =>
+    (await import("./modev-ai-event-for-a-new-era"))
+      .MODEV_AI_EVENT_FOR_A_NEW_ERA,
+  next_page: async () =>
+    (await import("./paic-youve-got-questions")).PAIC_YOUVE_GOT_QUESTIONS,
+
+  slug: "/opp-agenda-shifting-narratives",
 });

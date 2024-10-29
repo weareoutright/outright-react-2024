@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/google-yt-big-game/hero-bg.png";
 import BENTO_TOP from "./assets/google-yt-big-game/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/google-yt-big-game/bento-bottom-left.png";
@@ -51,6 +51,12 @@ export const GOOGLE_YT_BIG_GAME = new Project({
       recall, no matter where a viewer is experiencing it.
     </>
   ),
-  prev_page: "/experience-fayetteville-embrace-the-day-savor-the-night",
-  next_page: "/google-youtube-yt-shoppping-beauty-fest",
+  prev_page: async () =>
+    (await import("./exp-faye-embrace-the-day-savor-the-night"))
+      .EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
+  next_page: async () =>
+    (await import("./google-yt-connecting-beyond-coachella"))
+      .GOOGLE_YT_CONNECTING_BEYOND_COACHELLA,
+
+  slug: "/google-youtube-big-game-bigger-ads",
 });

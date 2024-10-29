@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/exp-faye-embrace-the-day/hero-bg.png";
 import BENTO_TOP from "./assets/exp-faye-embrace-the-day/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/exp-faye-embrace-the-day/bento-bottom-left.png";
@@ -50,6 +50,8 @@ export const EXP_FAYE_EMBRACE_THE_DAY = new Project({
       Fayetteville has to offer.
     </>
   ),
-  prev_page: "/edf-vision-2023",
-  next_page: "/google-youtube-big-game-bigger-ads",
+  prev_page: async () => (await import("./edf-vision-2023")).EDF_VISION_2023,
+  next_page: async () =>
+    (await import("./google-yt-big-game-bigger-ads")).GOOGLE_YT_BIG_GAME,
+  slug: "/experience-fayetteville-embrace-the-day-savor-the-night",
 });

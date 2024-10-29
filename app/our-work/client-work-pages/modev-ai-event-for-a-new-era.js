@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/modev-ai-new-era/hero-bg.png";
 import BENTO_TOP from "./assets/modev-ai-new-era/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/modev-ai-new-era/bento-bottom-left.png";
@@ -54,6 +54,12 @@ export const MODEV_AI_NEW_ERA = new Project({
       vibrant, living entity.
     </>
   ),
-  prev_page: "/me-too-intl-rebranding-a-movement",
-  next_page: "/paic-youve-got-questions",
+  prev_page: async () =>
+    (await import("./me-too-intl-rebranding-a-movement"))
+      .ME_TOO_REBRANDING_A_MOVEMENT,
+  next_page: async () =>
+    (await import("./opp-agenda-shifting-narratives"))
+      .OPP_AGENDA_SHIFTING_NARRATIVES,
+
+  slug: "/modev-ai-event-for-a-new-era",
 });

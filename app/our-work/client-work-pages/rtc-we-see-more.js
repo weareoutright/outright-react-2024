@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/rtc-we-see-more/hero-bg.png";
 import BENTO_TOP from "./assets/rtc-we-see-more/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/rtc-we-see-more/bento-bottom-left.png";
@@ -55,6 +55,10 @@ export const RTC_WE_SEE_MORE = new Project({
       a day outdoors.
     </>
   ),
-  prev_page: "/paic-youve-got-questions",
-  next_page: "/world-resources-institute-data-driven-revolution",
+  prev_page: async () =>
+    (await import("./paic-youve-got-questions")).PAIC_YOUVE_GOT_QUESTIONS,
+  next_page: async () =>
+    (await import("./wpa-art-that-brings-people-together"))
+      .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
+  slug: "rails-to-trails-conservancy-we-see-more-than-a-trail",
 });

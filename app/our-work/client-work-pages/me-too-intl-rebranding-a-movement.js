@@ -1,4 +1,4 @@
-import Project from "./newProjectConstructor";
+import Project from "./scripts/newProjectConstructor";
 import BG from "./assets/me-too-rebranding-a-movement/hero-bg.png";
 import BENTO_TOP from "./assets/me-too-rebranding-a-movement/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/me-too-rebranding-a-movement/bento-bottom-left.png";
@@ -61,6 +61,12 @@ export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
       survivor sanctuary to bold action
     </>
   ),
-  prev_page: "/marriot-intl-leading-to-new-horizons",
-  next_page: "/modev-ai-event-for-a-new-era",
+  prev_page: async () =>
+    (await import("./marriott-intl-leading-to-new-horizons"))
+      .MARRIOTT_INTL_NEW_HORIZONS,
+  next_page: async () =>
+    (await import("./modev-ai-event-for-a-new-era"))
+      .MODEV_AI_EVENT_FOR_A_NEW_ERA,
+
+  slug: "/me-too-intl-rebranding-a-movement",
 });
