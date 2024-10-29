@@ -15,7 +15,7 @@ const WorkPage = () => {
   const [currentOrder, setCurrentOrder] = useState("");
   const [spinnerOpacity, setSpinnerOpacity] = useState(0);
 
-  const containerRef = useRef(null);
+  const workPageContainerRef = useRef(null);
 
   // Refs for the components you want to observe
   const heroPaneRef = useRef(null);
@@ -46,7 +46,7 @@ const WorkPage = () => {
           }
         });
       },
-      { threshold: 0.75 } // Component must be at least ##% visible
+      { threshold: 0.1 } // Component must be at least ##% visible
     );
 
     const hero = heroPaneRef.current;
@@ -66,14 +66,14 @@ const WorkPage = () => {
       if (hero) observer.unobserve(hero);
       if (workGallery) {
         const children = workGallery.querySelectorAll("[data-waypoint]");
-        children.forEach((child) => observer.observe(child));
+        children.forEach((child) => observer.unobserve(child));
       }
       if (contact) observer.unobserve(contact);
     };
   }, []);
 
   return (
-    <div className={`WorkPage ${scrollbarColor}`} ref={containerRef}>
+    <div className={`WorkPage ${scrollbarColor}`} ref={workPageContainerRef}>
       <WorkGalleryUtility
         waypoint={currentWaypoint}
         order={currentOrder}
@@ -99,7 +99,11 @@ const WorkPage = () => {
         data-waypoint={ContactPaneProps.waypoint}
         data-order={ContactPaneProps.order}
       >
-        <PaneOuter pane={ContactPaneProps} spinnerOpacity={spinnerOpacity} />
+        <PaneOuter
+          pane={ContactPaneProps}
+          spinnerOpacity={spinnerOpacity}
+          currentWaypoint={currentWaypoint}
+        />
       </div>
     </div>
   );
