@@ -1,11 +1,12 @@
 import Project from "./scripts/newProjectConstructor";
-import BG from "./assets/me-too-rebranding-a-movement/hero-bg.png";
-import BENTO_TOP from "./assets/me-too-rebranding-a-movement/bento-top.png";
-import BENTO_BOTTOM_LEFT from "./assets/me-too-rebranding-a-movement/bento-bottom-left.png";
-import BENTO_BOTTOM_MID from "./assets/me-too-rebranding-a-movement/bento-bottom-mid.png";
-import BENTO_BOTTOM_RIGHT from "./assets/me-too-rebranding-a-movement/bento-bottom-right.png";
-import FULL_WIDTH_IMG from "./assets/me-too-rebranding-a-movement/full-width-img.png";
-import CLIENT_SPOTLIGHT from "./assets/me-too-rebranding-a-movement/client-spotlight.png";
+import BG from "./assets/me-too-intl-rebranding-a-movement/hero-bg.png";
+import BENTO_TOP from "./assets/me-too-intl-rebranding-a-movement/bento-top.png";
+import BENTO_BOTTOM_LEFT from "./assets/me-too-intl-rebranding-a-movement/bento-bottom-left.png";
+import BENTO_BOTTOM_MID from "./assets/me-too-intl-rebranding-a-movement/bento-bottom-mid.png";
+import BENTO_BOTTOM_RIGHT from "./assets/me-too-intl-rebranding-a-movement/bento-bottom-right.png";
+import FULL_WIDTH_IMG from "./assets/me-too-intl-rebranding-a-movement/full-width-img.png";
+import CLIENT_SPOTLIGHT from "./assets/me-too-intl-rebranding-a-movement/client-spotlight.png";
+import ME_TOO_REBRANDING_A_MOVEMENT_THUMBNAIL from "./assets/me-too-intl-rebranding-a-movement/thumbnail.png";
 
 export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
   hero_bg_img: BG,
@@ -69,4 +70,5 @@ export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
       .MODEV_AI_EVENT_FOR_A_NEW_ERA,
 
   slug: "/me-too-intl-rebranding-a-movement",
+  galleryThumbnail: ME_TOO_REBRANDING_A_MOVEMENT_THUMBNAIL,
 });

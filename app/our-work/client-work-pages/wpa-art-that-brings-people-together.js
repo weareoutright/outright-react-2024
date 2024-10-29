@@ -6,6 +6,7 @@ import BENTO_BOTTOM_MID from "./assets/wpa-art-that-brings-people-together/bento
 import BENTO_BOTTOM_RIGHT from "./assets/wpa-art-that-brings-people-together/bento-bottom-right.png";
 import FULL_WIDTH_IMG from "./assets/wpa-art-that-brings-people-together/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/wpa-art-that-brings-people-together/client-spotlight.png";
+import WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER_THUMBNAIL from "./assets/wpa-art-that-brings-people-together/thumbnail.png";
 
 export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
   hero_bg_img: BG,
@@ -43,4 +44,5 @@ export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
   next_page: async () =>
     (await import("./wri-data-driven-revolution")).WRI_DATA_DRIVEN_REVOLUTION,
   slug: "/washington-project-of-the-arts-art-that-brings-people-together",
+  galleryThumbnail: WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER_THUMBNAIL,
 });

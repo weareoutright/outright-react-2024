@@ -16,19 +16,23 @@ const files = fs.readdirSync(assetsDir).filter((file) => file.endsWith(".js"));
 // Start generating the content for the index.js file with import statements
 let content = `// Auto-generated file. Do not edit manually.\n\n`;
 
-// Use a regular expression to extract the `slug` and export name from each file
-function extractSlugAndExportName(fileContent) {
+// Regular expression to extract `slug`, `exportName`, and `galleryThumbnail` from each file
+function extractProperties(fileContent) {
   const slugMatch = fileContent.match(/slug:\s*["']([^"']+)["']/);
   const exportMatch = fileContent.match(/export\s+const\s+(\w+)/);
+  const thumbnailMatch = fileContent.match(/galleryThumbnail:\s*(\w+)/); // Match variable name, not string
+
   const slug = slugMatch ? slugMatch[1] : null;
   const exportName = exportMatch ? exportMatch[1] : null;
-  return { slug, exportName };
+  const galleryThumbnailName = thumbnailMatch ? thumbnailMatch[1] : null;
+
+  return { slug, exportName, galleryThumbnailName };
 }
 
 // Track each module's import
 const imports = [];
 
-// Process each file to extract the slug and add the file path
+// Process each file to extract the properties and add the file path
 for (const file of files) {
   const filePath = path.join(assetsDir, file);
 
@@ -36,16 +40,32 @@ for (const file of files) {
     // Read the file content as a string
     const fileContent = fs.readFileSync(filePath, "utf8");
 
-    // Extract the slug and export name using the `extractSlugAndExportName` function
-    const { slug, exportName } = extractSlugAndExportName(fileContent);
-    console.log("Extracted slug:", slug, "Export name:", exportName); // Debugging line
+    // Extract the properties using the `extractProperties` function
+    const { slug, exportName, galleryThumbnailName } =
+      extractProperties(fileContent);
+    console.log(
+      "Extracted slug:",
+      slug,
+      "Export name:",
+      exportName,
+      "Gallery thumbnail:",
+      galleryThumbnailName
+    ); // Debugging line
 
-    // Add an import statement for each module using the specific export name
+    // Add an import statement for each module and gallery thumbnail
     if (slug && exportName) {
       imports.push(`import { ${exportName} } from "./${file}";`);
-      content += `  "/our-work${slug}": { module: ${exportName}, filePath: "${file}" },\n`;
+      if (galleryThumbnailName) {
+        imports.push(
+          `import ${galleryThumbnailName} from "./assets/${file.replace(
+            ".js",
+            ""
+          )}/thumbnail.png";`
+        );
+      }
+      content += `  "/our-work${slug}": { module: ${exportName}, filePath: "${file}", galleryThumbnail: ${galleryThumbnailName} },\n`;
     } else {
-      console.warn(`No slug or export name found in ${filePath}`);
+      console.warn(`Missing required properties in ${filePath}`);
     }
   } catch (error) {
     console.error("Error reading file:", filePath, error); // Log the error

@@ -1,11 +1,12 @@
 import Project from "./scripts/newProjectConstructor";
-import BG from "./assets/google-yt-big-game/hero-bg.png";
-import BENTO_TOP from "./assets/google-yt-big-game/bento-top.png";
-import BENTO_BOTTOM_LEFT from "./assets/google-yt-big-game/bento-bottom-left.png";
-import BENTO_BOTTOM_MID from "./assets/google-yt-big-game/bento-bottom-mid.png";
-import BENTO_BOTTOM_RIGHT from "./assets/google-yt-big-game/bento-bottom-right.png";
-import FULL_WIDTH_IMG from "./assets/google-yt-big-game/full-width-img.png";
-import CLIENT_SPOTLIGHT from "./assets/google-yt-big-game/client-spotlight.png";
+import BG from "./assets/google-yt-big-game-bigger-ads/hero-bg.png";
+import BENTO_TOP from "./assets/google-yt-big-game-bigger-ads/bento-top.png";
+import BENTO_BOTTOM_LEFT from "./assets/google-yt-big-game-bigger-ads/bento-bottom-left.png";
+import BENTO_BOTTOM_MID from "./assets/google-yt-big-game-bigger-ads/bento-bottom-mid.png";
+import BENTO_BOTTOM_RIGHT from "./assets/google-yt-big-game-bigger-ads/bento-bottom-right.png";
+import FULL_WIDTH_IMG from "./assets/google-yt-big-game-bigger-ads/full-width-img.png";
+import CLIENT_SPOTLIGHT from "./assets/google-yt-big-game-bigger-ads/client-spotlight.png";
+import GOOGLE_YT_BIG_GAME_BIGGER_ADS_THUMBNAIL from "./assets/google-yt-big-game-bigger-ads/thumbnail.png";
 
 export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
   hero_bg_img: BG,
@@ -58,4 +59,5 @@ export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
     (await import("./google-yt-connecting-beyond-coachella"))
       .GOOGLE_YT_CONNECTING_BEYOND_COACHELLA,
   slug: "/google-youtube-big-game-bigger-ads",
+  galleryThumbnail: GOOGLE_YT_BIG_GAME_BIGGER_ADS_THUMBNAIL,
 });

@@ -1,11 +1,12 @@
 import Project from "./scripts/newProjectConstructor";
-import BG from "./assets/exp-faye-embrace-the-day/hero-bg.png";
-import BENTO_TOP from "./assets/exp-faye-embrace-the-day/bento-top.png";
-import BENTO_BOTTOM_LEFT from "./assets/exp-faye-embrace-the-day/bento-bottom-left.png";
-import BENTO_BOTTOM_MID from "./assets/exp-faye-embrace-the-day/bento-bottom-mid.png";
-import BENTO_BOTTOM_RIGHT from "./assets/exp-faye-embrace-the-day/bento-bottom-right.png";
-import FULL_WIDTH_IMG from "./assets/exp-faye-embrace-the-day/full-width-img.png";
-import CLIENT_SPOTLIGHT from "./assets/exp-faye-embrace-the-day/client-spotlight.png";
+import BG from "./assets/exp-faye-embrace-the-day-savor-the-night/hero-bg.png";
+import BENTO_TOP from "./assets/exp-faye-embrace-the-day-savor-the-night/bento-top.png";
+import BENTO_BOTTOM_LEFT from "./assets/exp-faye-embrace-the-day-savor-the-night/bento-bottom-left.png";
+import BENTO_BOTTOM_MID from "./assets/exp-faye-embrace-the-day-savor-the-night/bento-bottom-mid.png";
+import BENTO_BOTTOM_RIGHT from "./assets/exp-faye-embrace-the-day-savor-the-night/bento-bottom-right.png";
+import FULL_WIDTH_IMG from "./assets/exp-faye-embrace-the-day-savor-the-night/full-width-img.png";
+import CLIENT_SPOTLIGHT from "./assets/exp-faye-embrace-the-day-savor-the-night/client-spotlight.png";
+import EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT_THUMBNAIL from "./assets/exp-faye-embrace-the-day-savor-the-night/thumbnail.png";
 
 export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
   hero_bg_img: BG,
@@ -55,4 +56,5 @@ export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
     (await import("./google-yt-big-game-bigger-ads"))
       .GOOGLE_YT_BIG_GAME_BIGGER_ADS,
   slug: "/experience-fayetteville-embrace-the-day-savor-the-night",
+  galleryThumbnail: EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT_THUMBNAIL,
 });

@@ -1,11 +1,12 @@
 import Project from "./scripts/newProjectConstructor";
-import BG from "./assets/modev-ai-new-era/hero-bg.png";
-import BENTO_TOP from "./assets/modev-ai-new-era/bento-top.png";
-import BENTO_BOTTOM_LEFT from "./assets/modev-ai-new-era/bento-bottom-left.png";
-import BENTO_BOTTOM_MID from "./assets/modev-ai-new-era/bento-bottom-mid.png";
-import BENTO_BOTTOM_RIGHT from "./assets/modev-ai-new-era/bento-bottom-right.png";
-import FULL_WIDTH_IMG from "./assets/modev-ai-new-era/full-width-img.png";
-import CLIENT_SPOTLIGHT from "./assets/modev-ai-new-era/client-spotlight.png";
+import BG from "./assets/modev-ai-event-for-a-new-era/hero-bg.png";
+import BENTO_TOP from "./assets/modev-ai-event-for-a-new-era/bento-top.png";
+import BENTO_BOTTOM_LEFT from "./assets/modev-ai-event-for-a-new-era/bento-bottom-left.png";
+import BENTO_BOTTOM_MID from "./assets/modev-ai-event-for-a-new-era/bento-bottom-mid.png";
+import BENTO_BOTTOM_RIGHT from "./assets/modev-ai-event-for-a-new-era/bento-bottom-right.png";
+import FULL_WIDTH_IMG from "./assets/modev-ai-event-for-a-new-era/full-width-img.png";
+import CLIENT_SPOTLIGHT from "./assets/modev-ai-event-for-a-new-era/client-spotlight.png";
+import MODEV_AI_EVENT_FOR_A_NEW_ERA_THUMBNAIL from "./assets/modev-ai-event-for-a-new-era/thumbnail.png";
 
 export const MODEV_AI_EVENT_FOR_A_NEW_ERA = new Project({
   hero_bg_img: BG,
@@ -62,4 +63,5 @@ export const MODEV_AI_EVENT_FOR_A_NEW_ERA = new Project({
       .OPP_AGENDA_SHIFTING_NARRATIVES,
 
   slug: "/modev-ai-event-for-a-new-era",
+  galleryThumbnail: MODEV_AI_EVENT_FOR_A_NEW_ERA_THUMBNAIL,
 });

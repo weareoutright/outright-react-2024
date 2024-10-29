@@ -1,13 +1,12 @@
 import Project from "./scripts/newProjectConstructor";
-import BG from "./assets/google-yt-beauty-fest/hero-bg.png";
-import BENTO_TOP from "./assets/google-yt-beauty-fest/bento-top.png";
-import BENTO_BOTTOM_LEFT from "./assets/google-yt-beauty-fest/bento-bottom-left.png";
-import BENTO_BOTTOM_MID from "./assets/google-yt-beauty-fest/bento-bottom-mid.png";
-import BENTO_BOTTOM_RIGHT from "./assets/google-yt-beauty-fest/bento-bottom-right.png";
-import FULL_WIDTH_IMG from "./assets/google-yt-beauty-fest/full-width-img.png";
-import CLIENT_SPOTLIGHT from "./assets/google-yt-beauty-fest/client-spotlight.png";
-
-// prev_page & next_page slug imports
+import BG from "./assets/google-yt-youtube-shopping-beauty-fest/hero-bg.png";
+import BENTO_TOP from "./assets/google-yt-youtube-shopping-beauty-fest/bento-top.png";
+import BENTO_BOTTOM_LEFT from "./assets/google-yt-youtube-shopping-beauty-fest/bento-bottom-left.png";
+import BENTO_BOTTOM_MID from "./assets/google-yt-youtube-shopping-beauty-fest/bento-bottom-mid.png";
+import BENTO_BOTTOM_RIGHT from "./assets/google-yt-youtube-shopping-beauty-fest/bento-bottom-right.png";
+import FULL_WIDTH_IMG from "./assets/google-yt-youtube-shopping-beauty-fest/full-width-img.png";
+import CLIENT_SPOTLIGHT from "./assets/google-yt-youtube-shopping-beauty-fest/client-spotlight.png";
+import GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST_THUMBNAIL from "./assets/google-yt-youtube-shopping-beauty-fest/thumbnail.png";
 
 export const GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST = new Project({
   hero_bg_img: BG,
@@ -49,4 +48,5 @@ export const GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST = new Project({
     (await import("./marriott-intl-leading-to-new-horizons"))
       .MARRIOTT_INTL_NEW_HORIZONS,
   slug: "/google-youtube-shopping-beauty-fest",
+  galleryThumbnail: GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST_THUMBNAIL,
 });
