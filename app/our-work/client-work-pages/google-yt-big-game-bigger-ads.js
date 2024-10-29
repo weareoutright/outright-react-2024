@@ -7,7 +7,7 @@ import BENTO_BOTTOM_RIGHT from "./assets/google-yt-big-game/bento-bottom-right.p
 import FULL_WIDTH_IMG from "./assets/google-yt-big-game/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/google-yt-big-game/client-spotlight.png";
 
-export const GOOGLE_YT_BIG_GAME = new Project({
+export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
   hero_bg_img: BG,
   client_full_name: "Google / YouTube",
   project_title: "Bigger Game, Bigger Ads",
@@ -57,6 +57,5 @@ export const GOOGLE_YT_BIG_GAME = new Project({
   next_page: async () =>
     (await import("./google-yt-connecting-beyond-coachella"))
       .GOOGLE_YT_CONNECTING_BEYOND_COACHELLA,
-
   slug: "/google-youtube-big-game-bigger-ads",
 });

@@ -10,7 +10,7 @@ export const PrevNextBottomNav = ({ prevPage, nextPage }) => {
       {prevPage === "/" || prevPage !== null ? (
         <Link
           className="prev-btn"
-          href={prevPage === "/" ? "/" : prevPage.slug}
+          href={prevPage === "/" ? "/" : `/our-work${prevPage.slug}`}
         >
           <Image
             src={PREV_ARROW}
@@ -33,7 +33,7 @@ export const PrevNextBottomNav = ({ prevPage, nextPage }) => {
       )}
 
       {nextPage === "/" || nextPage !== null ? (
-        <Link className="next-btn" href={nextPage.slug}>
+        <Link className="next-btn" href={`/our-work${nextPage.slug}`}>
           NEXT
           <Image src={NEXT_ARROW} alt="Next" width={"100%"} height={"100%"} />
         </Link>
