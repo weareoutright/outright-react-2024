@@ -52,6 +52,6 @@ export const EDF_VISION_2023 = new Project({
   prev_page: "/",
   next_page: async () =>
     (await import("./exp-faye-embrace-the-day-savor-the-night"))
-      .EXP_FAYE_EMBRACE_THE_DAY,
+      .EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
   slug: "/edf-vision-2023",
 });
