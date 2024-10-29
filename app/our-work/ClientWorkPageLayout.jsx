@@ -15,18 +15,46 @@ import ClientFullWidthImg from "./components/ClientFullWidthImg";
 import { PrevNextBottomNav } from "./components/PrevNextBottomNav";
 
 const ClientWorkPageLayout = ({ clientProject }) => {
-  // State to track currently visible component's waypoint and order
   const [currentWaypoint, setCurrentWaypoint] = useState("");
-  const [currentOrder, setCurrentOrder] = useState("");
-  const [siteHeadlineOpacity, setSiteHeadlineOpacity] = useState(1);
-  const [siteHeadlineDisplay, setSiteHidelineDisplay] = useState("block");
-  const [spinnerYPos, setSpinnerYPos] = useState("50%");
-  const [spinnerOpacity, setSpinnerOpacity] = useState(0);
-  const containerRef = useRef(null);
 
-  // Refs for the components you want to observe
+  // State for resolved prev_page and next_page
+  const [prevPage, setPrevPage] = useState(null);
+  const [nextPage, setNextPage] = useState(null);
+
+  const clientWorkPageContainerRef = useRef(null);
   const pageComponentsRef = useRef(null);
   const contactRef = useRef(null);
+
+  const {
+    hero,
+    main_headline,
+    bento_images,
+    client_quote,
+    full_width_img,
+    client_spotlight,
+    project_overview,
+    _prev_page,
+    _next_page,
+  } = clientProject;
+
+  useEffect(() => {
+    // Resolve async prev_page and next_page
+    const fetchPrevNextPages = async () => {
+      if (_prev_page !== "/") {
+        const resolvedPrevPage = await _prev_page();
+        setPrevPage(resolvedPrevPage);
+      } else {
+        setPrevPage("/");
+      }
+      if (_next_page !== "/") {
+        const resolvedNextPage = await _next_page();
+        setNextPage(resolvedNextPage);
+      } else {
+        setNextPage("/");
+      }
+    };
+    fetchPrevNextPages();
+  }, [clientProject]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -37,18 +65,13 @@ const ClientWorkPageLayout = ({ clientProject }) => {
             setCurrentWaypoint(waypoint);
             setCurrentOrder(order);
 
-            if (entry.target.dataset.waypoint === "Contact") {
-              setSpinnerOpacity(1);
+            if (waypoint === "Contact") {
               setSiteHidelineDisplay("none");
-            }
-
-            if (entry.target.dataset.waypoint !== "Contact") {
-              setSpinnerOpacity(0);
             }
           }
         });
       },
-      { threshold: 0.75 } // Component must be at least ##% visible
+      { threshold: 0.75 } // Component must be at least 75% visible
     );
 
     const pageComponents = pageComponentsRef.current;
@@ -71,27 +94,13 @@ const ClientWorkPageLayout = ({ clientProject }) => {
     };
   }, []);
 
-  const {
-    hero,
-    main_headline,
-    bento_images,
-    client_quote,
-    full_width_img,
-    client_spotlight,
-    project_overview,
-    prev_page,
-    next_page,
-  } = clientProject;
+  useEffect(() => {
+    console.log(clientProject, _prev_page, _next_page().slug);
+  });
 
   return (
-    <div className="WorkPage ClientWorkPage" ref={containerRef}>
-      <WorkGalleryUtility
-        waypoint={currentWaypoint}
-        order={currentOrder}
-        siteHeadlineOpacity={siteHeadlineOpacity}
-        siteHeadlineDisplay={siteHeadlineDisplay}
-        spinnerOpacity={spinnerOpacity}
-      />
+    <div className="ClientWorkPage" ref={clientWorkPageContainerRef}>
+      <WorkGalleryUtility waypoint={currentWaypoint} />
       <div ref={pageComponentsRef} data-waypoint="WorkPageComponent">
         <ClientWorkHero
           heroBg={hero.hero_bg_img}
@@ -123,8 +132,8 @@ const ClientWorkPageLayout = ({ clientProject }) => {
           waypoint="WorkPageComponent"
         />
         <PrevNextBottomNav
-          prevPage={prev_page}
-          nextPage={next_page}
+          prevPage={prevPage}
+          nextPage={nextPage}
           waypoint="WorkPageComponent"
         />
       </div>
@@ -133,11 +142,7 @@ const ClientWorkPageLayout = ({ clientProject }) => {
         data-waypoint={ContactPaneProps.waypoint}
         data-order={ContactPaneProps.order}
       >
-        <PaneOuter
-          pane={ContactPaneProps}
-          spinnerOpacity={spinnerOpacity}
-          spinnerYPos={spinnerYPos}
-        />
+        <PaneOuter pane={ContactPaneProps} currentWaypoint={currentWaypoint} />
       </div>
     </div>
   );

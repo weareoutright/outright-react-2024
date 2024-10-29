@@ -1,11 +1,11 @@
-import Project from "./newProjectConstructor";
-import BG from "./assets/edf-vision-2023/edf-vision-2023-bg.png";
-import BENTO_TOP from "./assets/edf-vision-2023/edf-vision-2023-bento-top.png";
-import BENTO_BOTTOM_LEFT from "./assets/edf-vision-2023/edf-vision-2023-bento-bottom-left.png";
-import BENTO_BOTTOM_MID from "./assets/edf-vision-2023/edf-vision-2023-bento-bottom-mid.png";
-import BENTO_BOTTOM_RIGHT from "./assets/edf-vision-2023/edf-vision-2023-bento-bottom-right.png";
-import FULL_WIDTH_IMG from "./assets/edf-vision-2023/edf-vision-2023-full-width-img.png";
-import CLIENT_SPOTLIGHT from "./assets/edf-vision-2023/edf-vision-2023-client-spotlight.png";
+import Project from "./scripts/newProjectConstructor";
+import BG from "./assets/edf-vision-2023/hero-bg.png";
+import BENTO_TOP from "./assets/edf-vision-2023/bento-top.png";
+import BENTO_BOTTOM_LEFT from "./assets/edf-vision-2023/bento-bottom-left.png";
+import BENTO_BOTTOM_MID from "./assets/edf-vision-2023/bento-bottom-mid.png";
+import BENTO_BOTTOM_RIGHT from "./assets/edf-vision-2023/bento-bottom-right.png";
+import FULL_WIDTH_IMG from "./assets/edf-vision-2023/full-width-img.png";
+import CLIENT_SPOTLIGHT from "./assets/edf-vision-2023/client-spotlight.png";
 
 export const EDF_VISION_2023 = new Project({
   hero_bg_img: BG,
@@ -50,5 +50,8 @@ export const EDF_VISION_2023 = new Project({
     </>
   ),
   prev_page: "/",
-  next_page: "/experience-fayetteville-embrace-the-day-savor-the-night",
+  next_page: async () =>
+    (await import("./exp-faye-embrace-the-day-savor-the-night"))
+      .EXP_FAYE_EMBRACE_THE_DAY,
+  slug: "/edf-vision-2023",
 });

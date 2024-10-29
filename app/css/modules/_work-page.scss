@@ -3,7 +3,6 @@
   width: 100%;
   scroll-snap-type: y mandatory; /* Enable vertical snapping */
   overflow-y: scroll; /* Allow scrolling within the container */
-  scroll-behavior: smooth; /* Enable smooth scrolling behavior */
   overflow-x: hidden;
 
   .WorkPageHero {
@@ -11,6 +10,7 @@
     background: $chartreuse;
     padding-bottom: 2rem;
     margin: 0 auto;
+    scroll-snap-align: start;
     .work-page-title {
       color: $dark !important;
       text-align: center;
@@ -36,6 +36,7 @@
 
   .work-page-gallery {
     padding: em(60) em(125);
+    scroll-snap-align: start;
     .work-page-gallery-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

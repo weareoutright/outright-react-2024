@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import PaneInner from "./PaneInner";
 import Spinner from "./Spinner";
 
@@ -19,7 +18,7 @@ const PaneOuter = ({ pane, currentWaypoint }) => {
           backgroundImage: pane.background_image
             ? `url('../assets/${pane.background_image})`
             : "",
-          height: pane.attributes.id === "see-more" ? "75vh" : "100%",
+          height: pane.attributes.id === "see-more" ? "75vh" : "100vh",
           scrollSnapAlign:
             pane.attributes.id === "see-more" ? "center" : "start",
         }}

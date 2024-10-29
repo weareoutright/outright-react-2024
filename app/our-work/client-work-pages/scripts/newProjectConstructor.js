@@ -18,6 +18,7 @@ class Project {
     project_overview,
     prev_page,
     next_page,
+    slug,
   }) {
     this.hero = {
       hero_bg_img,
@@ -45,8 +46,23 @@ class Project {
     this.full_width_img = full_width_img;
     this.client_spotlight = client_spotlight;
     this.project_overview = project_overview;
-    this.prev_page = prev_page;
-    this.next_page = next_page;
+    this._prev_page = prev_page;
+    this._next_page = next_page;
+    this.slug = slug;
+  }
+
+  // Async Getter for prev_page
+  async getPrevPage() {
+    return typeof this._prev_page === "function"
+      ? await this._prev_page()
+      : this._prev_page;
+  }
+
+  // Async Getter for next_page
+  async getNextPage() {
+    return typeof this._next_page === "function"
+      ? await this._next_page()
+      : this._next_page;
   }
 }
 
