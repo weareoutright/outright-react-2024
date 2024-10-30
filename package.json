@@ -13,6 +13,7 @@
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
     "bootstrap": "^5.3.3",
+    "framer-motion": "^11.11.10",
     "fullpage.js": "^4.0.29",
     "next": "14.2.13",
     "postcss-cli": "^11.0.0",
