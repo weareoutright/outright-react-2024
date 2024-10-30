@@ -12,17 +12,35 @@ const OurClientsPane = () => {
   return (
     <div className="Clients">
       <h2>We work with...</h2>
-      <div className="client-logos">
-        <YOUTUBE className="youtube-logo" />
-        <GOOGLE className="google-logo" />
-        <MARRIOTT className="marriott-logo" />
-        <ADIDAS className="adidas-logo" />
-        <OC className="oc-logo" />
-        <ME_TOO className="me-too-logo" />
-        <AARP className="aarp-logo" />
-        <SHARE_OUR_STRENGTH className="share-our-strength-logo" />
-        <WRI className="wri-logo" />
-      </div>
+        <div className="client-logos">
+            <div className={"logo-item"}>
+                <YOUTUBE className="youtube-logo"/>
+            </div>
+            <div className={"logo-item"}>
+                <GOOGLE className="google-logo"/>
+            </div>
+            <div className={"logo-item"}>
+                <MARRIOTT className="marriott-logo"/>
+            </div>
+            <div className={"logo-item"}>
+                <ADIDAS className="adidas-logo"/>
+            </div>
+            <div className={"logo-item"}>
+                <OC className="oc-logo"/>
+            </div>
+            <div className={"logo-item"}>
+                <ME_TOO className="me-too-logo"/>
+            </div>
+            <div className={"logo-item"}>
+                <AARP className="aarp-logo"/>
+            </div>
+            <div className={"logo-item"}>
+                <SHARE_OUR_STRENGTH className="share-our-strength-logo"/>
+            </div>
+            <div className={"logo-item"}>
+                <WRI className="wri-logo"/>
+            </div>
+        </div>
     </div>
   );
 };

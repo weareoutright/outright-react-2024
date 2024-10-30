@@ -5,17 +5,22 @@
   padding: 0px 120px;
   scroll-snap-align: start;
 
-  .client-logos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
-    grid-template-rows: repeat(3, 1fr); /* Create 3 equal rows */
-    justify-items: center; /* Center the logos horizontally */
-    align-items: center;
-    margin-top: -2rem;
+  // .client-logos {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  //   grid-template-rows: repeat(3, 1fr); /* Create 3 equal rows */
+  //   justify-items: center; /* Center the logos horizontally */
+  //   align-items: center;
+  //   margin-top: -2rem;
+  //   gap:20px;
 
-    svg {
-      object-fit: contain;
-      width: 100%;
-    }
+  //   .logo-item {
+  //     object-fit: contain;
+  //     width: 100%;
+  //   }
+  // }
+
+  .client-logos {
+    
   }
 }

@@ -19,12 +19,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .service {
+      h3 {
+        color: $black;
+      }
+    }
   }
   .see-more-work {
     scroll-margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  
+  #pane-clients {
+    height: auto !important;
   }
 }
 

@@ -10,7 +10,7 @@ const TitleLogo = ({
     <div className={classes}>
       <div id={id}>
         <a href={href}>
-          <h1 className="title-logo">
+          <div className="title-logo">
             <a href="/" className="header-logo-nav">
               <span className="title-logo-img">
                 <LOGO_O />
@@ -40,7 +40,7 @@ const TitleLogo = ({
                 team
               </a>
             </div>
-          </h1>
+          </div>
         </a>
       </div>
     </div>

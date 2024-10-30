@@ -38,11 +38,11 @@ const PaneInner = ({ pane }) => {
             {(pane.title || pane.header_content) && !pane.hide_title && (
               <header className="pane-header">
                 {pane.attributes.id === "hero" ? (
-                  <h1 className="pane-title site-title">
+                  <h2 className="pane-title site-title">
                     <Image src={LOGO_O} alt="" />
-                  </h1>
+                  </h2>
                 ) : (
-                  <h1
+                  <h2
                     className={
                       pane.attributes.id === "contact"
                         ? "contact-title pane-title"
@@ -60,7 +60,7 @@ const PaneInner = ({ pane }) => {
                         alt=""
                       />
                     )}
-                  </h1>
+                  </h2>
                 )}
                 {pane.header_content && (
                   <div className="pane-header-content">

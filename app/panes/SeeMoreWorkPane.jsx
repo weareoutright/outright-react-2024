@@ -13,7 +13,7 @@ const SeeMoreWork = () => {
           onMouseEnter={() => setOpacity(1)}
           onMouseLeave={() => setOpacity(0)}
         >
-          <h1 className="no-list">Want more?</h1>
+          <h2 className="no-list">Want more?</h2>
           <br />
           <h2 className="work-subheading underline">
             Check Out Our Work.

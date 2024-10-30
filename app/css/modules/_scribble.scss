@@ -9,6 +9,7 @@
   height: auto;
   //filter:saturate(1.5) brightness(1.2);
   opacity: 0.85;
+  pointer-events: none;
 }
 
 .underline {
@@ -24,7 +25,7 @@
 }
 
 .scribble-circle-word-container {
-  padding: 0px 120px !important;
+  //padding: 0px 120px !important;
 
   .scribble-word-container {
     position: relative;
@@ -47,7 +48,7 @@
   }
 
   .meet-the-team-arrow {
-    display: relative;
+    //display: relative;
     margin-left: 2rem;
     .service-arrow {
       position: absolute;
