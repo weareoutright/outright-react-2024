@@ -54,5 +54,5 @@ if (!existsSync(outputDir)) {
 writeFileSync(join(outputDir, "index.js"), indexContent);
 
 console.log(
-  "index.js file generated successfully in ../assets/bg-zoom directory."
+  "index.js file generated successfully in ./app/zoom/assets/bg-zoom directory."
 );

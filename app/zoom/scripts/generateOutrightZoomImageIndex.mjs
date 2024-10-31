@@ -20,15 +20,15 @@ const imageFiles = files.filter((file) => file.endsWith(".jpg"));
 // Generate import statements and array entries for each image
 const imports = imageFiles
   .map((file, index) => {
-    const variableName = `bgZoom${index}`;
+    const variableName = `outrightZoom${index}`;
     return `import ${variableName} from './${file}';`;
   })
   .join("\n");
 
 const imageArrayEntries = imageFiles
   .map((file, index) => {
-    const key = file.replace("bg-zoom-", "").replace(".jpg", "");
-    return `{ key: '${key}', src: bgZoom${index} }`;
+    const key = file.replace("outright-zoom-", "").replace("-full.jpg", "");
+    return `{ key: '${key}', src: outrightZoom${index} }`;
   })
   .join(",\n  ");
 
@@ -54,5 +54,5 @@ if (!existsSync(outputDir)) {
 writeFileSync(join(outputDir, "index.js"), indexContent);
 
 console.log(
-  "index.js file generated successfully in ../assets/bg-zoom directory."
+  "index.js file generated successfully in ./app/zoom/assets/outright-zoom directory."
 );

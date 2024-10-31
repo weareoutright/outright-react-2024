@@ -1,8 +1,18 @@
+"use client";
+
 import React from "react";
-import { siteBaseUrl } from "../site_constants";
-import ZOOM_CARDS from "./zoom_cards";
+import bgZoomImages from "./assets/bg-zoom";
+import outrightZoomImages from "./assets/outright-zoom";
 
 const ZoomGallery = () => {
+  // Function to handle image download
+  const handleImageDownload = (downloadHref, key) => {
+    const link = document.createElement("a");
+    link.href = downloadHref;
+    link.download = `outright-zoom-${key}-full.jpg`; // Set the default download filename
+    link.click();
+  };
+
   return (
     <section className="pane pane-zoom">
       <div className="container">
@@ -15,33 +25,29 @@ const ZoomGallery = () => {
 
             <div className="pane-content">
               <div className="row">
-                {ZOOM_CARDS.map((card, index) => {
-                  console.log(card);
+                {bgZoomImages.map((card, index) => {
+                  // Find the corresponding outright zoom image by key
+                  const outrightZoomImage = outrightZoomImages.find(
+                    (img) => img.key === card.key
+                  );
+
+                  // Construct the href for the download link
+                  const downloadHref = outrightZoomImage
+                    ? outrightZoomImage.src.src
+                    : `./app/zoom/assets/outright-zoom/outright-zoom-${card.key}-full.jpg`;
+
                   return (
                     <div key={index} className="col-12 col-md-6">
                       <div className="card-zoom">
-                        <a
-                          href={`./app/outright-zoom-${card[0]}-full.jpg`}
-                          target="_blank"
-                          download
-                          rel="noopener noreferrer"
-                        >
-                          <img
-                            className="card-zoom-bg"
-                            src={`/app/assets/bg-zoom-${card[0]}.jpg`}
-                            alt={card[1]}
-                          />
-                          {/* Uncomment for alternate background image */}
-                          {/* <img className="card-zoom-bg bg-alt" src={`${process.env.REACT_APP_BASE_URL}/media/bg-zoom-${card[0]}-alt.jpg`} alt={card[1]} /> */}
-                        </a>
-                        {/* Uncomment for download link with title */}
-                        {/* <h2>
-                          <a href={`${process.env.REACT_APP_BASE_URL}/media/outright-zoom-${card[0]}-full.jpg`} target="_blank" download rel="noopener noreferrer">
-                            {card[1]} 
-                            <img src={`${process.env.REACT_APP_BASE_URL}/media/icon-download.png`} className="icon-download" alt="Download icon" />
-                            <img src={`${process.env.REACT_APP_BASE_URL}/media/icon-download-alt.png`} className="icon-download-alt" alt="Alternate download icon" />
-                          </a>
-                        </h2> */}
+                        <img
+                          className="card-zoom-bg"
+                          src={card.src.src}
+                          alt={card.key}
+                          onClick={() =>
+                            handleImageDownload(downloadHref, card.key)
+                          }
+                          style={{ cursor: "pointer" }} // Makes it clear that the image is clickable
+                        />
                       </div>
                     </div>
                   );
