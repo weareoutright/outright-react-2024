@@ -63,7 +63,7 @@ const ZoomGallery = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  here's how
+                  here&apos;s how
                 </a>
               </p>
             </div>
