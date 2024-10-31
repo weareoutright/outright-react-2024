@@ -43,14 +43,6 @@ for (const file of files) {
     // Extract the properties using the `extractProperties` function
     const { slug, exportName, galleryThumbnailName } =
       extractProperties(fileContent);
-    console.log(
-      "Extracted slug:",
-      slug,
-      "Export name:",
-      exportName,
-      "Gallery thumbnail:",
-      galleryThumbnailName
-    ); // Debugging line
 
     // Add an import statement for each module and gallery thumbnail
     if (slug && exportName) {
