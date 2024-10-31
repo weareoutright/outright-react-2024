@@ -3,6 +3,7 @@
 import React from "react";
 import bgZoomImages from "./assets/bg-zoom";
 import outrightZoomImages from "./assets/outright-zoom";
+import Image from "next/image";
 
 const ZoomGallery = () => {
   // Function to handle image download
@@ -39,7 +40,7 @@ const ZoomGallery = () => {
                   return (
                     <div key={index} className="col-12 col-md-6">
                       <div className="card-zoom">
-                        <img
+                        <Image
                           className="card-zoom-bg"
                           src={card.src.src}
                           alt={card.key}
@@ -47,6 +48,8 @@ const ZoomGallery = () => {
                             handleImageDownload(downloadHref, card.key)
                           }
                           style={{ cursor: "pointer" }} // Makes it clear that the image is clickable
+                          width={100}
+                          height={100}
                         />
                       </div>
                     </div>
@@ -54,7 +57,7 @@ const ZoomGallery = () => {
                 })}
               </div>
               <p>
-                It&apos;s really easy to install video call backgrounds –{" "}
+                It&apos;s really easy to install video call backgrounds &mdash;{" "}
                 <a
                   href="https://gizmodo.com/how-to-change-your-background-on-a-video-conference-cal-1845122637"
                   target="_blank"
