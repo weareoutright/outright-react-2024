@@ -9,7 +9,7 @@ const VideoGallery = () => {
           <div className="col-12">
             <div className="pane-header">
               <h1>Outright + Video</h1>
-              <p>Bringing our clients' vision to life</p>
+              <p>Bringing our clients&apos; vision to life</p>
             </div>
 
             <div className="pane-content">
