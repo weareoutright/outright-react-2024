@@ -1,1 +1,1 @@
-# Outright Site (Built w/ Next.js)
+# weareoutright.com (Built w/ Next.js)

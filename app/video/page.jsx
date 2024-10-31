@@ -4,7 +4,7 @@ import WorkGalleryUtility from "../components/WorkGalleryUtility";
 
 const VideoPage = () => {
   return (
-    <div className="WorkPage">
+    <div className="WorkPage VideoPage">
       <WorkGalleryUtility />
       <VideoGallery />
     </div>
