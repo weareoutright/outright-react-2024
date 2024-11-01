@@ -192,12 +192,12 @@ const PrivacyPolicy = () => {
               </p>
               <p>
                 Your data is stored on 3rd party servers and any other tools and
-                analytics we might use. Please consult these parties' privacy
-                policies and security for more details on how they handle
-                personal information and how your information is protected. We
-                have no control over, and assume no responsibility for the
-                content, privacy policies or practices of any third party sites
-                or services.
+                analytics we might use. Please consult these parties&apos;
+                privacy policies and security for more details on how they
+                handle personal information and how your information is
+                protected. We have no control over, and assume no responsibility
+                for the content, privacy policies or practices of any third
+                party sites or services.
               </p>
 
               <h2>Links To Other Sites</h2>
