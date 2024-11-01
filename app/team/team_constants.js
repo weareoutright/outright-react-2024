@@ -1,6 +1,4 @@
-export const pageTitle = "meet the team";
-
-export const team_cards = [
+const TEAM_CARDS = [
   {
     name: "Darin",
     title: "Founder",
@@ -13,7 +11,7 @@ export const team_cards = [
   },
   {
     name: "Tim",
-    title: "Technology Director",
+    title: "Director, Technology",
     funTitle: "Undercover Rockstar",
   },
   {
@@ -92,3 +90,5 @@ export const team_cards = [
     funTitle: "Digital Dungeon Guru",
   },
 ];
+
+export default TEAM_CARDS;
