@@ -181,6 +181,9 @@
 }
 
 .team-card {
+  &:hover {
+    cursor: pointer;
+  }
   &,
   * {
     -webkit-tap-highlight-color: transparent;
@@ -332,7 +335,7 @@
       height: auto;
       transform: translate(-50%, -50%);
       path {
-        fill: tomato;
+        fill: #fbdad6;
       }
     }
   }

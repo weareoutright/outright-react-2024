@@ -9,40 +9,38 @@ import Image from "next/image";
 
 const TeamPageContent = () => {
   const [shuffledCards, setShuffledCards] = useState([]);
-  const [activeCards, setActiveCards] = useState(
-    Array(TEAM_CARDS.length).fill(false) // Initialize all cards as inactive
-  );
+  const [activeCards, setActiveCards] = useState([]);
   const cardRefs = useRef([]);
 
   useEffect(() => {
-    // Shuffle the TEAM_CARDS array when the component mounts
     const shuffled = shuffleArray(TEAM_CARDS);
-    setShuffledCards(shuffled);
+    setShuffledCards(
+      shuffled.map((card) => ({
+        ...card,
+        styleClasses: setRandomStyles(),
+      }))
+    );
   }, []);
 
-  useEffect(() => {
-    // Apply random styles to each card on mount
-    cardRefs.current.forEach((card, index) => {
-      if (card) setRandomStyles(card); // Ensure card exists
-    });
-  }, [shuffledCards]);
-
   const toggleFunCard = (index) => {
-    setActiveCards((prevActiveCards) =>
-      prevActiveCards.map((isActive, i) => (i === index ? !isActive : isActive))
-    );
+    if (activeCards.includes(index)) {
+      setActiveCards(activeCards.filter((item) => item !== index));
+    } else setActiveCards([...activeCards, index]);
   };
 
-  const setRandomStyles = (card) => {
-    const styles = {
-      bg: Math.floor(Math.random() * 10) + 1,
-      fg: Math.floor(Math.random() * 10) + 1,
-      pos: Math.floor(Math.random() * 6) + 1,
-    };
+  const setRandomStyles = () => {
+    const bg = Math.floor(Math.random() * 10) + 1;
+    let fg;
 
-    Object.keys(styles).forEach((key) => {
-      card.classList.add(`style-${key}-${styles[key]}`);
-    });
+    // Ensure `fg` is different from `bg`
+    do {
+      fg = Math.floor(Math.random() * 10) + 1;
+    } while (fg === bg);
+
+    // Random position for `style-pos`
+    const pos = Math.floor(Math.random() * 6) + 1;
+
+    return `style-bg-${bg} style-fg-${fg} style-pos-${pos}`;
   };
 
   const shuffleArray = (array) => {
@@ -88,17 +86,19 @@ const TeamPageContent = () => {
 
                   return (
                     <div
-                      key={index}
+                      key={`${cardData.name}-${index}`}
                       className="col-12 col-md-6 col-lg-4 col-xl-3"
                     >
                       <div
-                        className={`team-card ${
-                          activeCards[index] ? "fun" : ""
-                        }`}
+                        className={`team-card ${card.styleClasses}`}
                         onClick={() => toggleFunCard(index)}
                         ref={(el) => (cardRefs.current[index] = el)}
                       >
-                        <div className="wipe-wrapper">
+                        <div
+                          className={`wipe-wrapper ${
+                            activeCards.includes(index) ? "fun" : ""
+                          }`}
+                        >
                           {/* Front of the Card */}
                           <div className="front">
                             <div className="img-container">
@@ -122,12 +122,7 @@ const TeamPageContent = () => {
                           {/* Back of the Card */}
                           <div className="back">
                             <div className="card-bg">
-                              <Image
-                                src={OUTRIGHT_O}
-                                alt="Background decoration"
-                                width={100}
-                                height={100}
-                              />
+                              <OUTRIGHT_O />
                             </div>
                             <div className="img-container">
                               <Image
