@@ -12,11 +12,6 @@ export const team_cards = [
     funTitle: "Half-Court Sinker",
   },
   {
-    name: "Kevin",
-    title: "Full-Stack Developer",
-    funTitle: "Medieval Times Ambassador",
-  },
-  {
     name: "Tim",
     title: "Technology Director",
     funTitle: "Undercover Rockstar",
