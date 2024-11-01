@@ -20,25 +20,25 @@ import steve from './steve.png';
 import tim from './tim.png';
 import tj from './tj.png';
 
-const teamImages = [
-  { name: 'amanda', src: amanda },
-  { name: 'anne', src: anne },
-  { name: 'antoine', src: antoine },
-  { name: 'dakota', src: dakota },
-  { name: 'darin', src: darin },
-  { name: 'emily', src: emily },
-  { name: 'gaby', src: gaby },
-  { name: 'grace', src: grace },
-  { name: 'jared', src: jared },
-  { name: 'kate', src: kate },
-  { name: 'kelsey', src: kelsey },
-  { name: 'logan', src: logan },
-  { name: 'michelle', src: michelle },
-  { name: 'mikaela', src: mikaela },
-  { name: 'sarah', src: sarah },
-  { name: 'steve', src: steve },
-  { name: 'tim', src: tim },
-  { name: 'tj', src: tj }
-];
+const TEAM_IMAGES = {
+  "amanda": amanda,
+  "anne": anne,
+  "antoine": antoine,
+  "dakota": dakota,
+  "darin": darin,
+  "emily": emily,
+  "gaby": gaby,
+  "grace": grace,
+  "jared": jared,
+  "kate": kate,
+  "kelsey": kelsey,
+  "logan": logan,
+  "michelle": michelle,
+  "mikaela": mikaela,
+  "sarah": sarah,
+  "steve": steve,
+  "tim": tim,
+  "tj": tj
+};
 
-export default teamImages;
+export default TEAM_IMAGES;
