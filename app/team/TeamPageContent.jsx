@@ -8,17 +8,24 @@ import OUTRIGHT_O from "../assets/outright-o.svg";
 import Image from "next/image";
 
 const TeamPageContent = () => {
+  const [shuffledCards, setShuffledCards] = useState([]);
   const [activeCards, setActiveCards] = useState(
-    TEAM_CARDS.map(() => false) // Initialize all cards as inactive
+    Array(TEAM_CARDS.length).fill(false) // Initialize all cards as inactive
   );
   const cardRefs = useRef([]);
+
+  useEffect(() => {
+    // Shuffle the TEAM_CARDS array when the component mounts
+    const shuffled = shuffleArray(TEAM_CARDS);
+    setShuffledCards(shuffled);
+  }, []);
 
   useEffect(() => {
     // Apply random styles to each card on mount
     cardRefs.current.forEach((card, index) => {
       if (card) setRandomStyles(card); // Ensure card exists
     });
-  }, []);
+  }, [shuffledCards]);
 
   const toggleFunCard = (index) => {
     setActiveCards((prevActiveCards) =>
@@ -36,6 +43,18 @@ const TeamPageContent = () => {
     Object.keys(styles).forEach((key) => {
       card.classList.add(`style-${key}-${styles[key]}`);
     });
+  };
+
+  const shuffleArray = (array) => {
+    const shuffledArray = [...array];
+    for (let i = shuffledArray.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledArray[i], shuffledArray[j]] = [
+        shuffledArray[j],
+        shuffledArray[i],
+      ];
+    }
+    return shuffledArray;
   };
 
   return (
@@ -60,7 +79,7 @@ const TeamPageContent = () => {
             </header>
             <div className="pane-content">
               <div className="row">
-                {TEAM_CARDS.map((card, index) => {
+                {shuffledCards.map((card, index) => {
                   const cardData = {
                     name: card.name.toLowerCase(),
                     title: card.title,
