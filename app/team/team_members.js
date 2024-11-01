@@ -16,9 +16,9 @@ const teamGroups = [
       },
       {
         id: "head-2",
-        name: "kevin",
-        title: "VP, Technology",
-        fun_title: "Medieval Times Ambassador",
+        name: "tim",
+        title: "Director, Technology",
+        fun_title: "Undercover Rockstar",
       },
       {
         id: "head-3",
