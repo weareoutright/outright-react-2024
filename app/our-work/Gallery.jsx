@@ -44,7 +44,6 @@ const LazyGalleryItem = ({ item, key, waypoint, slug }) => {
 
 const Gallery = ({ waypoint }) => {
   const galleryObjects = convertProjectSlugsToArray(PROJECT_SLUGS);
-  console.log(galleryObjects);
 
   return (
     <div
