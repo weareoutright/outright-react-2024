@@ -10,7 +10,7 @@
     "generate-team-headshot-index": "node app/team/scripts/generateTeamImgIndex.mjs",
     "generate-all-indexes": "npm run generate-client-work-page-index && npm run generate-bg-zoom-img-index && npm run generate-outright-zoom-img-index && npm run generate-team-headshot-index",
     "dev": "npm run generate-all-indexes && next dev",
-    "build": "npm run generate-all-indexes && next build",
+    "build": "npm run generate-all-indexes && next build && npm run postbuild",
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
