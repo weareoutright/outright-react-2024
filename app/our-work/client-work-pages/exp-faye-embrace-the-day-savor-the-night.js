@@ -51,7 +51,7 @@ export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
       Fayetteville has to offer.
     </>
   ),
-  prev_page: async () => (await import("./edf-vision-2023")).EDF_VISION_2023,
+  prev_page: async () => (await import("./edf-vision-2030")).EDF_VISION_2030,
   next_page: async () =>
     (await import("./google-yt-big-game-bigger-ads"))
       .GOOGLE_YT_BIG_GAME_BIGGER_ADS,

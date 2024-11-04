@@ -1,17 +1,17 @@
 import Project from "./scripts/newProjectConstructor";
-import BG from "./assets/edf-vision-2023/hero-bg.png";
-import BENTO_TOP from "./assets/edf-vision-2023/bento-top.png";
-import BENTO_BOTTOM_LEFT from "./assets/edf-vision-2023/bento-bottom-left.png";
-import BENTO_BOTTOM_MID from "./assets/edf-vision-2023/bento-bottom-mid.png";
-import BENTO_BOTTOM_RIGHT from "./assets/edf-vision-2023/bento-bottom-right.png";
-import FULL_WIDTH_IMG from "./assets/edf-vision-2023/full-width-img.png";
-import CLIENT_SPOTLIGHT from "./assets/edf-vision-2023/client-spotlight.png";
-import EDF_VISION_2023_THUMBNAIL from "./assets/edf-vision-2023/thumbnail.png";
+import BG from "./assets/edf-vision-2030/hero-bg.png";
+import BENTO_TOP from "./assets/edf-vision-2030/bento-top.png";
+import BENTO_BOTTOM_LEFT from "./assets/edf-vision-2030/bento-bottom-left.png";
+import BENTO_BOTTOM_MID from "./assets/edf-vision-2030/bento-bottom-mid.png";
+import BENTO_BOTTOM_RIGHT from "./assets/edf-vision-2030/bento-bottom-right.png";
+import FULL_WIDTH_IMG from "./assets/edf-vision-2030/full-width-img.png";
+import CLIENT_SPOTLIGHT from "./assets/edf-vision-2030/client-spotlight.png";
+import EDF_VISION_2030_THUMBNAIL from "./assets/edf-vision-2030/thumbnail.png";
 
-export const EDF_VISION_2023 = new Project({
+export const EDF_VISION_2030 = new Project({
   hero_bg_img: BG,
   client_full_name: "Environmental Defense Fund",
-  project_title: "Vision 2023",
+  project_title: "Vision 2030",
   tags: ["microsites", "ux/ui", "website development"],
   main_headline: (
     <>Visualizing an ambitious plan for climate action this decade.</>
@@ -54,6 +54,6 @@ export const EDF_VISION_2023 = new Project({
   next_page: async () =>
     (await import("./exp-faye-embrace-the-day-savor-the-night"))
       .EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
-  slug: "/edf-vision-2023",
-  galleryThumbnail: EDF_VISION_2023_THUMBNAIL,
+  slug: "/edf-vision-2030",
+  galleryThumbnail: EDF_VISION_2030_THUMBNAIL,
 });

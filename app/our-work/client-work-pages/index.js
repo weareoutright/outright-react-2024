@@ -1,7 +1,7 @@
 // Auto-generated file. Do not edit manually.
 
-import { EDF_VISION_2023 } from "./edf-vision-2023.js";
-import EDF_VISION_2023_THUMBNAIL from "./assets/edf-vision-2023/thumbnail.png";
+import { EDF_VISION_2030 } from "./edf-vision-2030.js";
+import EDF_VISION_2030_THUMBNAIL from "./assets/edf-vision-2030/thumbnail.png";
 import { EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT } from "./exp-faye-embrace-the-day-savor-the-night.js";
 import EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT_THUMBNAIL from "./assets/exp-faye-embrace-the-day-savor-the-night/thumbnail.png";
 import { GOOGLE_YT_BIG_GAME_BIGGER_ADS } from "./google-yt-big-game-bigger-ads.js";
@@ -30,7 +30,7 @@ import WRI_DATA_DRIVEN_REVOLUTION_THUMBNAIL from "./assets/wri-data-driven-revol
 const PROJECT_SLUGS = {
 // Auto-generated file. Do not edit manually.
 
-  "/our-work/edf-vision-2023": { module: EDF_VISION_2023, filePath: "edf-vision-2023.js", galleryThumbnail: EDF_VISION_2023_THUMBNAIL },
+  "/our-work/edf-vision-2030": { module: EDF_VISION_2030, filePath: "edf-vision-2030.js", galleryThumbnail: EDF_VISION_2030_THUMBNAIL },
   "/our-work/experience-fayetteville-embrace-the-day-savor-the-night": { module: EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT, filePath: "exp-faye-embrace-the-day-savor-the-night.js", galleryThumbnail: EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT_THUMBNAIL },
   "/our-work/google-youtube-big-game-bigger-ads": { module: GOOGLE_YT_BIG_GAME_BIGGER_ADS, filePath: "google-yt-big-game-bigger-ads.js", galleryThumbnail: GOOGLE_YT_BIG_GAME_BIGGER_ADS_THUMBNAIL },
   "/our-work/google-youtube-connecting-beyond-coachella": { module: GOOGLE_YT_CONNECTING_BEYOND_COACHELLA, filePath: "google-yt-connecting-beyond-coachella.js", galleryThumbnail: GOOGLE_YT_CONNECTING_BEYOND_COACHELLA_THUMBNAIL },
