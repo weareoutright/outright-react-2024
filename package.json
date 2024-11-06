@@ -13,10 +13,15 @@
     "build": "npm run generate-all-indexes && next build && npm run postbuild",
     "postbuild": "next-sitemap --config next-sitemap.config.mjs",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest",
+    "test-debug": "vitest --debug",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@svgr/webpack": "^8.1.0",
+    "@vitejs/plugin-react": "^4.3.3",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.11.10",
     "fullpage.js": "^4.0.29",
@@ -35,9 +40,16 @@
     "viewport-units-buggyfill": "^0.6.2"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@vitest/ui": "^2.1.4",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
+    "jsdom": "^25.0.1",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.1"
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.4.10",
+    "vitest": "^2.1.4"
   }
 }
