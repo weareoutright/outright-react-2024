@@ -1,17 +1,17 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import PaneOuter from "./components/PaneOuter";
-import Utility from "./components/Utility";
+import PaneOuter from "./components/PaneOuter.jsx";
+import Utility from "./components/Utility.jsx";
 import HeroPane from "./panes/HeroPane.jsx";
-import { pane as YouTubePane } from "./clients/YouTubePaneProps.js";
-import { pane as HeroPaneProps } from "./panes/HeroPaneProps.js";
-import { pane as GNRTPaneProps } from "./clients/GnrtPaneProps.js";
-import { pane as SeeMoreWorkPaneProps } from "./panes/SeeMoreWorkPaneProps.js";
-import { pane as ContactPaneProps } from "./panes/ContactPaneProps.js";
-import { pane as OurClientsPaneProps } from "./panes/OurClientsPaneProps.js";
-import { pane as ServicesPaneProps } from "./panes/ServicesPaneProps.js";
-import { pane as AboutPaneProps } from "./panes/AboutPaneProps.js";
+import { pane as YouTubePane } from "./clients/YouTubePaneProps.jsx";
+import { pane as HeroPaneProps } from "./panes/HeroPaneProps.jsx";
+import { pane as GNRTPaneProps } from "./clients/GnrtPaneProps.jsx";
+import { pane as SeeMoreWorkPaneProps } from "./panes/SeeMoreWorkPaneProps.jsx";
+import { pane as ContactPaneProps } from "./panes/ContactPaneProps.jsx";
+import { pane as OurClientsPaneProps } from "./panes/OurClientsPaneProps.jsx";
+import { pane as ServicesPaneProps } from "./panes/ServicesPaneProps.jsx";
+import { pane as AboutPaneProps } from "./panes/AboutPaneProps.jsx";
 
 export default function Home() {
   const [siteHeadlineOpacity, setSiteHeadlineOpacity] = useState(1);

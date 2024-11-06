@@ -5,7 +5,7 @@ import WorkGalleryUtility from "../components/WorkGalleryUtility";
 import Gallery from "./Gallery";
 import PaneOuter from "../components/PaneOuter";
 import WorkGalleryHero from "./WorkGalleryHero";
-import { pane as ContactPaneProps } from "../panes/ContactPaneProps.js";
+import { pane as ContactPaneProps } from "../panes/ContactPaneProps.jsx";
 import { pane as WorkGalleryHeroProps } from "./WorkGalleryHeroProps";
 
 const WorkPage = () => {

@@ -39,7 +39,7 @@ const PaneInner = ({ pane }) => {
               <header className="pane-header">
                 {pane.attributes.id === "hero" ? (
                   <h1 className="pane-title site-title">
-                    <Image src={LOGO_O} alt="" />
+                    <LOGO_O />
                   </h1>
                 ) : (
                   <h1
