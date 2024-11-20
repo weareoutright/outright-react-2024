@@ -1,9 +1,9 @@
-.Clients {
-  background-color: white !important;
-  color: $black;
-  width: 100vw;
-  padding: 0px 120px;
-  scroll-snap-align: start;
+// .Clients {
+//   background-color: white !important;
+//   color: $black;
+//   width: 100vw;
+//   padding: 0px 120px;
+//   scroll-snap-align: start;
 
   .client-logos {
     display: grid;
@@ -18,4 +18,31 @@
       width: 100%;
     }
   }
+// }
+
+.Clients {
+  text-align: center;
+  padding: 20px;
+  color: $black;
+  background-color: white !important;
 }
+
+.client-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+  gap: 16px; /* spacing between logo items */
+  margin-top: 20px;
+}
+
+.logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-item svg {
+  width: 100px; /* Adjust size of SVG logos */
+  height: auto;
+}
+

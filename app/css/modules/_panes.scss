@@ -218,12 +218,17 @@
   }
   &#pane-oppagenda {
     .video-bg {
-      background-image: url("../../assets//bg-oppagenda-video.jpg");
+      background-image: url("../../assets/bg-oppagenda-video.jpg");
     }
   }
   &#pane-thefamilyroom {
     &.pane-bg-img {
       background-position: center left;
+    }
+  }
+  &#pane-gnrt {
+    .video-bg {
+      background-image: url("../../assets/bg-gnrt-video.jpg");
     }
   }
   &#pane-youtube {
