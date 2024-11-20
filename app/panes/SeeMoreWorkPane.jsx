@@ -7,13 +7,13 @@ const SeeMoreWork = () => {
   return (
     <div className="see-more-work">
       <div className="header-text">
+      <h3 className="pane-title">Want more?</h3>
         <a
           href="/our-work"
           className="check-out-our-work-link underline"
           onMouseEnter={() => setOpacity(1)}
           onMouseLeave={() => setOpacity(0)}
         >
-          <h1 className="no-list">Want more?</h1>
           <br />
           <h2 className="work-subheading underline">
             Check Out Our Work.

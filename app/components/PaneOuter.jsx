@@ -20,7 +20,7 @@ const PaneOuter = ({ pane, currentWaypoint }) => {
             : "",
           height: pane.attributes.id === "see-more" ? "75vh" : "100vh",
           scrollSnapAlign:
-            pane.attributes.id === "see-more" ? "center" : "start",
+            pane.attributes.id === "see-more" ? "start" : "start",
         }}
       >
         {/* Include the primary pane content */}

@@ -67,8 +67,9 @@
   // 	color:$dark;
   // }
   @include media-breakpoint-down(sm) {
-    transform: translateX(-50%);
-    left: 50%;
+    //not ideal fix, find where this is being set
+    transform: none !important;
+    left: 40%;
   }
 }
 

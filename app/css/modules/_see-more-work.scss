@@ -11,21 +11,21 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    h3 {
+      color: $dark;
+      text-transform: uppercase;
+      font-size: em(115);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1em;
+      padding-right: 1.5em;
+      font-family: $fontAlt;
+      letter-spacing: -3.45px;
+    }
     .check-out-our-work-link {
       margin-left: 0;
       &:hover {
         text-decoration: none;
-      }
-      h1 {
-        color: $dark;
-        text-transform: uppercase;
-        font-size: em(115);
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1em;
-        padding-right: 1.5em;
-        font-family: $fontAlt;
-        letter-spacing: -3.45px;
       }
       .work-subheading {
         font-family: $fontSans;
