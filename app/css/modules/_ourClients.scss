@@ -5,24 +5,18 @@
 //   padding: 0px 120px;
 //   scroll-snap-align: start;
 
-  .client-logos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
-    grid-template-rows: repeat(3, 1fr); /* Create 3 equal rows */
-    justify-items: center; /* Center the logos horizontally */
-    align-items: center;
-    margin-top: -2rem;
+// .client-logos {
+//   display: grid;
+//   grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+//   grid-template-rows: repeat(3, 1fr); /* Create 3 equal rows */
+//   justify-items: center; /* Center the logos horizontally */
+//   margin-top: -2rem;
 
-    svg {
-      object-fit: contain;
-      width: 100%;
-    }
-  }
+// }
 // }
 
 .Clients {
-  text-align: center;
-  padding: 20px;
+  text-align: left;
   color: $black;
   background-color: white !important;
 }
@@ -30,19 +24,17 @@
 .client-logos {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
-  gap: 16px; /* spacing between logo items */
-  margin-top: 20px;
-}
-
-.logo-item {
-  display: flex;
-  justify-content: center;
+  margin-top: 10px;
+  align-self: center;
   align-items: center;
-  padding: 10px;
-}
+  width: 100%;
+  max-width: 1100px;
+  justify-content: center;
+  gap: 3rem;
 
-.logo-item svg {
-  width: 100px; /* Adjust size of SVG logos */
-  height: auto;
+  svg {
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+  }
 }
-
