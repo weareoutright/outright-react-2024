@@ -26,6 +26,11 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  #pane-see-more {
+    height: 80vh !important;
+    scroll-snap-align: center !important;
+  }
 }
 
 .gradient-box {
