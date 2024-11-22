@@ -21,35 +21,50 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      span svg {
+        //display after replacing to gif
+        display: none;
+      }
     }
     .work-page-headline {
       padding: 1rem;
+      height: 100%;
       .site-headline {
         margin-bottom: 3rem;
+        div {
+          margin-top: 10em;
+        }
       }
       .hero-chevron-down {
         fill: white;
         animation: 2.925s ease-in-out infinite oscillate;
-        margin-right: 20.5rem;
+      }
+      &.page-utility-center {
+        left: auto;
+        transform: unset;
       }
     }
   }
 
   .work-page-gallery {
-    padding: em(60) em(125);
+    margin: em(60) auto;
     scroll-snap-align: start;
+    max-width: 1200px;
+    width: 90%;
     .work-page-gallery-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 20px;
-      padding: em(60) em(125);
+      grid-gap: 5em 20px;
+      padding: em(60) 0;
       justify-content: center;
 
       .work-page-gallery-item {
         display: block;
         width: auto;
+        pointer-events: none;
 
         a {
+          pointer-events: all;
           &:hover {
             text-decoration: none;
           }
@@ -75,7 +90,6 @@
 
         .work-page-gallery-item-headings {
           padding-top: em(20);
-          padding-bottom: em(100);
           h5 {
             color: $grayLight;
           }
@@ -100,4 +114,18 @@
       }
     }
   }
+  @media screen and (max-width: map-get($grid-breakpoints, md)) {
+    .WorkPageHero {
+      .work-page-title {
+        font-size: 80px !important;
+      }
+      .work-page-headline {
+        .site-headline {
+          font-size: 20px !important;
+          margin-top: 15em;
+        }
+      }
+    }
+  }
 }
+
