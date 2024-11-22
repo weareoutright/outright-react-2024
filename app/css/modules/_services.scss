@@ -1,21 +1,37 @@
-.ServicesPane {
-  h2,
-  p,
-  strong {
-    color: $black;
-  }
-  padding: 0px 120px !important;
-
-  h2 {
-    text-transform: uppercase;
-    font-family: $fontAlt;
-  }
-
-  .service-content {
-    border-bottom: 2px solid $black;
-
-    p {
-      font-size: em(24) !important;
+#pane-services {
+  .row {
+    .col-12 {
+      max-width: 1000px;
+      width: 100%;
+      .ServicesPane {
+        h2,
+        p,
+        strong {
+          color: $black;
+        }
+        h2 {
+          text-transform: uppercase;
+          font-family: $fontAlt;
+        }
+        .service-content {
+          border-bottom: 2px solid $black;
+          p {
+            font-size: em(24) !important;
+          }
+        }
+      }
+      @media screen and (max-width: 675px) {
+        .pane-title {
+          font-size: 3em;
+        }
+        .ServicesPane {
+          .service-content {
+            p {
+              font-size: medium !important;
+            }
+          }
+        }
+      }
     }
   }
 }

@@ -15,6 +15,16 @@
   justify-content: center;
   gap: 3rem;
 
+  @media screen and (max-width: 1180px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 600px;
+  }
+
+  @media screen and (max-width: 950px) {
+    max-width: 500px;
+  }
+
   svg {
     width: 100%;
     object-fit: cover;
