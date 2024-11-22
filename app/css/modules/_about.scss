@@ -1,13 +1,89 @@
-.AboutPane {
-  margin: 0px 120px;
-  max-width: 1029px;
-
-  .about-content {
-    margin-top: -0.5rem;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 48px; /* 200% */
-    letter-spacing: 0.48px;
+#pane-about {
+  .container {
+    .row {
+      .col-12 {
+        .pane-title {
+          margin-bottom: 0;
+        }
+        max-width: 1000px;
+        margin: auto;
+        .scribble-circle-word-container {
+          .mobile-display {
+            display: none;
+          }
+        }
+        .AboutPane {
+            .about-content {
+              margin-top: -0.5rem;
+              font-style: normal;
+              font-weight: 400;
+              p {
+                font-size: 1.5em !important;
+                line-height: 1.444em; /* 200% */
+                letter-spacing: -0.02em;
+              }
+            }
+          }
+        @media screen and (max-width: 1180px) {
+          max-width: 900px;
+          .scribble-circle-word-container {
+            .mobile-display {
+              display: block;
+              .meet-the-team-arrow-bottom {
+                //height: auto;
+                .service-arrow {
+                  margin-top: .3em;
+                  height: auto;
+                  margin-right: .25em;
+                }
+                a img {
+                  width: 200px;
+                  height: auto;
+                  //-left: 1em;
+                }
+              }
+            }
+            .meet-the-team-arrow {
+              display: none;
+            }
+          }
+        }
+        @media screen and (max-width: 675px) {
+          .pane-title {
+            font-size: 3em;
+          }
+          .AboutPane {
+            .about-content {
+              p {
+                font-size: 1em !important;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: 350px) {
+          .pane-title {
+            .scribble-circle-word-container {
+              .mobile-display {
+                .meet-the-team-arrow-bottom {
+                  .service-arrow {
+                    width: 25px;
+                  }
+                  a img {
+                    width: 150px;
+                  }
+                }
+              }
+            }
+          }
+          .AboutPane {
+            .about-content {
+              p {
+                font-size: 1em !important;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

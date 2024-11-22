@@ -9,7 +9,7 @@ const TitleLogo = ({
   return (
     <div className={classes}>
       <div id={id}>
-        <a href={href}>
+        {/*<a href={href}>*/}
           <h1 className="title-logo">
             <a href="/" className="header-logo-nav">
               <span className="title-logo-img">
@@ -41,7 +41,7 @@ const TitleLogo = ({
               </a>
             </div>
           </h1>
-        </a>
+        {/*</a>*/}
       </div>
     </div>
   );

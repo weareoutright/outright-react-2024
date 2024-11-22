@@ -41,15 +41,35 @@ export const pane = {
       <br />
       anything is
       <br /> possible …
+        <div className={"mobile-display"}>
+            <div className="meet-the-team-arrow-bottom">
+        <Image
+            src={OUTRIGHT_ARROW}
+            className="service-arrow"
+            width={50}
+            height={50}
+            alt=""
+        />
+        <a href="./team">
+          <Image
+              src={MEET_THE_TEAM}
+              className="service-meet-the-team-bottom"
+              width={300}
+              height={40}
+              alt=""
+          />
+        </a>
+      </div>
+        </div>
     </div>
   ),
-  attributes: {
-    id: "about",
-    autoheight_responsive: true,
-    containerClasses: ["left"],
-  },
-  background: "black",
-  order: "06",
-  waypoint: "Who We Are",
-  content: <AboutPane />,
+    attributes: {
+        id: "about",
+        autoheight_responsive: true,
+        containerClasses: ["left"],
+    },
+    background: "black",
+    order: "06",
+    waypoint: "Who We Are",
+    content: <AboutPane/>,
 };

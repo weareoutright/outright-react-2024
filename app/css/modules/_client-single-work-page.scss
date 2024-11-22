@@ -14,103 +14,164 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
       width: 100%;
     }
   }
+  .work-page-content {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 20px;
+    .ClientWorkHeroHeader {
+      //padding: $work-page-padding;
+      padding: 100px 0;
+      h5 {
+        color: $grayLight;
+        margin-bottom: em(30);
+      }
+      h3 {
+        margin-bottom: em(25);
+      }
 
-  .ClientWorkHeroHeader {
-    padding: $work-page-padding;
-    h5 {
-      color: $grayLight;
-      margin-bottom: em(30);
-    }
-    h3 {
-      margin-bottom: em(25);
-    }
-
-    .project-tags {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: em(10);
-      .tag-pill {
-        border-radius: em(200);
-        border: 3px solid #000;
-        padding: em(7) em(16);
-        font-weight: 700;
+      .project-tags {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: em(10);
+        .tag-pill {
+          border-radius: em(200);
+          border: 3px solid #000;
+          padding: em(7) em(16);
+          font-weight: 700;
+        }
       }
     }
-  }
-
-  .ClientMainHeadline {
-    .main-headline-text {
-      padding: $work-page-padding-no-top;
-      font-size: em(60);
-      font-weight: 700;
-      line-height: 120%;
-    }
-  }
-
-  .ClientWorkBento {
-    padding: $work-page-padding-no-top;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr 0.15fr;
-    gap: 10px;
-    width: 100%;
-    height: auto;
-
-    img {
-      height: auto;
-      width: 100%;
-    }
-
-    .top {
-      grid-column: span 2;
-      grid-row: span 1;
-    }
-    .bottom-left {
-      grid-column: span 1;
-      grid-row: span 2;
-    }
-    .bottom-right {
-      grid-column: span 1;
-      grid-row: span 2;
-    }
-  }
-
-  .ClientQuote {
-    display: flex;
-    padding: $work-page-padding-no-top;
-    align-items: flex-start;
-    width: 100%;
-    justify-content: space-between;
-
-    .open-quotation,
-    .close-quotation {
-      font-size: em(128);
-      font-family: $fontSans;
-    }
-
-    .open-quotation {
-      transform: rotateZ(180deg);
-    }
-
-    .quote-body {
-      width: 100%;
-      justify-self: center;
-      margin: 0 auto;
-      h2 {
+    .ClientMainHeadline {
+      .main-headline-text {
+        padding-bottom: 100px;
+        font-size: em(60);
         font-weight: 700;
-        padding-bottom: 1.5rem;
         line-height: 120%;
-        width: 100%;
-        text-wrap: pretty;
       }
-      small {
+    }
+    .ClientWorkBento {
+      padding-bottom: 100px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr 1fr 0.15fr;
+      gap: 10px;
+      width: 100%;
+      height: auto;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
+
+      .top {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+      .bottom-left {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+      .bottom-right {
+        grid-column: span 1;
+        grid-row: span 2;
+      }
+    }
+    .ClientQuote {
+      display: flex;
+      padding-bottom: 100px;
+      margin: auto;
+      max-width: 550px;
+      align-items: flex-start;
+      width: 100%;
+      justify-content: space-between;
+
+      .open-quotation,
+      .close-quotation {
+        font-size: em(128);
+        font-family: $fontSans;
+      }
+
+      .open-quotation {
+        transform: rotateZ(180deg);
+      }
+
+      .quote-body {
+        width: 100%;
+        justify-self: center;
+        margin: 0 auto;
+        h2 {
+          font-weight: 700;
+          padding-bottom: 1.5rem;
+          line-height: 120%;
+          width: 100%;
+          text-wrap: pretty;
+        }
+        small {
+          font-size: em(20);
+        }
+      }
+
+      .close-quotation {
+        transform: rotateX(180deg);
+      }
+    }
+    .ClientSpotlight {
+      padding: 100px 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .ClientProjectOverview {
+      padding-bottom: 100px;
+      font-size: em(32);
+      line-height: 140%;
+    }
+    .PrevNextBottomNav {
+      width: 100%;
+      height: auto;
+      max-width: 700px;
+      margin: 0 auto;
+      //padding: $work-page-padding-no-top;
+      padding-bottom: 100px;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+
+      a {
+        font-family: $fontAlt;
+        font-size: em(36);
+        display: block;
+        color: $black;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: right;
+        transition: background-image 100ms ease-in;
+        padding-bottom: 1.25em;
+
+        &:hover {
+          background-image: url("../../assets/scribble-line.gif");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: bottom 55% right 10%;
+          text-decoration: none;
+        }
+      }
+    }
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+      .ClientMainHeadline {
+        .main-headline-text {
+          font-size: em(40);
+        }
+      }
+      .ClientProjectOverview {
+        font-size: em(22);
+      }
+      .PrevNextBottomNav a{
         font-size: em(20);
       }
-    }
-
-    .close-quotation {
-      transform: rotateX(180deg);
     }
   }
 
@@ -118,49 +179,6 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
     img {
       width: 100%;
       height: auto;
-    }
-  }
-
-  .ClientSpotlight {
-    padding: 100px 125px;
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .ClientProjectOverview {
-    padding: $work-page-padding-no-top;
-    font-size: em(32);
-    line-height: 140%;
-  }
-
-  .PrevNextBottomNav {
-    width: 100%;
-    height: auto;
-    padding: $work-page-padding-no-top;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-
-    a {
-      font-family: $fontAlt;
-      font-size: em(36);
-      display: block;
-      color: $black;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-align: right;
-      transition: background-image 100ms ease-in;
-      padding-bottom: 1.25em;
-
-      &:hover {
-        background-image: url("../../assets/scribble-line.gif");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: bottom 55% right 10%;
-        text-decoration: none;
-      }
     }
   }
 }
