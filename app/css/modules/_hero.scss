@@ -86,10 +86,14 @@
       opacity: 0.8;
     }
   }
+  a {
+    pointer-events: all;
+    scroll-behavior: smooth;
+  }
 
-  // .hero-chevron-down {
-  //   animation: 2.925s ease-in-out infinite oscillate;
-  // }
+   .hero-chevron-down {
+     animation: 2.925s ease-in-out infinite oscillate;
+   }
 }
 
 @keyframes oscillate {
