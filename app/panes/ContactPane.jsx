@@ -86,13 +86,13 @@ const ContactPane = () => {
             <br />
             &copy; Outright 2023
             <br />
-            <a
+            {/* <a
               href="https://www.designrush.com/agency/logo-branding/washington-dc"
               target="_blank"
               rel="noopener noreferrer"
             >
               DesignRush
-            </a>
+            </a> */}
           </li>
         </ul>
       </div>
