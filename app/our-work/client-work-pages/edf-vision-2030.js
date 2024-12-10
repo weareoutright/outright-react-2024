@@ -50,7 +50,8 @@ export const EDF_VISION_2030 = new Project({
       digestible and inspire action.
     </>
   ),
-  prev_page: "/",
+  prev_page: async () =>
+    (await import("./wri-data-driven-revolution")).WRI_DATA_DRIVEN_REVOLUTION,
   next_page: async () =>
     (await import("./exp-faye-embrace-the-day-savor-the-night"))
       .EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,

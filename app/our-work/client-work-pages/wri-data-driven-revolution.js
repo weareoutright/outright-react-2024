@@ -59,7 +59,7 @@ export const WRI_DATA_DRIVEN_REVOLUTION = new Project({
   prev_page: async () =>
     (await import("./wpa-art-that-brings-people-together"))
       .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
-  next_page: "/",
+  next_page: async () => (await import("./edf-vision-2030")).EDF_VISION_2030,
   slug: "/world-resources-institute-data-driven-revolution",
   galleryThumbnail: WRI_DATA_DRIVEN_REVOLUTION_THUMBNAIL,
 });
