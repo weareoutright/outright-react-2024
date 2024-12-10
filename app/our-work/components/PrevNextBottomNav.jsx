@@ -28,6 +28,10 @@ export const PrevNextBottomNav = ({ prevPage, nextPage, handleNavigation }) => {
         </a>
       )}
 
+      <a href="/our-work" alt="Back to Gallery" classname="back-to-gallery-btn">
+        Back to Gallery
+      </a>
+
       {nextPage && (
         <a
           href={nextPage === "/" ? nextPage : `/our-work${nextPage.slug}`}

@@ -25,7 +25,7 @@ const TitleLogo = ({
               work
             </a>
             <a className="link" href="/team">
-              team
+              who we are
             </a>
           </div>
         </h1>
