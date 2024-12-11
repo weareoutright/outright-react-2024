@@ -33,8 +33,8 @@ const TitleLogo = ({
                 who we are
               </a>
             </div>
-          </h1>
-        {/*</a>*/}
+          </div>
+        </h1>
       </div>
     </div>
   );

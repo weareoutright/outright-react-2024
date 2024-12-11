@@ -65,13 +65,14 @@ const Utility = ({
             &copy; Outright 2023
             <br />
             <br />
-            <a className="design-rush"
+            <a
+              className="design-rush"
               href="https://www.designrush.com/agency/logo-branding/washington-dc"
               target="_blank"
               rel="noopener noreferrer"
             >
               DesignRush
-            </a> */}
+            </a>
           </p>
         </div>
         <div
