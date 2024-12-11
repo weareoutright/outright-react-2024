@@ -24,11 +24,16 @@ const TitleLogo = ({
             <a className="link" href="/our-work">
               work
             </a>
-            <a className="link" href="/team">
-              who we are
-            </a>
-          </div>
-        </h1>
+            <span>outright</span>
+            <div className="nav-links">
+              <a className="link" href="/our-work">
+                work
+              </a>
+              <a className="link" href="/team">
+                who we are
+              </a>
+            </div>
+          </h1>
         {/*</a>*/}
       </div>
     </div>

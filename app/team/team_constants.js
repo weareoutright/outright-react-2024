@@ -10,6 +10,11 @@ const TEAM_CARDS = [
     funTitle: "Half-Court Sinker",
   },
   {
+    name: "Tracy",
+    title: "Managing Director",
+    funTitle: "Scream Queen Aficionado",
+  },
+  {
     name: "Tim",
     title: "Director, Technology",
     funTitle: "Undercover Rockstar",
@@ -40,11 +45,6 @@ const TEAM_CARDS = [
     funTitle: "Crochet Professional",
   },
   {
-    name: "Amanda",
-    title: "Marketing Account Manager",
-    funTitle: "“Pics or it didn't happen” Spokeswoman",
-  },
-  {
     name: "Kelsey",
     title: "Senior Designer",
     funTitle: "West Virginia, Mountain Mama",
@@ -56,7 +56,7 @@ const TEAM_CARDS = [
   },
   {
     name: "Emily",
-    title: "Graphic Designer",
+    title: "Senior Designer",
     funTitle: "Aesthetics Guru",
   },
   {
