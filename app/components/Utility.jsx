@@ -65,7 +65,7 @@ const Utility = ({
             &copy; Outright 2023
             <br />
             <br />
-            <a
+            <a className="design-rush"
               href="https://www.designrush.com/agency/logo-branding/washington-dc"
               target="_blank"
               rel="noopener noreferrer"
@@ -96,7 +96,7 @@ const Utility = ({
               />
               Elevated creative for modern brands
             </span>
-            <a href="#featured-01">
+            <a href="#pane-youtube">
               <CHEVRON_DOWN className="hero-chevron-down" />
             </a>
           </h2>

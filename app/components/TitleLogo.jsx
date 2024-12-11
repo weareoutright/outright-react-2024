@@ -21,23 +21,11 @@ const TitleLogo = ({
             </a>
             <span>outright</span>
             <div className="nav-links">
-              <a className="link" href="#featured">
-                featured
-              </a>
               <a className="link" href="/our-work">
                 work
               </a>
-              <a className="link" href="#clients">
-                clients
-              </a>
-              <a className="link" href="#who-we-are">
-                who we are
-              </a>
-              <a className="link" href="#approach">
-                approach
-              </a>
               <a className="link" href="/team">
-                team
+                who we are
               </a>
             </div>
           </h1>

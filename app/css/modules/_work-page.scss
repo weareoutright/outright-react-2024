@@ -38,6 +38,7 @@
       .hero-chevron-down {
         fill: white;
         animation: 2.925s ease-in-out infinite oscillate;
+        scroll-behavior: smooth;
       }
       &.page-utility-center {
         left: auto;
