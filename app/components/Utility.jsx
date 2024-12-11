@@ -54,7 +54,7 @@ const Utility = ({
         >
           <p
             style={{
-              opacity: waypoint === "Contact" ? 1 : privacyPolicyOpacity,
+              opacity: waypoint === "Contact" ? 1 : 0,
               transition: "200ms ease-in-out",
             }}
           >
@@ -71,7 +71,7 @@ const Utility = ({
               rel="noopener noreferrer"
             >
               DesignRush
-            </a>
+            </a> */}
           </p>
         </div>
         <div

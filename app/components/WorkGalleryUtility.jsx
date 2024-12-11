@@ -59,13 +59,13 @@ const WorkGalleryUtility = ({ waypoint }) => {
             &copy; Outright 2023
             <br />
             <br />
-            <a
+            {/* <a
               href="https://www.designrush.com/agency/logo-branding/washington-dc"
               target="_blank"
               rel="noopener noreferrer"
             >
               DesignRush
-            </a>
+            </a> */}
           </p>
         </div>
         <div className="page-utility-component page-utility-upper page-utility-right">

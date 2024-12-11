@@ -10,14 +10,19 @@ const TitleLogo = ({
     <div className={classes}>
       <div id={id}>
         {/*<a href={href}>*/}
-          <h1 className="title-logo">
-            <a href="/" className="header-logo-nav">
-              <span className="title-logo-img">
-                <LOGO_O />
-              </span>
-              <span className="title-logo-img-full">
-                <LOGO_FULL />
-              </span>
+        <h1 className="title-logo">
+          <a href="/" className="header-logo-nav">
+            <span className="title-logo-img">
+              <LOGO_O />
+            </span>
+            <span className="title-logo-img-full">
+              <LOGO_FULL />
+            </span>
+          </a>
+          <span>outright</span>
+          <div className="nav-links">
+            <a className="link" href="/our-work">
+              work
             </a>
             <span>outright</span>
             <div className="nav-links">

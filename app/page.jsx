@@ -141,128 +141,128 @@ export default function Home() {
   }, []);
 
   return (
-      <div className={`Home ${scrollbarColor}`} ref={containerRef}>
-          {/* Utility component receives dynamic waypoint and order */}
-          <Utility
-              waypoint={currentWaypoint}
-              order={currentOrder}
-              siteHeadlineOpacity={siteHeadlineOpacity}
-              siteHeadlineDisplay={siteHeadlineDisplay}
-              privacyPolicyOpacity={privacyHeadlineOpacity}
-          />
+    <div className={`Home ${scrollbarColor}`} ref={containerRef}>
+      {/* Utility component receives dynamic waypoint and order */}
+      <Utility
+        waypoint={currentWaypoint}
+        order={currentOrder}
+        siteHeadlineOpacity={siteHeadlineOpacity}
+        siteHeadlineDisplay={siteHeadlineDisplay}
+        privacyPolicyOpacity={privacyHeadlineOpacity}
+      />
 
-          {/* HeroPane observed */}
-          <div
-              ref={heroPaneRef}
-              data-waypoint={HeroPaneProps.waypoint}
-              data-order={HeroPaneProps.order}
-              data-scrollbar={HeroPaneProps.background}
-          >
-              <HeroPane/>
-          </div>
-
-          {/* PaneOuter observed */}
-          <div
-              ref={youtubeRef}
-              data-waypoint={YouTubePane.waypoint}
-              data-order={YouTubePane.order}
-              data-scrollbar={YouTubePane.background}
-              id="featured"
-          >
-              <PaneOuter pane={YouTubePane}/>
-          </div>
-          <div
-              ref={rtcRef}
-              data-waypoint={RtcPaneProps.waypoint}
-              data-order={RtcPaneProps.order}
-              data-scrollbar={RtcPaneProps.background}
-          >
-              <PaneOuter pane={RtcPaneProps}/>
-          </div>
-          <div
-              ref={meTooRef}
-              data-waypoint={MeTooPaneProps.waypoint}
-              data-order={MeTooPaneProps.order}
-              data-scrollbar={MeTooPaneProps.background}
-          >
-              <PaneOuter pane={MeTooPaneProps}/>
-          </div>
-          <div
-              ref={wriRef}
-              data-waypoint={WriPaneProps.waypoint}
-              data-order={WriPaneProps.order}
-              data-scrollbar={WriPaneProps.background}
-          >
-              <PaneOuter pane={WriPaneProps}/>
-          </div>
-          <div
-              ref={marriottRef}
-              data-waypoint={MarriottPaneProps.waypoint}
-              data-order={MarriottPaneProps.order}
-              data-scrollbar={MarriottPaneProps.background}
-          >
-              <PaneOuter pane={MarriottPaneProps}/>
-          </div>
-          <div
-              ref={toaRef}
-              data-waypoint={ToaPaneProps.waypoint}
-              data-order={ToaPaneProps.order}
-              data-scrollbar={ToaPaneProps.background}
-          >
-              <PaneOuter pane={ToaPaneProps}/>
-          </div>
-          <div
-              ref={gnrtRef}
-              data-waypoint={GNRTPaneProps.waypoint}
-              data-order={GNRTPaneProps.order}
-              data-scrollbar={GNRTPaneProps.background}
-          >
-              <PaneOuter pane={GNRTPaneProps}/>
-          </div>
-
-          <div
-              ref={seeMoreWorkRef}
-              data-waypoint={SeeMoreWorkPaneProps.waypoint}
-              data-order={SeeMoreWorkPaneProps.order}
-              data-scrollbar={SeeMoreWorkPaneProps.background}
-          >
-              <PaneOuter pane={SeeMoreWorkPaneProps}/>
-          </div>
-          <div
-              ref={ourClientsRef}
-              data-waypoint={OurClientsPaneProps.waypoint}
-              data-order={OurClientsPaneProps.order}
-              data-scrollbar={OurClientsPaneProps.background}
-              id="clients"
-          >
-              <PaneOuter pane={OurClientsPaneProps}/>
-          </div>
-          <div
-              ref={aboutRef}
-              data-waypoint={AboutPaneProps.waypoint}
-              data-order={AboutPaneProps.order}
-              data-scrollbar={AboutPaneProps.background}
-              id="who-we-are"
-          >
-              <PaneOuter pane={AboutPaneProps}/>
-          </div>
-          <div
-              ref={servicesRef}
-              data-waypoint={ServicesPaneProps.waypoint}
-              data-order={ServicesPaneProps.order}
-              data-scrollbar={ServicesPaneProps.background}
-              id="approach"
-          >
-              <PaneOuter pane={ServicesPaneProps}/>
-          </div>
-          <div
-              ref={contactRef}
-              data-waypoint={ContactPaneProps.waypoint}
-              data-order={ContactPaneProps.order}
-              data-scrollbar={ContactPaneProps.background}
-          >
-              <PaneOuter pane={ContactPaneProps} currentWaypoint={currentWaypoint}/>
-          </div>
+      {/* HeroPane observed */}
+      <div
+        ref={heroPaneRef}
+        data-waypoint={HeroPaneProps.waypoint}
+        data-order={HeroPaneProps.order}
+        data-scrollbar={HeroPaneProps.background}
+      >
+        <HeroPane />
       </div>
+
+      {/* PaneOuter observed */}
+      <div
+        ref={youtubeRef}
+        data-waypoint={YouTubePane.waypoint}
+        data-order={YouTubePane.order}
+        data-scrollbar={YouTubePane.background}
+        id="featured"
+      >
+        <PaneOuter pane={YouTubePane} />
+      </div>
+      <div
+        ref={rtcRef}
+        data-waypoint={RtcPaneProps.waypoint}
+        data-order={RtcPaneProps.order}
+        data-scrollbar={RtcPaneProps.background}
+      >
+        <PaneOuter pane={RtcPaneProps} />
+      </div>
+      <div
+        ref={meTooRef}
+        data-waypoint={MeTooPaneProps.waypoint}
+        data-order={MeTooPaneProps.order}
+        data-scrollbar={MeTooPaneProps.background}
+      >
+        <PaneOuter pane={MeTooPaneProps} />
+      </div>
+      <div
+        ref={wriRef}
+        data-waypoint={WriPaneProps.waypoint}
+        data-order={WriPaneProps.order}
+        data-scrollbar={WriPaneProps.background}
+      >
+        <PaneOuter pane={WriPaneProps} />
+      </div>
+      <div
+        ref={marriottRef}
+        data-waypoint={MarriottPaneProps.waypoint}
+        data-order={MarriottPaneProps.order}
+        data-scrollbar={MarriottPaneProps.background}
+      >
+        <PaneOuter pane={MarriottPaneProps} />
+      </div>
+      <div
+        ref={toaRef}
+        data-waypoint={ToaPaneProps.waypoint}
+        data-order={ToaPaneProps.order}
+        data-scrollbar={ToaPaneProps.background}
+      >
+        <PaneOuter pane={ToaPaneProps} />
+      </div>
+      <div
+        ref={gnrtRef}
+        data-waypoint={GNRTPaneProps.waypoint}
+        data-order={GNRTPaneProps.order}
+        data-scrollbar={GNRTPaneProps.background}
+      >
+        <PaneOuter pane={GNRTPaneProps} />
+      </div>
+
+      <div
+        ref={seeMoreWorkRef}
+        data-waypoint={SeeMoreWorkPaneProps.waypoint}
+        data-order={SeeMoreWorkPaneProps.order}
+        data-scrollbar={SeeMoreWorkPaneProps.background}
+      >
+        <PaneOuter pane={SeeMoreWorkPaneProps} />
+      </div>
+      <div
+        ref={ourClientsRef}
+        data-waypoint={OurClientsPaneProps.waypoint}
+        data-order={OurClientsPaneProps.order}
+        data-scrollbar={OurClientsPaneProps.background}
+        id="clients"
+      >
+        <PaneOuter pane={OurClientsPaneProps} />
+      </div>
+      <div
+        ref={aboutRef}
+        data-waypoint={AboutPaneProps.waypoint}
+        data-order={AboutPaneProps.order}
+        data-scrollbar={AboutPaneProps.background}
+        id="who-we-are"
+      >
+        <PaneOuter pane={AboutPaneProps} />
+      </div>
+      <div
+        ref={servicesRef}
+        data-waypoint={ServicesPaneProps.waypoint}
+        data-order={ServicesPaneProps.order}
+        data-scrollbar={ServicesPaneProps.background}
+        id="approach"
+      >
+        <PaneOuter pane={ServicesPaneProps} />
+      </div>
+      <div
+        ref={contactRef}
+        data-waypoint={ContactPaneProps.waypoint}
+        data-order={ContactPaneProps.order}
+        data-scrollbar={ContactPaneProps.background}
+      >
+        <PaneOuter pane={ContactPaneProps} currentWaypoint={currentWaypoint} />
+      </div>
+    </div>
   );
 }
