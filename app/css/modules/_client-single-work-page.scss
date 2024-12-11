@@ -54,28 +54,43 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
     .ClientWorkBento {
       padding-bottom: 100px;
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr 1fr 0.15fr;
       gap: 10px;
+      grid-template-columns: 1fr 1fr; /* Defines two equal columns */
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        "top top"
+        "bottom-left bottom-right";
       width: 100%;
-      height: auto;
 
       img {
         height: auto;
         width: 100%;
       }
 
-      .top {
-        grid-column: span 2;
-        grid-row: span 1;
-      }
-      .bottom-left {
-        grid-column: span 1;
-        grid-row: span 2;
-      }
+      .top,
+      .bottom-left,
       .bottom-right {
-        grid-column: span 1;
-        grid-row: span 2;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+      .top {
+        grid-area: top;
+      }
+
+      .bottom-left {
+        grid-area: bottom-left;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .bottom-right {
+        grid-area: bottom-right;
+        gap: 10px;
+        display: grid;
       }
     }
     .ClientQuote {
