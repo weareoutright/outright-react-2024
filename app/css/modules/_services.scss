@@ -12,6 +12,7 @@
         h2 {
           text-transform: uppercase;
           font-family: $fontAlt;
+          margin-bottom: -0.85rem;
         }
         .service-content {
           border-bottom: 2px solid $black;
@@ -25,6 +26,9 @@
           font-size: 3em;
         }
         .ServicesPane {
+          h2 {
+            margin-bottom: -0.25rem;
+          }
           .service-content {
             p {
               font-size: medium !important;
