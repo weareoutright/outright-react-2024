@@ -16,7 +16,7 @@ const SeeMoreWork = () => {
         >
           <br />
           <h2 className="work-subheading underline">
-            Check Out Our Work.
+            Dig into our work
             <SCRIBBLE_LINE_DARK style={{ opacity: opacity }} />
           </h2>
         </a>

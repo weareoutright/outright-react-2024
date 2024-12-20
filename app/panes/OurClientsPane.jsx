@@ -14,7 +14,7 @@ import RWJ from "../assets/client-logos/rwj.svg";
 const OurClientsPane = () => {
   return (
     <div className="Clients">
-      <h2>We work with...</h2>
+      <h2>Our work speaks for itself. And for the clients we work with.</h2>
       <div className="client-logos">
         <YOUTUBE className="youtube-logo" />
         <GOOGLE className="google-logo" />

@@ -5,7 +5,7 @@ const ServicesPane = () => {
         <h2>Strategy</h2>
         <div className="service-content">
           <p>
-            Brand strategy | Campaign concepting | Media planning & buying |
+            Brand strategy | Campaign concepting | Media planning & buying | Marketing strategy |
             Audience research
           </p>
         </div>
@@ -14,7 +14,7 @@ const ServicesPane = () => {
       <li className="service col-md-12">
         <h2>Design</h2>
         <div className="service-content">
-          <p>Branding | Graphic design | Motion & animation | Campaigns</p>
+          <p>Branding | Graphic design | Motion & animation | Campaigns | Events & experiential</p>
         </div>
       </li>
 
@@ -22,7 +22,7 @@ const ServicesPane = () => {
         <h2>Digital</h2>
         <div className="service-content">
           <p>
-            UX/UI design | Website development | Data visualization | Microsites
+            UX/UI design | Content strategy | Website development | Information Design | Microsites
           </p>
         </div>
       </li>
