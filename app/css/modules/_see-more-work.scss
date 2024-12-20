@@ -6,6 +6,16 @@
   width: 100%;
   background-color: $chartreuse;
 
+  .see-more-work-link-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   .header-text {
     display: flex;
     flex-direction: column;
@@ -46,6 +56,7 @@
 
   .right-chevron-link {
     transform: rotate(-90deg);
+    align-content: flex-end;
 
     &:hover {
       text-decoration: none;
