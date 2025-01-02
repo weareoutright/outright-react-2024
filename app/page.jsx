@@ -7,8 +7,6 @@ import HeroPane from "./panes/HeroPane.jsx";
 import { pane as YouTubePane } from "./clients/YouTubePaneProps.jsx";
 import { pane as HeroPaneProps } from "./panes/HeroPaneProps.jsx";
 import { pane as RtcPaneProps } from "./clients/RtcPaneProps.jsx";
-import { pane as MeTooPaneProps } from "./clients/MeTooPaneProps.jsx";
-import { pane as WriPaneProps } from "./clients/WriPaneProps.jsx";
 import { pane as MarriottPaneProps } from "./clients/MarriottPaneProps.jsx";
 import { pane as ToaPaneProps } from "./clients/ToaPaneProps.jsx";
 import { pane as GNRTPaneProps } from "./clients/GnrtPaneProps.jsx";
@@ -51,8 +49,6 @@ export default function Home() {
   const heroPaneRef = useRef(null);
   const youtubeRef = useRef(null);
   const rtcRef = useRef(null);
-  const meTooRef = useRef(null);
-  const wriRef = useRef(null);
   const marriottRef = useRef(null);
   const toaRef = useRef(null);
   const gnrtRef = useRef(null);
@@ -96,8 +92,6 @@ export default function Home() {
     const hero = heroPaneRef.current;
     const youtube = youtubeRef.current;
     const rtc = rtcRef.current;
-    const meToo = meTooRef.current;
-    const wri = wriRef.current;
     const marriott = marriottRef.current;
     const toa = toaRef.current;
     const gnrt = gnrtRef.current;
@@ -111,8 +105,6 @@ export default function Home() {
     if (hero) observer.observe(hero);
     if (youtube) observer.observe(youtube);
     if (rtc) observer.observe(rtc);
-    if (meToo) observer.observe(meToo);
-    if (wri) observer.observe(wri);
     if (marriott) observer.observe(marriott);
     if (toa) observer.observe(toa);
     if (gnrt) observer.observe(gnrt);
@@ -127,8 +119,6 @@ export default function Home() {
       if (hero) observer.observe(hero);
       if (youtube) observer.observe(youtube);
       if (rtc) observer.observe(rtc);
-      if (meToo) observer.observe(meToo);
-      if (wri) observer.observe(wri);
       if (marriott) observer.observe(marriott);
       if (toa) observer.observe(toa);
       if (gnrt) observer.observe(gnrt);
@@ -178,22 +168,6 @@ export default function Home() {
         data-scrollbar={RtcPaneProps.background}
       >
         <PaneOuter pane={RtcPaneProps} />
-      </div>
-      <div
-        ref={meTooRef}
-        data-waypoint={MeTooPaneProps.waypoint}
-        data-order={MeTooPaneProps.order}
-        data-scrollbar={MeTooPaneProps.background}
-      >
-        <PaneOuter pane={MeTooPaneProps} />
-      </div>
-      <div
-        ref={wriRef}
-        data-waypoint={WriPaneProps.waypoint}
-        data-order={WriPaneProps.order}
-        data-scrollbar={WriPaneProps.background}
-      >
-        <PaneOuter pane={WriPaneProps} />
       </div>
       <div
         ref={marriottRef}

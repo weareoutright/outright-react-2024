@@ -34,7 +34,11 @@ const SeeMoreWork = () => {
           onMouseEnter={() => setOpacity(1)}
           onMouseLeave={() => setOpacity(0)}
         >
-          <ICON_CHEVRON_DOWN className="right-chevron" />
+          <br />
+          <h2 className="work-subheading underline">
+            Dig into our work
+            <SCRIBBLE_LINE_DARK style={{ opacity: opacity }} />
+          </h2>
         </a>
       </a>
     </div>

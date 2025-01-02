@@ -96,7 +96,7 @@ const Utility = ({
                 width={100}
                 height={100}
               />
-              Elevated creative for modern brands
+              Creative that turns heads and elevates brands
             </span>
             <a href="#pane-youtube">
               <CHEVRON_DOWN className="hero-chevron-down" />
