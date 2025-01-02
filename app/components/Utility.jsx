@@ -7,6 +7,7 @@ import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
 import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 import CHEVRON_DOWN from "../assets/icon-chevron-down.svg";
 import ICON_X from "../assets/icon-x.svg";
+import { useRouter } from "next/navigation";
 
 const Utility = ({
   waypoint,
