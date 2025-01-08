@@ -7,60 +7,20 @@ import AboutPane from "./About";
 export const pane = {
   title: (
     <div className="scribble-circle-word-container">
-      With the
-      <br /> right{" "}
+      We're {" "}
       <span className="scribble-circled-word">
         {" "}
         <Image
           src={SCRIBBLE_CIRCLE}
           className="service-scribble scribble"
-          width={100}
+          width={90}
           height={100}
           alt=""
         />
-        <span>people</span>,
-      </span>
-      <span className="meet-the-team-arrow">
-        <Image
-          src={OUTRIGHT_ARROW}
-          className="service-arrow"
-          width={100}
-          height={100}
-          alt=""
-        />
-        <a href="./team">
-          <Image
-            src={MEET_THE_TEAM}
-            className="service-meet-the-team"
-            width={100}
-            height={100}
-            alt=""
-          />
-        </a>
+        <span>passionate</span>,
       </span>
       <br />
-      anything is
-      <br /> possible …
-        <div className={"mobile-display"}>
-            <div className="meet-the-team-arrow-bottom">
-        <Image
-            src={OUTRIGHT_ARROW}
-            className="service-arrow"
-            width={50}
-            height={50}
-            alt=""
-        />
-        <a href="./team">
-          <Image
-              src={MEET_THE_TEAM}
-              className="service-meet-the-team-bottom"
-              width={300}
-              height={40}
-              alt=""
-          />
-        </a>
-      </div>
-        </div>
+      about brands that create change and define culture.
     </div>
   ),
     attributes: {

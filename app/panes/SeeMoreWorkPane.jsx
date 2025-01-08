@@ -13,7 +13,7 @@ const SeeMoreWork = () => {
         onMouseLeave={() => setOpacity(0)}
       >
         <div className="header-text">
-          <h3 className="pane-title">Want more?</h3>
+          <p className="pane-title">Whether it’s for iconic brands or change-making nonprofits, we strategize, concept, and expertly execute work that moves clients forward.</p>
           <a
             href="/our-work"
             className="check-out-our-work-link underline"
@@ -22,24 +22,24 @@ const SeeMoreWork = () => {
           >
             <br />
             <h2 className="work-subheading underline">
-              Check Out Our Work.
+              Dig into our work.
               <SCRIBBLE_LINE_DARK style={{ opacity: opacity }} />
             </h2>
           </a>
         </div>
         <br />
-        <a
-          href="/our-work"
-          className="right-chevron-link"
-          onMouseEnter={() => setOpacity(1)}
-          onMouseLeave={() => setOpacity(0)}
-        >
-          <br />
-          <h2 className="work-subheading underline">
-            Dig into our work
-            <SCRIBBLE_LINE_DARK style={{ opacity: opacity }} />
-          </h2>
-        </a>
+      {/*  <a*/}
+      {/*    href="/our-work"*/}
+      {/*    className="right-chevron-link"*/}
+      {/*    onMouseEnter={() => setOpacity(1)}*/}
+      {/*    onMouseLeave={() => setOpacity(0)}*/}
+      {/*  >*/}
+      {/*    <br />*/}
+      {/*    <h2 className="work-subheading underline">*/}
+      {/*      Dig into our work*/}
+      {/*      <SCRIBBLE_LINE_DARK style={{ opacity: opacity }} />*/}
+      {/*    </h2>*/}
+      {/*  </a>*/}
       </a>
     </div>
   );
