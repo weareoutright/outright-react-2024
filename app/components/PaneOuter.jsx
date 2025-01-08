@@ -18,7 +18,7 @@ const PaneOuter = ({ pane, currentWaypoint }) => {
           backgroundImage: pane.background_image
             ? `url('../assets/${pane.background_image})`
             : "",
-          height: pane.attributes.id === "see-more" ? "50vh" : "100vh",
+          height: pane.attributes.id === "see-more" ? "60vh" : "100vh",
           scrollSnapAlign:
             pane.attributes.id === "see-more" ? "start" : "start",
         }}

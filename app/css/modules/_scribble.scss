@@ -25,6 +25,7 @@
 
 .scribble-circle-word-container {
   //padding: 0px 120px !important;
+  font-size: em(15);
 
   .scribble-word-container {
     position: relative;
@@ -36,7 +37,7 @@
 
     .service-scribble {
       position: absolute;
-      width: 160%;
+      width: 130%;
       height: 200%;
       top: 20%;
       left: 50%;
