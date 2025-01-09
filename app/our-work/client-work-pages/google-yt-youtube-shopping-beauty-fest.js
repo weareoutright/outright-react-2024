@@ -10,11 +10,11 @@ import GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST_THUMBNAIL from "./assets/google-yt
 
 export const GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST = new Project({
   hero_bg_img: BG,
-  client_full_name: "Google / YouTube",
+  client_full_name: "YouTube",
   project_title: "YouTube Shopping x #BeautyFest",
-  tags: ["branding", "video & motion", "sizzles"],
+  tags: ["branding", "video & motion", "campaigns"],
   main_headline: (
-    <>A fresh look for YouTube Shopping&apos;s annual beauty event.</>
+    <>Putting a fresh face on a growing live-stream beauty event.</>
   ),
   bento_top: BENTO_TOP,
   bento_bottom_left: BENTO_BOTTOM_LEFT,
@@ -22,23 +22,19 @@ export const GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST = new Project({
   bento_bottom_right: BENTO_BOTTOM_RIGHT,
   quote: (
     <>
-      A massive thank you to you and the team for your great
-      work...Outright&apos;s quality of work and quickness allowed us to truly
-      put our best foot forward and the partnership is so appreciated.
     </>
   ),
-  speaker_name: "Kristen Schwartz",
-  speaker_title: "Senior Video Strategy Lead",
-  speaker_org: "Google / Youtube",
+  speaker_name: "",
+  speaker_title: "",
+  speaker_org: "",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      A refreshed look for YouTube Shopping&apos;s beauty event of the year,
-      #BeautyFest. This updated design is simple yet elevated, seamlessly
-      adapting from sizzle reels and creator collaborations to static campaign
-      graphics. #BeautyFest&apos;s new visual identity enhances every aspect of
-      the event, making it more vibrant and engaging than ever before.
+        Once a year, hot celebs and even hotter brands converge at #BeautyFest, YouTube Shopping’s live-stream event in praise—and purchase—of all things beauty. Knowing 2023 was primed to be #BeautyFest’s  most successful year yet, Outright was called in to give it a signature seasonal style.
+      <br/>
+      <br/>
+        The revamped look in a word? Demure. Its simple-yet-elevated design seamlessly stretches from sizzle reels and creator collaborations to static campaign graphics. The entirely updated visual identity tied together and flowed throughout every aspect of the event—making it a more vibrant and engaging experience for beauty product lovers.
     </>
   ),
   prev_page: async () =>

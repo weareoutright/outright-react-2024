@@ -12,11 +12,10 @@ export const RTC_WE_SEE_MORE = new Project({
   hero_bg_img: BG,
   client_full_name: "Rails to Trails Conservancy",
   project_title: "We See More Than a Trail",
-  tags: ["brand strategy", "branding", "research"],
+  tags: ["brand strategy", "branding", "visual identity"],
   main_headline: (
     <>
-      Rebrand blazes a new trail for a leading national outdoors nonprofit
-      organization. 
+      Veering off the beaten path so an outdoor nonprofit can blaze new trials. 
     </>
   ),
   bento_top: BENTO_TOP,
@@ -39,21 +38,10 @@ export const RTC_WE_SEE_MORE = new Project({
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      Founded in 1986, Rails to Trails Conservancy (RTC) has always been about
-      transforming public spaces into vibrant, active pathways for walking,
-      biking, and outdoor fun. As the organization evolved, it needed a fresh
-      brand to showcase its expanded mission beyond rail-trails and to attract a
-      younger, more diverse group of outdoor enthusiasts and partners—all while
-      keeping the trust and love of its current community.
+        Creating a nationwide network of trails connecting people, places, and the benefits of being outdoors. That’s been Rails to Trails Conservancy’s (RTC) mission since 1986. Recently, attracting younger, more diverse outdoor enthusiasts and partners has become a priority, saddling RTC with the need to expand its reach without losing any hard-earned equity within the existing community.
       <br />
       <br />
-      RTC teamed up with Outright and research partner Vanguard Communications
-      to dig deep into the hearts and minds of their audience through extensive
-      research and focus groups. The result? A brand that feels like a perfect
-      day outside, radiates joy, and brings a breath of fresh air to the
-      outdoors nonprofit space. A new logo system, a custom pattern, inclusive
-      photography, and a vibrant color palette all inspired by the experience of
-      a day outdoors.
+        Of course, evolving the organization meant evolving the brand. So Outright gleaned insights from extensive research and focus groups with trail advocates, done by research partners, Vanguard Communications. From there, we breathed fresh air into this legacy nonprofit by crafting a bold and impactful, yet inviting aesthetic—including a new logo system, custom pattern, inclusive photography, and a meaningful color palette. Now, armed with this strategically evolved identity, RTC is inspiring new (and existing) members to tap into the joy, vibrancy and connection of leaning into life out on the trail.
     </>
   ),
   prev_page: async () =>

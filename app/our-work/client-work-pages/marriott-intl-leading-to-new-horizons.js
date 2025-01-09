@@ -11,15 +11,11 @@ import MARRIOTT_INTL_NEW_HORIZONS_THUMBNAIL from "./assets/marriott-intl-leading
 export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   hero_bg_img: BG,
   client_full_name: "Marriott International",
-  project_title: "Leading to New Horizons",
-  tags: ["naming", "visual identity", "brand strategy"],
+  project_title: "Lead to New Horizons",
+  tags: ["brand strategy", "visual identity", "sub-brands"],
   main_headline: (
     <>
-      A new visual identity for one of Marriott International&apos;s executive
-      advancement programs. / A new visual identity helping Marriott
-      International&apos;s visionary leaders navigate their careers. / Marriott
-      International&apos;s reimagined executive advancement program propels
-      visionary leaders forward.
+        Advancing the program that guides Marriott International’s leaders forward.
     </>
   ),
   bento_top: BENTO_TOP,
@@ -28,30 +24,19 @@ export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   bento_bottom_right: BENTO_BOTTOM_RIGHT,
   quote: (
     <>
-      Outright&apos;s ability to meet our design challenges across tone,
-      audiences, and programmatic offerings was very impressive.
     </>
   ),
-  speaker_name: "Denise Beek",
-  speaker_title: "Chief Communcations Officer",
-  speaker_org: "me too. International",
+  speaker_name: "",
+  speaker_title: "",
+  speaker_org: "",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      As a long-time client of Outright, Marriott International turned to our
-      creative experts to craft a distinctive identity for their new leadership
-      program. Our team of creative strategists developed a fresh identity named
-      “En Route,” inspired by the unique and invaluable journey that shapes
-      individuals throughout their careers.
+        To help promising, ambitious associates make their way up the ranks at Marriott International, this long-time Outright client had developed a new executive advancement program. With everything riding on its success, the global hospitality giant tapped Outright to bring it to life. We quickly set to work building an engaging, accessible and exciting brand experience for the standout employees that the Marriott team were looking to retain and grow.
+        <br />
       <br />
-      <br />
-      Every element of this visual identity reflects the experiences that build
-      great leaders. The color palette draws from diverse competencies, while a
-      custom pattern echoes career trajectories and milestones. En Route&apos;s
-      photography is authentic, with a tangible sense of place and self. Bold,
-      concise headlines connect directly with Associates&apos; aspirations for
-      professional and personal growth.
+        Pulling from the feeling of continuous forward momentum and the anticipation of reaching a destination, our team of creative strategists dubbed the program “En Route.” The three-tiered approach to learning (Embark/Emerge/Base Camp) furthers the advancing journey metaphor, along with a custom illustration suite for KPI categories and a color palette that draws from distinguished competencies. Bold photography and concise headlines tie it all together, further accentuating En Route’s global aspirational appeal.
     </>
   ),
   prev_page: async () =>

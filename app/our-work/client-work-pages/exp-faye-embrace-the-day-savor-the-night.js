@@ -12,11 +12,10 @@ export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
   hero_bg_img: BG,
   client_full_name: "Experience Fayetteville",
   project_title: "Embrace The Day, Savor The Night",
-  tags: ["media planning & buying", "campaigns", "motion design"],
+  tags: ["media planning & buying", "video production", "advertising"],
   main_headline: (
     <>
-      Discover the unexpected in Fayetteville, Arkansas tourism marketing
-      campaign.
+        Attracting tourists with the breadth and best of what Fayetteville has to offer.
     </>
   ),
   bento_top: BENTO_TOP,
@@ -25,30 +24,19 @@ export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
   bento_bottom_right: BENTO_BOTTOM_RIGHT,
   quote: (
     <>
-      Outright&apos;s ability to meet our design challenges across tone,
-      audiences, and programmatic offerings was very impressive.
     </>
   ),
-  speaker_name: "Denise Beek",
-  speaker_title: "Chief Communications Officer",
-  speaker_org: "me too. International",
+  speaker_name: "",
+  speaker_title: "",
+  speaker_org: "",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      As Experience Fayetteville&apos;s Marketing Agency of Record, our team is
-      tasked with boosting tourism in Fayetteville, Arkansas. Our team imagined
-      a campaign concept showcasing the wide range of what the city of
-      Fayetteville has to offer. Headlines entice new visitors by pairing
-      unexpected interests together — like gravel biking and fine dining — with
-      a reveal that it&apos;s all found in Fayetteville.
+        While there’s no shortage of Fayettevilles across the U.S. (14, to be exact), only one of them combines the natural splendor, artistic heritage, and hospitality of Fayetteville, Arkansas. Which is a good thing for us, since Outright works to boost its tourism as the Marketing Agency of Record for Experience Fayetteville. Leveraging our research and a strong existing brand identity, Outright’s campaigns team focused on touting the extent of what the city has to offer by visually pairing unexpected activities and interests—like gravel biking and fine dining.
       <br></br>
       <br></br>
-      Syndicated across digital platforms, the ads are designed to be
-      eye-catching, surprising, and artistically inspired, reflecting the
-      city&apos;s rich artistic heritage. Each headline and visual invites new
-      visitors to explore the unique and unexpected experiences that
-      Fayetteville has to offer.
+        Carefully curated shots, captured across two days and 14 locations, showcase that breadth while authentically conveying the richness of Fayetteville’s spirit. Stills and motion effortlessly fit together across strategically placed programmatic and display ads as well as through media coverage in publications including NYT and Southern Living—all encouraging new audiences to dig deeper and explore this amazing destination for themselves. The new campaign not only sparked an increase in travel to Fayetteville but also the number of average nights spent there, compared to the previous year.
     </>
   ),
   prev_page: async () => (await import("./edf-vision-2030")).EDF_VISION_2030,

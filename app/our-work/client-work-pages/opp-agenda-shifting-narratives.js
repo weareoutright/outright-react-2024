@@ -12,11 +12,10 @@ export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
   hero_bg_img: BG,
   client_full_name: "The Opportunity Agenda",
   project_title: "Shifting Narratives",
-  tags: ["brand strategy", "branding", "ux/ui design"],
+  tags: ["branding", "visual identity", "website development"],
   main_headline: (
     <>
-      A full rebrand and new website that&apos;s shifting narratives and
-      challenging systems of oppression.
+        Shifting narratives and challenging systems of oppression with the power of a strong brand.
     </>
   ),
   bento_top: BENTO_TOP,
@@ -38,24 +37,15 @@ export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
   ),
   speaker_name: "Rachel Reyes",
   speaker_title: "Director of Strategic Communications",
-  speaker_org: "Opportunity Agenda",
+  speaker_org: "TOA",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      The Opportunity Agenda (TOA) has long been a key resource for inclusive
-      message training for progressive organizations and advocates. When TOA
-      shifted its focus to combating white supremacy, it needed a brand that
-      mirrored this new direction.
+        Bringing activists and artists together to change the cultural narrative for equity and social justice for all has always been the work of The Opportunity Agenda (TOA). And while directly combating white supremacy as a means for doing that became prioritized for the organization, so was its need for a brand that genuinely reflected that. Armed with research and our own experiences, Outright set out building a bigger, bolder brand system to bolster TOA’s work—in dismantling other, more oppressive systems.
+        <br></br>
       <br></br>
-      <br></br>
-      Grounded in research, TOA&apos;s revamped brand includes a bold new logo,
-      a social-heavy visual identity, and a distinctive photography style that
-      align with the organization&apos;s mission and priorities. This
-      transformation paves the way for a new wave of narrative change. The brand
-      comes alive through a striking digital experience, featuring a new
-      information architecture, fully dark-mode UI, and a comprehensive catalog
-      of page templates with modular components.
+        This (r)evolution of the TOA brand actively invites a new wave of narrative change through a striking digital experience (featuring a new information architecture, fully dark-mode UI, and a comprehensive catalog of page templates with modular components) and an intersectionality-centered aesthetic that harmoniously uses high-velocity hues, a social-heavy visual identity, and a distinctive photography style. Five distinct-yet-familial sub-brands serving various audiences now work together in supporting and strengthening TOA’s mission.
     </>
   ),
   prev_page: async () =>

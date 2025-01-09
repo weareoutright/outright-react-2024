@@ -12,9 +12,9 @@ export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   hero_bg_img: BG,
   client_full_name: "Pennsylvania Immunization Coalition",
   project_title: "You've Got Questions",
-  tags: ["campaigns", "motion design", "microsites"],
+  tags: ["media planning & buying", "video & motion", "microsites"],
   main_headline: (
-    <>A vaccination education campaign that cuts through the noise. </>
+    <>Arming PA parents with accurate, actionable information about vaccines. </>
   ),
   bento_top: BENTO_TOP,
   bento_bottom_left: BENTO_BOTTOM_LEFT,
@@ -22,29 +22,19 @@ export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   bento_bottom_right: BENTO_BOTTOM_RIGHT,
   quote: (
     <>
-      Outright has been an absolute joy to work with. We have worked with them
-      on several projects to date and they have always gone out of their way to
-      ensure that what they produce for us is deeply reflective of our voice and
-      our vision. The staff is sharp, creative, efficient and accommodating.
-      They understand and care about the work which only makes the working
-      relationship more rich and rewarding. I highly recommend them to anyone
-      who wants innovative and fresh work!
     </>
   ),
-  speaker_name: "Tarana Burke",
-  speaker_title: "Founder",
-  speaker_org: "me too. International",
+  speaker_name: "",
+  speaker_title: "",
+  speaker_org: "",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      In a crowded public health landscape, our campaign for Pennsylvania
-      Immunization Coalition cut through the noise with a simple,
-      stop-the-scroll approach. Quirky, attention-grabbing photos and headlines
-      speak directly to parents&apos; feelings of overwhelm and confusion about
-      vaccines. A vibrant palette of saturated colors paired with soft pastels
-      allowed the campaign to transition seamlessly between eye-catching visuals
-      and a more nuanced, approachable tone.
+      Between all the mis-, dis-, or lack of information out there about vaccines, it’s no wonder Pennsylvania parents of children and teens have so many questions. Yet, despite focus groups with local providers and community members echoing that confusion, the Pennsylvania Immunization Coalition (PAIC) still struggled to educate them on this potentially life-saving topic. Outright understood, responding with a simple, visually arresting, stop-the-scroll approach grounded in research insights  that quickly cut through the already crowded public health landscape.
+      <br/>
+      <br/>
+      Quirky, attention-grabbing photos and headlines empathetically tapped into parents’ sense of confusion and overwhelm surrounding vaccinations, while a thoughtful saturated color palette paired with soft pastels created a natural bridge between the bold visuals and a more nuanced, serious tone. The campaign was disseminated across online video, display and native ads, strategically targeting vaccine-hesitant parents through advanced audience targeting capabilities. Generating more than 26M impressions with PA parents and quickly surpassing industry benchmarks for click-through and video completion rates, viewers landed at GetAnswersPA.org, a simple, intuitive hub for trustworthy information, links, and testimonials.
     </>
   ),
   prev_page: async () =>
