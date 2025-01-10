@@ -7,7 +7,7 @@ import AboutPane from "./About";
 export const pane = {
   title: (
     <div className="scribble-circle-word-container">
-      We're {" "}
+      We&apos;re{" "}
       <span className="scribble-circled-word">
         {" "}
         <Image
@@ -23,13 +23,13 @@ export const pane = {
       about brands that create change and define culture.
     </div>
   ),
-    attributes: {
-        id: "about",
-        autoheight_responsive: true,
-        containerClasses: ["left"],
-    },
-    background: "black",
-    order: "06",
-    waypoint: "Who We Are",
-    content: <AboutPane/>,
+  attributes: {
+    id: "about",
+    autoheight_responsive: true,
+    containerClasses: ["left"],
+  },
+  background: "black",
+  order: "06",
+  waypoint: "Who We Are",
+  content: <AboutPane />,
 };
