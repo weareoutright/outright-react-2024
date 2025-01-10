@@ -12,11 +12,10 @@ export const MODEV_AI_EVENT_FOR_A_NEW_ERA = new Project({
   hero_bg_img: BG,
   client_full_name: "Modev",
   project_title: "AI Event for a New Era",
-  tags: ["brand strategy", "event", "video & motion"],
+  tags: ["branding", "events & environmental", "video & motion"],
   main_headline: (
     <>
-      An AI event brand illuminating a new era of creators (and creations) that
-      are shaping our world. Launched at CES 2024. 
+        Inspiring the future of AI innovation, one conference attendee at a time. 
     </>
   ),
   bento_top: BENTO_TOP,
@@ -25,34 +24,19 @@ export const MODEV_AI_EVENT_FOR_A_NEW_ERA = new Project({
   bento_bottom_right: BENTO_BOTTOM_RIGHT,
   quote: (
     <>
-      Outright has been an absolute joy to work with. We have worked with them
-      on several projects to date and they have always gone out of their way to
-      ensure that what they produce for us is deeply reflective of our voice and
-      our vision. The staff is sharp, creative, efficient and accommodating.
-      They understand and care about the work which only makes the working
-      relationship more rich and rewarding. I highly recommend them to anyone
-      who wants innovative and fresh work!
     </>
   ),
-  speaker_name: "Tarana Burke",
-  speaker_title: "Founder",
-  speaker_org: "me too. International",
+  speaker_name: "",
+  speaker_title: "",
+  speaker_org: "",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      Introducing “GNRT” (pronounced “generate”), a brand that captures the
-      essence of the new world of AI creation. GNRT inspires all facets of AI to
-      collaborate and blend together through a visual strategy that is deeply
-      artistic and intentionally immersive. Abstract ink and bold typography
-      embody the creativity within us and the innovative ways AI integrates into
-      our lives.
+        Unless you live under a rock (that doesn’t have wi-fi), it’s hard not to see the ways AI is bleeding into every aspect of our lives. But how do we make sure all facets of AI collaborate and blend together in ways that change our world for the better? Enter GNRT.AI. An event created to support and accelerate global innovations in augmented-intelligence. To do that well, the GNRT (pronounced “generate”) brand experience had to live up to the hype surrounding this technology. That’s when Modev (the creator of the event) tagged Outright to make it happen.
       <br />
       <br />
-      GNRT is dynamic, edgy, and empowering, with AI-generated art as a central
-      element of its visual and photography strategy. Motion—both subtle and
-      kinetic—plays a crucial role in experiencing the GNRT brand, making it a
-      vibrant, living entity.
+        After our team imagined  GNRT’s original squid-inspired mark, we stretched our tentacles further into the deep-sea metaphor, to accentuate the innate immersive fluidity of the brand, while making it feel even more intelligent and alive. Continuous motion—both subtle and kinetic—ushers attendees through every aspect of the event, from registration to the final demo. Abstract ink flows into bold typography and custom AI-generated portraits (meant to work across digital touch screens, edgy swag, animated speaker backgrounds, and more) to visually represent and inspire the ways augmented intelligence is weaving its way into every aspect of our lives.
     </>
   ),
   prev_page: async () =>

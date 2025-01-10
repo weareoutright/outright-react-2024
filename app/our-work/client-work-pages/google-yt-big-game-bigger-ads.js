@@ -10,13 +10,12 @@ import GOOGLE_YT_BIG_GAME_BIGGER_ADS_THUMBNAIL from "./assets/google-yt-big-game
 
 export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
   hero_bg_img: BG,
-  client_full_name: "Google / YouTube",
+  client_full_name: "YouTube",
   project_title: "Bigger Game, Bigger Ads",
-  tags: ["branding", "campaign concepting", "motion design"],
+  tags: ["branding", "motion design", "visual identity"],
   main_headline: (
     <>
-      Key art for YouTube AdBlitz — the best place to watch ads from the biggest
-      game.
+        Bringing YouTube’s A Game to the ad game after the big game.
     </>
   ),
   bento_top: BENTO_TOP,
@@ -32,24 +31,15 @@ export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
   ),
   speaker_name: "Kristen Schwartz",
   speaker_title: "Senior Video Strategy Lead",
-  speaker_org: "Google / Youtube",
+  speaker_org: "YouTube",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      YouTube AdBlitz is the top destination for catching Super Bowl ads after
-      the game, racking up over one billion views each year. Working with
-      Outright to reimagine their visual identity, the new AdBlitz brand
-      captures the NFL&apos;s camaraderie without falling into cliché territory,
-      showcasing advertiser sponsorships while driving views and engagement with
-      a distinct YouTube flair.
+        Re-upping on snacks. Poorly-planned bathroom breaks. A general lack of interest in football. Whatever the excuse for missing the best ads of the year, there’s only one destination for catching them after the Super Bowl. YouTube AdBlitz racks up 1B+ views each year, so when they reached out for a rebrand that would help better showcase advertiser sponsorships while driving views and engagement, Outright ran with it.
       <br />
       <br />
-      It&apos;s a high-energy, refreshing twist on the big game, featuring
-      graphical elements that deconstruct the game&apos;s mechanics—from planned
-      plays to watch parties. The campaign is intentionally designed to flex
-      between key art and co-sponsored ad spots, ensuring cohesion and brand
-      recall, no matter where a viewer is experiencing it.
+        We reimagined their new visual identity in a way that captures the excitement and camaraderie of the NFL minus the overplayed sports clichés. By using graphical elements that deconstruct the game’s mechanics—from planned plays to watch parties and everything in between—the subsequent high-energy campaign flexes seamlessly between key art and co-sponsored ad spots, ensuring cohesion and brand recall, regardless of where viewers experience it.
     </>
   ),
   prev_page: async () =>

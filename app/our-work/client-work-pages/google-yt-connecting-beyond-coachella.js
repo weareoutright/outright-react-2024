@@ -10,13 +10,12 @@ import GOOGLE_YT_CONNECTING_BEYOND_COACHELLA_THUMBNAIL from "./assets/google-yt-
 
 export const GOOGLE_YT_CONNECTING_BEYOND_COACHELLA = new Project({
   hero_bg_img: BG,
-  client_full_name: "Google / YouTube",
+  client_full_name: "YouTube",
   project_title: "Connecting Beyond Coachella",
-  tags: ["brand strategy", "visual identity", "design"],
+  tags: ["campaigns", "video & motion", "sizzles"],
   main_headline: (
     <>
-      Didn&apos;t snag a ticket to Coachella? Sponsorships and swag help fans
-      experience the action from home.
+        Helping fans enjoy the best of Coachella—from the comfort of the couch.
     </>
   ),
   bento_top: BENTO_TOP,
@@ -32,14 +31,15 @@ export const GOOGLE_YT_CONNECTING_BEYOND_COACHELLA = new Project({
   ),
   speaker_name: "Lori Schak",
   speaker_title: "Sponsorship Deal Lead",
-  speaker_org: "Google / Youtube",
+  speaker_org: "YouTube",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      From crafting ad spots for Coachella x YouTube sponsorships to designing
-      swag and giveaways, our campaigns and motion teams brought the festival
-      experience directly to fans at home.
+      Every year, thousands of people descend upon the desert to experience three days of aural bliss at one of the most well-recognized, well-produced music festivals around. Over the last twenty years, Coachella has blown up—attracting an impressively dense lineup of world-famous artists and throngs of attendees from all over the world. But, successfully snagging a ticket isn’t easy—or always even possible. That’s where we came in.
+      <br />
+      <br />
+      For those without airfare and a wristband for the 2025 event, Outright partnered with YouTube to create a festival experience all fans can enjoy. Our campaigns and motion teams concepted and brought to life an integrated Coachella x YouTube sponsorship campaign, complete with everything from display ads and brand collabs to custom swag and giveaways to amp up online engagement and bring the hype home.
     </>
   ),
   prev_page: async () =>

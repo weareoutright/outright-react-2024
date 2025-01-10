@@ -12,9 +12,9 @@ export const EDF_VISION_2030 = new Project({
   hero_bg_img: BG,
   client_full_name: "Environmental Defense Fund",
   project_title: "Vision 2030",
-  tags: ["microsites", "ux/ui", "website development"],
+  tags: ["information design", "ux/ui design", "website development"],
   main_headline: (
-    <>Visualizing an ambitious plan for climate action this decade.</>
+    <>Implementing innovative, creative solutions so a global environmental nonprofit can do the same.</>
   ),
   bento_top: BENTO_TOP,
   bento_bottom_left: BENTO_BOTTOM_LEFT,
@@ -22,32 +22,19 @@ export const EDF_VISION_2030 = new Project({
   bento_bottom_right: BENTO_BOTTOM_RIGHT,
   quote: (
     <>
-      Outright&apos;s ability to meet our design challenges across tone,
-      audiences, and programmatic offerings was very impressive.
     </>
   ),
-  speaker_name: "Denise Beek",
-  speaker_title: "Chief Communications Officer",
-  speaker_org: "me too. International",
+  speaker_name: "",
+  speaker_title: "",
+  speaker_org: "",
   full_width_img: FULL_WIDTH_IMG,
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      With an ambitious climate action plan for the decade, the Environmental
-      Defense Fund enlisted Outright to create a bespoke, interactive web
-      experience to mobilize the most promising climate opportunities.
+        More than 50-years deep in the work of building innovative solutions to address the world’s greatest environmental challenges, the Environmental Defense Fund (EDF)needed help mobilizing the most promising opportunities in pursuit of its ambitious climate goals. The legacy nonprofit enlisted Outright to develop a captivating and inspirational way to share extensive content and research.
       <br />
       <br />
-      The key challenge was to present extensive content and research in a
-      captivating way. We distilled rich information into a visual narrative,
-      using human-focused photography and inventive UX strategies to drive
-      awareness and engagement.
-      <br />
-      <br />
-      Vision 2030 sets a new standard for web experiences within the
-      organization. Standout features include interactive stories, carefully
-      curated photography, and bold design elements that make information easily
-      digestible and inspire action.
+        Anchored in EDF’s newly refreshed brand identity, we created a bespoke, interactive web experience. The resulting Vision 2030 represents the organization’s newly defined online approach—distilling rich information into easy-to-digest visual narratives, employing inventive UX strategies to further engagement and centering human-focused photography with a concentric circle treatment to visually express the ever-expanding impact our actions set in motion.
     </>
   ),
   prev_page: async () =>

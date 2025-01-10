@@ -12,9 +12,9 @@ export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
   hero_bg_img: BG,
   client_full_name: "me too. International",
   project_title: "Rebranding a Movement",
-  tags: ["branding", "research", "brand strategy"],
+  tags: ["brand strategy", "branding", "visual identity", ],
   main_headline: (
-    <>Moving the organization behind the #metoo Movement beyond the hashtag.</>
+    <>Moving the organization behind the #metoo Movement to the forefront.</>
   ),
   bento_top: BENTO_TOP,
   bento_bottom_left: BENTO_BOTTOM_LEFT,
@@ -38,28 +38,10 @@ export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      Founded by Tarana Burke in 2017 to combat sexual violence toward women of
-      color, the me too. Movement organization was thrust into the spotlight
-      when the hashtag #metoo dominated social media. However, the origin of the
-      hashtag and the work of the organization behind it was lost in the noise.
-      This misperception was a continuing challenge for the organization,
-      leading &apos;me too.&apos; to work with Outright to craft a new brand
-      identity that is unique, empowering, and inspired by communities they
-      serve.
+        #metoo exploded on social media in 2017, as a movement created to combat sexual violence toward women of color. That’s when the hashtag’s viral dominance eclipsed the true origins of this culture-shaping organization and the vital work it had been doing since its inception in 2006. It was at this point that founder, Tarana Burke, knew reclaiming their identity and strengthening their narrative was a must, so she turned to Outright to help.
       <br />
       <br />
-      Partnering with Outright, the &apos;me too.&apos; brand identity needed
-      reimagining. It needed to do more than exist and inspire; it needed to
-      stretch from the loud speaker to the more accessible counseling
-      conversation, and to better reflect their impact, mission, and
-      aspirations.
-      <br />
-      <br />
-      Every visual detail of the rebrand is thoughtful, unique, and empowering —
-      and inspired by Black artists, activists, and social movements. A collage
-      effect of elements, textures, stylized photography, typography, a broad
-      color palette, and a volume meter that allows the brand to stretch from
-      survivor sanctuary to bold action
+        Mindful of the brand’s intrinsic need to be as unique and empowering as the communities they serve, we got to work. Black artists, activists, and social movements provided inspiration and a lens for crafting a brand that was dynamic and resilient. Rich textures, stylized photography, expressive typography, and an expansive color palette create a functional and nuanced brand system with elements that can be dialed up and down to resonate with audiences more deeply—whether the organization is speaking as a sanctuary for healing or a survivor activation system.
     </>
   ),
   prev_page: async () =>
