@@ -7,12 +7,16 @@ import BENTO_BOTTOM_RIGHT from "./assets/wri-data-driven-revolution/bento-bottom
 import FULL_WIDTH_IMG from "./assets/wri-data-driven-revolution/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/wri-data-driven-revolution/client-spotlight.png";
 import WRI_DATA_DRIVEN_REVOLUTION_THUMBNAIL from "./assets/wri-data-driven-revolution/thumbnail.png";
+import {
+  GOOGLE_YT_CONNECTING_BEYOND_COACHELLA
+} from "@/app/our-work/client-work-pages/google-yt-connecting-beyond-coachella.js";
 
 export const WRI_DATA_DRIVEN_REVOLUTION = new Project({
   hero_bg_img: BG,
   client_full_name: "World Resources Institute",
   project_title: "Visualizing Global Transformation",
   tags: ["brand strategy", "visual identity", "data visualization"],
+  awards: ["Fast Company Innovation by Design Honoree", "Webby Award Honoree", "Information Is Beautiful Shortlist"],
   main_headline: (
     <>
         Changing the way decision-makers change the world.
@@ -41,9 +45,9 @@ export const WRI_DATA_DRIVEN_REVOLUTION = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./wpa-art-that-brings-people-together"))
-      .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
-  next_page: async () => (await import("./edf-vision-2030")).EDF_VISION_2030,
+    (await import("./edf-vision-2030"))
+      .EDF_VISION_2030,
+  next_page: async () => (await import("./modev-ai-event-for-a-new-era")).MODEV_AI_EVENT_FOR_A_NEW_ERA,
   slug: "/world-resources-institute-data-driven-revolution",
   galleryThumbnail: WRI_DATA_DRIVEN_REVOLUTION_THUMBNAIL,
 });

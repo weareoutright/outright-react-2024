@@ -7,12 +7,14 @@ import BENTO_BOTTOM_RIGHT from "./assets/marriott-intl-leading-to-new-horizons/b
 import FULL_WIDTH_IMG from "./assets/marriott-intl-leading-to-new-horizons/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/marriott-intl-leading-to-new-horizons/client-spotlight.png";
 import MARRIOTT_INTL_NEW_HORIZONS_THUMBNAIL from "./assets/marriott-intl-leading-to-new-horizons/thumbnail.png";
+import {GOOGLE_YT_BIG_GAME_BIGGER_ADS} from "@/app/our-work/client-work-pages/google-yt-big-game-bigger-ads.js";
 
 export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   hero_bg_img: BG,
   client_full_name: "Marriott International",
   project_title: "Lead to New Horizons",
   tags: ["brand strategy", "visual identity", "sub-brands"],
+  awards: ["award"],
   main_headline: (
     <>
         Advancing the program that guides Marriott International’s leaders forward.
@@ -40,11 +42,11 @@ export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./google-yt-youtube-shopping-beauty-fest"))
-      .GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
-  next_page: async () =>
     (await import("./me-too-intl-rebranding-a-movement"))
       .ME_TOO_REBRANDING_A_MOVEMENT,
+  next_page: async () =>
+    (await import("./google-yt-big-game-bigger-ads"))
+      .GOOGLE_YT_BIG_GAME_BIGGER_ADS,
 
   slug: "/marriott-intl-leading-to-new-horizons",
   galleryThumbnail: MARRIOTT_INTL_NEW_HORIZONS_THUMBNAIL,

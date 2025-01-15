@@ -33,15 +33,18 @@ const TitleLogo = ({
             <a className="link" href={workHref}>
               work
             </a>
-            <span>outright</span>
-            <div className="nav-links">
-              <a className="link" href={workHref}>
-                work
-              </a>
-              <a className="link" href="/team">
-                who we are
-              </a>
-            </div>
+            <a className="link" href="/team">
+              who we are
+            </a>
+            {/*<span>outright</span>*/}
+            {/*<div className="nav-links">*/}
+            {/*  <a className="link" href={workHref}>*/}
+            {/*    work*/}
+            {/*  </a>*/}
+            {/*  <a className="link" href="/team">*/}
+            {/*    who we are*/}
+            {/*  </a>*/}
+            {/*</div>*/}
           </div>
         </h1>
       </div>

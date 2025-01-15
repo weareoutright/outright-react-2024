@@ -7,12 +7,14 @@ import BENTO_BOTTOM_RIGHT from "./assets/modev-ai-event-for-a-new-era/bento-bott
 import FULL_WIDTH_IMG from "./assets/modev-ai-event-for-a-new-era/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/modev-ai-event-for-a-new-era/client-spotlight.png";
 import MODEV_AI_EVENT_FOR_A_NEW_ERA_THUMBNAIL from "./assets/modev-ai-event-for-a-new-era/thumbnail.png";
+import {WRI_DATA_DRIVEN_REVOLUTION} from "@/app/our-work/client-work-pages/wri-data-driven-revolution.js";
 
 export const MODEV_AI_EVENT_FOR_A_NEW_ERA = new Project({
   hero_bg_img: BG,
   client_full_name: "Modev",
   project_title: "AI Event for a New Era",
   tags: ["branding", "events & environmental", "video & motion"],
+  awards: ["award"],
   main_headline: (
     <>
         Inspiring the future of AI innovation, one conference attendee at a time. 
@@ -40,11 +42,11 @@ export const MODEV_AI_EVENT_FOR_A_NEW_ERA = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./me-too-intl-rebranding-a-movement"))
-      .ME_TOO_REBRANDING_A_MOVEMENT,
+    (await import("./wri-data-driven-revolution"))
+      .WRI_DATA_DRIVEN_REVOLUTION,
   next_page: async () =>
-    (await import("./opp-agenda-shifting-narratives"))
-      .OPP_AGENDA_SHIFTING_NARRATIVES,
+    (await import("./paic-youve-got-questions"))
+      .PAIC_YOUVE_GOT_QUESTIONS,
 
   slug: "/modev-ai-event-for-a-new-era",
   galleryThumbnail: MODEV_AI_EVENT_FOR_A_NEW_ERA_THUMBNAIL,
