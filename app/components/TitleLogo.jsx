@@ -18,7 +18,7 @@ const TitleLogo = ({
 
   return (
     <div className={classes}>
-      <div id={id}>
+      <div className="TitleLogo" id={id}>
         <h1 className="title-logo">
           <a href="/" className="header-logo-nav">
             <span className="title-logo-img">

@@ -3,10 +3,11 @@
 .HeroPane {
   width: 100vw;
   height: 100vh;
-  display: flex;
+  // display: flex;
   justify-content: center;
   overflow: hidden;
   position: relative;
+  display: none;
 
   .scrollImage {
     width: 100%; /* Or any size you prefer */
@@ -38,6 +39,9 @@
     @include headerTextHero;
     margin: 0 0 0.1em;
     // animation-play-state: paused;
+    position: relative;
+    z-index: 25;
+    border: 1px solid red;
     img,
     svg {
       height: 1.15em;
@@ -91,9 +95,9 @@
     scroll-behavior: smooth;
   }
 
-   .hero-chevron-down {
-     animation: 2.925s ease-in-out infinite oscillate;
-   }
+  .hero-chevron-down {
+    animation: 2.925s ease-in-out infinite oscillate;
+  }
 }
 
 @keyframes oscillate {

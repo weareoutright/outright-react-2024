@@ -1,7 +1,5 @@
 import Image from "next/image";
 import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
-import OUTRIGHT_ARROW from "../assets/outright-arrow.png";
-import MEET_THE_TEAM from "../assets/meet-the-team.png";
 import AboutPane from "./About";
 
 export const pane = {

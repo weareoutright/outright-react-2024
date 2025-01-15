@@ -7,7 +7,7 @@
   height: calc(100dvh - #{$gutter-page-outer * 2});
   width: calc(100vw - #{$gutter-page-outer * 2});
   color: $light;
-  pointer-events: none;
+  pointer-events: all;
   z-index: 20;
   mix-blend-mode: difference;
   @include media-breakpoint-down(lg) {
@@ -51,6 +51,7 @@
 #site-branding {
   transition: all 0.33s ease-out 0.5s;
   transform: translateY(0);
+  width: 100%;
   //max-width: 50%;
   .branding-hide & {
     transition: all 0.33s ease-out;

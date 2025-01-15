@@ -191,21 +191,14 @@ a {
 
 @mixin titleLogo {
   @include titleLogoText;
-  width: 85vw;
+  width: 90vw;
   //width: 30vw;
   position: relative;
+  z-index: 21;
   margin-bottom: 0;
   display: inline-block;
   filter: invert(1);
-  &:hover {
-    .title-logo-img-full {
-      opacity: 1;
-    }
 
-    .nav-links {
-      opacity: 1;
-    }
-  }
   .title-logo-img {
     position: absolute;
     top: 0;
@@ -214,10 +207,6 @@ a {
     opacity: 1;
     transition: opacity 0.33s ease-in;
     z-index: 1;
-
-    // &.title-logo-img-contrast {
-    //   opacity:0;
-    // }
   }
   .title-logo-img-full {
     position: absolute;
@@ -244,7 +233,7 @@ a {
     top: 0;
     padding-left: 350px;
     right: 0;
-    z-index: 0;
+    z-index: 5;
 
     .link {
       color: $dark;
@@ -296,33 +285,36 @@ a {
       pointer-events: all;
     }
   }
-
-  // span {
-  //   //opacity: 0;
-  // }
-
-  // .contrast & {
-  //   .title-logo-img {
-  //     opacity:0;
-  //     &.title-logo-img-contrast {
-  //       opacity:1;
-  //     }
-  //   }
-  // }
 }
 
-.title-logo {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  max-width: 100%;
-  //max-width: fit-content;
-  @include titleLogo;
-
-  .header-logo-nav {
+.TitleLogo {
+  .title-logo {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
+    max-width: 100%;
+    min-width: 100%;
+
+    //max-width: fit-content;
+    @include titleLogo;
+
+    .header-logo-nav {
+      display: flex;
+      align-items: center;
+      height: 3rem;
+      width: 90vw;
+    }
+  }
+  &:hover {
+    width: 100vw;
+    .title-logo-img-full {
+      opacity: 1;
+    }
+
+    .nav-links {
+      opacity: 1;
+    }
   }
 }
 
