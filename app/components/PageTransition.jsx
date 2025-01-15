@@ -10,7 +10,7 @@ const PageTransition = ({ children, page, xOffset }) => {
         initial={{ x: 0, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         // exit={{ x: -xOffset, opacity: 0 }} // Reverse offset on exit
-        transition={{ duration: 0.5, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "cubic-bezier" }}
       >
         {children}
       </motion.div>

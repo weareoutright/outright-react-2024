@@ -304,6 +304,8 @@ a {
     align-items: center;
     height: 3rem;
     width: 90vw;
+    position: relative;
+    z-index: 6;
   }
   &:hover {
     &:hover {
