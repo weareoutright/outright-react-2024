@@ -7,7 +7,7 @@
   height: calc(100dvh - #{$gutter-page-outer * 2});
   width: calc(100vw - #{$gutter-page-outer * 2});
   color: $light;
-  pointer-events: all;
+  pointer-events: none;
   z-index: 20;
   mix-blend-mode: difference;
   @include media-breakpoint-down(lg) {
@@ -17,7 +17,12 @@
     height: calc(100dvh - #{$gutter-page-outer-responsive * 2});
     width: calc(100vw - #{$gutter-page-outer-responsive * 2});
   }
+
+  &:hover * {
+    pointer-events: auto !important;
+  }
 }
+
 .page-utility-component {
   position: absolute;
   line-height: 1em;
@@ -51,7 +56,6 @@
 #site-branding {
   transition: all 0.33s ease-out 0.5s;
   transform: translateY(0);
-  width: 100%;
   //max-width: 50%;
   .branding-hide & {
     transition: all 0.33s ease-out;

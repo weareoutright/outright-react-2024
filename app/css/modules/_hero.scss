@@ -34,12 +34,11 @@
 }
 
 #pane-hero {
+  pointer-events: all;
   h1 {
     @include headerTextHero;
     margin: 0 0 0.1em;
     // animation-play-state: paused;
-    position: relative;
-    z-index: 25;
     img,
     svg {
       height: 1.15em;
