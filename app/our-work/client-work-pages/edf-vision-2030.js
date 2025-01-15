@@ -7,12 +7,16 @@ import BENTO_BOTTOM_RIGHT from "./assets/edf-vision-2030/bento-bottom-right.png"
 import FULL_WIDTH_IMG from "./assets/edf-vision-2030/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/edf-vision-2030/client-spotlight.png";
 import EDF_VISION_2030_THUMBNAIL from "./assets/edf-vision-2030/thumbnail.png";
+import {
+  GOOGLE_YT_CONNECTING_BEYOND_COACHELLA
+} from "@/app/our-work/client-work-pages/google-yt-connecting-beyond-coachella.js";
 
 export const EDF_VISION_2030 = new Project({
   hero_bg_img: BG,
   client_full_name: "Environmental Defense Fund",
   project_title: "Vision 2030",
   tags: ["information design", "ux/ui design", "website development"],
+  awards: ["Bronze Anthem Award - Digital & Innovative Experiences"],
   main_headline: (
     <>Implementing innovative, creative solutions so a global environmental nonprofit can do the same.</>
   ),
@@ -38,10 +42,10 @@ export const EDF_VISION_2030 = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./wri-data-driven-revolution")).WRI_DATA_DRIVEN_REVOLUTION,
+    (await import("./google-yt-connecting-beyond-coachella")).GOOGLE_YT_CONNECTING_BEYOND_COACHELLA,
   next_page: async () =>
-    (await import("./exp-faye-embrace-the-day-savor-the-night"))
-      .EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
+    (await import("./wri-data-driven-revolution"))
+      .WRI_DATA_DRIVEN_REVOLUTION,
   slug: "/edf-vision-2030",
   galleryThumbnail: EDF_VISION_2030_THUMBNAIL,
 });

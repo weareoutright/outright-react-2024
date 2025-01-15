@@ -13,6 +13,7 @@ export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
   client_full_name: "Washington Project for the Arts",
   project_title: "Art That Brings People Together",
   tags: ["ux/ui design", "website development", "graphic design"],
+  awards: ["award"],
   main_headline: (
     <>Supporting an experimental arts community with a more experiential online hub.</>
   ),
@@ -37,9 +38,9 @@ export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
       So when Outright was brought in to redesign the website for this bold, experimental, tone-setting organization, we knew its digital presence needed to reflect that—while also presenting an intuitive destination for curators, researchers, artists, and patrons. Custom features infused throughout create an immersive, gallery-like front-end experience for the entire arts community while providing WPA with a manageable content entry system for better supporting their expanded mission.
     </>
   ),
-  prev_page: async () => (await import("./rtc-we-see-more")).RTC_WE_SEE_MORE,
+  prev_page: async () => (await import("./google-yt-youtube-shopping-beauty-fest")).GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
   next_page: async () =>
-    (await import("./wri-data-driven-revolution")).WRI_DATA_DRIVEN_REVOLUTION,
+    (await import("./rtc-we-see-more")).RTC_WE_SEE_MORE,
   slug: "/washington-project-of-the-arts-art-that-brings-people-together",
   galleryThumbnail: WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER_THUMBNAIL,
 });

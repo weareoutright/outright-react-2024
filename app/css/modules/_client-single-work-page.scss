@@ -35,7 +35,7 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: em(10);
-        .tag-pill {
+        .tag-pill, .award-name {
           border-radius: em(200);
           border: 3px solid #000;
           padding: em(7) em(16);
@@ -110,12 +110,14 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
 
       .open-quotation {
         transform: rotateZ(180deg);
+        margin-top: .45em;
       }
 
       .quote-body {
         width: 100%;
         justify-self: center;
         margin: 0 auto;
+        padding: 0 1em;
         h2 {
           font-weight: 700;
           padding-bottom: 1.5rem;
@@ -129,7 +131,7 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
       }
 
       .close-quotation {
-        margin-top: -5.5rem;
+        margin-top: -2rem;
       }
     }
     .ClientSpotlight {

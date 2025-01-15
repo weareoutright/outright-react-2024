@@ -7,12 +7,15 @@ import BENTO_BOTTOM_RIGHT from "./assets/google-yt-big-game-bigger-ads/bento-bot
 import FULL_WIDTH_IMG from "./assets/google-yt-big-game-bigger-ads/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/google-yt-big-game-bigger-ads/client-spotlight.png";
 import GOOGLE_YT_BIG_GAME_BIGGER_ADS_THUMBNAIL from "./assets/google-yt-big-game-bigger-ads/thumbnail.png";
+import {MARRIOTT_INTL_NEW_HORIZONS} from "@/app/our-work/client-work-pages/marriott-intl-leading-to-new-horizons.js";
+import {OPP_AGENDA_SHIFTING_NARRATIVES} from "@/app/our-work/client-work-pages/opp-agenda-shifting-narratives.js";
 
 export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
   hero_bg_img: BG,
   client_full_name: "YouTube",
   project_title: "Bigger Game, Bigger Ads",
   tags: ["branding", "motion design", "visual identity"],
+    awards: ["award"],
   main_headline: (
     <>
         Bringing YouTube’s A Game to the ad game after the big game.
@@ -43,11 +46,11 @@ export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./exp-faye-embrace-the-day-savor-the-night"))
-      .EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
+    (await import("./marriott-intl-leading-to-new-horizons"))
+      .MARRIOTT_INTL_NEW_HORIZONS,
   next_page: async () =>
-    (await import("./google-yt-connecting-beyond-coachella"))
-      .GOOGLE_YT_CONNECTING_BEYOND_COACHELLA,
+    (await import("./opp-agenda-shifting-narratives"))
+      .OPP_AGENDA_SHIFTING_NARRATIVES,
   slug: "/google-youtube-big-game-bigger-ads",
   galleryThumbnail: GOOGLE_YT_BIG_GAME_BIGGER_ADS_THUMBNAIL,
 });

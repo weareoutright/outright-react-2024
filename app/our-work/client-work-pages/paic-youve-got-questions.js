@@ -7,12 +7,14 @@ import BENTO_BOTTOM_RIGHT from "./assets/paic-youve-got-questions/bento-bottom-r
 import FULL_WIDTH_IMG from "./assets/paic-youve-got-questions/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/paic-youve-got-questions/client-spotlight.png";
 import PAIC_YOUVE_GOT_QUESTIONS_THUMBNAIL from "./assets/paic-youve-got-questions/thumbnail.png";
+import {MODEV_AI_EVENT_FOR_A_NEW_ERA} from "@/app/our-work/client-work-pages/modev-ai-event-for-a-new-era.js";
 
 export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   hero_bg_img: BG,
   client_full_name: "Pennsylvania Immunization Coalition",
   project_title: "You've Got Questions",
   tags: ["media planning & buying", "video & motion", "microsites"],
+  awards: ["award"],
   main_headline: (
     <>Arming PA parents with accurate, actionable information about vaccines. </>
   ),
@@ -38,9 +40,9 @@ export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./opp-agenda-shifting-narratives"))
-      .OPP_AGENDA_SHIFTING_NARRATIVES,
-  next_page: async () => (await import("./rtc-we-see-more")).RTC_WE_SEE_MORE,
+    (await import("./modev-ai-event-for-a-new-era"))
+      .MODEV_AI_EVENT_FOR_A_NEW_ERA,
+  next_page: async () => (await import("./google-yt-youtube-shopping-beauty-fest")).GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
 
   slug: "/paic-youve-got-questions",
   galleryThumbnail: PAIC_YOUVE_GOT_QUESTIONS_THUMBNAIL,

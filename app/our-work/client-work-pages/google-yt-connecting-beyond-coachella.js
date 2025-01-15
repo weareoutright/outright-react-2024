@@ -7,12 +7,16 @@ import BENTO_BOTTOM_RIGHT from "./assets/google-yt-connecting-beyond-coachella/b
 import FULL_WIDTH_IMG from "./assets/google-yt-connecting-beyond-coachella/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/google-yt-connecting-beyond-coachella/client-spotlight.png";
 import GOOGLE_YT_CONNECTING_BEYOND_COACHELLA_THUMBNAIL from "./assets/google-yt-connecting-beyond-coachella/thumbnail.png";
+import {
+    EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT
+} from "@/app/our-work/client-work-pages/exp-faye-embrace-the-day-savor-the-night.js";
 
 export const GOOGLE_YT_CONNECTING_BEYOND_COACHELLA = new Project({
   hero_bg_img: BG,
   client_full_name: "YouTube",
   project_title: "Connecting Beyond Coachella",
   tags: ["campaigns", "video & motion", "sizzles"],
+    awards: ["award"],
   main_headline: (
     <>
         Helping fans enjoy the best of Coachella—from the comfort of the couch.
@@ -43,11 +47,11 @@ export const GOOGLE_YT_CONNECTING_BEYOND_COACHELLA = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./google-yt-big-game-bigger-ads"))
-      .GOOGLE_YT_BIG_GAME_BIGGER_ADS,
+    (await import("./exp-faye-embrace-the-day-savor-the-night"))
+      .EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
   next_page: async () =>
-    (await import("./google-yt-youtube-shopping-beauty-fest"))
-      .GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
+    (await import("./edf-vision-2030"))
+      .EDF_VISION_2030,
 
   slug: "/google-youtube-connecting-beyond-coachella",
   galleryThumbnail: GOOGLE_YT_CONNECTING_BEYOND_COACHELLA_THUMBNAIL,

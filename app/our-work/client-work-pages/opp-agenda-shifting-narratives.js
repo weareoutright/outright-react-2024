@@ -7,12 +7,14 @@ import BENTO_BOTTOM_RIGHT from "./assets/opp-agenda-shifting-narratives/bento-bo
 import FULL_WIDTH_IMG from "./assets/opp-agenda-shifting-narratives/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/opp-agenda-shifting-narratives/client-spotlight.png";
 import OPP_AGENDA_SHIFTING_NARRATIVES_THUMBNAIL from "./assets/opp-agenda-shifting-narratives/thumbnail.png";
+import {GOOGLE_YT_BIG_GAME_BIGGER_ADS} from "@/app/our-work/client-work-pages/google-yt-big-game-bigger-ads.js";
 
 export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
   hero_bg_img: BG,
   client_full_name: "The Opportunity Agenda",
   project_title: "Shifting Narratives",
   tags: ["branding", "visual identity", "website development"],
+    awards: ["award"],
   main_headline: (
     <>
         Shifting narratives and challenging systems of oppression with the power of a strong brand.
@@ -49,10 +51,10 @@ export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./modev-ai-event-for-a-new-era"))
-      .MODEV_AI_EVENT_FOR_A_NEW_ERA,
+    (await import("./google-yt-big-game-bigger-ads"))
+      .GOOGLE_YT_BIG_GAME_BIGGER_ADS,
   next_page: async () =>
-    (await import("./paic-youve-got-questions")).PAIC_YOUVE_GOT_QUESTIONS,
+    (await import("./exp-faye-embrace-the-day-savor-the-night")).EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
 
   slug: "/opp-agenda-shifting-narratives",
   galleryThumbnail: OPP_AGENDA_SHIFTING_NARRATIVES_THUMBNAIL,

@@ -7,12 +7,14 @@ import BENTO_BOTTOM_RIGHT from "./assets/rtc-we-see-more/bento-bottom-right.png"
 import FULL_WIDTH_IMG from "./assets/rtc-we-see-more/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/rtc-we-see-more/client-spotlight.png";
 import RTC_WE_SEE_MORE_THUMBNAIL from "./assets/rtc-we-see-more/thumbnail.png";
+import {ME_TOO_REBRANDING_A_MOVEMENT} from "@/app/our-work/client-work-pages/me-too-intl-rebranding-a-movement.js";
 
 export const RTC_WE_SEE_MORE = new Project({
   hero_bg_img: BG,
   client_full_name: "Rails to Trails Conservancy",
   project_title: "We See More Than a Trail",
   tags: ["brand strategy", "branding", "visual identity"],
+    awards: ["award"],
   main_headline: (
     <>
       Veering off the beaten path so an outdoor nonprofit can blaze new trials. 
@@ -45,10 +47,11 @@ export const RTC_WE_SEE_MORE = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./paic-youve-got-questions")).PAIC_YOUVE_GOT_QUESTIONS,
+      (await import("./wpa-art-that-brings-people-together"))
+          .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
   next_page: async () =>
-    (await import("./wpa-art-that-brings-people-together"))
-      .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
+    (await import("./me-too-intl-rebranding-a-movement"))
+      .ME_TOO_REBRANDING_A_MOVEMENT,
   slug: "/rails-to-trails-conservancy-we-see-more-than-a-trail",
   galleryThumbnail: RTC_WE_SEE_MORE_THUMBNAIL,
 });

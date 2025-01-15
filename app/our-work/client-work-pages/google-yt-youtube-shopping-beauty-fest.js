@@ -7,12 +7,14 @@ import BENTO_BOTTOM_RIGHT from "./assets/google-yt-youtube-shopping-beauty-fest/
 import FULL_WIDTH_IMG from "./assets/google-yt-youtube-shopping-beauty-fest/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/google-yt-youtube-shopping-beauty-fest/client-spotlight.png";
 import GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST_THUMBNAIL from "./assets/google-yt-youtube-shopping-beauty-fest/thumbnail.png";
+import {PAIC_YOUVE_GOT_QUESTIONS} from "@/app/our-work/client-work-pages/paic-youve-got-questions.js";
 
 export const GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST = new Project({
   hero_bg_img: BG,
   client_full_name: "YouTube",
   project_title: "YouTube Shopping x #BeautyFest",
   tags: ["branding", "video & motion", "campaigns"],
+  awards: ["award"],
   main_headline: (
     <>Putting a fresh face on a growing live-stream beauty event.</>
   ),
@@ -38,11 +40,11 @@ export const GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST = new Project({
     </>
   ),
   prev_page: async () =>
-    (await import("./google-yt-connecting-beyond-coachella"))
-      .GOOGLE_YT_CONNECTING_BEYOND_COACHELLA,
+    (await import("./paic-youve-got-questions"))
+      .PAIC_YOUVE_GOT_QUESTIONS,
   next_page: async () =>
-    (await import("./marriott-intl-leading-to-new-horizons"))
-      .MARRIOTT_INTL_NEW_HORIZONS,
+    (await import("./wpa-art-that-brings-people-together"))
+      .WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER,
   slug: "/google-youtube-shopping-beauty-fest",
   galleryThumbnail: GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST_THUMBNAIL,
 });

@@ -7,12 +7,15 @@ import BENTO_BOTTOM_RIGHT from "./assets/me-too-intl-rebranding-a-movement/bento
 import FULL_WIDTH_IMG from "./assets/me-too-intl-rebranding-a-movement/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/me-too-intl-rebranding-a-movement/client-spotlight.png";
 import ME_TOO_REBRANDING_A_MOVEMENT_THUMBNAIL from "./assets/me-too-intl-rebranding-a-movement/thumbnail.png";
+import {RTC_WE_SEE_MORE} from "@/app/our-work/client-work-pages/rtc-we-see-more.js";
+import {MARRIOTT_INTL_NEW_HORIZONS} from "@/app/our-work/client-work-pages/marriott-intl-leading-to-new-horizons.js";
 
 export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
   hero_bg_img: BG,
   client_full_name: "me too. International",
   project_title: "Rebranding a Movement",
   tags: ["brand strategy", "branding", "visual identity", ],
+    awards: ["Silver Anthem Awards - Nonprofit Campaign",],
   main_headline: (
     <>Moving the organization behind the #metoo Movement to the forefront.</>
   ),
@@ -45,11 +48,11 @@ export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
     </>
   ),
   prev_page: async () =>
+    (await import("./rtc-we-see-more"))
+      .RTC_WE_SEE_MORE,
+  next_page: async () =>
     (await import("./marriott-intl-leading-to-new-horizons"))
       .MARRIOTT_INTL_NEW_HORIZONS,
-  next_page: async () =>
-    (await import("./modev-ai-event-for-a-new-era"))
-      .MODEV_AI_EVENT_FOR_A_NEW_ERA,
 
   slug: "/me-too-intl-rebranding-a-movement",
   galleryThumbnail: ME_TOO_REBRANDING_A_MOVEMENT_THUMBNAIL,

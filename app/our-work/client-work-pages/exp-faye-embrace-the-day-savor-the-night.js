@@ -7,12 +7,14 @@ import BENTO_BOTTOM_RIGHT from "./assets/exp-faye-embrace-the-day-savor-the-nigh
 import FULL_WIDTH_IMG from "./assets/exp-faye-embrace-the-day-savor-the-night/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/exp-faye-embrace-the-day-savor-the-night/client-spotlight.png";
 import EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT_THUMBNAIL from "./assets/exp-faye-embrace-the-day-savor-the-night/thumbnail.png";
+import {OPP_AGENDA_SHIFTING_NARRATIVES} from "@/app/our-work/client-work-pages/opp-agenda-shifting-narratives.js";
 
 export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
   hero_bg_img: BG,
   client_full_name: "Experience Fayetteville",
   project_title: "Embrace The Day, Savor The Night",
   tags: ["media planning & buying", "video production", "advertising"],
+  awards: ["award"],
   main_headline: (
     <>
         Attracting tourists with the breadth and best of what Fayetteville has to offer.
@@ -39,10 +41,10 @@ export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
         Carefully curated shots, captured across two days and 14 locations, showcase that breadth while authentically conveying the richness of Fayetteville’s spirit. Stills and motion effortlessly fit together across strategically placed programmatic and display ads as well as through media coverage in publications including NYT and Southern Living—all encouraging new audiences to dig deeper and explore this amazing destination for themselves. The new campaign not only sparked an increase in travel to Fayetteville but also the number of average nights spent there, compared to the previous year.
     </>
   ),
-  prev_page: async () => (await import("./edf-vision-2030")).EDF_VISION_2030,
+  prev_page: async () => (await import("./opp-agenda-shifting-narratives")).OPP_AGENDA_SHIFTING_NARRATIVES,
   next_page: async () =>
-    (await import("./google-yt-big-game-bigger-ads"))
-      .GOOGLE_YT_BIG_GAME_BIGGER_ADS,
+    (await import("./google-yt-connecting-beyond-coachella"))
+      .GOOGLE_YT_CONNECTING_BEYOND_COACHELLA,
   slug: "/experience-fayetteville-embrace-the-day-savor-the-night",
   galleryThumbnail: EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT_THUMBNAIL,
 });
