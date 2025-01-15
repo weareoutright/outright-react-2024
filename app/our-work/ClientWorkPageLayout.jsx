@@ -103,50 +103,50 @@ const ClientWorkPageLayout = ({ clientProject }) => {
         <WorkGalleryUtility waypoint={currentWaypoint} />
         <div ref={pageComponentsRef} data-waypoint="WorkPageComponent">
           <ClientWorkHero
-              heroBg={hero.hero_bg_img}
-              waypoint="WorkPageComponent"
+            heroBg={hero.hero_bg_img}
+            waypoint="WorkPageComponent"
           />
           <div className={"work-page-content"}>
             <ClientWorkHeroHeader
-                heroHeader={hero.header}
-                waypoint="WorkPageComponent"
+              heroHeader={hero.header}
+              waypoint="WorkPageComponent"
             />
             <ClientMainHeadline
-                mainHeadline={main_headline}
-                waypoint="WorkPageComponent"
+              mainHeadline={main_headline}
+              waypoint="WorkPageComponent"
             />
             <ClientWorkBento
-                bentoImages={bento_images}
-                waypoint="WorkPageComponent"
+              bentoImages={bento_images}
+              waypoint="WorkPageComponent"
             />
             <ClientQuote
-                clientQuote={client_quote}
-                waypoint="WorkPageComponent"
+              clientQuote={client_quote}
+              waypoint="WorkPageComponent"
             />
           </div>
           <ClientFullWidthImg
-              fullWidthImg={full_width_img}
-              waypoint="WorkPageComponent"
+            fullWidthImg={full_width_img}
+            waypoint="WorkPageComponent"
           />
           <div className={"work-page-content"}>
             <ClientSpotlight
-                clientSpotlight={client_spotlight}
-                waypoint="WorkPageComponent"
+              clientSpotlight={client_spotlight}
+              waypoint="WorkPageComponent"
             />
             <ClientProjectOverview
-                projectOverview={project_overview}
-                waypoint="WorkPageComponent"
+              projectOverview={project_overview}
+              waypoint="WorkPageComponent"
             />
             <PrevNextBottomNav
-                prevPage={prevPage}
-                nextPage={nextPage}
-                waypoint="WorkPageComponent"
-                handleNavigation={handleNavigation}
+              prevPage={prevPage}
+              nextPage={nextPage}
+              waypoint="WorkPageComponent"
+              handleNavigation={handleNavigation}
             />
           </div>
         </div>
         <div
-            ref={contactRef}
+          ref={contactRef}
           data-waypoint={ContactPaneProps.waypoint}
           data-order={ContactPaneProps.order}
         >

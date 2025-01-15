@@ -3,11 +3,10 @@
 .HeroPane {
   width: 100vw;
   height: 100vh;
-  // display: flex;
+  display: flex;
   justify-content: center;
   overflow: hidden;
   position: relative;
-  display: none;
 
   .scrollImage {
     width: 100%; /* Or any size you prefer */
