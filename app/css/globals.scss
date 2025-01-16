@@ -215,74 +215,91 @@ a {
     opacity: 0;
     height: fit-content;
     transition: opacity 0.33s ease-in;
+    pointer-events: auto;
     z-index: 1;
-    pointer-events: all;
   }
 
   .nav-links {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    //justify-content: flex-end;
+    // flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
     height: inherit;
-    width: 100%;
     opacity: 0;
     transition: opacity 0.33s ease-in;
     position: absolute;
     top: 0;
-    padding-left: 350px;
     right: 0;
-    z-index: 5;
+    z-index: 7;
+    padding-right: 2rem;
 
-    .link {
-      color: $dark;
-      font-size: 23px;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-align: right;
-      margin: 0 2rem;
-      transition: background-image 300ms;
-      padding-bottom: 1.25em;
-      pointer-events: all;
+    .links-container {
+      padding-right: 2rem;
+      display: flex;
 
-      &:hover {
-        background-image: url("../assets/scribble-line.gif");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left 90% bottom 0%;
-        text-decoration: none;
-      }
+      .link {
+        color: $dark;
+        font-size: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 2rem;
+        transition: background-image 300ms;
+        padding-bottom: 1.25em;
+        pointer-events: all;
 
-      &:visited {
-        text-decoration: none;
-      }
+        &:hover {
+          background-image: url("../assets/scribble-line.gif");
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: left 90% bottom 0%;
+          text-decoration: none;
+        }
 
-      &:active {
-        text-decoration: none;
+        &:visited {
+          text-decoration: none;
+        }
+
+        &:active {
+          text-decoration: none;
+        }
+
+        @media screen and (max-width: 1180px) {
+          justify-content: flex-end;
+          margin: 0;
+          padding: 0;
+          width: 90vw;
+          text-align: right;
+          background-size: contain;
+          background-position: left 0% bottom 0%;
+
+          &:hover {
+            background-image: url("../assets/scribble-line.gif");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: left 100% bottom 0%;
+            text-decoration: none;
+          }
+        }
       }
 
       @media screen and (max-width: 1180px) {
-        //justify-content: flex-start;
-        margin: 0;
-        padding: 0;
-        //width: 20%;
-        text-align: left;
-        background-size: contain;
-        background-position: left 0% bottom 0%;
+        flex-direction: column;
+        width: 100%;
+        padding-right: 0;
       }
     }
 
     @media screen and (max-width: 1180px) {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-      //margin-top: 1.25em;
-      margin-top: 0.25em;
+      justify-content: flex-end !important;
+      align-items: flex-end !important;
       max-width: fit-content;
       position: relative;
       pointer-events: all;
+      padding-right: 0rem;
+      padding-top: 1.5rem;
     }
   }
 }
@@ -303,15 +320,13 @@ a {
     display: flex;
     align-items: center;
     height: 3rem;
-    width: 90vw;
+    width: 100%;
     position: relative;
     z-index: 6;
   }
-  &:hover {
-    &:hover {
-      pointer-events: auto !important;
-    }
 
+  &:hover {
+    pointer-events: auto !important;
     .title-logo-img-full {
       opacity: 1;
     }

@@ -20,31 +20,24 @@ const TitleLogo = ({
     <div className={classes}>
       <div className="TitleLogo" id={id}>
         <h1 className="title-logo">
-          <a href="/" className="header-logo-nav">
-            <span className="title-logo-img">
+          <div className="header-logo-nav">
+            <a className="title-logo-img" href="/">
               <LOGO_O />
-            </span>
-            <span className="title-logo-img-full">
+            </a>
+            <a className="title-logo-img-full" href="/">
               <LOGO_FULL />
-            </span>
-          </a>
+            </a>
+          </div>
           <span>outright</span>
           <div className="nav-links">
-            <a className="link" href={workHref}>
-              work
-            </a>
-            <a className="link" href="/team">
-              who we are
-            </a>
-            {/*<span>outright</span>*/}
-            {/*<div className="nav-links">*/}
-            {/*  <a className="link" href={workHref}>*/}
-            {/*    work*/}
-            {/*  </a>*/}
-            {/*  <a className="link" href="/team">*/}
-            {/*    who we are*/}
-            {/*  </a>*/}
-            {/*</div>*/}
+            <div className="links-container">
+              <a className="link" href={workHref}>
+                work
+              </a>
+              <a className="link" href="/team">
+                who we are
+              </a>
+            </div>
           </div>
         </h1>
       </div>
