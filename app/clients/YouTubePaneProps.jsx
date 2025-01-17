@@ -3,6 +3,7 @@ import YouTubePane from "./YouTubePane.jsx";
 
 export const pane = {
   title: "Google/YouTube",
+  uri: "/google-youtube-big-game-bigger-ads",
   collection: "clients",
   attributes: {
     id: "youtube",

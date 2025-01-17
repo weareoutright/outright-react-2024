@@ -3,6 +3,7 @@ import Iframe from "react-iframe";
 
 export const pane = {
   title: "GNRT.AI",
+  uri: "/modev-ai-event-for-a-new-era",
   collection: "clients",
   attributes: {
     id: "gnrt",
