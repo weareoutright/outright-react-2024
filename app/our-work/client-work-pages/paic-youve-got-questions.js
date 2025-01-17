@@ -7,7 +7,7 @@ import BENTO_BOTTOM_RIGHT from "./assets/paic-youve-got-questions/bento-bottom-r
 import FULL_WIDTH_IMG from "./assets/paic-youve-got-questions/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/paic-youve-got-questions/client-spotlight.png";
 import PAIC_YOUVE_GOT_QUESTIONS_THUMBNAIL from "./assets/paic-youve-got-questions/thumbnail.png";
-import {MODEV_AI_EVENT_FOR_A_NEW_ERA} from "@/app/our-work/client-work-pages/modev-ai-event-for-a-new-era.js";
+import { MODEV_AI_EVENT_FOR_A_NEW_ERA } from "@/app/our-work/client-work-pages/modev-ai-event-for-a-new-era.js";
 
 export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   hero_bg_img: BG,
@@ -16,16 +16,15 @@ export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   tags: ["media planning & buying", "video & motion", "microsites"],
   awards: ["award"],
   main_headline: (
-    <>Arming PA parents with accurate, actionable information about vaccines. </>
+    <>
+      Arming PA parents with accurate, actionable information about vaccines. 
+    </>
   ),
   bento_top: BENTO_TOP,
   bento_bottom_left: BENTO_BOTTOM_LEFT,
   bento_bottom_mid: BENTO_BOTTOM_MID,
   bento_bottom_right: BENTO_BOTTOM_RIGHT,
-  quote: (
-    <>
-    </>
-  ),
+  quote: null,
   speaker_name: "",
   speaker_title: "",
   speaker_org: "",
@@ -33,16 +32,34 @@ export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-      Between all the mis-, dis-, or lack of information out there about vaccines, it’s no wonder Pennsylvania parents of children and teens have so many questions. Yet, despite focus groups with local providers and community members echoing that confusion, the Pennsylvania Immunization Coalition (PAIC) still struggled to educate them on this potentially life-saving topic. Outright understood, responding with a simple, visually arresting, stop-the-scroll approach grounded in research insights  that quickly cut through the already crowded public health landscape.
-      <br/>
-      <br/>
-      Quirky, attention-grabbing photos and headlines empathetically tapped into parents’ sense of confusion and overwhelm surrounding vaccinations, while a thoughtful saturated color palette paired with soft pastels created a natural bridge between the bold visuals and a more nuanced, serious tone. The campaign was disseminated across online video, display and native ads, strategically targeting vaccine-hesitant parents through advanced audience targeting capabilities. Generating more than 26M impressions with PA parents and quickly surpassing industry benchmarks for click-through and video completion rates, viewers landed at GetAnswersPA.org, a simple, intuitive hub for trustworthy information, links, and testimonials.
+      Between all the mis-, dis-, or lack of information out there about
+      vaccines, it’s no wonder Pennsylvania parents of children and teens have
+      so many questions. Yet, despite focus groups with local providers and
+      community members echoing that confusion, the Pennsylvania Immunization
+      Coalition (PAIC) still struggled to educate them on this potentially
+      life-saving topic. Outright understood, responding with a simple, visually
+      arresting, stop-the-scroll approach grounded in research insights that
+      quickly cut through the already crowded public health landscape.
+      <br />
+      <br />
+      Quirky, attention-grabbing photos and headlines empathetically tapped into
+      parents’ sense of confusion and overwhelm surrounding vaccinations, while
+      a thoughtful saturated color palette paired with soft pastels created a
+      natural bridge between the bold visuals and a more nuanced, serious tone.
+      The campaign was disseminated across online video, display and native ads,
+      strategically targeting vaccine-hesitant parents through advanced audience
+      targeting capabilities. Generating more than 26M impressions with PA
+      parents and quickly surpassing industry benchmarks for click-through and
+      video completion rates, viewers landed at GetAnswersPA.org, a simple,
+      intuitive hub for trustworthy information, links, and testimonials.
     </>
   ),
   prev_page: async () =>
     (await import("./modev-ai-event-for-a-new-era"))
       .MODEV_AI_EVENT_FOR_A_NEW_ERA,
-  next_page: async () => (await import("./google-yt-youtube-shopping-beauty-fest")).GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
+  next_page: async () =>
+    (await import("./google-yt-youtube-shopping-beauty-fest"))
+      .GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
 
   slug: "/paic-youve-got-questions",
   galleryThumbnail: PAIC_YOUVE_GOT_QUESTIONS_THUMBNAIL,

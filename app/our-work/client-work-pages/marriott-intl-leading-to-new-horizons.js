@@ -7,7 +7,7 @@ import BENTO_BOTTOM_RIGHT from "./assets/marriott-intl-leading-to-new-horizons/b
 import FULL_WIDTH_IMG from "./assets/marriott-intl-leading-to-new-horizons/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/marriott-intl-leading-to-new-horizons/client-spotlight.png";
 import MARRIOTT_INTL_NEW_HORIZONS_THUMBNAIL from "./assets/marriott-intl-leading-to-new-horizons/thumbnail.png";
-import {GOOGLE_YT_BIG_GAME_BIGGER_ADS} from "@/app/our-work/client-work-pages/google-yt-big-game-bigger-ads.js";
+import { GOOGLE_YT_BIG_GAME_BIGGER_ADS } from "@/app/our-work/client-work-pages/google-yt-big-game-bigger-ads.js";
 
 export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   hero_bg_img: BG,
@@ -17,17 +17,15 @@ export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   awards: ["award"],
   main_headline: (
     <>
-        Advancing the program that guides Marriott International’s leaders forward.
+      Advancing the program that guides Marriott International’s leaders
+      forward.
     </>
   ),
   bento_top: BENTO_TOP,
   bento_bottom_left: BENTO_BOTTOM_LEFT,
   bento_bottom_mid: BENTO_BOTTOM_MID,
   bento_bottom_right: BENTO_BOTTOM_RIGHT,
-  quote: (
-    <>
-    </>
-  ),
+  quote: null,
   speaker_name: "",
   speaker_title: "",
   speaker_org: "",
@@ -35,10 +33,23 @@ export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-        To help promising, ambitious associates make their way up the ranks at Marriott International, this long-time Outright client had developed a new executive advancement program. With everything riding on its success, the global hospitality giant tapped Outright to bring it to life. We quickly set to work building an engaging, accessible and exciting brand experience for the standout employees that the Marriott team were looking to retain and grow.
-        <br />
+      To help promising, ambitious associates make their way up the ranks at
+      Marriott International, this long-time Outright client had developed a new
+      executive advancement program. With everything riding on its success, the
+      global hospitality giant tapped Outright to bring it to life. We quickly
+      set to work building an engaging, accessible and exciting brand experience
+      for the standout employees that the Marriott team were looking to retain
+      and grow.
       <br />
-        Pulling from the feeling of continuous forward momentum and the anticipation of reaching a destination, our team of creative strategists dubbed the program “En Route.” The three-tiered approach to learning (Embark/Emerge/Base Camp) furthers the advancing journey metaphor, along with a custom illustration suite for KPI categories and a color palette that draws from distinguished competencies. Bold photography and concise headlines tie it all together, further accentuating En Route’s global aspirational appeal.
+      <br />
+      Pulling from the feeling of continuous forward momentum and the
+      anticipation of reaching a destination, our team of creative strategists
+      dubbed the program “En Route.” The three-tiered approach to learning
+      (Embark/Emerge/Base Camp) furthers the advancing journey metaphor, along
+      with a custom illustration suite for KPI categories and a color palette
+      that draws from distinguished competencies. Bold photography and concise
+      headlines tie it all together, further accentuating En Route’s global
+      aspirational appeal.
     </>
   ),
   prev_page: async () =>

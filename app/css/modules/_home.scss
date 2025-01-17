@@ -21,6 +21,7 @@
     justify-content: center;
   }
   .see-more-work {
+    scroll-snap-align: start;
     scroll-margin: 0;
     display: flex;
     align-items: center;

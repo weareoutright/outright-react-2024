@@ -7,7 +7,6 @@ import BUG_CONTACT_OUTER from "../assets/bug-contact-outer.svg";
 import SCRIBBLE_CIRCLE from "../assets/scribble-circle.gif";
 import CHEVRON_DOWN from "../assets/icon-chevron-down.svg";
 import ICON_X from "../assets/icon-x.svg";
-import { useRouter } from "next/navigation";
 
 const Utility = ({
   waypoint,
@@ -32,7 +31,7 @@ const Utility = ({
           }}
         >
           <div id="bug-site-contact">
-            <a href="#contact">
+            <a href="#pane-contact">
               <BUG_CONTACT_OUTER
                 className="bug-contact-img"
                 id="bug-contact-img"

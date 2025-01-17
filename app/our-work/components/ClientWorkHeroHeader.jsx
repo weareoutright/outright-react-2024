@@ -3,29 +3,29 @@ import React from "react";
 const ClientWorkHeroHeader = ({ heroHeader, waypoint }) => {
   const { client_full_name, project_title, tags, awards } = heroHeader;
   return (
-      <div className="ClientWorkHeroHeader" data-waypoint={waypoint}>
-          <h5>{client_full_name}</h5>
-          <h3>{project_title}</h3>
-          <div className="project-tags">
-              {tags?.map((tag) => {
-                  return (
-                      <div key={tag} className="tag-pill">
-                          {tag.toUpperCase()}
-                      </div>
-                  );
-              })}
-          </div>
-          <div className="awards">
-              here
-              {awards?.map((award) => {
-                  return (
-                      <div key={award} className="award-name">
-                          {award.toUpperCase()}
-                      </div>
-                  );
-              })}
-          </div>
+    <div className="ClientWorkHeroHeader" data-waypoint={waypoint}>
+      <h5>{client_full_name}</h5>
+      <h3>{project_title}</h3>
+      <div className="project-tags">
+        {tags?.map((tag) => {
+          return (
+            <div key={tag} className="tag-pill">
+              {tag.toUpperCase()}
+            </div>
+          );
+        })}
       </div>
+      <div className="awards">
+        {/* here */}
+        {awards?.map((award) => {
+          return (
+            <div key={award} className="award-name">
+              {award.toUpperCase()}
+            </div>
+          );
+        })}
+      </div>
+    </div>
   );
 };
 
