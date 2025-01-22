@@ -3,7 +3,7 @@ import RtcPane from "./RtcPane.jsx";
 
 export const pane = {
   title: "Rails to Trails Conservancy",
-  uri: "/rails-to-trails-conservancy-we-see-more-than-a-trail",
+  uri: "rails-to-trails-conservancy-we-see-more-than-a-trail",
   collection: "clients",
   attributes: {
     id: "rtc",

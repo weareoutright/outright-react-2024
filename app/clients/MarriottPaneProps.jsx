@@ -3,7 +3,7 @@ import Iframe from "react-iframe";
 
 export const pane = {
   title: "Marriott International",
-  uri: "/me-too-intl-rebranding-a-movement",
+  uri: "me-too-intl-rebranding-a-movement",
   collection: "clients",
   attributes: {
     id: "marriott",

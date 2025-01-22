@@ -41,11 +41,9 @@ export default function Home() {
     };
   }, []);
 
-  // State to track currently visible component's waypoint and order
   const [currentWaypoint, setCurrentWaypoint] = useState("");
   const [currentOrder, setCurrentOrder] = useState("light-scrollbar");
 
-  // Refs for the components you want to observe
   const heroPaneRef = useRef(null);
   const youtubeRef = useRef(null);
   const rtcRef = useRef(null);
@@ -57,6 +55,15 @@ export default function Home() {
   const aboutRef = useRef(null);
   const servicesRef = useRef(null);
   const contactRef = useRef(null);
+
+  const saveScrollState = (paneId) => {
+    window.history.replaceState({ paneId }, "", window.location.href);
+  };
+
+  const handlePaneClick = (paneId, link) => {
+    saveScrollState(paneId);
+    window.location.href = link;
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -83,56 +90,55 @@ export default function Home() {
             } else {
               setSiteHidelineDisplay("block");
             }
+
+            const targetId = entry.target.id;
+            if (targetId) {
+              window.history.pushState({}, "", `#${targetId}`);
+            }
           }
         });
       },
       { threshold: 0.5 } // Component must be at least ##% visible
     );
 
-    const hero = heroPaneRef.current;
-    const youtube = youtubeRef.current;
-    const rtc = rtcRef.current;
-    const marriott = marriottRef.current;
-    const toa = toaRef.current;
-    const gnrt = gnrtRef.current;
-    const seeMoreWork = seeMoreWorkRef.current;
-    const ourClients = ourClientsRef.current;
-    const about = aboutRef.current;
-    const services = servicesRef.current;
-    const contact = contactRef.current;
+    const elements = [
+      heroPaneRef.current,
+      youtubeRef.current,
+      rtcRef.current,
+      marriottRef.current,
+      toaRef.current,
+      gnrtRef.current,
+      seeMoreWorkRef.current,
+      ourClientsRef.current,
+      aboutRef.current,
+      servicesRef.current,
+      contactRef.current,
+    ];
 
-    // Observe components
-    if (hero) observer.observe(hero);
-    if (youtube) observer.observe(youtube);
-    if (rtc) observer.observe(rtc);
-    if (marriott) observer.observe(marriott);
-    if (toa) observer.observe(toa);
-    if (gnrt) observer.observe(gnrt);
-    if (seeMoreWork) observer.observe(seeMoreWork);
-    if (ourClients) observer.observe(ourClients);
-    if (about) observer.observe(about);
-    if (services) observer.observe(services);
-    if (contact) observer.observe(contact);
+    elements.forEach((el) => el && observer.observe(el));
 
-    // Cleanup on unmount
+    const restoreScrollState = () => {
+      const { paneId } = window.history.state || {};
+      if (paneId) {
+        const targetElement = document.getElementById(paneId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: "auto" });
+        }
+      }
+    };
+
+    window.addEventListener("popstate", restoreScrollState);
+
+    restoreScrollState();
+
     return () => {
-      if (hero) observer.observe(hero);
-      if (youtube) observer.observe(youtube);
-      if (rtc) observer.observe(rtc);
-      if (marriott) observer.observe(marriott);
-      if (toa) observer.observe(toa);
-      if (gnrt) observer.observe(gnrt);
-      if (seeMoreWork) observer.observe(seeMoreWork);
-      if (ourClients) observer.observe(ourClients);
-      if (about) observer.observe(about);
-      if (services) observer.observe(services);
-      if (contact) observer.observe(contact);
+      elements.forEach((el) => el && observer.unobserve(el));
+      window.removeEventListener("popstate", restoreScrollState);
     };
   }, []);
 
   return (
     <div className={`Home ${scrollbarColor}`} ref={containerRef}>
-      {/* Utility component receives dynamic waypoint and order */}
       <Utility
         waypoint={currentWaypoint}
         order={currentOrder}
@@ -141,7 +147,6 @@ export default function Home() {
         privacyPolicyOpacity={privacyHeadlineOpacity}
       />
 
-      {/* HeroPane observed */}
       <div
         ref={heroPaneRef}
         data-waypoint={HeroPaneProps.waypoint}
@@ -151,55 +156,95 @@ export default function Home() {
         <HeroPane />
       </div>
 
-      {/* PaneOuter observed */}
       <div
         ref={youtubeRef}
         data-waypoint={YouTubePane.waypoint}
         data-order={YouTubePane.order}
         data-scrollbar={YouTubePane.background}
-        id="featured"
+        id="youtube-pane"
       >
-        <a href={`our-work/${YouTubePane.uri}`}>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            handlePaneClick("youtube-pane", `our-work/${YouTubePane.uri}`);
+          }}
+          href={`our-work/${YouTubePane.uri}`}
+        >
           <PaneOuter pane={YouTubePane} />
         </a>
       </div>
+
       <div
         ref={rtcRef}
         data-waypoint={RtcPaneProps.waypoint}
         data-order={RtcPaneProps.order}
         data-scrollbar={RtcPaneProps.background}
+        id="rtc-pane"
       >
-        <a href={`our-work/${RtcPaneProps.uri}`}>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            handlePaneClick("rtc-pane", `our-work/${RtcPaneProps.uri}`);
+          }}
+          href={`our-work/${RtcPaneProps.uri}`}
+        >
           <PaneOuter pane={RtcPaneProps} />
         </a>
       </div>
+
       <div
         ref={marriottRef}
         data-waypoint={MarriottPaneProps.waypoint}
         data-order={MarriottPaneProps.order}
         data-scrollbar={MarriottPaneProps.background}
+        id="marriott-pane"
       >
-        <a href={`our-work/${MarriottPaneProps.uri}`}>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            handlePaneClick(
+              "marriott-pane",
+              `our-work/${MarriottPaneProps.uri}`
+            );
+          }}
+          href={`our-work/${MarriottPaneProps.uri}`}
+        >
           <PaneOuter pane={MarriottPaneProps} />
         </a>
       </div>
+
       <div
         ref={toaRef}
         data-waypoint={ToaPaneProps.waypoint}
         data-order={ToaPaneProps.order}
         data-scrollbar={ToaPaneProps.background}
+        id="toa-pane"
       >
-        <a href={`our-work/${ToaPaneProps.uri}`}>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            handlePaneClick("toa-pane", `our-work/${ToaPaneProps.uri}`);
+          }}
+          href={`our-work/${ToaPaneProps.uri}`}
+        >
           <PaneOuter pane={ToaPaneProps} />
         </a>
       </div>
+
       <div
         ref={gnrtRef}
         data-waypoint={GNRTPaneProps.waypoint}
         data-order={GNRTPaneProps.order}
         data-scrollbar={GNRTPaneProps.background}
+        id="gnrt-pane"
       >
-        <a href={`our-work/${GNRTPaneProps.uri}`}>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            handlePaneClick("gnrt-pane", `our-work/${GNRTPaneProps.uri}`);
+          }}
+          href={`our-work/${GNRTPaneProps.uri}`}
+        >
           <PaneOuter pane={GNRTPaneProps} />
         </a>
       </div>
@@ -212,6 +257,7 @@ export default function Home() {
       >
         <PaneOuter pane={SeeMoreWorkPaneProps} />
       </div>
+
       <div
         ref={ourClientsRef}
         data-waypoint={OurClientsPaneProps.waypoint}
@@ -221,6 +267,7 @@ export default function Home() {
       >
         <PaneOuter pane={OurClientsPaneProps} />
       </div>
+
       <div
         ref={aboutRef}
         data-waypoint={AboutPaneProps.waypoint}
@@ -230,6 +277,7 @@ export default function Home() {
       >
         <PaneOuter pane={AboutPaneProps} />
       </div>
+
       <div
         ref={servicesRef}
         data-waypoint={ServicesPaneProps.waypoint}
@@ -239,6 +287,7 @@ export default function Home() {
       >
         <PaneOuter pane={ServicesPaneProps} />
       </div>
+
       <div
         ref={contactRef}
         data-waypoint={ContactPaneProps.waypoint}

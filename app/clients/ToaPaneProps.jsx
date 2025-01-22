@@ -3,7 +3,7 @@ import ToaPane from "./ToaPane.jsx";
 
 export const pane = {
   title: "The Opportunity Agenda",
-  uri: "/opp-agenda-shifting-narratives",
+  uri: "opp-agenda-shifting-narratives",
   collection: "clients",
   attributes: {
     id: "oppagenda",
