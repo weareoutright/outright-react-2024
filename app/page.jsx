@@ -159,7 +159,7 @@ export default function Home() {
         data-scrollbar={YouTubePane.background}
         id="featured"
       >
-        <a href={YouTubePane.uri}>
+        <a href={`our-work/${YouTubePane.uri}`}>
           <PaneOuter pane={YouTubePane} />
         </a>
       </div>
@@ -169,7 +169,7 @@ export default function Home() {
         data-order={RtcPaneProps.order}
         data-scrollbar={RtcPaneProps.background}
       >
-        <a href={RtcPaneProps.uri}>
+        <a href={`our-work/${RtcPaneProps.uri}`}>
           <PaneOuter pane={RtcPaneProps} />
         </a>
       </div>
@@ -179,7 +179,7 @@ export default function Home() {
         data-order={MarriottPaneProps.order}
         data-scrollbar={MarriottPaneProps.background}
       >
-        <a href={MarriottPaneProps.uri}>
+        <a href={`our-work/${MarriottPaneProps.uri}`}>
           <PaneOuter pane={MarriottPaneProps} />
         </a>
       </div>
@@ -189,7 +189,7 @@ export default function Home() {
         data-order={ToaPaneProps.order}
         data-scrollbar={ToaPaneProps.background}
       >
-        <a href={ToaPaneProps.uri}>
+        <a href={`our-work/${ToaPaneProps.uri}`}>
           <PaneOuter pane={ToaPaneProps} />
         </a>
       </div>
@@ -199,7 +199,7 @@ export default function Home() {
         data-order={GNRTPaneProps.order}
         data-scrollbar={GNRTPaneProps.background}
       >
-        <a href={GNRTPaneProps.uri}>
+        <a href={`our-work/${GNRTPaneProps.uri}`}>
           <PaneOuter pane={GNRTPaneProps} />
         </a>
       </div>

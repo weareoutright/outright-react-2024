@@ -7,7 +7,6 @@ import BENTO_BOTTOM_RIGHT from "./assets/edf-vision-2030/bento-bottom-right.png"
 import FULL_WIDTH_IMG from "./assets/edf-vision-2030/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/edf-vision-2030/client-spotlight.png";
 import EDF_VISION_2030_THUMBNAIL from "./assets/edf-vision-2030/thumbnail.png";
-import { GOOGLE_YT_CONNECTING_BEYOND_COACHELLA } from "@/app/our-work/client-work-pages/google-yt-connecting-beyond-coachella.js";
 
 export const EDF_VISION_2030 = new Project({
   hero_bg_img: BG,
