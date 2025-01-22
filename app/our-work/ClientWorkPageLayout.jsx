@@ -135,6 +135,7 @@ const ClientWorkPageLayout = ({ clientProject }) => {
             />
             <ClientProjectOverview
               projectOverview={project_overview}
+              awards={hero.header.awards}
               waypoint="WorkPageComponent"
             />
             <PrevNextBottomNav

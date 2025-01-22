@@ -35,7 +35,8 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: em(10);
-        .tag-pill, .award-name {
+
+        .tag-pill {
           border-radius: em(200);
           border: 3px solid #000;
           padding: em(7) em(16);
@@ -110,7 +111,7 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
 
       .open-quotation {
         transform: rotateZ(180deg);
-        margin-top: .45em;
+        margin-top: 0.45em;
       }
 
       .quote-body {
@@ -145,6 +146,31 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
       padding-bottom: 100px;
       font-size: em(32);
       line-height: 140%;
+
+      .awards-section {
+        margin-top: 3.5rem;
+        color: $grayLight;
+        gap: em(10);
+        h3 {
+          display: block;
+          margin-bottom: 2rem;
+        }
+
+        .awards {
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          .award-name {
+            border-radius: em(200);
+            border: 3px solid $grayLight;
+            padding: em(7) em(16);
+            font-weight: 700;
+            width: fit-content;
+            font-size: 16px;
+            line-height: 16px;
+          }
+        }
+      }
     }
     .PrevNextBottomNav {
       width: 100%;

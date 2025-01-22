@@ -14,7 +14,7 @@ export const MODEV_AI_EVENT_FOR_A_NEW_ERA = new Project({
   client_full_name: "Modev",
   project_title: "AI Event for a New Era",
   tags: ["branding", "events & environmental", "video & motion"],
-  awards: ["award"],
+  awards: null,
   main_headline: (
     <>
       Inspiring the future of AI innovation, one conference attendee at a time. 

@@ -7,17 +7,18 @@ import BENTO_BOTTOM_RIGHT from "./assets/opp-agenda-shifting-narratives/bento-bo
 import FULL_WIDTH_IMG from "./assets/opp-agenda-shifting-narratives/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/opp-agenda-shifting-narratives/client-spotlight.png";
 import OPP_AGENDA_SHIFTING_NARRATIVES_THUMBNAIL from "./assets/opp-agenda-shifting-narratives/thumbnail.png";
-import {GOOGLE_YT_BIG_GAME_BIGGER_ADS} from "@/app/our-work/client-work-pages/google-yt-big-game-bigger-ads.js";
+import { GOOGLE_YT_BIG_GAME_BIGGER_ADS } from "@/app/our-work/client-work-pages/google-yt-big-game-bigger-ads.js";
 
 export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
   hero_bg_img: BG,
   client_full_name: "The Opportunity Agenda",
   project_title: "Shifting Narratives",
   tags: ["branding", "visual identity", "website development"],
-    awards: ["award"],
+  awards: null,
   main_headline: (
     <>
-        Shifting narratives and challenging systems of oppression with the power of a strong brand.
+      Shifting narratives and challenging systems of oppression with the power
+      of a strong brand.
     </>
   ),
   bento_top: BENTO_TOP,
@@ -44,17 +45,32 @@ export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-        Bringing activists and artists together to change the cultural narrative for equity and social justice for all has always been the work of The Opportunity Agenda (TOA). And while directly combating white supremacy as a means for doing that became prioritized for the organization, so was its need for a brand that genuinely reflected that. Armed with research and our own experiences, Outright set out building a bigger, bolder brand system to bolster TOA’s work—in dismantling other, more oppressive systems.
-        <br></br>
+      Bringing activists and artists together to change the cultural narrative
+      for equity and social justice for all has always been the work of The
+      Opportunity Agenda (TOA). And while directly combating white supremacy as
+      a means for doing that became prioritized for the organization, so was its
+      need for a brand that genuinely reflected that. Armed with research and
+      our own experiences, Outright set out building a bigger, bolder brand
+      system to bolster TOA’s work—in dismantling other, more oppressive
+      systems.
       <br></br>
-        This (r)evolution of the TOA brand actively invites a new wave of narrative change through a striking digital experience (featuring a new information architecture, fully dark-mode UI, and a comprehensive catalog of page templates with modular components) and an intersectionality-centered aesthetic that harmoniously uses high-velocity hues, a social-heavy visual identity, and a distinctive photography style. Five distinct-yet-familial sub-brands serving various audiences now work together in supporting and strengthening TOA’s mission.
+      <br></br>
+      This (r)evolution of the TOA brand actively invites a new wave of
+      narrative change through a striking digital experience (featuring a new
+      information architecture, fully dark-mode UI, and a comprehensive catalog
+      of page templates with modular components) and an
+      intersectionality-centered aesthetic that harmoniously uses high-velocity
+      hues, a social-heavy visual identity, and a distinctive photography style.
+      Five distinct-yet-familial sub-brands serving various audiences now work
+      together in supporting and strengthening TOA’s mission.
     </>
   ),
   prev_page: async () =>
     (await import("./google-yt-big-game-bigger-ads"))
       .GOOGLE_YT_BIG_GAME_BIGGER_ADS,
   next_page: async () =>
-    (await import("./exp-faye-embrace-the-day-savor-the-night")).EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
+    (await import("./exp-faye-embrace-the-day-savor-the-night"))
+      .EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT,
 
   slug: "/opp-agenda-shifting-narratives",
   galleryThumbnail: OPP_AGENDA_SHIFTING_NARRATIVES_THUMBNAIL,

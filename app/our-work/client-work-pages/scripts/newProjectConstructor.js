@@ -4,6 +4,7 @@ class Project {
     client_full_name,
     project_title,
     tags,
+    awards,
     main_headline,
     bento_top,
     bento_bottom_left,
@@ -27,6 +28,7 @@ class Project {
         client_full_name,
         project_title,
         tags,
+        awards,
       },
     };
     this.main_headline = main_headline;

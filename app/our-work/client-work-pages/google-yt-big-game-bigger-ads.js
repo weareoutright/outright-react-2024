@@ -7,19 +7,17 @@ import BENTO_BOTTOM_RIGHT from "./assets/google-yt-big-game-bigger-ads/bento-bot
 import FULL_WIDTH_IMG from "./assets/google-yt-big-game-bigger-ads/full-width-img.png";
 import CLIENT_SPOTLIGHT from "./assets/google-yt-big-game-bigger-ads/client-spotlight.png";
 import GOOGLE_YT_BIG_GAME_BIGGER_ADS_THUMBNAIL from "./assets/google-yt-big-game-bigger-ads/thumbnail.png";
-import {MARRIOTT_INTL_NEW_HORIZONS} from "@/app/our-work/client-work-pages/marriott-intl-leading-to-new-horizons.js";
-import {OPP_AGENDA_SHIFTING_NARRATIVES} from "@/app/our-work/client-work-pages/opp-agenda-shifting-narratives.js";
+import { MARRIOTT_INTL_NEW_HORIZONS } from "@/app/our-work/client-work-pages/marriott-intl-leading-to-new-horizons.js";
+import { OPP_AGENDA_SHIFTING_NARRATIVES } from "@/app/our-work/client-work-pages/opp-agenda-shifting-narratives.js";
 
 export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
   hero_bg_img: BG,
   client_full_name: "YouTube",
   project_title: "Bigger Game, Bigger Ads",
   tags: ["branding", "motion design", "visual identity"],
-    awards: ["award"],
+  awards: null,
   main_headline: (
-    <>
-        Bringing YouTube’s A Game to the ad game after the big game.
-    </>
+    <>Bringing YouTube’s A Game to the ad game after the big game.</>
   ),
   bento_top: BENTO_TOP,
   bento_bottom_left: BENTO_BOTTOM_LEFT,
@@ -39,10 +37,21 @@ export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
   client_spotlight: CLIENT_SPOTLIGHT,
   project_overview: (
     <>
-        Re-upping on snacks. Poorly-planned bathroom breaks. A general lack of interest in football. Whatever the excuse for missing the best ads of the year, there’s only one destination for catching them after the Super Bowl. YouTube AdBlitz racks up 1B+ views each year, so when they reached out for a rebrand that would help better showcase advertiser sponsorships while driving views and engagement, Outright ran with it.
+      Re-upping on snacks. Poorly-planned bathroom breaks. A general lack of
+      interest in football. Whatever the excuse for missing the best ads of the
+      year, there’s only one destination for catching them after the Super Bowl.
+      YouTube AdBlitz racks up 1B+ views each year, so when they reached out for
+      a rebrand that would help better showcase advertiser sponsorships while
+      driving views and engagement, Outright ran with it.
       <br />
       <br />
-        We reimagined their new visual identity in a way that captures the excitement and camaraderie of the NFL minus the overplayed sports clichés. By using graphical elements that deconstruct the game’s mechanics—from planned plays to watch parties and everything in between—the subsequent high-energy campaign flexes seamlessly between key art and co-sponsored ad spots, ensuring cohesion and brand recall, regardless of where viewers experience it.
+      We reimagined their new visual identity in a way that captures the
+      excitement and camaraderie of the NFL minus the overplayed sports clichés.
+      By using graphical elements that deconstruct the game’s mechanics—from
+      planned plays to watch parties and everything in between—the subsequent
+      high-energy campaign flexes seamlessly between key art and co-sponsored ad
+      spots, ensuring cohesion and brand recall, regardless of where viewers
+      experience it.
     </>
   ),
   prev_page: async () =>

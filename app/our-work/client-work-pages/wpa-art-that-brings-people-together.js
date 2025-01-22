@@ -13,7 +13,7 @@ export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
   client_full_name: "Washington Project for the Arts",
   project_title: "Art That Brings People Together",
   tags: ["ux/ui design", "website development", "graphic design"],
-  awards: ["award"],
+  awards: null,
   main_headline: (
     <>
       Supporting an experimental arts community with a more experiential online

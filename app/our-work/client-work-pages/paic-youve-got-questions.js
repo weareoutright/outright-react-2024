@@ -14,7 +14,7 @@ export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   client_full_name: "Pennsylvania Immunization Coalition",
   project_title: "You've Got Questions",
   tags: ["media planning & buying", "video & motion", "microsites"],
-  awards: ["award"],
+  awards: null,
   main_headline: (
     <>
       Arming PA parents with accurate, actionable information about vaccines. 

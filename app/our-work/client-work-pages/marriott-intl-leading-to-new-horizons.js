@@ -14,7 +14,7 @@ export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   client_full_name: "Marriott International",
   project_title: "Lead to New Horizons",
   tags: ["brand strategy", "visual identity", "sub-brands"],
-  awards: ["award"],
+  awards: null,
   main_headline: (
     <>
       Advancing the program that guides Marriott International’s leaders
