@@ -1,8 +1,33 @@
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import SCRIBBLE_LINE from "../assets/scribble-line.gif";
 import LOGO_O from "../assets/logo-o.svg";
 
 const PaneInner = ({ pane }) => {
+  const iframeRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (!pane.iframe) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting); // Update visibility state
+      },
+      { threshold: 0.5 } // Trigger when at least 50% of the iframe is visible
+    );
+
+    if (iframeRef.current) {
+      observer.observe(iframeRef.current);
+    }
+
+    return () => {
+      if (iframeRef.current) {
+        observer.unobserve(iframeRef.current);
+      }
+    };
+  }, [pane.iframe]);
+
   return (
     <>
       <div
@@ -21,7 +46,11 @@ const PaneInner = ({ pane }) => {
                 className="video-bg-embed"
                 data-videourl={pane.background_video}
               >
-                {pane.iframe}
+                {isVisible ? (
+                  <div ref={iframeRef}>{pane.iframe}</div>
+                ) : (
+                  <div ref={iframeRef}></div>
+                )}
               </div>
             </div>
           )}
@@ -72,12 +101,6 @@ const PaneInner = ({ pane }) => {
             <div className="pane-content">{pane.content}</div>
           </div>
         </div>
-        {/* {pane.attributes.id === "contactform" && (
-          <Spinner
-            text="Send it!"
-            classes="spinner-contact spinner-contactform"
-          />
-        )}*/}
       </div>
     </>
   );
