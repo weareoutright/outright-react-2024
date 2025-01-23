@@ -83,4 +83,15 @@
       transform: translate(0px, -5px);
     }
   }
+
+  @media screen and (max-width: 960px) {
+    .header-text {
+      p {
+        font-size: em(30);
+      }
+      .work-subheading {
+        font-size: em(30) !important;
+      }
+    }
+  }
 }

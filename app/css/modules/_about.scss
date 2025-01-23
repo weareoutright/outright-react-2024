@@ -26,25 +26,25 @@
           }
         @media screen and (max-width: 1180px) {
           max-width: 900px;
+          .pane-title {
+            font-size: 4em;
+          }
           .scribble-circle-word-container {
             .mobile-display {
               display: block;
-              .meet-the-team-arrow-bottom {
-                //height: auto;
-                .service-arrow {
-                  margin-top: .3em;
-                  height: auto;
-                  margin-right: .25em;
-                }
-                a img {
-                  width: 200px;
-                  height: auto;
-                  //-left: 1em;
-                }
-              }
             }
             .meet-the-team-arrow {
               display: none;
+            }
+          }
+        }
+        @media screen and (max-width: 1180px) {
+          .AboutPane {
+            padding-top: 2em;
+            .about-content {
+              p {
+                font-size: 1.25em !important;
+              }
             }
           }
         }
