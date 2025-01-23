@@ -16,18 +16,42 @@ const OurClientsPane = () => {
     <div className="Clients">
       <h2>Our work speaks for itself. And for the clients we work with.</h2>
       <div className="client-logos">
-        <YOUTUBE className="youtube-logo" />
-        <GOOGLE className="google-logo" />
-        <MARRIOTT className="marriott-logo" />
-        <NHL className="nhl-logo" />
-        <OC className="oc-logo" />
-        <ME_TOO className="me-too-logo" />
-        <EF className="ef-logo" />
-        <KABOOM className="kaboom-logo" />
-        <RTC className="rtc-logo" />
-        <ADIDAS className="adidas-logo" />
-        <WRI className="wri-logo" />
-        <RWJ className="rwj-logo" />
+        <div className="logo-inner">
+          <YOUTUBE className="youtube-logo" />
+        </div>
+        <div className="logo-inner">
+          <GOOGLE className="google-logo" />
+        </div>
+        <div className="logo-inner">
+          <MARRIOTT className="marriott-logo" />
+        </div>
+        <div className="logo-inner">
+          <NHL className="nhl-logo" />
+        </div>
+        <div className="logo-inner">
+          <OC className="oc-logo" />
+        </div>
+        <div className="logo-inner">
+          <ME_TOO className="me-too-logo" />
+        </div>
+        <div className="logo-inner">
+          <EF className="ef-logo" />
+        </div>
+        <div className="logo-inner">
+          <KABOOM className="kaboom-logo" />
+        </div>
+        <div className="logo-inner">
+          <RTC className="rtc-logo" />
+        </div>
+        <div className="logo-inner">
+          <ADIDAS className="adidas-logo" />
+        </div>
+        <div className="logo-inner">
+          <WRI className="wri-logo" />
+        </div>
+        <div className="logo-inner">
+          <RWJ className="rwj-logo" />
+        </div>
       </div>
     </div>
   );
