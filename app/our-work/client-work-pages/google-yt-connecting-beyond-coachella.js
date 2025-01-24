@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/google-yt-connecting-beyond-coachella/hero-bg.png";
 import BENTO_TOP from "./assets/google-yt-connecting-beyond-coachella/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/google-yt-connecting-beyond-coachella/bento-bottom-left.png";
@@ -15,7 +15,7 @@ export const GOOGLE_YT_CONNECTING_BEYOND_COACHELLA = new Project({
   project_title: "Connecting Beyond Coachella",
   tags: ["campaigns", "video & motion", "sizzles"],
   awards: null,
-  order: 7,
+  order: 6,
   main_headline: (
     <>Helping fans enjoy the best of Coachella—from the comfort of the couch.</>
   ),

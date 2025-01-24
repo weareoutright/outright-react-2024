@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/marriott-intl-leading-to-new-horizons/hero-bg.png";
 import BENTO_TOP from "./assets/marriott-intl-leading-to-new-horizons/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/marriott-intl-leading-to-new-horizons/bento-bottom-left.png";
@@ -15,7 +15,7 @@ export const MARRIOTT_INTL_NEW_HORIZONS = new Project({
   project_title: "Lead to New Horizons",
   tags: ["brand strategy", "visual identity", "sub-brands"],
   awards: null,
-  order: 3,
+  order: 2,
   main_headline: (
     <>
       Advancing the program that guides Marriott International’s leaders

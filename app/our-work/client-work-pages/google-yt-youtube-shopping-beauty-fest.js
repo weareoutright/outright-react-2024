@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/google-yt-youtube-shopping-beauty-fest/hero-bg.png";
 import BENTO_TOP from "./assets/google-yt-youtube-shopping-beauty-fest/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/google-yt-youtube-shopping-beauty-fest/bento-bottom-left.png";
@@ -15,7 +15,7 @@ export const GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST = new Project({
   project_title: "YouTube Shopping x #BeautyFest",
   tags: ["branding", "video & motion", "campaigns"],
   awards: null,
-  order: 12,
+  order: 11,
   main_headline: (
     <>Putting a fresh face on a growing live-stream beauty event.</>
   ),

@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/edf-vision-2030/hero-bg.png";
 import BENTO_TOP from "./assets/edf-vision-2030/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/edf-vision-2030/bento-bottom-left.png";
@@ -14,7 +14,7 @@ export const EDF_VISION_2030 = new Project({
   project_title: "Vision 2030",
   tags: ["information design", "ux/ui design", "website development"],
   awards: ["Bronze Anthem Award - Digital & Innovative Experiences"],
-  order: 8,
+  order: 7,
   main_headline: (
     <>
       Implementing innovative, creative solutions so a global environmental

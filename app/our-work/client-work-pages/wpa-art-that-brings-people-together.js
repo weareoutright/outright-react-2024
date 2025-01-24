@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/wpa-art-that-brings-people-together/hero-bg.png";
 import BENTO_TOP from "./assets/wpa-art-that-brings-people-together/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/wpa-art-that-brings-people-together/bento-bottom-left.png";
@@ -14,7 +14,7 @@ export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
   project_title: "Art That Brings People Together",
   tags: ["ux/ui design", "website development", "graphic design"],
   awards: null,
-  order: 13,
+  order: 12,
   main_headline: (
     <>
       Supporting an experimental arts community with a more experiential online
@@ -54,7 +54,7 @@ export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
   prev_page: async () =>
     (await import("./google-yt-youtube-shopping-beauty-fest"))
       .GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST,
-  next_page: async () => (await import("./rtc-we-see-more")).RTC_WE_SEE_MORE,
+  next_page: async () => (await import("./rtc-we-see-more.js")).RTC_WE_SEE_MORE,
   slug: "/washington-project-of-the-arts-art-that-brings-people-together",
   galleryThumbnail: WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER_THUMBNAIL,
 });

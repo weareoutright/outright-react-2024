@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/google-yt-big-game-bigger-ads/hero-bg.png";
 import BENTO_TOP from "./assets/google-yt-big-game-bigger-ads/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/google-yt-big-game-bigger-ads/bento-bottom-left.png";
@@ -16,7 +16,7 @@ export const GOOGLE_YT_BIG_GAME_BIGGER_ADS = new Project({
   project_title: "Bigger Game, Bigger Ads",
   tags: ["branding", "motion design", "visual identity"],
   awards: null,
-  order: 4,
+  order: 3,
   main_headline: (
     <>Bringing YouTube’s A Game to the ad game after the big game.</>
   ),

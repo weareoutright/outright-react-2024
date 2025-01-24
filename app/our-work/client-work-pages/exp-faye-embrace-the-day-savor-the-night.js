@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/exp-faye-embrace-the-day-savor-the-night/hero-bg.png";
 import BENTO_TOP from "./assets/exp-faye-embrace-the-day-savor-the-night/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/exp-faye-embrace-the-day-savor-the-night/bento-bottom-left.png";
@@ -15,7 +15,7 @@ export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
   project_title: "Embrace The Day, Savor The Night",
   tags: ["media planning & buying", "video production", "advertising"],
   awards: null,
-  order: 6,
+  order: 5,
   main_headline: (
     <>
       Attracting tourists with the breadth and best of what Fayetteville has to

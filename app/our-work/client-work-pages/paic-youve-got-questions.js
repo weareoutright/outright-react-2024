@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/paic-youve-got-questions/hero-bg.png";
 import BENTO_TOP from "./assets/paic-youve-got-questions/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/paic-youve-got-questions/bento-bottom-left.png";
@@ -15,7 +15,7 @@ export const PAIC_YOUVE_GOT_QUESTIONS = new Project({
   project_title: "You've Got Questions",
   tags: ["media planning & buying", "video & motion", "microsites"],
   awards: null,
-  order: 11,
+  order: 10,
   main_headline: (
     <>
       Arming PA parents with accurate, actionable information about vaccines. 

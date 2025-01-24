@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/me-too-intl-rebranding-a-movement/hero-bg.png";
 import BENTO_TOP from "./assets/me-too-intl-rebranding-a-movement/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/me-too-intl-rebranding-a-movement/bento-bottom-left.png";
@@ -16,7 +16,7 @@ export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
   project_title: "Rebranding a Movement",
   tags: ["brand strategy", "branding", "visual identity"],
   awards: ["Silver Anthem Awards - Nonprofit Campaign"],
-  order: 2,
+  order: 1,
   main_headline: (
     <>Moving the organization behind the #metoo Movement to the forefront.</>
   ),
@@ -61,7 +61,7 @@ export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
       for healing or a survivor activation system.
     </>
   ),
-  prev_page: async () => (await import("./rtc-we-see-more")).RTC_WE_SEE_MORE,
+  prev_page: async () => (await import("./rtc-we-see-more.js")).RTC_WE_SEE_MORE,
   next_page: async () =>
     (await import("./marriott-intl-leading-to-new-horizons"))
       .MARRIOTT_INTL_NEW_HORIZONS,

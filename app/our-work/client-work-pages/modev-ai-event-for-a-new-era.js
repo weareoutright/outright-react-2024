@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/modev-ai-event-for-a-new-era/hero-bg.png";
 import BENTO_TOP from "./assets/modev-ai-event-for-a-new-era/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/modev-ai-event-for-a-new-era/bento-bottom-left.png";
@@ -15,7 +15,7 @@ export const MODEV_AI_EVENT_FOR_A_NEW_ERA = new Project({
   project_title: "AI Event for a New Era",
   tags: ["branding", "events & environmental", "video & motion"],
   awards: null,
-  order: 10,
+  order: 9,
   main_headline: (
     <>
       Inspiring the future of AI innovation, one conference attendee at a time. 

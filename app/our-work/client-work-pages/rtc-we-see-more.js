@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/rtc-we-see-more/hero-bg.png";
 import BENTO_TOP from "./assets/rtc-we-see-more/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/rtc-we-see-more/bento-bottom-left.png";
@@ -15,7 +15,7 @@ export const RTC_WE_SEE_MORE = new Project({
   project_title: "We See More Than a Trail",
   tags: ["brand strategy", "branding", "visual identity"],
   awards: null,
-  order: 1,
+  order: 0,
   main_headline: (
     <>
       Veering off the beaten path so an outdoor nonprofit can blaze new trials. 

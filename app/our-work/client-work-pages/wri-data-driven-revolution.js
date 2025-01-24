@@ -1,4 +1,4 @@
-import Project from "./scripts/newProjectConstructor";
+import Project from "./scripts/newProjectConstructor.mjs";
 import BG from "./assets/wri-data-driven-revolution/hero-bg.png";
 import BENTO_TOP from "./assets/wri-data-driven-revolution/bento-top.png";
 import BENTO_BOTTOM_LEFT from "./assets/wri-data-driven-revolution/bento-bottom-left.png";
@@ -13,7 +13,7 @@ export const WRI_DATA_DRIVEN_REVOLUTION = new Project({
   client_full_name: "World Resources Institute",
   project_title: "Visualizing Global Transformation",
   tags: ["brand strategy", "visual identity", "data visualization"],
-  order: 9,
+  order: 8,
   awards: [
     "Fast Company Innovation by Design Honoree",
     "Webby Award Honoree",

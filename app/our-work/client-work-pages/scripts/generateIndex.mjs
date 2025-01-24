@@ -81,7 +81,7 @@ projectsArray.sort((a, b) => a.order - b.order);
 // Generate PROJECT_SLUGS from the sorted projectsArray
 content += `${imports.join("\n")}\n\nconst PROJECT_SLUGS = {\n`;
 projectsArray.forEach((project) => {
-  content += `  "${project.slug}": { module: ${project.module}, filePath: "${project.filePath}", galleryThumbnail: ${project.galleryThumbnail} },\n`;
+  content += `  "${project.slug}": { module: ${project.module}, filePath: "${project.filePath}", galleryThumbnail: ${project.galleryThumbnail}, order: ${project.order} },\n`;
 });
 content += `};\n\nexport default PROJECT_SLUGS;\n`;
 
