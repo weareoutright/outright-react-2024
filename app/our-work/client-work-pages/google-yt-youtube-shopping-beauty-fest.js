@@ -15,7 +15,7 @@ export const GOOGLE_YT_YOUTUBE_SHOPPING_BEAUTY_FEST = new Project({
   project_title: "YouTube Shopping x #BeautyFest",
   tags: ["branding", "video & motion", "campaigns"],
   awards: null,
-    order: "12",
+  order: 12,
   main_headline: (
     <>Putting a fresh face on a growing live-stream beauty event.</>
   ),

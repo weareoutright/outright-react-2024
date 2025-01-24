@@ -14,7 +14,7 @@ export const WPA_ART_THAT_BRINGS_PEOPLE_TOGETHER = new Project({
   project_title: "Art That Brings People Together",
   tags: ["ux/ui design", "website development", "graphic design"],
   awards: null,
-    order: "13",
+  order: 13,
   main_headline: (
     <>
       Supporting an experimental arts community with a more experiential online

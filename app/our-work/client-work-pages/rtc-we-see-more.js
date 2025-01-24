@@ -15,7 +15,7 @@ export const RTC_WE_SEE_MORE = new Project({
   project_title: "We See More Than a Trail",
   tags: ["brand strategy", "branding", "visual identity"],
   awards: null,
-    order: "01",
+  order: 1,
   main_headline: (
     <>
       Veering off the beaten path so an outdoor nonprofit can blaze new trials. 

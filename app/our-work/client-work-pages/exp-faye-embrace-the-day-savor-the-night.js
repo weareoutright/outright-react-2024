@@ -15,7 +15,7 @@ export const EXP_FAYE_EMBRACE_THE_DAY_SAVOR_THE_NIGHT = new Project({
   project_title: "Embrace The Day, Savor The Night",
   tags: ["media planning & buying", "video production", "advertising"],
   awards: null,
-    order: "06",
+  order: 6,
   main_headline: (
     <>
       Attracting tourists with the breadth and best of what Fayetteville has to
