@@ -15,6 +15,7 @@ export const GOOGLE_YT_CONNECTING_BEYOND_COACHELLA = new Project({
   project_title: "Connecting Beyond Coachella",
   tags: ["campaigns", "video & motion", "sizzles"],
   awards: null,
+    order: "07",
   main_headline: (
     <>Helping fans enjoy the best of Coachella—from the comfort of the couch.</>
   ),

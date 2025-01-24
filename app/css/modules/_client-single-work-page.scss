@@ -191,9 +191,11 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
         color: $black;
         font-weight: 700;
         text-transform: uppercase;
-        text-align: right;
+        //text-align: right;
+        text-align: center;
         transition: background-image 100ms ease-in;
         padding-bottom: 1.25em;
+        line-height: 1em;
 
         &:hover {
           background-image: url("../../assets/scribble-line.gif");
@@ -230,6 +232,24 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
             width: 4rem;
             height: auto;
           }
+        }
+      }
+    }
+    @media screen and (max-width: map-get($grid-breakpoints, sm)) {
+      .ClientQuote {
+        .quote-body {
+          .quote-text {
+            font-size: em(22);
+          }
+          small {
+            font-size: em(18);
+          }
+        }
+        .open-quotation, .close-quotation {
+            font-size: em(80);
+        }
+        .close-quotation {
+            margin-top: -1.2rem;
         }
       }
     }

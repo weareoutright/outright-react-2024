@@ -16,6 +16,7 @@ export const ME_TOO_REBRANDING_A_MOVEMENT = new Project({
   project_title: "Rebranding a Movement",
   tags: ["brand strategy", "branding", "visual identity"],
   awards: ["Silver Anthem Awards - Nonprofit Campaign"],
+    order: "02",
   main_headline: (
     <>Moving the organization behind the #metoo Movement to the forefront.</>
   ),
