@@ -15,6 +15,7 @@ export const OPP_AGENDA_SHIFTING_NARRATIVES = new Project({
   project_title: "Shifting Narratives",
   tags: ["branding", "visual identity", "website development"],
   awards: null,
+    order: "05",
   main_headline: (
     <>
       Shifting narratives and challenging systems of oppression with the power

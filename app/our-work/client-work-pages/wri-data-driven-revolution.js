@@ -13,6 +13,7 @@ export const WRI_DATA_DRIVEN_REVOLUTION = new Project({
   client_full_name: "World Resources Institute",
   project_title: "Visualizing Global Transformation",
   tags: ["brand strategy", "visual identity", "data visualization"],
+    order: "09",
   awards: [
     "Fast Company Innovation by Design Honoree",
     "Webby Award Honoree",

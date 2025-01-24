@@ -14,6 +14,7 @@ export const EDF_VISION_2030 = new Project({
   project_title: "Vision 2030",
   tags: ["information design", "ux/ui design", "website development"],
   awards: ["Bronze Anthem Award - Digital & Innovative Experiences"],
+    order: "08",
   main_headline: (
     <>
       Implementing innovative, creative solutions so a global environmental
