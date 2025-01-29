@@ -22,7 +22,7 @@ const WorkGalleryUtility = ({ waypoint }) => {
           }}
         >
           <div id="bug-site-contact">
-            <a href="#contact">
+            <a href="#pane-contact">
               <BUG_CONTACT_OUTER
                 className="bug-contact-img"
                 id="bug-contact-img"
