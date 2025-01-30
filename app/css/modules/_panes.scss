@@ -154,6 +154,9 @@
   }
 }
 
+.pane-link:hover {
+  text-decoration: none;
+}
 .pane-clients {
   .pane-title {
     @include clientsPaneHeaderText;

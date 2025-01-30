@@ -196,12 +196,20 @@ a {
 @mixin titleLogo {
   @include titleLogoText;
   width: 90vw;
-  //width: 30vw;
   position: relative;
   z-index: 21;
   margin-bottom: 0;
   display: inline-block;
   filter: invert(1);
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
   .title-logo-img {
     position: absolute;
@@ -209,34 +217,36 @@ a {
     left: 1.5px;
     height: fit-content;
     opacity: 1;
-    transition: opacity 0.33s ease-in;
     z-index: 1;
   }
   .title-logo-img-full {
     position: absolute;
     top: -17px;
     left: 2px;
-    opacity: 0;
+    opacity: 1;
     height: fit-content;
-    transition: opacity 0.33s ease-in;
     pointer-events: auto;
     z-index: 1;
+    animation: fadeOut 2s ease-in forwards;
+    animation-delay: 2s;
+    transition: opacity 0.33s ease-in;
   }
 
   .nav-links {
     display: flex;
     flex-direction: row;
-    // flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     height: inherit;
-    opacity: 0;
-    transition: opacity 0.33s ease-in;
+    opacity: 1;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 7;
     padding-right: 2rem;
+    animation: fadeOut 2s ease-in forwards;
+    animation-delay: 2s;
+    transition: opacity 0.33s ease-in;
 
     .links-container {
       padding-right: 2rem;
@@ -333,10 +343,12 @@ a {
     pointer-events: auto !important;
     .title-logo-img-full {
       opacity: 1;
+      animation: none;
     }
 
     .nav-links {
       opacity: 1;
+      animation: none;
     }
   }
 }

@@ -3,12 +3,7 @@ const AboutPane = () => {
     <div className="AboutPane">
       <div className="about-content">
         <p>
-          We are Outright, a crew of seasoned artists and strategists who are
-          personally invested in the collective success of ourselves and our
-          clients.
-        </p>
-        <p>
-          We&apos;re a full-service creative agency that believes in design for
+          We are Outright, a full-service creative agency that believes in design for
           good—working where consumer brands and nonprofits converge to make a
           positive impact on our world. Based in D.C., we have our pulse on the
           intersection of advocacy and change, while our nationwide team allows

@@ -164,6 +164,7 @@ export default function Home() {
         id="youtube-pane"
       >
         <a
+            className={"pane-link"}
           onClick={(e) => {
             e.preventDefault();
             handlePaneClick("youtube-pane", `our-work/${YouTubePane.uri}`);
@@ -182,6 +183,7 @@ export default function Home() {
         id="rtc-pane"
       >
         <a
+            className={"pane-link"}
           onClick={(e) => {
             e.preventDefault();
             handlePaneClick("rtc-pane", `our-work/${RtcPaneProps.uri}`);
@@ -200,6 +202,7 @@ export default function Home() {
         id="marriott-pane"
       >
         <a
+            className={"pane-link"}
           onClick={(e) => {
             e.preventDefault();
             handlePaneClick(
@@ -221,6 +224,7 @@ export default function Home() {
         id="toa-pane"
       >
         <a
+            className={"pane-link"}
           onClick={(e) => {
             e.preventDefault();
             handlePaneClick("toa-pane", `our-work/${ToaPaneProps.uri}`);
@@ -239,6 +243,7 @@ export default function Home() {
         id="gnrt-pane"
       >
         <a
+            className={"pane-link"}
           onClick={(e) => {
             e.preventDefault();
             handlePaneClick("gnrt-pane", `our-work/${GNRTPaneProps.uri}`);
