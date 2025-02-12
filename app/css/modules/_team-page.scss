@@ -1,8 +1,18 @@
 .TeamPage {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
+
+.TeamPage{
   display: flex;
   flex-direction: column;
+  scroll-snap-align: start;
 
   .TeamPageContent {
-    height: 100vh;
+    scroll-snap-align: start !important;
   }
 }
