@@ -16,7 +16,7 @@ const PaneOuter = ({ pane, currentWaypoint }) => {
         data-bg={pane.background}
         style={{
           backgroundImage: pane.background_image
-            ? `url('../assets/${pane.background_image})`
+            ? `url('../assets/${pane.background_image}')`
             : "",
           height: pane.attributes.id === "see-more" ? "60vh" : "100vh",
           scrollSnapAlign:

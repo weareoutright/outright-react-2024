@@ -22,6 +22,13 @@ export const pane = {
       title="Marriott_Panel"
     ></Iframe>
   ),
+  iframe_mobile: (
+    <Iframe
+      src="https://player.vimeo.com/video/830658831?h=d4f53ec5fd&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;autoplay=1&amp;loop=1&amp;controls=0&amp;responsive=1&amp;background=1&amp;app_id=58479"
+      frameborder="0"
+      title="Marriott_Panel"
+    ></Iframe>
+  ),
   hide_title: false,
   content: <MarriottPane />,
 };

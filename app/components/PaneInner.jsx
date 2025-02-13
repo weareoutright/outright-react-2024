@@ -5,6 +5,7 @@ import LOGO_O from "../assets/logo-o.svg";
 
 const PaneInner = ({ pane }) => {
   const iframeRef = useRef(null);
+  const iframeMobileRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -60,7 +61,14 @@ const PaneInner = ({ pane }) => {
                 id={`video-${pane.responsive_background_video}`}
                 className="video-bg-embed"
                 data-videourl={pane.responsive_background_video}
-              ></div>
+              >
+                {" "}
+                {isVisible ? (
+                  <div ref={iframeRef}>{pane.iframe_mobile}</div>
+                ) : (
+                  <div ref={iframeRef}></div>
+                )}
+              </div>
             </div>
           )}
           <div className="col-12">
