@@ -24,7 +24,8 @@ const PaneInner = ({ pane }) => {
 
     return () => {
       if (iframeRef.current) {
-        observer.unobserve(iframeRef.current);
+        const current = iframeRef.current;
+        observer.unobserve(current);
       }
     };
   }, [pane.iframe]);
