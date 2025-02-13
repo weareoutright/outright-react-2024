@@ -1,6 +1,8 @@
 import GNRTPane from "./GnrtPane";
 import Iframe from "react-iframe";
 
+// updated iframe_mobile property to use responsive_background_video
+
 export const pane = {
   title: "GNRT.AI",
   uri: "modev-ai-event-for-a-new-era",
