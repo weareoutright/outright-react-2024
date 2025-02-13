@@ -1,10 +1,6 @@
-"use client;";
-
 import localFont from "next/font/local";
 import "./css/globals.scss";
-import { pageview } from "./lib/gtag";
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import Analytics from "./components/Analytics";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,18 +19,9 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const pathname = usePathname();
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      pageview(pathname);
-    }
-  }, [pathname]);
-
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=G-JF5377DG23`}
           strategy="afterInteractive"
@@ -52,6 +39,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* <div className="overlay active" id="overlay-loading"></div> */}
+        <Analytics />
         {children}
       </body>
     </html>
