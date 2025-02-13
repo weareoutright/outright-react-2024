@@ -1,3 +1,5 @@
+"use client;";
+
 import localFont from "next/font/local";
 import "./css/globals.scss";
 import { pageview } from "./lib/gtag";
