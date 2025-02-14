@@ -54,17 +54,25 @@
 }
 
 #site-branding {
-  transition: all 0.33s ease-out 0.5s;
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
   transform: translateY(0);
   //max-width: 50%;
   .branding-hide & {
-    transition: all 0.33s ease-out;
+    transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
     transform: translateY(-200%);
   }
 }
 
+#site-branding.visible {
+  opacity: 1;
+}
+
+#site-branding.hidden {
+  opacity: 0;
+}
+
 #site-nav {
-  transition: all 0.33s ease-out;
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
   transform-origin: 0 100%;
   transform: rotate(-90deg) translateY(100%);
   color: $light;
@@ -82,7 +90,7 @@
 #site-terms {
   @include termsText;
   margin-left: 4em;
-  transition: opacity 0.33s ease-out;
+  transition: all 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
   opacity: 1;
   pointer-events: none;
   .contrast-light-bottom & {
