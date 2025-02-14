@@ -7,7 +7,7 @@ export default function Analytics() {
 
   useEffect(() => {
     if (typeof window !== "undefined" && window.gtag) {
-      window.gtag("config", "G-XXXXXXXXXX", {
+      window.gtag("config", "G-JF5377DG23", {
         page_path: pathname,
       });
     }

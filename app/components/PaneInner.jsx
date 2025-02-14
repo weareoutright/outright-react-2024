@@ -5,8 +5,8 @@ import LOGO_O from "../assets/logo-o.svg";
 
 const PaneInner = ({ pane }) => {
   const iframeRef = useRef(null);
-  const iframeMobileRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (!pane.iframe) return;
@@ -30,6 +30,17 @@ const PaneInner = ({ pane }) => {
     };
   }, [pane.iframe]);
 
+  useEffect(() => {
+    const checkViewport = () => {
+      setIsMobile(window.innerWidth <= 767); // UPDATED: Detect screen width
+    };
+
+    checkViewport();
+    window.addEventListener("resize", checkViewport); // UPDATED: Listen for viewport changes
+
+    return () => window.removeEventListener("resize", checkViewport); // UPDATED: Cleanup event listener
+  }, []);
+
   return (
     <>
       <div
@@ -48,27 +59,18 @@ const PaneInner = ({ pane }) => {
                 className="video-bg-embed"
                 data-videourl={pane.background_video}
               >
-                {isVisible ? (
-                  <div ref={iframeRef}>{pane.iframe}</div>
-                ) : (
-                  <div ref={iframeRef}></div>
-                )}
+                <div ref={iframeRef}>{pane.iframe}</div>
               </div>
             </div>
           )}
-          {pane.responsive_background_video && (
+          {pane.responsive_background_video && isMobile && (
             <div className="video-bg video-bg-vertical">
               <div
                 id={`video-${pane.responsive_background_video}`}
                 className="video-bg-embed"
                 data-videourl={pane.responsive_background_video}
               >
-                {" "}
-                {isVisible ? (
-                  <div ref={iframeRef}>{pane.iframe_mobile}</div>
-                ) : (
-                  <div ref={iframeRef}></div>
-                )}
+                <div ref={iframeRef}>{pane.iframe_mobile}</div>
               </div>
             </div>
           )}
