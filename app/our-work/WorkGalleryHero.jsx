@@ -24,14 +24,10 @@ const HeroPane = () => {
 
   return (
     <div className="HeroPane WorkPageHero" id="work-page-hero">
-      <h1 className="pane-title site-title work-page-title">
-        OUR{" "}
-        <span className="underline">
-          WORK.
-          <SCRIBBLE_LINE />
-        </span>
-      </h1>
-      <div className="work-page-headline page-utility-component page-utility-lower page-utility-center">
+      <div className="work-page-headline page-utility-lower page-utility-center">
+        <h1 className="pane-title site-title work-page-title">
+          OUR WORK.
+        </h1>
         <h2 className="site-headline">
           <div>Elevated creative for modern brands</div>
           <a href="#gallery">
