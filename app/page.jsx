@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Head from "next/head.js";
+import { Metadata } from "next";
 import PaneOuter from "./components/PaneOuter.jsx";
 import Utility from "./components/Utility.jsx";
 import HeroPane from "./panes/HeroPane.jsx";
@@ -138,10 +139,16 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    document.title = "Outright | Home";
+    document.description =
+      "We are Outright. A creative agency making elevated creative for modern brands.";
+  }, []);
+
   return (
     <>
       <Head>
-        <title>Home | Outright</title>
+        <title>Outright | Home</title>
         <meta
           name="description"
           content="We are Outright. A creative agency making elevated creative for modern brands."

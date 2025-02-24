@@ -61,13 +61,24 @@ const TeamPage = () => {
     };
   }, []);
 
+  useEffect(() => {
+    document.title = "Meet The Team | Outright";
+    document.description = "Meet the team @ Outright";
+  }, []);
+
   return (
     <>
       <Head>
         <title>Meet The Team | Outright</title>
-        <meta name="description" content="Meet the team @ Outright" />
+        <meta
+          name="description"
+          content="We are Outright. A creative agency making elevated creative for modern brands."
+        />
         <meta property="og:title" content="Meet The Team | Outright" />
-        <meta property="og:description" content="Meet the team @ Outright" />
+        <meta
+          property="og:description"
+          content="We are Outright. A creative agency making elevated creative for modern brands."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://weareoutright.com/team" />
       </Head>

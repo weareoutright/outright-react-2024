@@ -73,13 +73,24 @@ const WorkPage = () => {
     };
   }, []);
 
+  useEffect(() => {
+    document.title = "Our Work | Outright";
+    document.description = "Our Work | Outright";
+  }, []);
+
   return (
     <>
       <Head>
-        <title>Work | Outright</title>
-        <meta name="description" content="Our Work | Outright" />
+        <title>Our Work | Outright</title>
+        <meta
+          name="description"
+          content="We are Outright. A creative agency making elevated creative for modern brands."
+        />
         <meta property="og:title" content="Our Work | Outright" />
-        <meta property="og:description" content="Our Work | Outright" />
+        <meta
+          property="og:description"
+          content="We are Outright. A creative agency making elevated creative for modern brands."
+        />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://weareoutright.com/our-work" />
       </Head>
