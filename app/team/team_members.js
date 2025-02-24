@@ -55,17 +55,17 @@ const teamGroups = [
         title: "Director, Marketing",
         fun_title: "Crochet Professional",
       },
+      {
+        id: "head-8",
+        name: "harry",
+        title: "Account Manager, Media & Marketing",
+        fun_title: "Senior Snow Surfer",
+      },
     ],
   },
   {
     group: "groupThree",
     members: [
-      {
-        id: "head-8",
-        name: "amanda",
-        title: "Project Manager",
-        fun_title: '"Pics or it didn\'t happen" Spokesperson',
-      },
       {
         id: "head-9",
         name: "kelsey",
@@ -78,11 +78,6 @@ const teamGroups = [
         title: "Senior Motion & UX Designer",
         fun_title: "Playlist Perfectionist",
       },
-    ],
-  },
-  {
-    group: "groupFour",
-    members: [
       {
         id: "head-11",
         name: "emily",
@@ -93,13 +88,24 @@ const teamGroups = [
         id: "head-12",
         name: "dakota",
         title: "Full-Stack Developer",
-        fun_title: "Sushi Connoisseur",
+        fun_title: "Human Swiss Army Knife",
       },
+    ],
+  },
+  {
+    group: "groupFour",
+    members: [
       {
         id: "head-13",
         name: "gaby",
         title: "Full-Stack Developer",
         fun_title: "Full-Stack Expert Jetsetter",
+      },
+      {
+        id: "head-14",
+        name: "kristy",
+        title: "Financial Advisor",
+        fun_title: "Chaos Coordinator",
       },
     ],
   },

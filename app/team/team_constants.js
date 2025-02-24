@@ -36,7 +36,7 @@ const TEAM_CARDS = [
   },
   {
     name: "Sarah",
-    title: "Project Manager",
+    title: "Senior Project Manager",
     funTitle: "Random Facts Wizard",
   },
   {
@@ -62,7 +62,7 @@ const TEAM_CARDS = [
   {
     name: "Dakota",
     title: "Full-Stack Developer",
-    funTitle: "Sushi Connoisseur",
+    funTitle: "Human Swiss Army Knife",
   },
   {
     name: "Gaby",
@@ -88,6 +88,16 @@ const TEAM_CARDS = [
     name: "Steve",
     title: "Full-Stack Developer",
     funTitle: "Digital Dungeon Guru",
+  },
+  {
+    name: "Harry",
+    title: "Account Manager, Media & Marketing",
+    funTitle: "Senior Snow Surfer",
+  },
+  {
+    name: "Kristy",
+    title: "Financial Advisor",
+    funTitle: "Chaos Coordinator",
   },
 ];
 
