@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Head from "next/head.js";
 import PaneOuter from "./components/PaneOuter.jsx";
 import Utility from "./components/Utility.jsx";
 import HeroPane from "./panes/HeroPane.jsx";
@@ -138,169 +139,214 @@ export default function Home() {
   }, []);
 
   return (
-    <div className={`Home ${scrollbarColor}`} ref={containerRef}>
-      <Utility
-        waypoint={currentWaypoint}
-        order={currentOrder}
-        siteHeadlineOpacity={siteHeadlineOpacity}
-        siteHeadlineDisplay={siteHeadlineDisplay}
-        privacyPolicyOpacity={privacyHeadlineOpacity}
-      />
+    <>
+      <Head>
+        <title>Home | Outright</title>
+        <meta
+          name="description"
+          content="We are Outright. A creative agency making elevated creative for modern brands."
+        />
 
-      <div
-        ref={heroPaneRef}
-        data-waypoint={HeroPaneProps.waypoint}
-        data-order={HeroPaneProps.order}
-        data-scrollbar={HeroPaneProps.background}
-      >
-        <HeroPane />
-      </div>
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Outright" />
+        <meta property="og:url" content="https://weareoutright.com" />
+        <meta property="og:title" content="Outright | Home" />
+        <meta
+          property="og:description"
+          content="We are Outright. A creative agency making elevated creative for modern brands."
+        />
+        <meta
+          property="og:image"
+          content="https://weareoutright.com/media/logo-outright-social.jpg"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
-      <div
-        ref={youtubeRef}
-        data-waypoint={YouTubePane.waypoint}
-        data-order={YouTubePane.order}
-        data-scrollbar={YouTubePane.background}
-        id="youtube-pane"
-      >
-        <a
-          className={"pane-link"}
-          onClick={(e) => {
-            e.preventDefault();
-            handlePaneClick("youtube-pane", `our-work/${YouTubePane.uri}`);
-          }}
-          href={`our-work/${YouTubePane.uri}`}
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Outright | Home" />
+        <meta
+          name="twitter:description"
+          content="We are Outright. A creative agency making elevated creative for modern brands."
+        />
+        <meta
+          name="twitter:image"
+          content="https://weareoutright.com/media/logo-outright-social.jpg"
+        />
+
+        {/* Application & Apple Web App */}
+        <meta name="application-name" content="Outright" />
+        <meta name="apple-mobile-web-app-title" content="Outright" />
+      </Head>
+
+      <div className={`Home ${scrollbarColor}`} ref={containerRef}>
+        <Utility
+          waypoint={currentWaypoint}
+          order={currentOrder}
+          siteHeadlineOpacity={siteHeadlineOpacity}
+          siteHeadlineDisplay={siteHeadlineDisplay}
+          privacyPolicyOpacity={privacyHeadlineOpacity}
+        />
+
+        <div
+          ref={heroPaneRef}
+          data-waypoint={HeroPaneProps.waypoint}
+          data-order={HeroPaneProps.order}
+          data-scrollbar={HeroPaneProps.background}
         >
-          <PaneOuter pane={YouTubePane} />
-        </a>
-      </div>
+          <HeroPane />
+        </div>
 
-      <div
-        ref={rtcRef}
-        data-waypoint={RtcPaneProps.waypoint}
-        data-order={RtcPaneProps.order}
-        data-scrollbar={RtcPaneProps.background}
-        id="rtc-pane"
-      >
-        <a
-          className={"pane-link"}
-          onClick={(e) => {
-            e.preventDefault();
-            handlePaneClick("rtc-pane", `our-work/${RtcPaneProps.uri}`);
-          }}
-          href={`our-work/${RtcPaneProps.uri}`}
+        <div
+          ref={youtubeRef}
+          data-waypoint={YouTubePane.waypoint}
+          data-order={YouTubePane.order}
+          data-scrollbar={YouTubePane.background}
+          id="youtube-pane"
         >
-          <PaneOuter pane={RtcPaneProps} />
-        </a>
-      </div>
+          <a
+            className={"pane-link"}
+            onClick={(e) => {
+              e.preventDefault();
+              handlePaneClick("youtube-pane", `our-work/${YouTubePane.uri}`);
+            }}
+            href={`our-work/${YouTubePane.uri}`}
+          >
+            <PaneOuter pane={YouTubePane} />
+          </a>
+        </div>
 
-      <div
-        ref={marriottRef}
-        data-waypoint={MarriottPaneProps.waypoint}
-        data-order={MarriottPaneProps.order}
-        data-scrollbar={MarriottPaneProps.background}
-        id="marriott-pane"
-      >
-        <a
-          className={"pane-link"}
-          onClick={(e) => {
-            e.preventDefault();
-            handlePaneClick(
-              "marriott-pane",
-              `our-work/${MarriottPaneProps.uri}`
-            );
-          }}
-          href={`our-work/${MarriottPaneProps.uri}`}
+        <div
+          ref={rtcRef}
+          data-waypoint={RtcPaneProps.waypoint}
+          data-order={RtcPaneProps.order}
+          data-scrollbar={RtcPaneProps.background}
+          id="rtc-pane"
         >
-          <PaneOuter pane={MarriottPaneProps} />
-        </a>
-      </div>
+          <a
+            className={"pane-link"}
+            onClick={(e) => {
+              e.preventDefault();
+              handlePaneClick("rtc-pane", `our-work/${RtcPaneProps.uri}`);
+            }}
+            href={`our-work/${RtcPaneProps.uri}`}
+          >
+            <PaneOuter pane={RtcPaneProps} />
+          </a>
+        </div>
 
-      <div
-        ref={toaRef}
-        data-waypoint={ToaPaneProps.waypoint}
-        data-order={ToaPaneProps.order}
-        data-scrollbar={ToaPaneProps.background}
-        id="toa-pane"
-      >
-        <a
-          className={"pane-link"}
-          onClick={(e) => {
-            e.preventDefault();
-            handlePaneClick("toa-pane", `our-work/${ToaPaneProps.uri}`);
-          }}
-          href={`our-work/${ToaPaneProps.uri}`}
+        <div
+          ref={marriottRef}
+          data-waypoint={MarriottPaneProps.waypoint}
+          data-order={MarriottPaneProps.order}
+          data-scrollbar={MarriottPaneProps.background}
+          id="marriott-pane"
         >
-          <PaneOuter pane={ToaPaneProps} />
-        </a>
-      </div>
+          <a
+            className={"pane-link"}
+            onClick={(e) => {
+              e.preventDefault();
+              handlePaneClick(
+                "marriott-pane",
+                `our-work/${MarriottPaneProps.uri}`
+              );
+            }}
+            href={`our-work/${MarriottPaneProps.uri}`}
+          >
+            <PaneOuter pane={MarriottPaneProps} />
+          </a>
+        </div>
 
-      <div
-        ref={gnrtRef}
-        data-waypoint={GNRTPaneProps.waypoint}
-        data-order={GNRTPaneProps.order}
-        data-scrollbar={GNRTPaneProps.background}
-        id="gnrt-pane"
-      >
-        <a
-          className={"pane-link"}
-          onClick={(e) => {
-            e.preventDefault();
-            handlePaneClick("gnrt-pane", `our-work/${GNRTPaneProps.uri}`);
-          }}
-          href={`our-work/${GNRTPaneProps.uri}`}
+        <div
+          ref={toaRef}
+          data-waypoint={ToaPaneProps.waypoint}
+          data-order={ToaPaneProps.order}
+          data-scrollbar={ToaPaneProps.background}
+          id="toa-pane"
         >
-          <PaneOuter pane={GNRTPaneProps} />
-        </a>
-      </div>
+          <a
+            className={"pane-link"}
+            onClick={(e) => {
+              e.preventDefault();
+              handlePaneClick("toa-pane", `our-work/${ToaPaneProps.uri}`);
+            }}
+            href={`our-work/${ToaPaneProps.uri}`}
+          >
+            <PaneOuter pane={ToaPaneProps} />
+          </a>
+        </div>
 
-      <div
-        ref={seeMoreWorkRef}
-        data-waypoint={SeeMoreWorkPaneProps.waypoint}
-        data-order={SeeMoreWorkPaneProps.order}
-        data-scrollbar={SeeMoreWorkPaneProps.background}
-      >
-        <PaneOuter pane={SeeMoreWorkPaneProps} />
-      </div>
+        <div
+          ref={gnrtRef}
+          data-waypoint={GNRTPaneProps.waypoint}
+          data-order={GNRTPaneProps.order}
+          data-scrollbar={GNRTPaneProps.background}
+          id="gnrt-pane"
+        >
+          <a
+            className={"pane-link"}
+            onClick={(e) => {
+              e.preventDefault();
+              handlePaneClick("gnrt-pane", `our-work/${GNRTPaneProps.uri}`);
+            }}
+            href={`our-work/${GNRTPaneProps.uri}`}
+          >
+            <PaneOuter pane={GNRTPaneProps} />
+          </a>
+        </div>
 
-      <div
-        ref={ourClientsRef}
-        data-waypoint={OurClientsPaneProps.waypoint}
-        data-order={OurClientsPaneProps.order}
-        data-scrollbar={OurClientsPaneProps.background}
-        id="clients"
-      >
-        <PaneOuter pane={OurClientsPaneProps} />
-      </div>
+        <div
+          ref={seeMoreWorkRef}
+          data-waypoint={SeeMoreWorkPaneProps.waypoint}
+          data-order={SeeMoreWorkPaneProps.order}
+          data-scrollbar={SeeMoreWorkPaneProps.background}
+        >
+          <PaneOuter pane={SeeMoreWorkPaneProps} />
+        </div>
 
-      <div
-        ref={aboutRef}
-        data-waypoint={AboutPaneProps.waypoint}
-        data-order={AboutPaneProps.order}
-        data-scrollbar={AboutPaneProps.background}
-        id="who-we-are"
-      >
-        <PaneOuter pane={AboutPaneProps} />
-      </div>
+        <div
+          ref={ourClientsRef}
+          data-waypoint={OurClientsPaneProps.waypoint}
+          data-order={OurClientsPaneProps.order}
+          data-scrollbar={OurClientsPaneProps.background}
+          id="clients"
+        >
+          <PaneOuter pane={OurClientsPaneProps} />
+        </div>
 
-      <div
-        ref={servicesRef}
-        data-waypoint={ServicesPaneProps.waypoint}
-        data-order={ServicesPaneProps.order}
-        data-scrollbar={ServicesPaneProps.background}
-        id="approach"
-      >
-        <PaneOuter pane={ServicesPaneProps} />
-      </div>
+        <div
+          ref={aboutRef}
+          data-waypoint={AboutPaneProps.waypoint}
+          data-order={AboutPaneProps.order}
+          data-scrollbar={AboutPaneProps.background}
+          id="who-we-are"
+        >
+          <PaneOuter pane={AboutPaneProps} />
+        </div>
 
-      <div
-        ref={contactRef}
-        data-waypoint={ContactPaneProps.waypoint}
-        data-order={ContactPaneProps.order}
-        data-scrollbar={ContactPaneProps.background}
-      >
-        <PaneOuter pane={ContactPaneProps} currentWaypoint={currentWaypoint} />
+        <div
+          ref={servicesRef}
+          data-waypoint={ServicesPaneProps.waypoint}
+          data-order={ServicesPaneProps.order}
+          data-scrollbar={ServicesPaneProps.background}
+          id="approach"
+        >
+          <PaneOuter pane={ServicesPaneProps} />
+        </div>
+
+        <div
+          ref={contactRef}
+          data-waypoint={ContactPaneProps.waypoint}
+          data-order={ContactPaneProps.order}
+          data-scrollbar={ContactPaneProps.background}
+        >
+          <PaneOuter
+            pane={ContactPaneProps}
+            currentWaypoint={currentWaypoint}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

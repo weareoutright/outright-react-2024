@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
+import Head from "next/head";
 import WorkGalleryUtility from "../components/WorkGalleryUtility";
 import Gallery from "./Gallery";
 import PaneOuter from "../components/PaneOuter";
@@ -73,39 +74,49 @@ const WorkPage = () => {
   }, []);
 
   return (
-    <div className={`WorkPage ${scrollbarColor}`} ref={workPageContainerRef}>
-      <WorkGalleryUtility
-        waypoint={currentWaypoint}
-        order={currentOrder}
-        spinnerOpacity={spinnerOpacity}
-      />
-      <div
-        ref={heroPaneRef}
-        data-waypoint={WorkGalleryHeroProps.waypoint}
-        data-order={WorkGalleryHeroProps.order}
-        data-scrollbar="chartreuse"
-      >
-        <WorkGalleryHero pane={WorkGalleryHeroProps} />
-      </div>
-      <div
-        ref={workGalleryRef}
-        data-waypoint={WorkGalleryHeroProps.galleryWaypoint}
-        className="work-page-gallery"
-      >
-        <Gallery waypoint={WorkGalleryHeroProps.galleryWaypoint} />
-      </div>
-      <div
-        ref={contactRef}
-        data-waypoint={ContactPaneProps.waypoint}
-        data-order={ContactPaneProps.order}
-      >
-        <PaneOuter
-          pane={ContactPaneProps}
+    <>
+      <Head>
+        <title>Work | Outright</title>
+        <meta name="description" content="Our Work | Outright" />
+        <meta property="og:title" content="Our Work | Outright" />
+        <meta property="og:description" content="Our Work | Outright" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://weareoutright.com/our-work" />
+      </Head>
+      <div className={`WorkPage ${scrollbarColor}`} ref={workPageContainerRef}>
+        <WorkGalleryUtility
+          waypoint={currentWaypoint}
+          order={currentOrder}
           spinnerOpacity={spinnerOpacity}
-          currentWaypoint={currentWaypoint}
         />
+        <div
+          ref={heroPaneRef}
+          data-waypoint={WorkGalleryHeroProps.waypoint}
+          data-order={WorkGalleryHeroProps.order}
+          data-scrollbar="chartreuse"
+        >
+          <WorkGalleryHero pane={WorkGalleryHeroProps} />
+        </div>
+        <div
+          ref={workGalleryRef}
+          data-waypoint={WorkGalleryHeroProps.galleryWaypoint}
+          className="work-page-gallery"
+        >
+          <Gallery waypoint={WorkGalleryHeroProps.galleryWaypoint} />
+        </div>
+        <div
+          ref={contactRef}
+          data-waypoint={ContactPaneProps.waypoint}
+          data-order={ContactPaneProps.order}
+        >
+          <PaneOuter
+            pane={ContactPaneProps}
+            spinnerOpacity={spinnerOpacity}
+            currentWaypoint={currentWaypoint}
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
