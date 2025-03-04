@@ -215,11 +215,14 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
       .ClientProjectOverview {
         font-size: em(22);
       }
-      .PrevNextBottomNav a {
+      .PrevNextBottomNav {
+        min-width: auto;
+        a {
         font-size: em(16);
         justify-content: center;
         text-align: center;
       }
+    }
       .PrevNextBottomNav {
         .prev-btn {
           img {
@@ -263,6 +266,23 @@ $work-page-padding-no-top: 0px 250px 100px 250px;
       .ClientMainHeadline {
         .main-headline-text {
           padding-bottom: 60px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .work-page-content {
+      .ClientQuote {
+        min-width: auto;
+        .open-quotation, .close-quotation {
+          font-size: 3em;
+        }
+        .open-quotation {
+          margin-top: 0.3em;
+        }
+        .quote-body {
+          padding: 0 .25em;
         }
       }
     }
