@@ -275,6 +275,9 @@
     }
   }
   @include media-breakpoint-down(sm) {
+    .col-12 {
+      width: 100% !important;
+    }
     .pane-title {
       padding-top: 50px;
       br {
