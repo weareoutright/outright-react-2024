@@ -22,12 +22,7 @@
   svg {
     align-items: center;
     text-align: center;
-  }
-
-  .rwj-logo {
-    path {
-      //width: 75% !important;
-    }
+    max-width: 100%;
   }
 
   @media screen and (max-width: 1200px) {
@@ -43,7 +38,24 @@
   }
 
   @media screen and (max-width: 950px) {
+    row-gap: .25rem;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
+    max-width: 500px;
+    margin: auto;
+    .logo-inner {
+      svg {
+        max-width: 70%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 467px) {
+    row-gap: 1rem;
+    .logo-inner {
+      svg {
+        max-width: 80%;
+      }
+    }
   }
 }
